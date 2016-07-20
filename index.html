@@ -17,46 +17,144 @@
 
     <section class="main-content">
       <h1>
-<a id="测试一下markdown吧" class="anchor" href="#%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8Bmarkdown%E5%90%A7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>测试一下MARKDOWN吧～</h1>
+<a id="环境搭建ubuntu下" class="anchor" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAubuntu%E4%B8%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>环境搭建(Ubuntu下)：</h1>
 
 <h3>
-<a id="这是小标题" class="anchor" href="#%E8%BF%99%E6%98%AF%E5%B0%8F%E6%A0%87%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>这是小标题～</h3>
+<a id="包括nvmgitgruntwebpack的安装和配置" class="anchor" href="#%E5%8C%85%E6%8B%ACnvmgitgruntwebpack%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>[包括nvm，git，grunt，webpack的安装和配置]</h3>
+
+<hr>
+
+<h2>
+<a id="nvm的搭建" class="anchor" href="#nvm%E7%9A%84%E6%90%AD%E5%BB%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>nvm的搭建</h2>
+
+<p><code>$ cd ~/git</code><br>
+<code>$ git clone https://github.com/creationix/nvm.git</code>    </p>
+
+<p>配置终端启动时自动执行 <code>source ~/git/nvm/nvm.sh</code>,
+在 <code>~/.bashrc</code>, <code>~/.bash_profile</code>, <code>~/.profile</code>, 或者 <code>~/.zshrc</code> 文件添加以下命令:    </p>
+
+<p><code>source ~/git/nvm/nvm.sh</code>    </p>
+
+<h4>
+<a id="或者" class="anchor" href="#%E6%88%96%E8%80%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>或者：</h4>
+
+<p><code>wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash</code>    </p>
+
+<p>在 <code>~/.bashrc</code>, <code>~/.bash_profile</code>, <code>~/.profile</code>, 或者 <code>~/.zshrc</code> 文件添加以下命令:</p>
+
+<p><code>source ./.nvm/nvm.sh</code>    </p>
+
+<p>然后输入在控制台输入 <code>nvm</code> 查看是否安装成功吧～    </p>
 
 <hr>
 
 <h3>
-<a id="来试试列表" class="anchor" href="#%E6%9D%A5%E8%AF%95%E8%AF%95%E5%88%97%E8%A1%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>来试试列表</h3>
+<a id="常见nvm命令" class="anchor" href="#%E5%B8%B8%E8%A7%81nvm%E5%91%BD%E4%BB%A4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>常见nvm命令：</h3>
 
 <ol>
-<li> 这是第一个</li>
-<li> 这是第二个</li>
-<li> 这是第三个</li>
+<li>
+<p>安装node：  </p>
+
+<blockquote>
+<p><code>nvm install &lt;version&gt;</code>    </p>
+
+<p>nvm 默认是从 <a href="http://nodejs.org/dist/">http://nodejs.org/dist/</a> 下载的, 国外服务器, 必然很慢, 好在 nvm以及支持从镜像服务器下载包, 于是我们可以方便地从七牛的 node dist 镜像下载:    </p>
+
+<p><code>NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node nvm install 5</code>    </p>
+
+<p>5是5.xx版本的意思，6即是6.xx版本，也可以指定版本如5.9.1    </p>
+</blockquote>
+</li>
+<li>
+<p>查看node版本   </p>
+
+<p><code>nvm ls</code>    列出你安装的所有版本的node以及当前你所用的node版本，还有你默认的node版本。    </p>
+</li>
+<li>
+<p>切换node版本    </p>
+
+<p><code>nvm use version</code>   </p>
+</li>
+<li>
+<p>设置默认版本    </p>
+
+<p><code>nvm alias default v5.9.0</code>    </p>
+</li>
 </ol>
 
 <hr>
 
-<h3>
-<a id="接下来试试引用吧" class="anchor" href="#%E6%8E%A5%E4%B8%8B%E6%9D%A5%E8%AF%95%E8%AF%95%E5%BC%95%E7%94%A8%E5%90%A7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>接下来试试引用吧～</h3>
+<h2>
+<a id="git安装及配置" class="anchor" href="#git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git安装及配置</h2>
 
-<blockquote>
-<p>呵呵，这是第一句～<br>
-接下来说什么好呢？<br>
-结束吧～<br>
-对了，换行别忘了后边加四个空格～    </p>
-</blockquote>
+<ol>
+<li>
+<p>安装git    </p>
+
+<p><code>sudo apt-get install git</code>    </p>
+</li>
+<li>
+<p>配置git    </p>
+
+<p><code>git config --global user.name "your name"</code></p>
+
+<p><code>git config --global user.email "your email"</code>     </p>
+</li>
+<li>
+<p>创建SSH Key    </p>
+
+<p><code>ssh-keygen -t rsa -C "youremail@example.com"</code>     </p>
+
+<p><code>cd ~/.ssh</code>可以看到id_rsa(私钥)和id_rsa.pub(公钥)，将id_rsa.pub的内容添加到<br>
+GitHub-&gt;Account-settings-&gt;SSH Keys中     </p>
+</li>
+</ol>
 
 <hr>
 
-<p>接下来来试试代码块吧 <code>print("pjy")</code> 很棒哦！    </p>
+<h2>
+<a id="grunt的安装和配置" class="anchor" href="#grunt%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>grunt的安装和配置：</h2>
 
-<pre><code>//javascript
-var a = "pjy";
-console.log(a);
-</code></pre>
+<ol>
+<li>
+<p>安装grunt和grunt-cli    </p>
+
+<p><code>npm install -g grunt-cli</code>    </p>
+
+<p><code>npm install grunt -g</code>    </p>
+</li>
+<li>
+<p>安装grunt插件    </p>
+
+<p><code>npm install &lt;module&gt; --save-dev</code>    </p>
+</li>
+</ol>
 
 <hr>
 
-<p>哈哈，最后来个链接！ <a href="http://www.cat666.com">猫溜弹幕网</a></p>
+<h2>
+<a id="webpack的安装和使用" class="anchor" href="#webpack%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>webpack的安装和使用</h2>
+
+<ol>
+<li>
+<p>安装    </p>
+
+<p><code>npm install webpack -g</code>    </p>
+
+<p><code>npm install webpack --save-dev</code>    </p>
+</li>
+<li>
+<p>命令行操作    </p>
+
+<p><code>$ webpack --config XXX.js</code>   //使用另一份配置文件（比如webpack.config2.js）来打包</p>
+
+<p><code>$ webpack --watch</code>   //监听变动并自动打包</p>
+
+<p><code>$ webpack -p</code>    //压缩混淆脚本，这个非常非常重要！</p>
+
+<p><code>$ webpack -d</code>    //生成map映射文件，告知哪些模块被最终打包到哪里了   </p>
+</li>
+</ol>
 
       <footer class="site-footer">
 
