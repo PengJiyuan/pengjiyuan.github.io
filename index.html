@@ -20,7 +20,7 @@
 <a id="环境搭建ubuntu下" class="anchor" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAubuntu%E4%B8%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>环境搭建(Ubuntu下)：</h1>
 
 <h3>
-<a id="包括nvmgitgruntwebpack的安装和配置" class="anchor" href="#%E5%8C%85%E6%8B%ACnvmgitgruntwebpack%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>[包括nvm，git，grunt，webpack的安装和配置]</h3>
+<a id="包括nvmgitgruntwebpacksublimegoogle-chromevpn的安装和配置" class="anchor" href="#%E5%8C%85%E6%8B%ACnvmgitgruntwebpacksublimegoogle-chromevpn%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>[包括nvm，git，grunt，webpack，sublime，google-chrome，vpn的安装和配置]</h3>
 
 <hr>
 
@@ -155,6 +155,72 @@ GitHub-&gt;Account-settings-&gt;SSH Keys中     </p>
 <p><code>$ webpack -d</code>    //生成map映射文件，告知哪些模块被最终打包到哪里了   </p>
 </li>
 </ol>
+
+<hr>
+
+<h2>
+<a id="sublime-text-3的安装" class="anchor" href="#sublime-text-3%E7%9A%84%E5%AE%89%E8%A3%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sublime text 3的安装</h2>
+
+<pre><code>1. sudo add-apt-repository ppa:webupd8team/sublime-text-3  
+
+2. sudo apt-get update    
+
+3. sudo apt-get install sublime-text-installer    
+</code></pre>
+
+<hr>
+
+<h2>
+<a id="google-chrome安装" class="anchor" href="#google-chrome%E5%AE%89%E8%A3%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>google chrome安装</h2>
+
+<pre><code>1. wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb     
+
+2. sudo dpkg -i google-chrome-stable_current_amd64.deb    
+
+3. 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到启动器吧～ 
+</code></pre>
+
+<hr>
+
+<h2>
+<a id="vpn的搭建" class="anchor" href="#vpn%E7%9A%84%E6%90%AD%E5%BB%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VPN的搭建</h2>
+
+<ol>
+<li><p>首先需要两个文件<br>
+NetExtender.Linux.7.0.741.x86_64.tgz<br>
+NetExtender.Linux.7.5.760-1.x86.64.rpm    </p></li>
+<li>
+<p>安装第一个tgz    </p>
+
+<p><code>tar -zxvf NetExtender.Linux.7.0.741.x86_64.tgz</code>       </p>
+
+<p><code>cd netExtenderClient</code>     </p>
+
+<p><code>sudo ./install</code>     </p>
+</li>
+<li>
+<p>图形化界面需要java环境支持，不安装图形化界面的略过～    </p>
+
+<p><code>sudo apt-get install openjdk-7-jre</code>       </p>
+
+<p>如果报错的话，使用下边方法：    </p>
+
+<p><code>sudo add-apt-repository ppa:webupd8team/java</code>    </p>
+
+<p><code>sudo apt-get update</code>      </p>
+
+<p><code>sudo apt-get install oracle-java7-installer</code>    </p>
+
+<p>等待时间略长～～    </p>
+</li>
+<li>
+<p>启动    </p>
+
+<p>在控制台输入 <code>netExtender</code> 即可～    </p>
+</li>
+</ol>
+
+<hr>
 
       <footer class="site-footer">
 
