@@ -1,6 +1,6 @@
 {
   "name": "Pengjiyuan.GitHub.io",
   "tagline": "日常备忘随记",
-  "body": "测试一下MARKDOWN吧～\r\n==================\r\n###这是小标题～\r\n---\r\n\r\n###来试试列表   \r\n1.  这是第一个\r\n2.  这是第二个\r\n3.  这是第三个\r\n\r\n---\r\n###接下来试试引用吧～\r\n\r\n>呵呵，这是第一句～    \r\n>接下来说什么好呢？    \r\n>结束吧～    \r\n>对了，换行别忘了后边加四个空格～    \r\n\r\n---\r\n接下来来试试代码块吧 `print(\"pjy\")` 很棒哦！    \r\n\r\n```\r\n//javascript\r\nvar a = \"pjy\";\r\nconsole.log(a);\r\n```    \r\n\r\n---\r\n哈哈，最后来个链接！ [猫溜弹幕网](http://www.cat666.com)\r\n",
+  "body": "测试一下MARKDOWN吧～\r\n==================\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
