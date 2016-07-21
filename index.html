@@ -222,6 +222,25 @@ NetExtender.Linux.7.0.741.x86_64.tgz      </p></li>
 <hr>
 
 <h2>
+<a id="安装mysql" class="anchor" href="#%E5%AE%89%E8%A3%85mysql" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安装mysql</h2>
+
+<p><code>sudo apt-get install mysql-server mysql-client</code> 安装mysql    </p>
+
+<p><code>service mysql start</code>  启动MySQL服务    </p>
+
+<p><code>service mysql stop</code>  停止MySQL服务    </p>
+
+<p><code>sudo mysqladmin -u root password newpassword</code>  修改 MySQL 的管理员密码    </p>
+
+<p>设置远程访问(正常情况下，mysql占用的3306端口只是在IP 127.0.0.1上监听，拒绝了其他IP的访问（通过netstat可以查看到）。取消本地监</p>
+
+<p>听需要修改 my.cnf 文件：)：</p>
+
+<p><code>sudo vi /etc/mysql/my.cnf</code></p>
+
+<p><code>bind-address = 127.0.0.1</code> //找到此内容并且注释  </p>
+
+<h2>
 <a id="装x神器gnome-pie" class="anchor" href="#%E8%A3%85x%E7%A5%9E%E5%99%A8gnome-pie" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>装X神器gnome-pie</h2>
 
 <p><code>sudo add-apt-repository ppa:simonschneegans/testing -y</code>    </p>
