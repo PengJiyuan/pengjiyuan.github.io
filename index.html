@@ -183,6 +183,25 @@ GitHub-&gt;Account-settings-&gt;SSH Keys中     </p>
 <hr>
 
 <h2>
+<a id="linux-zip" class="anchor" href="#linux-zip" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux zip</h2>
+
+<ol>
+<li><p><code>zip -r myfile.zip ./*</code>
+将当前目录下的所有文件和文件夹全部压缩成myfile.zip文件,－r表示递归压缩子目录下所有文件.    </p></li>
+<li><p>unzip
+<code>unzip -o -d /home/sunny myfile.zip</code><br>
+把myfile.zip文件解压到 /home/sunny/<br>
+-o:不提示的情况下覆盖文件；<br>
+-d:-d /home/sunny 指明将文件解压缩到/home/sunny目录下；</p></li>
+<li><p><code>zip -d myfile.zip smart.txt</code><br>
+删除压缩文件中smart.txt文件<br>
+zip -m myfile.zip ./rpm_info.txt<br>
+向压缩文件中myfile.zip中添加rpm_info.txt文件    </p></li>
+<li><p><code>zip -r filename.zip file1 file2 file3 /usr/work/school</code><br>
+上面的命令把 file1、file2、 file3、以及 /usr/work/school 目录的内容（假设这个目录存在）压缩起来，然后放入 filename.zip 文件中。 </p></li>
+</ol>
+
+<h2>
 <a id="vpn的搭建" class="anchor" href="#vpn%E7%9A%84%E6%90%AD%E5%BB%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VPN的搭建</h2>
 
 <ol>
