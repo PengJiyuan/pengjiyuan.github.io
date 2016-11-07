@@ -359,7 +359,53 @@ unset color_prompt force_color_prompt    将w改成W，保存
       </footer>
 
     </section>
-
-  
+<style>
+.fix_wrapper {
+  width: 200px;
+  height: 500px;
+  background-color: #fff;
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.fix_wrapper > a {
+  display: block;
+  width: 160px;
+  text-overflow: ellipsis;
+}
+</style>
+<script>
+;(function() {
+  var $ = function(selector) {return document.querySelector(selector);},
+  $$ = function(selector) {return document.querySelectorAll(selector);},
+  wrapper = document.createElement('div');
+  wrapper.className = 'fix_wrapper';
+  $('body').appendChild(wrapper);
+  Array.from($$('h1,h2,h3,h4,h5')).filter(function(item) {
+    return item.firstElementChild;
+  }).forEach(function(item, index) {
+    var hd = document.createElement('a');
+    hd.href = '#' + (item.firstElementChild ? item.firstElementChild.getAttribute('id') : item.textContent);
+    hd.text = item.textContent;
+    switch(item.tagName) {
+      case 'H1':
+        hd.style = 'color: #159957';
+        break;
+      case 'H2':
+        hd.style = 'margin-left: 15px;color: #ef8376';
+        break;
+      case 'H3':
+        hd.style.marginLeft = '30px';
+        break;
+      default:
+        hd.style.marginLeft = 0;
+        break;
+    }
+    wrapper.appendChild(hd);
+  });
+})();
+</script>
   </body>
 </html>
