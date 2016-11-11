@@ -39,6 +39,12 @@ module.exports = {
       loader: ExtractTextPlugin.extract(
         'css!postcss-loader'
       )
+    }, {
+      test: /\.jpg$/,
+      loader: "file-loader"
+    }, {
+      test: /\.png$/, 
+      loader: "url-loader?mimetype=image/png"
     }]
   },
 
