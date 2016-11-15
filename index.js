@@ -3,14 +3,20 @@ require('github-markdown-css');
 require('highlight.js/styles/default.css');
 require('./style/index.less');
 
-let addBg = require('./javascript/header_bg.js');
-let addCatalog = require('./javascript/add_catalog.js');
-let mdcontent = require("./article.md");
+let config = require('./config.json');
+
+let mdcontent = require('./article.md');
 let container = document.getElementById('container');
 container.innerHTML = mdcontent;
 
 //header add canvas bg
-//addBg();
+if(config && config.header_bg) {
+  let addBg = require('./modules/header_bg/index');
+  addBg();
+}
 
-//todo add catalog
-//new addCatalog().init();
+//add left catalog
+if(config && config.catalog) {
+  let addCatalog = require('./modules/catalog/index');
+  addCatalog();
+}

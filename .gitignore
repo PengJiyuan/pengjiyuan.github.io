@@ -1,3 +1,11 @@
 /node_modules
 
 **/test.*
+
+# gitbook's cache file
+/_book
+
+# eslint's cache file
+.eslintcache
+
+npm-debug.log

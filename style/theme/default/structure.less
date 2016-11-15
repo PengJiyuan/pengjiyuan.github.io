@@ -3,7 +3,7 @@
 @header_bg: @green;
 @footer_bg: @green;
 @header_font: @font_white;
-@font_shadow: @font;
+@font_shadow: @shadow;
 
 .markdown-body {
 	width: 60%;
@@ -41,15 +41,12 @@ header {
 footer {
 	background-color: @footer_bg;
 	width: 100%;
-	height: 100px;
+	height: 50px;
+	line-height: 50px;
 	bottom: 0;
 	overflow: hidden;
-	p {
-		margin-top: 20px;
-		color: @header_font;
-		text-shadow: 0 2px 2px @font_shadow;
-		width: 100%;
-		text-align: center;
-		font-size: 50px;
-	}
+	color: @header_font;
+	text-shadow: 0 2px 2px @font_shadow;
+	text-align: center;
+	font-size: 30px;
 }

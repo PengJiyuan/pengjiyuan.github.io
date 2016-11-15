@@ -261,7 +261,7 @@ tar  -zxvf   压缩文件名.tar.gz
 
 3. 如图配置    
        
- ![config](img/daily/nproxy.png)    
+ ![config](assets/daily/nproxy.png)    
 
 4. `npm install nproxy -g`    
 
