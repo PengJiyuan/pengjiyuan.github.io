@@ -5,9 +5,29 @@
 @header_font: @font_white;
 @font_shadow: @shadow;
 
-.markdown-body {
-	width: 60%;
-	margin: 20px auto;
+.container-wrapper {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	transition: all 0.5s;
+
+	.markdown-body {
+		width: 60%;
+		margin: 20px auto;
+	}
+}
+
+.container-wrapper-active {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 200px;
+	transition: all 0.5s;
+
+	.markdown-body {
+		width: 80%;
+		margin: 20px auto;
+	}
 }
 
 header {
@@ -36,17 +56,4 @@ header {
 			text-align: center;
 		}
 	}
-}
-
-footer {
-	background-color: @footer_bg;
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
-	bottom: 0;
-	overflow: hidden;
-	color: @header_font;
-	text-shadow: 0 2px 2px @font_shadow;
-	text-align: center;
-	font-size: 30px;
 }

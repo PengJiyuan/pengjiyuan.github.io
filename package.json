@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf disk && rm -rf ./style/fonts && grunt",
+    "build": "rm -rf disk && grunt",
     "dev": "webpack --config dev.webpack.config.js --color --progress",
     "eslint": "eslint *.js modules/**/ uitls/**/ scripts/ --ext .js --cache",
-    "add_eslint": "node ./scripts/add_eslint.js"
+    "add_eslint": "node ./scripts/add_eslint.js",
+    "font": "rm -rf ./style/fonts && grunt font"
   },
   "author": "pjy",
   "license": "ISC",

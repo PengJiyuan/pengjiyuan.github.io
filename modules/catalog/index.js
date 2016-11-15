@@ -19,11 +19,12 @@ addCatalog.prototype = {
 
   init: function() {
     let that = this;
+    let container_wrapper = helper.selectOne('#container-wrapper');
     that.initDom();
     that.initItems();
     helper.bind(document, 'scroll', () => {
       if(helper.getScrollY() > header_height) {
-        let catalogList = helper.selectAll('.module-catalog > .content > a');
+        let catalogList = Array.from(helper.selectAll('.module-catalog > .content > a'));
         that.overLine = true;
         // show the catalog
         that.wrapper.classList.remove('module-catalog-move_out');
@@ -31,6 +32,10 @@ addCatalog.prototype = {
         helper.css(that.icon, {
           lineHeight: '40px'
         });
+
+        // fix the wrapper style
+        container_wrapper.classList.remove('container-wrapper');
+        container_wrapper.classList.add('container-wrapper-active');
 
         // active current tag
         that.headers.forEach((item) => {
@@ -49,6 +54,10 @@ addCatalog.prototype = {
           helper.css(that.icon, {
             lineHeight: catalog_height
           });
+
+          // fix the wrapper style
+          container_wrapper.classList.remove('container-wrapper-active');
+          container_wrapper.classList.add('container-wrapper');
         }
       }
     });

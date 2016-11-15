@@ -26,6 +26,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-webpack');
   grunt.loadNpmTasks('grunt-webfont');
 
-  grunt.registerTask('default', ['webfont', 'webpack:build']);
+  grunt.registerTask('default', ['webpack:build']);
+
+  grunt.registerTask('font', ['webfont']);
 
 };
