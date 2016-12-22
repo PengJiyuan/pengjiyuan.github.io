@@ -189,6 +189,20 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 
 tar  -zxvf   压缩文件名.tar.gz
 
+## Linux rar 解压
+
+需要先下载rar    
+
+`sudo apt-get install rar`    
+
+解压：    
+
+`rar x FileName.rar`    
+
+压缩：    
+
+`rar a FileName.rar DirName`
+
 
 ##  VPN的搭建
 

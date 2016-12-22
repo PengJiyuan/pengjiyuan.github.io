@@ -1,6 +1,6 @@
 /node_modules
 
-**/test.*
+/test
 
 # gitbook's cache file
 /_book
@@ -9,3 +9,5 @@
 .eslintcache
 
 npm-debug.log
+
+
