@@ -1,5 +1,5 @@
 # markdown博客
-只需markdown文件，全自动自动生成网页,支持自定义插件，自定义配置。[pengjiyuan.github.io](http://pengjiyuan.github.io)
+只需markdown文件，全自动自动生成网页,支持自定义插件，自定义配置。[pengjiyuan.github.io](http://pengjiyuan.github.io) test release!
 ## Usage
 
 * fork本项目， 然后克隆到本地。
