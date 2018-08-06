@@ -4,7 +4,8 @@
   "description": "PengJiyuan's github blog.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve .",
+    "build": "node scripts/home.js && node build/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/PengJiyuan/pengjiyuan.github.io/issues"
   },
-  "homepage": "https://github.com/PengJiyuan/pengjiyuan.github.io#readme"
+  "homepage": "https://github.com/PengJiyuan/pengjiyuan.github.io#readme",
+  "devDependencies": {
+    "@egoist/front-matter": "^1.0.0",
+    "mdpack": "^0.4.5",
+    "serve": "^9.4.0"
+  }
 }
