@@ -8,6 +8,7 @@ const metadata = {
 
 function getMetadata(content) {
   const head = frontMatter(content).head.split('\n');
+  console.log(head);
   const ret = {};
   head.forEach((h) => {
     const [key, value] = h.split(': ');
