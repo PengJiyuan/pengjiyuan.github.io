@@ -14,6 +14,10 @@ function getMetadata(content) {
     ret[key.trim()] = value.trim();
   });
 
+  if (!ret.type) {
+    ret.type = '原创';
+  }
+
   return ret;
 }
 
@@ -30,5 +34,7 @@ fs.readdirSync(path.resolve(__dirname, '../_posts'))
         });
       });
   });
+
+fs.writeFileSync(path.resolve(__dirname, '../postMap.json'), JSON.stringify(metadata), 'utf8');
 
 module.exports = metadata;

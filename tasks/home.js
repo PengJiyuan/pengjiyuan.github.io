@@ -14,8 +14,7 @@ const list = metadata.post.map((postInfo) => {
     url: `/blog/${postInfo.year}/${postInfo.filename}`,
     intro: data.intro,
     tag: data.tag,
-    author: data.author,
-    type: data.type || '原创'
+    author: data.author
   };
 });
 

@@ -2,23 +2,17 @@
   <head>
     <link href="/static/css/markdown.css" rel="stylesheet" />
     <link href="/static/css/highlight.css" rel="stylesheet" />
-    <style>
-      .markdown-body {
-        box-sizing: border-box;
-        min-width: 200px;
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 45px;
-      }
-
-      @media (max-width: 767px) {
-        .markdown-body {
-          padding: 15px;
-        }
-      }
-    </style>
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
   </head>
   <body>
+    <header id="header" class="header">
+      <div class="center">
+        <h1 class="title">hello</h1>
+        <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+        <p class="intro">Hello world!</p>
+      </div>
+    </header>
     <div class="markdown-body">
       <p>Hello world!!!
 Hello world!!!
@@ -31,5 +25,18 @@ Hello world!!!
 Hello world!!!</p>
 
     </div>
+    <script>
+      var header = document.getElementById('header');
+      var themes = [
+        'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+        'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+        'purple_bliss', 'miaka', 'sky'
+      ];
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      const theme = themes[random(0, themes.length - 1)];
+      header.classList.add(theme);
+    </script>
   </body>
 </html>

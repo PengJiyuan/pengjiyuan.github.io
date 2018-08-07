@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  height: 300px;
+
+  &.mooonlit {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  }
+  &.cool_blue {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+  }
+  &.evening_sunshing {
+    background: linear-gradient(to right, #b92b27, #1565c0);
+  }
+  &.memariani {
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+  }
+  &.kye_meh {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+  }
+  &.by_design {
+    background: linear-gradient(to right, #009fff, #ec2f4b);
+  }
+  &.red_sunset {
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  }
+  &.pun_yeta {
+    background: linear-gradient(to right, #108dc7, #ef8e38);
+  }
+  &.nepal {
+    background: linear-gradient(to right, #de6161, #2657eb);
+  }
+  &.deep_space {
+    background: linear-gradient(to right, #000000, #434343);
+  }
+  &.curiosity_blue {
+    background: linear-gradient(to right, #525252, #3d72b4);
+  }
+  &.purple_bliss {
+    background: linear-gradient(to right, #360033, #0b8793);
+  }
+  &.miaka {
+    background: linear-gradient(to right, #fc354c, #0abfbc);
+  }
+  &.sky {
+    background: linear-gradient(to right, #076585, #fff);
+  }
+
+  > .center {
+    position: absolute;
+    width: 60%;
+    max-width: 600px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    > h1.title {
+      text-align: center;
+      color: #fff;
+      font-weight: 300;
+    }
+    > .author {
+      text-align: center;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 300;
+      img {
+        width: 26px;
+        height: 26px;
+        border-radius: 1000px;
+        vertical-align: -6px;
+        margin-right: 8px;
+      }
+    }
+    > .intro {
+      margin-top: 40px;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 100;
+    }
+  }
+}
+
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}

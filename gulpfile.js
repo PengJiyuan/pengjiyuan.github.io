@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const plumber = require('gulp-plumber');
 const mdpack = require('mdpack');
 const buildHome = require('./tasks/home');
+const metadata = require('./postMap.json');
 
 function build() {
   fs.readdirSync(path.resolve(__dirname, '_posts'))
@@ -14,19 +15,27 @@ function build() {
   .forEach((year) => {
     fs.readdirSync(path.resolve(__dirname, '_posts', year))
       .forEach((post) => {
+        const filename = post.split('.md')[0];
+        const _meta = metadata.post.find(_m => _m.filename === filename).metadata;
+        console.log(_meta);
         const mdConfig = {
           entry: path.resolve(__dirname, '_posts', year, post),
           output: {
-            path: path.resolve(__dirname, 'blog', year, post.split('.md')[0]),
+            path: path.resolve(__dirname, 'blog', year, filename),
             name: 'index'
           },
           format: ['html'],
           plugins: [
             new mdpack.plugins.mdpackPluginRemoveHead()
           ],
+          template: path.resolve(__dirname, 'tasks/template.html'),
           resources: {
             markdownCss: '/static/css/markdown.css',
-            highlightCss: '/static/css/highlight.css'
+            highlightCss: '/static/css/highlight.css',
+            title: _meta.title,
+            author: _meta.author,
+            type: _meta.type,
+            intro: _meta.intro
           }
         };
         mdpack(mdConfig);
@@ -51,7 +60,7 @@ gulp.task('cssDev', () => {
 });
 
 gulp.task('mdDev', () => {
-  return gulp.watch('_posts/**/*.md', ['build']);
+  return gulp.watch('_posts/**/*.md', ['home', 'blog']);
 });
 
 gulp.task('home', buildHome);

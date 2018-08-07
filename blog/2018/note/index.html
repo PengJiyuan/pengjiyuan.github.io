@@ -2,23 +2,17 @@
   <head>
     <link href="/static/css/markdown.css" rel="stylesheet" />
     <link href="/static/css/highlight.css" rel="stylesheet" />
-    <style>
-      .markdown-body {
-        box-sizing: border-box;
-        min-width: 200px;
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 45px;
-      }
-
-      @media (max-width: 767px) {
-        .markdown-body {
-          padding: 15px;
-        }
-      }
-    </style>
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
   </head>
   <body>
+    <header id="header" class="header">
+      <div class="center">
+        <h1 class="title">一些工具的安装</h1>
+        <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+        <p class="intro">这里记录了我的一些备忘的操作和命令，这个备忘录较早，其中可能大部分都不使用了!</p>
+      </div>
+    </header>
     <div class="markdown-body">
       <h1 id="-ubuntu-">环境搭建(Ubuntu下)：</h1>
 <p><strong>[包括nvm，git，grunt，webpack，sublime，google-chrome，vpn，gnome-pie的安装和配置]</strong>     </p>
@@ -199,5 +193,18 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 <p>（如果导出单张表的话在数据库名后面输入表名即可）</p>
 
     </div>
+    <script>
+      var header = document.getElementById('header');
+      var themes = [
+        'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+        'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+        'purple_bliss', 'miaka', 'sky'
+      ];
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      const theme = themes[random(0, themes.length - 1)];
+      header.classList.add(theme);
+    </script>
   </body>
 </html>
