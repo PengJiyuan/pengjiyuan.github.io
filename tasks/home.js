@@ -7,17 +7,30 @@ let htmlNav = '';
 
 const list = metadata.post.map((postInfo) => {
   const data = postInfo.metadata;
+
   return {
     title: data.title,
     date: data.date,
-    url: `/blog/${postInfo.year}/${postInfo.filename}`
+    url: `/blog/${postInfo.year}/${postInfo.filename}`,
+    intro: data.intro,
+    tag: data.tag,
+    author: data.author,
+    type: data.type || '原创'
   };
 });
 
 htmlNav = `
-  <ul>
-    ${list.map(l => `<li><a href="${l.url}">${l.title}</a></li>`).join('')}
-  </ul>
+  ${list.map(l => `
+    <article>
+      <header>
+        <h1 class="post-title"><a href="${l.url}">${l.title}</a></h1>
+      </header>
+      <section>
+        <p>${l.intro}</p>
+      </section>
+      <footer>${l.author}</footer>
+    </article>
+  `).join('')}
 `;
 
 function buildHomeHtml() {

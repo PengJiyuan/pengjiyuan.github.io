@@ -51,12 +51,12 @@ gulp.task('cssDev', () => {
 });
 
 gulp.task('mdDev', () => {
-  return gulp.watch('_posts/**/*.md', ['blog']);
+  return gulp.watch('_posts/**/*.md', ['build']);
 });
 
-gulp.task('home', () => buildHome);
+gulp.task('home', buildHome);
 
-gulp.task('blog', () => build);
+gulp.task('blog', build);
 
 gulp.task('default', ['build']);
 

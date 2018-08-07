@@ -13,6 +13,7 @@ function getMetadata(content) {
     const [key, value] = h.split(': ');
     ret[key.trim()] = value.trim();
   });
+
   return ret;
 }
 

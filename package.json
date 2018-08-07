@@ -23,7 +23,8 @@
   "homepage": "https://github.com/PengJiyuan/pengjiyuan.github.io#readme",
   "dependencies": {
     "@egoist/front-matter": "^1.0.0",
-    "mdpack": "^0.4.5"
+    "mdpack": "^0.4.5",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

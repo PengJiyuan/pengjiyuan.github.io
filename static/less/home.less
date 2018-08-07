@@ -1,16 +1,30 @@
+@import './normalize.less';
+
 html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  a {
+    text-decoration: none;
+    color: #222;
+  }
 }
 .container {
-  width: 1000px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
   overflow: auto;
-}
-.container {
-  ul {
-    list-style: none;
+  .list {
+    width: 80%;
+    max-width: 710px;
+    margin: 0 auto;
+    article {
+      box-sizing: border-box;
+      background-color: cyan;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
