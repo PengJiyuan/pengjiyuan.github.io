@@ -7,23 +7,61 @@ html, body {
   a {
     text-decoration: none;
     color: #222;
+    transition: color 0.3s;
+    &:hover {
+      color: lighten(#222, 20%);
+    }
   }
 }
+
 .container {
   width: 100%;
   height: 100%;
   overflow: auto;
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background: #222 url(/static/images/common/banner.jpg) no-repeat fixed center;
+  }
   .list {
+    padding: 40px 0;
     width: 80%;
     max-width: 710px;
     margin: 0 auto;
     article {
+      position: relative;
       box-sizing: border-box;
-      background-color: cyan;
-      a {
+      color: #2e2e2e;
+      padding-bottom: 20px;
+      border-bottom: #ebf2f6 1px solid;
+      &:after {
         display: block;
-        width: 100%;
-        height: 100%;
+        content: "";
+        width: 7px;
+        height: 7px;
+        border: #e7eef2 1px solid;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        margin-left: -5px;
+        background: #fff;
+        border-radius: 100%;
+        box-shadow: #fff 0 0 0 5px;
+      }
+      .intro {
+        color: #3a4145;
+        font-size: 14px;
+      }
+      .author {
+        color: #595959;
+        font-size: 15px;
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 1000px;
+          vertical-align: -6px;
+          margin-right: 6px;
+        }
       }
     }
   }

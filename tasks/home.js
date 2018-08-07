@@ -14,7 +14,8 @@ const list = metadata.post.map((postInfo) => {
     url: `/blog/${postInfo.year}/${postInfo.filename}`,
     intro: data.intro,
     tag: data.tag,
-    author: data.author
+    author: data.author,
+    type: data.type
   };
 });
 
@@ -25,9 +26,9 @@ htmlNav = `
         <h1 class="post-title"><a href="${l.url}">${l.title}</a></h1>
       </header>
       <section>
-        <p>${l.intro}</p>
+        <p class="intro">${l.intro}<a href="${l.url}">  »</a></p>
       </section>
-      <footer>${l.author}</footer>
+      <footer class="author"><img src="/static/images/common/favicon.ico" />${l.author} | ${l.date}</footer>
     </article>
   `).join('')}
 `;

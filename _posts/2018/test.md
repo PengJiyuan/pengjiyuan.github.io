@@ -1,6 +1,6 @@
 ---
 title: 测试博客
-date: 2018/08/07 20:46:25
+date: 2018/08/07
 author: PengJiyuan
 tag: Javascript
 intro: 这是一个测试的博客

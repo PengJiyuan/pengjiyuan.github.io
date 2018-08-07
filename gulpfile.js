@@ -17,7 +17,6 @@ function build() {
       .forEach((post) => {
         const filename = post.split('.md')[0];
         const _meta = metadata.post.find(_m => _m.filename === filename).metadata;
-        console.log(_meta);
         const mdConfig = {
           entry: path.resolve(__dirname, '_posts', year, post),
           output: {
