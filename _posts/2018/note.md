@@ -36,13 +36,13 @@ source ./.nvm/nvm.sh
 ## 常见nvm命令：    
 ### 1.  安装node：  
     
-> `nvm install <version>`    
+* `nvm install <version>`    
 
-> nvm 默认是从 http://nodejs.org/dist/ 下载的, 国外服务器, 必然很慢, 好在 nvm以及支持从镜像服务器下载包, 于是我们可以方便地从七牛的 node dist 镜像下载:    
+* nvm 默认是从 http://nodejs.org/dist/ 下载的, 国外服务器, 必然很慢, 好在 nvm以及支持从镜像服务器下载包, 于是我们可以方便地从七牛的 node dist 镜像下载:    
 
-> `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node nvm install 5`   
+* `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node nvm install 5`   
 
-> 5是5.xx版本的意思，6即是6.xx版本，也可以指定版本如5.9.1    
+* 5是5.xx版本的意思，6即是6.xx版本，也可以指定版本如5.9.1    
 
 ### 2.  查看node版本   
 ```bash
@@ -166,21 +166,21 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 
 ## Linux zip    
 
-> 1. `zip -r myfile.zip ./*`
+* `zip -r myfile.zip ./*`
    将当前目录下的所有文件和文件夹全部压缩成myfile.zip文件,－r表示递归压缩子目录下所有文件.    
 
-> 2. unzip
+* unzip
    `unzip -o -d /home/sunny myfile.zip`    
    把myfile.zip文件解压到 /home/sunny/    
    -o:不提示的情况下覆盖文件；    
    -d:-d /home/sunny 指明将文件解压缩到/home/sunny目录下；
 
-> 3. `zip -d myfile.zip smart.txt`    
+* `zip -d myfile.zip smart.txt`    
    删除压缩文件中smart.txt文件    
    zip -m myfile.zip ./rpm_info.txt    
    向压缩文件中myfile.zip中添加rpm_info.txt文件    
 
-> 4. `zip -r filename.zip file1 file2 file3 /usr/work/school`    
+* `zip -r filename.zip file1 file2 file3 /usr/work/school`    
    上面的命令把 file1、file2、 file3、以及 /usr/work/school 目录的内容（假设这个目录存在）压缩起来，然后放入 filename.zip 文件中。 
 
 ## Linux tar.gz解压

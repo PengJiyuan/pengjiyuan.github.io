@@ -20,6 +20,10 @@ htmlNav = `
   </ul>
 `;
 
-fs.writeFile(path.resolve(__dirname, '..', 'index.html'), homeTpl.replace('<% blogList %>', htmlNav), (err) => {
-  console.log('Upadate home html success!\n');
-});
+function buildHomeHtml() {
+  fs.writeFile(path.resolve(__dirname, '..', 'index.html'), homeTpl.replace('<% blogList %>', htmlNav), (err) => {
+    console.log('\nUpadate home html success!\n');
+  });
+}
+
+module.exports = buildHomeHtml;
