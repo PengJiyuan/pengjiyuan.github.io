@@ -16,7 +16,11 @@ fs.readdirSync(path.resolve(__dirname, '../_posts'))
           format: ['html'],
           plugins: [
             new mdpack.plugins.mdpackPluginRemoveHead()
-          ]
+          ],
+          resources: {
+            markdownCss: '/static/css/markdown.css',
+            highlightCss: '/static/css/highlight.css'
+          }
         };
         mdpack(mdConfig);
       });

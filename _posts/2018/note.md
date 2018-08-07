@@ -6,29 +6,33 @@ date: 2018/08/06 18:37:00
 # 环境搭建(Ubuntu下)：
 **[包括nvm，git，grunt，webpack，sublime，google-chrome，vpn，gnome-pie的安装和配置]**     
 
--------
-
-
-## nvm的搭建    
-`$ cd ~/git`    
-`$ git clone https://github.com/creationix/nvm.git`    
+## nvm的搭建
+```bash
+$ cd ~/git   
+$ git clone https://github.com/creationix/nvm.git
+```  
 
 配置终端启动时自动执行 `source ~/git/nvm/nvm.sh`,
 在 `~/.bashrc`, `~/.bash_profile`, `~/.profile`, 或者 `~/.zshrc` 文件添加以下命令:    
 
-`source ~/git/nvm/nvm.sh`    
+```bash
+source ~/git/nvm/nvm.sh
+```    
 
 **或者：**    
 
-`wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash`    
+```bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
+```    
 
 在 `~/.bashrc`, `~/.bash_profile`, `~/.profile`, 或者 `~/.zshrc` 文件添加以下命令:
 
-`source ./.nvm/nvm.sh`    
+```bash
+source ./.nvm/nvm.sh
+```   
 
 然后输入在控制台输入 `nvm` 查看是否安装成功吧～    
 
--------
 ## 常见nvm命令：    
 ### 1.  安装node：  
     
@@ -37,24 +41,27 @@ date: 2018/08/06 18:37:00
 > nvm 默认是从 http://nodejs.org/dist/ 下载的, 国外服务器, 必然很慢, 好在 nvm以及支持从镜像服务器下载包, 于是我们可以方便地从七牛的 node dist 镜像下载:    
 
 > `NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node nvm install 5`   
- 
+
 > 5是5.xx版本的意思，6即是6.xx版本，也可以指定版本如5.9.1    
 
 ### 2.  查看node版本   
-`nvm ls`     
+```bash
+nvm ls
+```     
 
 列出你安装的所有版本的node以及当前你所用的node版本，还有你默认的node版本。    
 
 ### 3.  切换node版本    
-  
-`nvm use version`   
+
+```bash
+nvm use version
+```
 
 ### 4.  设置默认版本    
 
-`nvm alias default v5.9.0`    
-
--------
-   
+```bash
+nvm alias default v5.9.0
+```    
 
 ## git安装及配置
 
@@ -98,8 +105,6 @@ __创建SSH Key:__
 
 进入/c/Users/Administrator/.ssh目录，`ssh-keygen -t rsa -C "youremail@example.com"` ,接下来同linux操作。
 
----    
-
 ## grunt的安装和配置：    
 
 安装grunt和grunt-cli  
@@ -115,9 +120,6 @@ $ npm install grunt -g
 ```bash
 $ npm install <module> --save-dev
 ```
-
-
--------
 
 ## webpack的安装和使用    
 
@@ -142,9 +144,6 @@ $ webpack -p    //压缩混淆脚本，这个非常非常重要！
 $ webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了   
 ```
 
-
--------
-
 ##  sublime text 3的安装       
 
 ```bash
@@ -155,8 +154,6 @@ $ sudo apt-get update
 $ sudo apt-get install sublime-text-installer    
 ```
 
--------
-
 ##  google chrome安装    
 
 ```bash
@@ -166,9 +163,6 @@ $ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到启动器吧～ 
 ```
-
-
--------
 
 ## Linux zip    
 
@@ -239,8 +233,6 @@ tar  -zxvf   压缩文件名.tar.gz
 
     在控制台输入 `netExtender` 即可～    
 
--------
-
 ## 安装mysql    
 
    `sudo apt-get install mysql-server mysql-client` 安装mysql    
@@ -269,8 +261,6 @@ tar  -zxvf   压缩文件名.tar.gz
 
   `ctrl+alt+a`  在鼠标处唤出    
 
--------
-
 ##  chrome 代理设置(nproxy)    
 
 1. SwitchySharp下载    
@@ -289,8 +279,6 @@ tar  -zxvf   压缩文件名.tar.gz
 
 
 # 一些备忘操作
-
--------
 
 ##  连接远程服务器    
 
