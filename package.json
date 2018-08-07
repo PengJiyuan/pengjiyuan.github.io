@@ -23,6 +23,10 @@
   "devDependencies": {
     "@egoist/front-matter": "^1.0.0",
     "mdpack": "^0.4.5",
+    "pre-commit": "^1.2.2",
     "serve": "^9.4.0"
-  }
+  },
+  "pre-commit": [
+    "build"
+  ]
 }
