@@ -5,6 +5,8 @@ const less = require('gulp-less');
 const minifyCSS = require('gulp-csso');
 const autoprefixer = require('gulp-autoprefixer');
 const plumber = require('gulp-plumber');
+const iconfont = require('gulp-iconfont');
+const iconfontCss = require('gulp-iconfont-css');
 const mdpack = require('mdpack');
 const buildHome = require('./tasks/home');
 const metadata = require('./postMap.json');
@@ -72,4 +74,22 @@ gulp.task('default', ['build']);
 gulp.task('dev', ['cssDev', 'mdDev']);
 
 gulp.task('build', ['home', 'blog']);
+
+gulp.task('fonts', () => {
+  console.log('Task: [Generate icon fonts and stylesheets and preview html]');
+  return gulp.src(['static/iconfonts/svgs/**/*.svg'])
+    .pipe(iconfontCss({
+      fontName: 'icons',
+      path: 'css',
+      targetPath: 'icons.css',
+      cacheBuster: Math.random()
+    }))
+    .pipe(iconfont({
+      fontName: 'icons',
+      prependUnicode: true,
+      fontHeight: 1000,
+      normalize: true
+    }))
+    .pipe(gulp.dest('static/iconfonts/icons'));
+});
           
