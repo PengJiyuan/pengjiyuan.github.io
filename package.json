@@ -7,7 +7,8 @@
     "start": "serve .",
     "build": "gulp",
     "dev": "gulp dev",
-    "add": "git add ."
+    "add": "git add .",
+    "iconfonts": "gulp fonts"
   },
   "repository": {
     "type": "git",

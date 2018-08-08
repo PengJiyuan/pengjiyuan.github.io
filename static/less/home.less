@@ -1,4 +1,5 @@
 @import './normalize.less';
+@fontColor: rgba(255, 255, 255, 0.9);
 
 html, body {
   width: 100%;
@@ -19,12 +20,70 @@ html, body {
   height: 100%;
   overflow: auto;
   .banner {
+    position: relative;
     width: 100%;
     height: 100vh;
     background: #222 url(/static/images/common/banner.jpg) no-repeat fixed center;
-    i {
-      color: #fff;
-      font-size: 50px;
+    .bg-cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .center {
+      position: absolute;
+      margin-top: -40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: @fontColor;
+      .links {
+        text-align: center;
+        > a {
+          margin-right: 10px;
+          > i {
+            color: @fontColor;
+            font-size: 40px;
+            transition: color .3s;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .title {
+        font-size: 3.2em;
+        margin: 0.2em 0;
+      }
+      .intro {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 200;
+      }
+    }
+    .scroll-down {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      bottom: 45px;
+      left: 50%;
+      margin-left: -16px;
+      width: 34px;
+      height: 34px;
+      font-size: 44px;
+      text-align: center;
+      text-decoration: none;
+      color: @fontColor;
+      -webkit-animation: bounce 4s 2s infinite;
+      animation: bounce 4s 2s infinite;
+      > i {
+        color: @fontColor;
+        font-size: 38px;
+        &:before {
+          font-weight: bold;
+        }
+      }
     }
   }
   .list {
@@ -68,5 +127,17 @@ html, body {
         }
       }
     }
+  }
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
   }
 }
