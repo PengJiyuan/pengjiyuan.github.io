@@ -1,9 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 const metadata = require('./metadata');
-const homeTpl = fs.readFileSync(path.resolve(__dirname, '../_posts/home.html'), 'utf8');
+const homeTpl = fs.readFileSync(path.resolve(__dirname, './home.html'), 'utf8');
+const myInfo = require('../my.json');
 
 let htmlNav = '';
+let links = '';
 
 const list = metadata.post.map((postInfo) => {
   const data = postInfo.metadata;
@@ -33,10 +35,28 @@ htmlNav = `
   `).join('')}
 `;
 
-function buildHomeHtml() {
-  fs.writeFile(path.resolve(__dirname, '..', 'index.html'), homeTpl.replace('<% blogList %>', htmlNav), (err) => {
-    console.log('\nUpadate home html success!\n');
+if (myInfo.links) {
+  Object.keys(myInfo.links).forEach((link) => {
+    if (link === 'email') {
+      links += `<a href="mailto:${myInfo.links[link]}"><i class="icon icon-${link}"></i></a>`;
+    } else {
+      links += `<a href="${myInfo.links[link]}" target="_blank"><i class="icon icon-${link}"></i></a>`;
+    }
   });
+}
+
+function buildHomeHtml() {
+  fs.writeFile(
+    path.resolve(__dirname, '..', 'index.html'),
+    homeTpl
+      .replace('<% blogList %>', htmlNav)
+      .replace('<% links %>', links)
+      .replace('<% name %>', myInfo.name)
+      .replace('<% intro %>', myInfo.intro),
+    (err) => {
+      console.log('\nUpadate home html success!\n');
+    }
+  );
 }
 
 module.exports = buildHomeHtml;
