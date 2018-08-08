@@ -10,6 +10,7 @@ const iconfontCss = require('gulp-iconfont-css');
 const mdpack = require('mdpack');
 const buildHome = require('./tasks/home');
 const metadata = require('./postMap.json');
+const myInfo = require('./my.json');
 
 function build() {
   fs.readdirSync(path.resolve(__dirname, '_posts'))
@@ -36,7 +37,9 @@ function build() {
             title: _meta.title,
             author: _meta.author,
             type: _meta.type,
-            intro: _meta.intro
+            intro: _meta.intro,
+            homepage: myInfo.homepage,
+            name: myInfo.name
           }
         };
         mdpack(mdConfig);
