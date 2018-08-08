@@ -11,7 +11,23 @@ No Hexo! No Jekyll! All by myself. Powered by [Mdpack](https://www.github.com/Pe
 
 ## 怎么写博客
 
-TODO
+* 在`_posts`中当前年份文件夹下新建一个markdown文件。
+* `npm run dev && npm start`
+
+## markdown格式
+
+在markdown顶部需要手动填写一些文章的基本信息，基本包括这几项：
+
+```markdown
+---
+title: 一天学会Javascript (做梦)
+date: 2018/08/05
+author: PengJiyuan
+tag: Javascript
+intro: 这篇文章主要教大家如何在一天之内学会Javascript.
+type: 原创
+---
+```
 
 ## 怎么发布到Github Pages?
 
@@ -22,4 +38,3 @@ TODO
 ## LICENSE
 
 [MIT](./LICENSE) © PengJiyuan
-
