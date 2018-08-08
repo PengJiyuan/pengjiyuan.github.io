@@ -51,8 +51,9 @@ function buildHomeHtml() {
     homeTpl
       .replace('<% blogList %>', htmlNav)
       .replace('<% links %>', links)
-      .replace('<% name %>', myInfo.name)
-      .replace('<% intro %>', myInfo.intro),
+      .replace(/<% name %>/g, myInfo.name)
+      .replace('<% intro %>', myInfo.intro)
+      .replace('<% homepage %>', myInfo.homepage),
     (err) => {
       console.log('\nUpadate home html success!\n');
     }
