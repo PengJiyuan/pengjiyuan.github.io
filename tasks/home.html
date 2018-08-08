@@ -9,26 +9,24 @@
     <link href="/static/css/home.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <header class="banner">
-        <div class="bg-cover"></div>
-        <div class="center">
-          <div class="links">
-            <% links %>
-          </div>
-          <h1 class="title"><% name %>'s Blog</h1>
-          <p class="intro"> <% intro %> </p>
+    <header class="banner">
+      <div class="bg-cover"></div>
+      <div class="center">
+        <div class="links">
+          <% links %>
         </div>
-        <div class="scroll-down">
-          <i class="icon icon-down"></i>
-        </div>
-      </header>
-      <div class="list">
-        <% blogList %>
+        <h1 class="title"><% name %>'s Blog</h1>
+        <p class="intro"> <% intro %> </p>
       </div>
-      <footer class="copyright">
-        <span><b><a href="<% homepage %>"><% name %></a></b> All rights reserved</span>
-      </footer>
+      <div class="scroll-down">
+        <i class="icon icon-down"></i>
+      </div>
+    </header>
+    <div class="list">
+      <% blogList %>
     </div>
+    <footer class="copyright">
+      <span><b><a href="<% homepage %>"><% name %></a></b> All rights reserved</span>
+    </footer>
   </body>
 </html>
