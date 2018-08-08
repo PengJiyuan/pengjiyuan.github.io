@@ -7,7 +7,7 @@ No Hexo! No Jekyll! All by myself. Powered by [Mdpack](https://www.github.com/Pe
 * 克隆下来源代码
 * 将my.json中的信息修改成自己的信息，`links`对象中的字段可以删减。
 * `_post`文件夹中放入自己的markdown文件
-* `npm run build` && `npm start`
+* `npm i serve -g && npm i && npm run build && npm start`
 
 ## 怎么写博客
 
