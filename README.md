@@ -9,6 +9,7 @@ No Hexo! No Jekyll! All by myself. Powered by [Mdpack](https://www.github.com/Pe
 * `_post`文件夹中放入自己的markdown文件
 * `npm i serve -g && npm i && npm run build && npm start`
 
+
 ## 怎么写博客
 
 * 在`_posts`中当前年份文件夹下新建一个markdown文件。
