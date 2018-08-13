@@ -6,20 +6,50 @@
     <link href="/static/css/highlight.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
     <link href="/static/css/blog.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="header" class="header">
-      <div class="center">
-        <h1 class="title">hello</h1>
-        <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
-        <p class="intro">Hello world!</p>
-      </div>
-    </header>
-    <div class="markdown-body">
-      <div class="copyright">
-        本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
-      </div>
-      <p>Hello world!!!
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/about-me">关于我</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header id="header" class="header">
+        <div class="center">
+          <h1 class="title">hello</h1>
+          <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+          <p class="intro">Hello world!</p>
+        </div>
+      </header>
+      <div class="markdown-body">
+        <div class="copyright">
+          本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
+        </div>
+        <p>Hello world!!!
 Hello world!!!
 Hello world!!!
 Hello world!!!
@@ -29,10 +59,11 @@ Hello world!!!
 Hello world!!!
 Hello world!!!</p>
 
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
     </div>
-    <footer class="copyright">
-      <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
-    </footer>
     <script>
       var header = document.getElementById('header');
       var themes = [
@@ -45,6 +76,13 @@ Hello world!!!</p>
       }
       const theme = themes[random(0, themes.length - 1)];
       header.classList.add(theme);
+    </script>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: 'rgb(255, 255, 255, 0.2)'
+      });
     </script>
   </body>
 </html>

@@ -40,32 +40,24 @@
     <div class="site-wrapper">
       <header id="header" class="header">
         <div class="center">
-          <h1 class="title">测试博客</h1>
+          <h1 class="title">js-track</h1>
           <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
-          <p class="intro">这是一个测试的博客</p>
+          <p class="intro">记录一些Javascript上小技巧和备忘.</p>
         </div>
       </header>
       <div class="markdown-body">
         <div class="copyright">
           本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
         </div>
-        <p>这是一个测试博客。</p>
-<pre><code class="language-javascript"><span class="hljs-comment">// mdpack</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$initHighlight</span>(<span class="hljs-params">block, cls</span>) </span>{
-  <span class="hljs-keyword">try</span> {
-    <span class="hljs-keyword">if</span> (cls.search(<span class="hljs-regexp">/\bno\-highlight\b/</span>) != <span class="hljs-number">-1</span>)
-      <span class="hljs-keyword">return</span> process(block, <span class="hljs-literal">true</span>, <span class="hljs-number">0x0F</span>) +
-             <span class="hljs-string">` class="<span class="hljs-subst">${cls}</span>"`</span>;
-  } <span class="hljs-keyword">catch</span> (e) {
-    <span class="hljs-comment">/* handle exception */</span>
-  }
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> / <span class="hljs-number">2</span>; i &lt; classes.length; i++) {
-    <span class="hljs-keyword">if</span> (checkCondition(classes[i]) === <span class="hljs-literal">undefined</span>)
-      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'undefined'</span>);
-  }
-}
-
-<span class="hljs-keyword">export</span>  $initHighlight;</code></pre>
+        <h2 id="position">Position</h2>
+<h4 id="fixed">Fixed</h4>
+<p>如果<code>position: fixed</code>元素的祖先元素有<code>transform</code>, <code>perspective</code>, <code>filter</code>属性，那么<code>fixed</code>失效。</p>
+<p>FYI: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></p>
+<p>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a <code>transform</code>, <code>perspective</code>, or <code>filter</code> property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with <code>perspective</code> and <code>filter</code> contributing to containing block formation.) Its final position is determined by the values of <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>.
+This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.</p>
+<h4 id="sticky">sticky</h4>
+<p>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>. The offset does not affect the position of any other elements.
+This value always creates a new stacking context. Note that a sticky element &quot;sticks&quot; to its nearest ancestor that has a &quot;scrolling mechanism&quot; (created when <code>overflow</code> is <code>hidden</code>, <code>scroll</code>, <code>auto</code>, or <code>overlay</code>), even if that ancestor isn&#39;t the nearest actually scrolling ancestor. This effectively inhibits any &quot;sticky&quot; behavior</p>
 
       </div>
       <footer class="copyright">

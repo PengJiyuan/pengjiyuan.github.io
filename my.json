@@ -7,5 +7,19 @@
     "zhihu": "https://www.zhihu.com/people/fu-xin-87-62",
     "twitter": "https://twitter.com/MrjLEO",
     "email": "pjy@isweety.me"
-  }
+  },
+  "menus": [{
+    "name": "博客",
+    "link": "/"
+  }, {
+    "name": "关于我",
+    "link": "/about-me"
+  }],
+  "followMe": [{
+    "name": "Github",
+    "link": "https://github.com/PengJiyuan"
+  }, {
+    "name": "Twitter",
+    "link": "https://twitter.com/MrjLEO"
+  }]
 }

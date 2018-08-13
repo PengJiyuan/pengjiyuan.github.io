@@ -10,21 +10,50 @@
     <link href="/static/css/home.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="banner">
-      <div class="bg-cover"></div>
-      <div class="center">
-        <div class="links">
-          <a href="https://github.com/PengJiyuan" target="_blank"><i class="icon icon-github"></i></a><a href="https://www.zhihu.com/people/fu-xin-87-62" target="_blank"><i class="icon icon-zhihu"></i></a><a href="https://twitter.com/MrjLEO" target="_blank"><i class="icon icon-twitter"></i></a><a href="mailto:pjy@isweety.me"><i class="icon icon-email"></i></a>
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/about-me">关于我</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header class="banner">
+        <!-- <div class="bg-cover"></div> -->
+        <div class="center">
+          <div class="links">
+            <a href="https://github.com/PengJiyuan" target="_blank"><i class="icon icon-github"></i></a><a href="https://www.zhihu.com/people/fu-xin-87-62" target="_blank"><i class="icon icon-zhihu"></i></a><a href="https://twitter.com/MrjLEO" target="_blank"><i class="icon icon-twitter"></i></a><a href="mailto:pjy@isweety.me"><i class="icon icon-email"></i></a>
+          </div>
+          <h1 class="title">PengJiyuan's Blog</h1>
+          <p class="intro"> 随便写点东西 </p>
         </div>
-        <h1 class="title">PengJiyuan's Blog</h1>
-        <p class="intro"> 随便写点东西 </p>
-      </div>
-      <div class="scroll-down">
-        <i class="icon icon-down"></i>
-      </div>
-    </header>
-    <div class="list">
-      
+        <div class="scroll-down">
+          <i class="icon icon-down"></i>
+        </div>
+      </header>
+      <div class="list">
+        
     
       <article>
         <header>
@@ -34,6 +63,16 @@
           <p class="intro">Hello world!<a href="/blog/2018/hello">  »</a></p>
         </section>
         <footer class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 2018/08/06</footer>
+      </article>
+    
+      <article>
+        <header>
+          <h1 class="post-title"><a href="/blog/2018/js-track">js-track</a></h1>
+        </header>
+        <section>
+          <p class="intro">记录一些Javascript上小技巧和备忘.<a href="/blog/2018/js-track">  »</a></p>
+        </section>
+        <footer class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 2018-08-13 15:20:16</footer>
       </article>
     
       <article>
@@ -67,9 +106,17 @@
       </article>
     
   
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
     </div>
-    <footer class="copyright">
-      <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
-    </footer>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('.banner', {
+        color: 'rgba(255, 255, 255, 0.2)',
+        count: 80
+      });
+    </script>
   </body>
 </html>
