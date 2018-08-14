@@ -1,0 +1,8 @@
+{
+  "pages": [{
+    "name": "我的开源",
+    "path": "opensource",
+    "template": "templates/opensource.html",
+    "entry": "opensource.md"
+  }]
+}

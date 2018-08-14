@@ -12,8 +12,8 @@
     "name": "博客",
     "link": "/"
   }, {
-    "name": "关于我",
-    "link": "/about-me"
+    "name": "我的开源",
+    "link": "/opensource"
   }],
   "followMe": [{
     "name": "Github",

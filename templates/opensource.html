@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+  <link href="/static/css/markdown.css" rel="stylesheet" />
+  <link href="/static/css/opensource.css" rel="stylesheet" />
+  <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
+  <title>我的开源</title>
+</head>
+<body>
+  <% htmlMenu %>
+  <div class="site-wrapper">
+    <header id="header" class="header curiosity_blue">
+      <div class="center">
+        <h1 class="title">我的开源</h1>
+      </div>
+    </header>
+    <div class="markdown-body">
+      <% content %>
+    </div>
+    <footer class="copyright">
+      <span><b><a href="/"><% name %></a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+  <script>
+    particleBg('#header', {
+      count: 30,
+      color: 'rgb(255, 255, 255, 0.2)'
+    });
+  </script>
+</body>
+</html>

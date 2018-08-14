@@ -19,7 +19,7 @@
   <h3>菜单</h3>
   <i id="close-nav" class="icon icon-close"></i>
   <div class="menus">
-    <a href="/">博客</a><a href="/about-me">关于我</a>
+    <a href="/">博客</a><a href="/opensource">我的开源</a>
   </div>
   <h3>关注我</h3>
   <div class="follow-me">
@@ -115,7 +115,7 @@
     <script>
       particleBg('.banner', {
         color: 'rgba(255, 255, 255, 0.2)',
-        count: 80
+        count: document.body.clientWidth < 800 ? 40 : 80
       });
     </script>
   </body>
