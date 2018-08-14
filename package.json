@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/PengJiyuan/pengjiyuan.github.io#readme",
   "devDependencies": {
-    "bloger": "^0.3.1",
+    "bloger": "^0.3.2",
     "pre-commit": "^1.2.2",
     "serve": "^9.4.0"
   },
