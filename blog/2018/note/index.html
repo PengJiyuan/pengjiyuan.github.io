@@ -8,6 +8,19 @@
     <link href="/static/css/blog.css" rel="stylesheet" />
     <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
   </head>
+  <script>
+    var header = document.getElementById('header');
+    var themes = [
+      'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+      'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+      'purple_bliss', 'miaka', 'sky'
+    ];
+    function random(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    const theme = themes[random(0, themes.length - 1)];
+    header.classList.add(theme);
+  </script>
   <body>
     <nav class="nav">
   <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
@@ -227,24 +240,29 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 <p>如我输入的命令行:mysqldump -u root -p news &gt; news.sql   (输入后会让你输入进入MySQL的密码)    </p>
 <p>（如果导出单张表的话在数据库名后面输入表名即可）</p>
 
+        <div style="margin-top: 80px;" id="disqus_thread"></div>
+        <script>
+        
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        var disqus_config = function () {
+        this.page.url = 'http://www.isweety.me';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '一些工具的安装'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://pengjiyuan-blog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       </div>
       <footer class="copyright">
         <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
       </footer>
     </div>
-    <script>
-      var header = document.getElementById('header');
-      var themes = [
-        'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
-        'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
-        'purple_bliss', 'miaka', 'sky'
-      ];
-      function random(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      const theme = themes[random(0, themes.length - 1)];
-      header.classList.add(theme);
-    </script>
     <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
     <script>
       particleBg('#header', {
