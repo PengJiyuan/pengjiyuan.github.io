@@ -81,6 +81,7 @@ function drawPoints() {
       item.x += item.rateX * rate;
       item.y += item.rateY * rate;
     } else {
+      // 如果粒子运动超出了边界，将这个粒子去除，同时重新生成一个新点。
       points.splice(i, 1);
       points.push(getPoint(radius));
     }
