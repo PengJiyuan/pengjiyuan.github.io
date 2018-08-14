@@ -1,5 +1,5 @@
 ---
-title: js-track
+title: Javascript备忘记录
 date: 2018-08-13 15:20:16
 author: PengJiyuan
 tag: Javascript
