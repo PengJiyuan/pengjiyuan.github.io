@@ -8,19 +8,6 @@
     <link href="/static/css/blog.css" rel="stylesheet" />
     <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
   </head>
-  <script>
-    var header = document.getElementById('header');
-    var themes = [
-      'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
-      'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
-      'purple_bliss', 'miaka', 'sky'
-    ];
-    function random(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-    const theme = themes[random(0, themes.length - 1)];
-    header.classList.add(theme);
-  </script>
   <body>
     <nav class="nav">
   <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
@@ -58,6 +45,19 @@
           <p class="intro">记录一些Javascript上小技巧和备忘.</p>
         </div>
       </header>
+      <script>
+        var header = document.getElementById('header');
+        var themes = [
+          'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+          'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+          'purple_bliss', 'miaka', 'sky'
+        ];
+        function random(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        const theme = themes[random(0, themes.length - 1)];
+        header.classList.add(theme);
+      </script>
       <div class="markdown-body">
         <div class="copyright">
           本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
