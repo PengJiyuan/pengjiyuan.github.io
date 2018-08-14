@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/markdown.css" rel="stylesheet" />
+    <link href="/static/css/highlight.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/opensource">我的开源</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header id="header" class="header">
+        <div class="center">
+          <h1 class="title">粒子动画背景</h1>
+          <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+          <p class="intro">教你如何绘制炫酷的粒子背景。</p>
+        </div>
+      </header>
+      <div class="markdown-body">
+        <div class="copyright">
+          本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
+        </div>
+        <h3 id="-">效果 :)</h3>
+<p>不带连线效果：</p>
+<div id="particle-demo" style="width: 100%;height: 300px;background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);background: -webkit-linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);"></div>
+<script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+<script>
+  particleBg('#particle-demo', {
+    line: false
+  });
+</script>
+
+<p><br/>带连线的效果：<br/></p>
+<div id="particle-demo2" style="width: 100%;height: 300px;background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);background: -webkit-linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);"></div>
+<script>
+  particleBg('#particle-demo2');
+</script>
+
+<h3 id="-">教程</h3>
+<p>要实现这样的效果其实很简单，大概分为这么几个步骤：</p>
+<h4 id="-canvas">创建canvas</h4>
+<p>首先需要在需要展示粒子背景的父元素中创建一个<code>canvas</code>标签, 指定<code>width</code>和<code>height</code>, 在我们生成随机点坐标的时候需要用<code>width</code>和<code>height</code>来做参照。<code>width</code>和<code>height</code>等于父元素的宽和高。</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// 假如父元素是body</span>
+<span class="hljs-keyword">const</span> ele = <span class="hljs-built_in">document</span>.body;
+<span class="hljs-keyword">const</span> canvas = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'canvas'</span>);
+canvas.width = ele.clientWidth;
+canvas.height = ele.clientHeight;
+<span class="hljs-comment">// 将canvas标签插入</span>
+ele.appendChild(canvas);</code></pre>
+<h4 id="-">随机生成一定数量的点坐标信息</h4>
+<p>以<code>width</code>和<code>height</code>做参照随机生成一定数量的点坐标信息，包含<code>x</code>, <code>y</code>, <code>rateX</code>(点在X轴的移动速率), <code>rateY</code>(点在Y轴移动的速率), <code>rateX</code>和<code>rateY</code>决定了点的运动轨迹。</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> points = [];
+<span class="hljs-comment">// 随机生成点的坐标，需指定radius的最大值</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPoint</span>(<span class="hljs-params">radius</span>) </span>{
+  <span class="hljs-keyword">const</span> x = <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-keyword">this</span>.width), <span class="hljs-comment">// 粒子的x坐标</span>
+    y = <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-keyword">this</span>.height), <span class="hljs-comment">// 粒子的y坐标</span>
+    r = +(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-keyword">this</span>.radius).toFixed(<span class="hljs-number">4</span>), <span class="hljs-comment">// 粒子的半径</span>
+    rateX = +(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">2</span> - <span class="hljs-number">1</span>).toFixed(<span class="hljs-number">4</span>), <span class="hljs-comment">// 粒子在x方向运动的速率</span>
+    rateY = +(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">2</span> - <span class="hljs-number">1</span>).toFixed(<span class="hljs-number">4</span>); <span class="hljs-comment">// 粒子在y方向运动的速率</span>
+
+  <span class="hljs-keyword">return</span> { x, y, r, rateX, rateY };
+}
+
+<span class="hljs-comment">// 随机生成100个点的坐标信息</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+  points.push(<span class="hljs-keyword">this</span>.getPoint());
+}</code></pre>
+<h4 id="-canvas-">将生成的点数组画到canvas上</h4>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">drawPoints</span>(<span class="hljs-params"></span>) </span>{
+  points.forEach(<span class="hljs-function">(<span class="hljs-params">item, i</span>) =&gt;</span> {
+    ctx.beginPath();
+    ctx.arc(item.x, item.y, item.r, <span class="hljs-number">0</span>, <span class="hljs-built_in">Math</span>.PI*<span class="hljs-number">2</span>, <span class="hljs-literal">false</span>);
+    ctx.fillStyle = <span class="hljs-string">'#fff'</span>;
+    ctx.fill();
+    <span class="hljs-comment">// 根据rateX和rateY移动点的坐标</span>
+    <span class="hljs-keyword">if</span>(item.x &gt; <span class="hljs-number">0</span> &amp;&amp; item.x &lt; width &amp;&amp; item.y &gt; <span class="hljs-number">0</span> &amp;&amp; item.y &lt; height) {
+      item.x += item.rateX * rate;
+      item.y += item.rateY * rate;
+    } <span class="hljs-keyword">else</span> {
+      points.splice(i, <span class="hljs-number">1</span>);
+      points.push(getPoint(radius));
+    }
+  });
+}</code></pre>
+<h4 id="-">画线</h4>
+<p>遍历点数组，两两比较点坐标，如果两点之间距离小于某个值，在两个点之间画一条直线，<code>lineWidth</code>随两点之间距离改变，距离越大，线越细。</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// 计算两点之间的距离</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dis</span>(<span class="hljs-params">x1, y1, x2, y2</span>) </span>{
+  <span class="hljs-keyword">var</span> disX = <span class="hljs-built_in">Math</span>.abs(x1 - x2),
+    disY = <span class="hljs-built_in">Math</span>.abs(y1 - y2);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.sqrt(disX * disX + disY * disY);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">drawLines</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> len = points.length;
+  <span class="hljs-comment">//对圆心坐标进行两两判断</span>
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; len; i++) {
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j = len - <span class="hljs-number">1</span>; j &gt;= <span class="hljs-number">0</span>; j--) {
+      <span class="hljs-keyword">const</span> x1 = points[i].x,
+        y1 = points[i].y,
+        x2 = points[j].x,
+        y2 = points[j].y,
+        disPoint = dis(x1, y1, x2, y2);
+
+      <span class="hljs-comment">// 如果两点之间距离小于150，画线</span>
+      <span class="hljs-keyword">if</span>(disPoint &lt;= <span class="hljs-number">150</span>) {
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.strokeStyle = <span class="hljs-string">'#fff'</span>;
+        <span class="hljs-comment">//两点之间距离越大，线越细，反之亦然</span>
+        ctx.lineWidth = <span class="hljs-number">1</span> - disPoint / distance;
+        ctx.stroke();
+      }
+    }
+  }
+}</code></pre>
+<h4 id="-">动画</h4>
+<p>使用<code>requestAnimationFrame</code>循环调用<code>draw</code>方法（draw方法里包含画点和画线），同时在<code>draw</code>的时候根据<code>rateX</code>和<code>rateY</code>来改动点的位置。</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// 调用draw函数开启动画</span>
+(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>) </span>{
+  ctx.clearRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, width, height);
+  drawPoints();
+  <span class="hljs-comment">// 如果不需要画线，取消下面这行代码即可。</span>
+  drawLines();
+  <span class="hljs-built_in">window</span>.requestAnimationFrame(draw);
+}());</code></pre>
+<h5 id="-">本章完</h5>
+
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
+    </div>
+    <script>
+      var header = document.getElementById('header');
+      var themes = [
+        'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+        'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+        'purple_bliss', 'miaka', 'sky'
+      ];
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      const theme = themes[random(0, themes.length - 1)];
+      header.classList.add(theme);
+    </script>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: 'rgb(255, 255, 255, 0.2)'
+      });
+    </script>
+  </body>
+</html>
