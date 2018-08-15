@@ -11,7 +11,7 @@
   <title>我的开源</title>
 </head>
 <body>
-  <% htmlMenu %>
+  <%- htmlMenu %>
   <div class="site-wrapper">
     <header id="header" class="header curiosity_blue">
       <div class="center">
@@ -19,10 +19,10 @@
       </div>
     </header>
     <div class="markdown-body">
-      <% content %>
+      <%- pureHtml %>
     </div>
     <footer class="copyright">
-      <span><b><a href="/"><% name %></a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      <span><b><a href="/"><%= name %></a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
     </footer>
   </div>
   <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>

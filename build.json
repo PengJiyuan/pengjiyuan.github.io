@@ -2,7 +2,7 @@
   "pages": [{
     "name": "我的开源",
     "path": "opensource",
-    "template": "templates/opensource.html",
+    "template": "templates/opensource.ejs",
     "entry": "opensource.md"
   }]
 }

@@ -21,5 +21,8 @@
   }, {
     "name": "Twitter",
     "link": "https://twitter.com/MrjLEO"
-  }]
+  }],
+  "disqus": {
+    "src": "https://pengjiyuan-blog.disqus.com/embed.js"
+  }
 }
