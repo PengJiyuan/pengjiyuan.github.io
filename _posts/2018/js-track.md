@@ -2,7 +2,7 @@
 title: Javascript备忘记录
 date: 2018-08-13 15:20:16
 author: PengJiyuan
-tag: Javascript
+tag: JavaScript,笔记
 intro: 记录一些Javascript上小技巧和备忘.
 type: 原创
 ---

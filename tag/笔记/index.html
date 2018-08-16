@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/tag.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
+    <title>笔记</title>
+  </head>
+  <body>
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/opensource">我的开源</a><a href="/tag">归档</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header id="header" class="header red_sunset">
+        <div class="center">
+          <h1 class="title"><i class="icon icon-tag"></i>笔记</h1>
+        </div>
+      </header>
+      <div class="tag-wrapper">
+        <ul class="blogs">
+          
+            <li><a href="/blog/2018/js-track"><i class="icon icon-book"></i>Javascript备忘记录</a><span class="date">( 2018-08-13 15:20:16 )</span></li>
+          
+            <li><a href="/blog/2018/note"><i class="icon icon-book"></i>一些工具的安装</a><span class="date">( 2018/08/05 )</span></li>
+          
+        </ul>
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: '#fff'
+      });
+    </script>
+  </body>
+</html>

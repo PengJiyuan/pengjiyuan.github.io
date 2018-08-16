@@ -2,7 +2,7 @@
 title: 粒子动画背景
 date: 2018-08-14 15:52:06
 author: PengJiyuan
-tag: Javascript
+tag: JavaScript
 intro: 教你如何绘制炫酷的粒子背景。
 type: 原创
 ---
