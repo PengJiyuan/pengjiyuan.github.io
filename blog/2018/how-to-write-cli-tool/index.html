@@ -1,0 +1,210 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/markdown.css" rel="stylesheet" />
+    <link href="/static/css/highlight.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
+    <title>手把手教你写命令行工具</title>
+  </head>
+  <body>
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/opensource">我的开源</a><a href="/tag">归档</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header id="header" class="header">
+        <div class="center">
+          <h1 class="title">手把手教你写命令行工具</h1>
+          <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+          <p class="intro">手把手教你学会写NodeJs的cli工具</p>
+        </div>
+      </header>
+      <script>
+        var header = document.getElementById('header');
+        var themes = [
+          'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+          'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+          'purple_bliss', 'miaka', 'sky'
+        ];
+        function random(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        const theme = themes[random(0, themes.length - 1)];
+        header.classList.add(theme);
+      </script>
+      <div class="markdown-body">
+        <div class="copyright">
+          本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
+        </div>
+        <blockquote>
+<p><strong>命令行工具</strong>，即 <strong>Cli</strong>(command-line interface)。是在图形用户界面得到普及之前使用最为广泛的用户界面，它通常不支持鼠标，用户通过键盘输入指令，计算机接收到指令后，予以执行。</p>
+</blockquote>
+<p><strong>在学习这篇教程之前，你需要先了解NodeJs,NPM和一些常用的shell命令！</strong></p>
+<p>对于前端开发者来说，用NodeJs开发命令行工具是最方便和快速的，借助于 <strong>npm</strong>，可以方便的进行调试和发布。</p>
+<p>NodeJs的命令行使用如下图所示：</p>
+<div style="width: 100%;max-height:720px;text-align:center;overflow:hidden;">
+  <img src="/static/images/blogs/how-to-write-cli-tool/cli.svg" />
+</div>
+<br>
+
+<h3 id="-">创建一个新项目</h3>
+<p>首先，我们创建一个npm项目。</p>
+<pre><code class="language-bash">$ mkdir cli-demo
+$ <span class="hljs-built_in">cd</span> cli-demo
+$ npm init</code></pre>
+<p>通过以上步骤，我们新建了一个<code>cli-demo</code>文件夹，并且在<code>cli-demo</code>文件夹中初始化了一个<code>package.json</code>文件。<code>package.json</code>的内容大概是这样:</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"cli-demo"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"index.js"</span>,
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"test"</span>: <span class="hljs-string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+  },
+  <span class="hljs-attr">"author"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"MIT"</span>
+}</code></pre>
+<h3 id="-">新建一个可执行文件</h3>
+<p>我们在<code>cli-demo</code>文件夹中，新建一个js文件，这里我们新建一个名为<code>cli.js</code>的文件。</p>
+<blockquote>
+<p>我们在写命令行工具的时候，需要指定一个可执行文件。在<code>package.json</code>中，<code>bin</code>字段用来映射命令名和可执行文件。在通过<code>npm install -g</code>全局安装的时候，npm会<code>symlink</code>可执行文件到<code>prefix/bin</code>文件夹。
+如果通过<code>npm install</code>本地安装的时候, npm会<code>symlink</code>可执行文件到<code>./node_modules/.bin/</code>文件夹。</p>
+<p>(完整的字段说明在这里：<a href="https://docs.npmjs.com/files/package.json">https://docs.npmjs.com/files/package.json</a>)</p>
+</blockquote>
+<p>如何让一个js文件变成可执行文件？只需要在js文件的头部加上一行代码:</p>
+<pre><code class="language-javascript"><span class="hljs-meta">#!/usr/bin/env node</span></code></pre>
+<p>稍微完善一下<code>cli.js</code>, 如下：</p>
+<pre><code class="language-javascript"><span class="hljs-meta">#!/usr/bin/env node</span>
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello world!'</span>);</code></pre>
+<h3 id="-cli-js-">指定<code>cli.js</code>为执行文件</h3>
+<p>我们需要在<code>package.json</code>中，指定<code>bin</code>字段将<code>cli.js</code>作为我们的执行文件。</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"bin"</span>: <span class="hljs-string">"cli.js"</span>
+}</code></pre>
+<p>或者：</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"bin"</span>: {
+    <span class="hljs-attr">"cli-demo"</span>: <span class="hljs-string">"cli.js"</span>
+  }
+}</code></pre>
+<h3 id="-">调试</h3>
+<p>我们全局安装一个cli包后，可以全局调用这个命令行工具。那我们在开发调试的时候, 就要用到<code>npm link</code>这个命令了。</p>
+<blockquote>
+<p>在npm包文件夹下执行<code>npm link</code>命令，会创建一个符号链接，链接全局文件夹<code>{prefix}/lib/node_modules/&lt;package&gt;</code>和你执行<code>npm link</code>的包文件夹。</p>
+<p>注意：<code>package-name</code>是<code>package.json</code>中的<code>name</code>, 而不是文件夹名。</p>
+<p>详细的解释在这儿: <a href="https://docs.npmjs.com/cli/link">https://docs.npmjs.com/cli/link</a></p>
+</blockquote>
+<p>我们在<code>cli-demo</code>文件夹下执行<code>npm link</code>命令后，就可以全局使用<code>cli-demo</code>命令了。</p>
+<pre><code class="language-bash">$ cli-demo
+
+Hello world!</code></pre>
+<h3 id="-">使用命令行辅助工具</h3>
+<p>在我们写命令行工具的时候，使用一些辅助工具会让我们开发更高效。以下是一些我用过的一些辅助工具：</p>
+<ul>
+<li><a href="https://github.com/tj/commander.js">Commander.js</a> - 帮助参数解析，我最常用</li>
+<li><a href="https://github.com/gkz/optionator">optionator</a> - 帮助参数解析，<a href="https://github.com/eslint/eslint">Eslint</a> 使用</li>
+<li><a href="https://github.com/SBoudrias/Inquirer.js">Inquirer.js</a> - 常见交互式命令行</li>
+<li><a href="https://github.com/chalk/chalk">chalk</a> - 命令行输出自定义颜色</li>
+</ul>
+<p>修改我们的<code>cli.js</code>，使用<a href="https://github.com/tj/commander.js">Commander.js</a>做一些更复杂的操作。</p>
+<p>首先，安装<code>commander.js</code>:</p>
+<pre><code class="language-bash">npm i commander</code></pre>
+<p><code>cli.js</code>代码：</p>
+<pre><code class="language-javascript"><span class="hljs-meta">#!/usr/bin/env node</span>
+
+<span class="hljs-keyword">const</span> program = <span class="hljs-built_in">require</span>(<span class="hljs-string">'commander'</span>);
+
+program
+  .version(<span class="hljs-string">'0.1.0'</span>)
+  .option(<span class="hljs-string">'-n, --yourname [yourname]'</span>, <span class="hljs-string">'Your name'</span>)
+  .option(<span class="hljs-string">'-g, --glad'</span>, <span class="hljs-string">'Tell us you are happy'</span>)
+  .parse(process.argv);
+
+<span class="hljs-keyword">if</span> (program.yourname) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Hello, <span class="hljs-subst">${program.yourname}</span>! <span class="hljs-subst">${program.glad ? <span class="hljs-string">'I am very happy to see you!'</span> : <span class="hljs-string">''</span>}</span>`</span>);
+}</code></pre>
+<p>在命令行中使用：</p>
+<pre><code class="language-bash">$ cli-demo -h
+
+  Usage: cli-demo [options]
+
+  Options:
+
+    -V, --version              output the version number
+    -n, --yourname [yourname]  Your name
+    -g, --glad                 Tell us you are happy
+    -h, --<span class="hljs-built_in">help</span>                 output usage information</code></pre>
+<pre><code class="language-bash">$ cli-demo -n Jay
+
+  Hello, Jay!</code></pre>
+<pre><code class="language-bash">$ cli-demo -n Jay -g
+
+  Hello, Jay! I am very happy to see you!</code></pre>
+<h3 id="-">发布</h3>
+<p>单纯的发布包到npm非常简单，只需要一条命令：</p>
+<pre><code class="language-bash">npm publish</code></pre>
+<p>但是一个完善规范的发布流程不仅如此，还需要考虑版本号的规范(<a href="https://semver.org/">Semver</a>)，commit message的规范，tag等一系列因素。如果手动来搞的话，是挺麻烦的。</p>
+<p>这里推荐使用<a href="https://github.com/PengJiyuan/relix">relix</a>, 一步搞定！</p>
+<pre><code class="language-bash">npm i relix -g</code></pre>
+<p>进入<code>cli-demo</code>文件夹，然后：</p>
+<pre><code class="language-bash">relix --patch</code></pre>
+<p>会自动帮你生成新版本号，生成提交信息，打tag，推送提交和tag到github，发布npm包！<a href="https://github.com/PengJiyuan/relix">relix</a>的详细用法请看relix文档。</p>
+
+        
+          <div style="margin-top: 80px;" id="disqus_thread"></div>
+          <script>
+            var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://pengjiyuan-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: '#fff'
+      });
+    </script>
+  </body>
+</html>
