@@ -5,6 +5,7 @@ author: PengJiyuan
 tag: JavaScript
 intro: 教你如何绘制炫酷的粒子背景。
 type: 原创
+keywords: canvas,particles,动画,前端,JavaScript,JS
 ---
 
 ### 效果 :)

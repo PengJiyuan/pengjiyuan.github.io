@@ -4,6 +4,7 @@ date: 2018/08/08
 author: PengJiyuan
 tag: JavaScript
 intro: 这篇文章教你如何让svg一笔一画的把你的名字画出来
+keywords: svg,动画,javascript,js,前端,教程
 ---
 
 ## 难点在哪儿？
