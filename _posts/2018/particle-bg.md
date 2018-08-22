@@ -144,4 +144,6 @@ function drawLines() {
 }());
 ```
 
+> 完整代码请看: https://github.com/PengJiyuan/particle-bg
+
 ##### 本章完
