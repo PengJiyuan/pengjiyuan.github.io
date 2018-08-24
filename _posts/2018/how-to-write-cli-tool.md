@@ -6,7 +6,6 @@ tag: JavaScript
 intro: 手把手教你学会写NodeJs的cli工具
 type: 原创
 keywords: 命令行,cli,工具,JavaScript,nodejs,npm,JS,js,手把手教你,shell
-top: true
 ---
 
 > **命令行工具**，即 **Cli**(command-line interface)。是在图形用户界面得到普及之前使用最为广泛的用户界面，它通常不支持鼠标，用户通过键盘输入指令，计算机接收到指令后，予以执行。
