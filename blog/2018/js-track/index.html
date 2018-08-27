@@ -70,13 +70,22 @@
         <div class="copyright">
           本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
         </div>
-        <h2 id="position">Position</h2>
-<h4 id="fixed">Fixed</h4>
+        <h2 id="position">
+      <a href="#position" aria-hidden="true"><i class="icon icon-link"></i></a>
+      Position
+    </h2>
+<h4 id="fixed">
+      <a href="#fixed" aria-hidden="true"><i class="icon icon-link"></i></a>
+      Fixed
+    </h4>
 <p>如果<code>position: fixed</code>元素的祖先元素有<code>transform</code>, <code>perspective</code>, <code>filter</code>属性，那么<code>fixed</code>失效。</p>
 <p>FYI: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></p>
 <p>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a <code>transform</code>, <code>perspective</code>, or <code>filter</code> property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with <code>perspective</code> and <code>filter</code> contributing to containing block formation.) Its final position is determined by the values of <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>.
 This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.</p>
-<h4 id="sticky">sticky</h4>
+<h4 id="sticky">
+      <a href="#sticky" aria-hidden="true"><i class="icon icon-link"></i></a>
+      sticky
+    </h4>
 <p>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>. The offset does not affect the position of any other elements.
 This value always creates a new stacking context. Note that a sticky element &quot;sticks&quot; to its nearest ancestor that has a &quot;scrolling mechanism&quot; (created when <code>overflow</code> is <code>hidden</code>, <code>scroll</code>, <code>auto</code>, or <code>overlay</code>), even if that ancestor isn&#39;t the nearest actually scrolling ancestor. This effectively inhibits any &quot;sticky&quot; behavior</p>
 

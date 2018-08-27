@@ -72,7 +72,10 @@
         <div class="copyright">
           本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
         </div>
-        <h3 id="-">效果 :)</h3>
+        <h3 id="效果-:)">
+      <a href="#效果-:)" aria-hidden="true"><i class="icon icon-link"></i></a>
+      效果 :)
+    </h3>
 <p>不带连线效果：</p>
 <div id="particle-demo" style="width: 100%;height: 300px;background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);background: -webkit-linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);"></div>
 <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
@@ -88,9 +91,15 @@
   particleBg('#particle-demo2');
 </script>
 
-<h3 id="-">教程</h3>
+<h3 id="教程">
+      <a href="#教程" aria-hidden="true"><i class="icon icon-link"></i></a>
+      教程
+    </h3>
 <p>要实现这样的效果其实很简单，大概分为这么几个步骤：</p>
-<h4 id="-canvas">创建canvas</h4>
+<h4 id="创建canvas">
+      <a href="#创建canvas" aria-hidden="true"><i class="icon icon-link"></i></a>
+      创建canvas
+    </h4>
 <p>首先需要在需要展示粒子背景的父元素中创建一个<code>canvas</code>标签, 指定<code>width</code>和<code>height</code>, 在我们生成随机点坐标的时候需要用<code>width</code>和<code>height</code>来做参照。<code>width</code>和<code>height</code>等于父元素的宽和高。</p>
 <pre><code class="language-javascript"><span class="hljs-comment">// 假如父元素是body</span>
 <span class="hljs-keyword">const</span> ele = <span class="hljs-built_in">document</span>.body;
@@ -99,7 +108,10 @@ canvas.width = ele.clientWidth;
 canvas.height = ele.clientHeight;
 <span class="hljs-comment">// 将canvas标签插入</span>
 ele.appendChild(canvas);</code></pre>
-<h4 id="-">随机生成一定数量的点坐标信息</h4>
+<h4 id="随机生成一定数量的点坐标信息">
+      <a href="#随机生成一定数量的点坐标信息" aria-hidden="true"><i class="icon icon-link"></i></a>
+      随机生成一定数量的点坐标信息
+    </h4>
 <p>以<code>width</code>和<code>height</code>做参照随机生成一定数量的点坐标信息，包含<code>x</code>, <code>y</code>, <code>rateX</code>(点在X轴的移动速率), <code>rateY</code>(点在Y轴移动的速率), <code>rateX</code>和<code>rateY</code>决定了点的运动轨迹。</p>
 <pre><code class="language-javascript"><span class="hljs-keyword">const</span> points = [];
 <span class="hljs-comment">// 随机生成点的坐标，需指定radius的最大值</span>
@@ -117,7 +129,10 @@ ele.appendChild(canvas);</code></pre>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
   points.push(<span class="hljs-keyword">this</span>.getPoint());
 }</code></pre>
-<h4 id="-canvas-">将生成的点数组画到canvas上</h4>
+<h4 id="将生成的点数组画到canvas上">
+      <a href="#将生成的点数组画到canvas上" aria-hidden="true"><i class="icon icon-link"></i></a>
+      将生成的点数组画到canvas上
+    </h4>
 <pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">drawPoints</span>(<span class="hljs-params"></span>) </span>{
   points.forEach(<span class="hljs-function">(<span class="hljs-params">item, i</span>) =&gt;</span> {
     ctx.beginPath();
@@ -135,7 +150,10 @@ ele.appendChild(canvas);</code></pre>
     }
   });
 }</code></pre>
-<h4 id="-">画线</h4>
+<h4 id="画线">
+      <a href="#画线" aria-hidden="true"><i class="icon icon-link"></i></a>
+      画线
+    </h4>
 <p>遍历点数组，两两比较点坐标，如果两点之间距离小于某个值，在两个点之间画一条直线，<code>lineWidth</code>随两点之间距离改变，距离越大，线越细。</p>
 <pre><code class="language-javascript"><span class="hljs-comment">// 计算两点之间的距离</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dis</span>(<span class="hljs-params">x1, y1, x2, y2</span>) </span>{
@@ -169,7 +187,10 @@ ele.appendChild(canvas);</code></pre>
     }
   }
 }</code></pre>
-<h4 id="-">动画</h4>
+<h4 id="动画">
+      <a href="#动画" aria-hidden="true"><i class="icon icon-link"></i></a>
+      动画
+    </h4>
 <p>使用<code>requestAnimationFrame</code>循环调用<code>draw</code>方法（draw方法里包含画点和画线），同时在<code>draw</code>的时候根据<code>rateX</code>和<code>rateY</code>来改动点的位置。</p>
 <pre><code class="language-javascript"><span class="hljs-comment">// 调用draw函数开启动画</span>
 (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>) </span>{
@@ -182,7 +203,10 @@ ele.appendChild(canvas);</code></pre>
 <blockquote>
 <p>完整代码请看: <a href="https://github.com/PengJiyuan/particle-bg">https://github.com/PengJiyuan/particle-bg</a></p>
 </blockquote>
-<h5 id="-">本章完</h5>
+<h5 id="本章完">
+      <a href="#本章完" aria-hidden="true"><i class="icon icon-link"></i></a>
+      本章完
+    </h5>
 
         
           <div style="margin-top: 80px;" id="disqus_thread"></div>

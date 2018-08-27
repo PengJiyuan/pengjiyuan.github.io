@@ -70,9 +70,15 @@
         <div class="copyright">
           本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
         </div>
-        <h1 id="-ubuntu-">环境搭建(Ubuntu下)：</h1>
+        <h1 id="环境搭建(ubuntu下)：">
+      <a href="#环境搭建(ubuntu下)：" aria-hidden="true"><i class="icon icon-link"></i></a>
+      环境搭建(Ubuntu下)：
+    </h1>
 <p><strong>[包括nvm，git，grunt，webpack，sublime，google-chrome，vpn，gnome-pie的安装和配置]</strong>     </p>
-<h2 id="nvm-">nvm的搭建</h2>
+<h2 id="nvm的搭建">
+      <a href="#nvm的搭建" aria-hidden="true"><i class="icon icon-link"></i></a>
+      nvm的搭建
+    </h2>
 <pre><code class="language-bash">$ <span class="hljs-built_in">cd</span> ~/git   
 $ git <span class="hljs-built_in">clone</span> https://github.com/creationix/nvm.git</code></pre>
 <p>配置终端启动时自动执行 <code>source ~/git/nvm/nvm.sh</code>,
@@ -83,8 +89,14 @@ $ git <span class="hljs-built_in">clone</span> https://github.com/creationix/nvm
 <p>在 <code>~/.bashrc</code>, <code>~/.bash_profile</code>, <code>~/.profile</code>, 或者 <code>~/.zshrc</code> 文件添加以下命令:</p>
 <pre><code class="language-bash"><span class="hljs-built_in">source</span> ./.nvm/nvm.sh</code></pre>
 <p>然后输入在控制台输入 <code>nvm</code> 查看是否安装成功吧～    </p>
-<h2 id="-nvm-">常见nvm命令：</h2>
-<h3 id="1-node-">1.  安装node：</h3>
+<h2 id="常见nvm命令：">
+      <a href="#常见nvm命令：" aria-hidden="true"><i class="icon icon-link"></i></a>
+      常见nvm命令：
+    </h2>
+<h3 id="1.-安装node：">
+      <a href="#1.-安装node：" aria-hidden="true"><i class="icon icon-link"></i></a>
+      1.  安装node：
+    </h3>
 <ul>
 <li><p><code>nvm install &lt;version&gt;</code>    </p>
 </li>
@@ -95,46 +107,82 @@ $ git <span class="hljs-built_in">clone</span> https://github.com/creationix/nvm
 <li><p>5是5.xx版本的意思，6即是6.xx版本，也可以指定版本如5.9.1    </p>
 </li>
 </ul>
-<h3 id="2-node-">2.  查看node版本</h3>
+<h3 id="2.-查看node版本">
+      <a href="#2.-查看node版本" aria-hidden="true"><i class="icon icon-link"></i></a>
+      2.  查看node版本
+    </h3>
 <pre><code class="language-bash">nvm ls</code></pre>
 <p>列出你安装的所有版本的node以及当前你所用的node版本，还有你默认的node版本。    </p>
-<h3 id="3-node-">3.  切换node版本</h3>
+<h3 id="3.-切换node版本">
+      <a href="#3.-切换node版本" aria-hidden="true"><i class="icon icon-link"></i></a>
+      3.  切换node版本
+    </h3>
 <pre><code class="language-bash">nvm use version</code></pre>
-<h3 id="4-">4.  设置默认版本</h3>
+<h3 id="4.-设置默认版本">
+      <a href="#4.-设置默认版本" aria-hidden="true"><i class="icon icon-link"></i></a>
+      4.  设置默认版本
+    </h3>
 <pre><code class="language-bash">nvm <span class="hljs-built_in">alias</span> default v5.9.0</code></pre>
-<h2 id="git-">git安装及配置</h2>
-<h3 id="1-git">1.  安装git</h3>
+<h2 id="git安装及配置">
+      <a href="#git安装及配置" aria-hidden="true"><i class="icon icon-link"></i></a>
+      git安装及配置
+    </h2>
+<h3 id="1.-安装git">
+      <a href="#1.-安装git" aria-hidden="true"><i class="icon icon-link"></i></a>
+      1.  安装git
+    </h3>
 <pre><code class="language-bash">$ sudo apt-get install git</code></pre>
-<h3 id="2-git">2.  配置git</h3>
+<h3 id="2.-配置git">
+      <a href="#2.-配置git" aria-hidden="true"><i class="icon icon-link"></i></a>
+      2.  配置git
+    </h3>
 <pre><code class="language-bash">$ git config --global user.name <span class="hljs-string">"your name"</span>
 
 $ git config --global user.email <span class="hljs-string">"your email"</span></code></pre>
-<h3 id="3-ssh-key">3.  创建SSH Key</h3>
+<h3 id="3.-创建ssh-key">
+      <a href="#3.-创建ssh-key" aria-hidden="true"><i class="icon icon-link"></i></a>
+      3.  创建SSH Key
+    </h3>
 <pre><code class="language-bash">$ ssh-keygen -t rsa -C <span class="hljs-string">"youremail@example.com"</span>     
 
 $ <span class="hljs-built_in">cd</span> ~/.ssh    可以看到id_rsa(私钥)和id_rsa.pub(公钥)，将id_rsa.pub的内容添加到    
 
 GitHub-&gt;Account-settings-&gt;SSH Keys中</code></pre>
-<h3 id="4-windows-git-">4.  windows下配置git：</h3>
+<h3 id="4.-windows下配置git：">
+      <a href="#4.-windows下配置git：" aria-hidden="true"><i class="icon icon-link"></i></a>
+      4.  windows下配置git：
+    </h3>
 <pre><code class="language-bash">$ Git config --global user.name <span class="hljs-string">"your name"</span>    
 
 $ git config --global user.email <span class="hljs-string">"your email"</span></code></pre>
 <p><strong>创建SSH Key:</strong>        </p>
 <p>不同于linux，window没有~/.ssh，需要生成秘钥到/c/Users/Administrator/.ssh。     </p>
 <p>进入/c/Users/Administrator/.ssh目录，<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code> ,接下来同linux操作。</p>
-<h2 id="grunt-">grunt的安装和配置：</h2>
+<h2 id="grunt的安装和配置：">
+      <a href="#grunt的安装和配置：" aria-hidden="true"><i class="icon icon-link"></i></a>
+      grunt的安装和配置：
+    </h2>
 <p>安装grunt和grunt-cli  </p>
 <pre><code class="language-bash">$ npm install -g grunt-cli    
 
 $ npm install grunt -g</code></pre>
 <p>安装grunt插件    </p>
 <pre><code class="language-bash">$ npm install &lt;module&gt; --save-dev</code></pre>
-<h2 id="webpack-">webpack的安装和使用</h2>
-<h3 id="1-">1.  安装</h3>
+<h2 id="webpack的安装和使用">
+      <a href="#webpack的安装和使用" aria-hidden="true"><i class="icon icon-link"></i></a>
+      webpack的安装和使用
+    </h2>
+<h3 id="1.-安装">
+      <a href="#1.-安装" aria-hidden="true"><i class="icon icon-link"></i></a>
+      1.  安装
+    </h3>
 <pre><code class="language-bash">$ npm install webpack -g    
 
 $ pm install webpack --save-dev</code></pre>
-<h3 id="2-">2.  命令行操作</h3>
+<h3 id="2.-命令行操作">
+      <a href="#2.-命令行操作" aria-hidden="true"><i class="icon icon-link"></i></a>
+      2.  命令行操作
+    </h3>
 <pre><code class="language-bash">$ webpack --config XXX.js   //使用另一份配置文件（比如webpack.config2.js）来打包
 
 $ webpack --watch   //监听变动并自动打包
@@ -142,19 +190,28 @@ $ webpack --watch   //监听变动并自动打包
 $ webpack -p    //压缩混淆脚本，这个非常非常重要！
 
 $ webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了   </code></pre>
-<h2 id="sublime-text-3-">sublime text 3的安装</h2>
+<h2 id="sublime-text-3的安装">
+      <a href="#sublime-text-3的安装" aria-hidden="true"><i class="icon icon-link"></i></a>
+      sublime text 3的安装
+    </h2>
 <pre><code class="language-bash">$ sudo add-apt-repository ppa:webupd8team/sublime-text-3  
 
 $ sudo apt-get update    
 
 $ sudo apt-get install sublime-text-installer    </code></pre>
-<h2 id="google-chrome-">google chrome安装</h2>
+<h2 id="google-chrome安装">
+      <a href="#google-chrome安装" aria-hidden="true"><i class="icon icon-link"></i></a>
+      google chrome安装
+    </h2>
 <pre><code class="language-bash">$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb     
 
 $ sudo dpkg -i google-chrome-stable_current_amd64.deb    
 
 $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到启动器吧～ </code></pre>
-<h2 id="linux-zip">Linux zip</h2>
+<h2 id="linux-zip">
+      <a href="#linux-zip" aria-hidden="true"><i class="icon icon-link"></i></a>
+      Linux zip
+    </h2>
 <ul>
 <li><p><code>zip -r myfile.zip ./*</code>
  将当前目录下的所有文件和文件夹全部压缩成myfile.zip文件,－r表示递归压缩子目录下所有文件.    </p>
@@ -167,16 +224,25 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 <li><p><code>zip -r filename.zip file1 file2 file3 /usr/work/school</code><br> 上面的命令把 file1、file2、 file3、以及 /usr/work/school 目录的内容（假设这个目录存在）压缩起来，然后放入 filename.zip 文件中。 </p>
 </li>
 </ul>
-<h2 id="linux-tar-gz-">Linux tar.gz解压</h2>
+<h2 id="linux-tar.gz解压">
+      <a href="#linux-tar.gz解压" aria-hidden="true"><i class="icon icon-link"></i></a>
+      Linux tar.gz解压
+    </h2>
 <p>tar  -zxvf   压缩文件名.tar.gz</p>
-<h2 id="linux-rar-">Linux rar 解压</h2>
+<h2 id="linux-rar-解压">
+      <a href="#linux-rar-解压" aria-hidden="true"><i class="icon icon-link"></i></a>
+      Linux rar 解压
+    </h2>
 <p>需要先下载rar    </p>
 <p><code>sudo apt-get install rar</code>    </p>
 <p>解压：    </p>
 <p><code>rar x FileName.rar</code>    </p>
 <p>压缩：    </p>
 <p><code>rar a FileName.rar DirName</code></p>
-<h2 id="vpn-">VPN的搭建</h2>
+<h2 id="vpn的搭建">
+      <a href="#vpn的搭建" aria-hidden="true"><i class="icon icon-link"></i></a>
+      VPN的搭建
+    </h2>
 <ol>
 <li><p>首先需要准备一个文件<br>NetExtender.Linux.7.0.741.x86_64.tgz      </p>
 </li>
@@ -197,7 +263,10 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 <p>在控制台输入 <code>netExtender</code> 即可～    </p>
 </li>
 </ol>
-<h2 id="-mysql">安装mysql</h2>
+<h2 id="安装mysql">
+      <a href="#安装mysql" aria-hidden="true"><i class="icon icon-link"></i></a>
+      安装mysql
+    </h2>
 <p>   <code>sudo apt-get install mysql-server mysql-client</code> 安装mysql    </p>
 <p>   <code>service mysql start</code>  启动MySQL服务    </p>
 <p>   <code>service mysql stop</code>  停止MySQL服务    </p>
@@ -206,12 +275,18 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 <p>听需要修改 my.cnf 文件：)：</p>
 <p>   <code>sudo vi /etc/mysql/my.cnf</code></p>
 <p>   <code>bind-address = 127.0.0.1</code> //找到此内容并且注释  </p>
-<h2 id="-x-gnome-pie">装X神器gnome-pie</h2>
+<h2 id="装x神器gnome-pie">
+      <a href="#装x神器gnome-pie" aria-hidden="true"><i class="icon icon-link"></i></a>
+      装X神器gnome-pie
+    </h2>
 <p>  <code>sudo add-apt-repository ppa:simonschneegans/testing -y</code>    </p>
 <p>  <code>sudo apt-get update &amp;&amp; sudo apt-get install gnome-pie</code>    </p>
 <p>  <code>gnome-pie</code>  即可启动应用        </p>
 <p>  <code>ctrl+alt+a</code>  在鼠标处唤出    </p>
-<h2 id="chrome-nproxy-">chrome 代理设置(nproxy)</h2>
+<h2 id="chrome-代理设置(nproxy)">
+      <a href="#chrome-代理设置(nproxy)" aria-hidden="true"><i class="icon icon-link"></i></a>
+      chrome 代理设置(nproxy)
+    </h2>
 <ol>
 <li><p>SwitchySharp下载    </p>
 </li>
@@ -227,12 +302,24 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
 <li><p><code>nproxy -l your_replace_rule.js</code>  即可开启代理    </p>
 </li>
 </ol>
-<h1 id="-">一些备忘操作</h1>
-<h2 id="-">连接远程服务器</h2>
+<h1 id="一些备忘操作">
+      <a href="#一些备忘操作" aria-hidden="true"><i class="icon icon-link"></i></a>
+      一些备忘操作
+    </h1>
+<h2 id="连接远程服务器">
+      <a href="#连接远程服务器" aria-hidden="true"><i class="icon icon-link"></i></a>
+      连接远程服务器
+    </h2>
 <pre><code>ssh root@192.168.1.1  </code></pre><p>   （root对应你使用的用户名，192……对应的服务器ip地址，一般服务器端口22，命令默认22.如果需要更改端口在ssh后面 -p 端口）</p>
-<h2 id="-terminal-">修改terminal前面路径太长</h2>
+<h2 id="修改terminal前面路径太长">
+      <a href="#修改terminal前面路径太长" aria-hidden="true"><i class="icon icon-link"></i></a>
+      修改terminal前面路径太长
+    </h2>
 <p>   将 <code>export PS1=&quot;\[\e[32;1m\]-&gt; \[\e[0m\]&quot;</code> 添加到 ～/.bashrc 内，保存<br>   那么终端前面路径只会显示一个箭头～</p>
-<h2 id="-terminal-">修改terminal不显示绝对路径，只显示当前路径</h2>
+<h2 id="修改terminal不显示绝对路径，只显示当前路径">
+      <a href="#修改terminal不显示绝对路径，只显示当前路径" aria-hidden="true"><i class="icon icon-link"></i></a>
+      修改terminal不显示绝对路径，只显示当前路径
+    </h2>
 <p>打开 ～/.bashrc    </p>
 <pre><code class="language-bash"><span class="hljs-keyword">if</span> [ <span class="hljs-string">"<span class="hljs-variable">$color_prompt</span>"</span> = yes ]; <span class="hljs-keyword">then</span>
     PS1=<span class="hljs-string">'${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '</span>
@@ -240,10 +327,16 @@ $ 控制台输入 `google-chrome` 即可打开chrome浏览器，把它锁定到�
     PS1=<span class="hljs-string">'${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '</span>
 <span class="hljs-keyword">fi</span>
     <span class="hljs-built_in">unset</span> color_prompt force_color_prompt     //将w改成W，保存    </code></pre>
-<h2 id="watch-enospc-">watch ... ENOSPC报错</h2>
+<h2 id="watch-...-enospc报错">
+      <a href="#watch-...-enospc报错" aria-hidden="true"><i class="icon icon-link"></i></a>
+      watch ... ENOSPC报错
+    </h2>
 <p>在使用gulp，grunt，gitbook等的watch功能时，如果出现watch...ENOSPC的报错，主要是因为watch需要监听很多文件的改动，但是fedora、ubuntu系统的文件句柄其实是有限制的，因此可以使用以下命令：    </p>
 <p><code>$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p</code></p>
-<h2 id="mysql-">mysql导出</h2>
+<h2 id="mysql导出">
+      <a href="#mysql导出" aria-hidden="true"><i class="icon icon-link"></i></a>
+      mysql导出
+    </h2>
 <p>导出数据库：mysqldump -u 用户名 -p 数据库名 &gt; 导出的文件名     </p>
 <p>如我输入的命令行:mysqldump -u root -p news &gt; news.sql   (输入后会让你输入进入MySQL的密码)    </p>
 <p>（如果导出单张表的话在数据库名后面输入表名即可）</p>
