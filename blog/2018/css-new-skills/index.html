@@ -3,14 +3,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="keywords" content="css-modules,style-components,less,css,postcss,js,前端" />
+    <meta name="keywords" content="css-modules,styled-components,less,css,postcss,js,前端" />
     
-    <meta name="description" content="本章主要介绍css-modules, style-components, less." />
+    <meta name="description" content="本章主要介绍css-modules, styled-components, less." />
     <meta name="og:site_name" content="PengJiyuan's Blog" />
     <meta name="og:image" content="/static/images/common/avatar.png" />
     <meta name="og:url" content="http://isweety.me/blog/2018/css-new-skills" />
     <meta name="og:title" content="Css还可以这么写?" />
-    <meta name="og:description" content="本章主要介绍css-modules, style-components, less." />
+    <meta name="og:description" content="本章主要介绍css-modules, styled-components, less." />
     <link href="/static/css/markdown.css" rel="stylesheet" />
     <link href="/static/css/highlight.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
@@ -52,7 +52,7 @@
         <div class="center">
           <h1 class="title">Css还可以这么写?</h1>
           <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
-          <p class="intro">本章主要介绍css-modules, style-components, less.</p>
+          <p class="intro">本章主要介绍css-modules, styled-components, less.</p>
         </div>
       </header>
       <script>
@@ -74,7 +74,7 @@
         </div>
         <blockquote>
 <p>作为一个前端，毫无疑问css肯定是最基础的一项技能之一。css是一个标记语言，没有编程语言的诸多特性，比如变量定义，复用，嵌套等，所以相应的开发效率也受到限制。
-在追求效率和自动化的当下，涌现了一批解决方案，像是css预编译语言Less, Sass等，解决css命名冲突的css-modules，在js中写css的style-components等。</p>
+在追求效率和自动化的当下，涌现了一批解决方案，像是css预编译语言Less, Sass等，解决css命名冲突的css-modules，react中css的最佳实践styled-components等。</p>
 <p>本篇文章不在于探讨css的技巧学习，而在于讨论css的这些提升开发效率的方案。</p>
 </blockquote>
 <h2 id="less">
@@ -367,11 +367,267 @@ $ lessc bootstrap.less bootstrap.css</code></pre>
 <pre><code class="language-js"><span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">'./text.css'</span>;
 
 <span class="hljs-comment">// styles = {green: 'green__green___1v20L', text: 'text__text__2jfs0 green__green___1v20L'}</span></code></pre>
-<h2 id="style-components">
-      <a href="#style-components" aria-hidden="true"><i class="icon icon-link"></i></a>
-      style-components
+<h2 id="styled-components">
+      <a href="#styled-components" aria-hidden="true"><i class="icon icon-link"></i></a>
+      styled-components
     </h2>
-<p>TODO...</p>
+<p><a href="https://github.com/styled-components/styled-components">styled-components</a>, 可能是React中css的最佳实践了，如果你喜欢，你也可以叫它<code>styled-react-components</code> : )。想象一下，像写react组件一样去写css，是一种什么样的体验？</p>
+<p>如下，你可以这样来写样式：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">'styled-components'</span>;
+
+<span class="hljs-keyword">const</span> Title = styled.h1<span class="hljs-string">`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`</span>;
+
+<span class="hljs-keyword">const</span> Wrapper = styled.section<span class="hljs-string">`
+  padding: 4em;
+  background: papayawhip;
+`</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> () =&gt; <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Wrapper</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Hello World, this is my first styled component!<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">Wrapper</span>&gt;</span></span>;</code></pre>
+<p><code>styled-components</code>会自动帮你在 <code>运行时</code> 生成一个样式表，插入到 <code>&lt;head&gt;</code> 下的 <code>&lt;style&gt;</code> 标签中，比如上边的代码，会在运行是生成如下代码：</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">data-styled-components</span>&gt;</span><span class="css">
+    <span class="hljs-comment">/* sc-component-id: model__Title-cooNNd */</span>
+    <span class="hljs-selector-class">.model__Title-cooNNd</span> {} <span class="hljs-selector-class">.jHitSF</span>{<span class="hljs-attribute">font-size</span>:<span class="hljs-number">1.5em</span>;<span class="hljs-attribute">text-align</span>:center;<span class="hljs-attribute">color</span>:palevioletred;}
+    <span class="hljs-comment">/* sc-component-id: model__Wrapper-bEJrHK */</span>
+    <span class="hljs-selector-class">.model__Wrapper-bEJrHK</span> {} <span class="hljs-selector-class">.ipFfju</span>{<span class="hljs-attribute">padding</span>:<span class="hljs-number">4em</span>;<span class="hljs-attribute">background</span>:papayawhip;}
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"model__Wrapper-bEJrHK ipFfju"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"model__Title-cooNNd jHitSF"</span>&gt;</span>Hello World, this is my first styled component!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre>
+<p>我们可以看到，我们在js中写的样式，被插入到了 <code>&lt;style&gt;</code>中，并且生成了一个随机的类名，而且这个类名，也是被 <code>react-dom</code> 生成的DOM结构所引用。</p>
+<p>受益于 <code>styled-components</code>，我们贯彻了 <code>react</code> 的 <code>万物皆组件</code> 的思想，使我们在css的组件化上又推进了一步（发布一个纯css组件试试？） : )</p>
+<p>在这篇文章里，我会简单探讨一下 <code>style-components</code> 的用法和特性。</p>
+<h3 id="如何使用？">
+      <a href="#如何使用？" aria-hidden="true"><i class="icon icon-link"></i></a>
+      如何使用？
+    </h3>
+<p><code>styled-components</code> 一般配合着 <code>react</code> 使用，当然也支持 <code>vue</code> （<a href="https://github.com/styled-components/vue-styled-components">vue-styled-components</a>)。抛开这两个来说，你也可以直接在原生js下使用：</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/styled-components/dist/styled-components.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<p>我们这里讲配合 <code>react</code> 的用法。</p>
+<p><strong>一、首先，安装依赖</strong></p>
+<pre><code class="language-bash">$ npm i styled-components
+<span class="hljs-comment"># 配合着babel来使用</span>
+$ npm i -D babel-plugin-styled-components</code></pre>
+<p><strong>二、配置 <code>.babelrc</code></strong> （当然，我们需要安装 <code>webpack</code> ，配置webpack的config，并且需要需要安装 <code>babel-preset-env</code> 和 <code>babel-preset-react</code>，这里不赘述）</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"presets"</span>: [<span class="hljs-string">"env"</span>, <span class="hljs-string">"react"</span>],
+  <span class="hljs-attr">"plugins"</span>: [<span class="hljs-string">"styled-components"</span>]
+}</code></pre>
+<p>经过以上简单的配置之后，就可以在项目中使用 <code>styled-components</code> 了。</p>
+<h3 id="工具">
+      <a href="#工具" aria-hidden="true"><i class="icon icon-link"></i></a>
+      工具
+    </h3>
+<p>当然，现在的 <code>styled-components</code> 也是支持了 <a href="https://github.com/styled-components/stylelint-processor-styled-components">stylelint</a> 和 <a href="https://github.com/styled-components/jest-styled-components">jest</a>，所以，你也不用担心样式检查和测试了 ：）</p>
+<p><strong>下边儿说一下 <code>styled-components</code> 的一些用法和特性。</strong> 官方文档在这儿： <a href="https://www.styled-components.com/docs/basics">https://www.styled-components.com/docs/basics</a></p>
+<h3 id="一、动态样式赋值">
+      <a href="#一、动态样式赋值" aria-hidden="true"><i class="icon icon-link"></i></a>
+      一、动态样式赋值
+    </h3>
+<p>你可以传props给组件，让组件根据所传的props的值动态改变样式。</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> Button = styled.button<span class="hljs-string">`
+  /* 根据props的值动态改变样式的值 */
+  background: <span class="hljs-subst">${props =&gt; props.primary ? <span class="hljs-string">'palevioletred'</span> : <span class="hljs-string">'white'</span>}</span>;
+  color: <span class="hljs-subst">${props =&gt; props.primary ? <span class="hljs-string">'white'</span> : <span class="hljs-string">'palevioletred'</span>}</span>;
+`</span>;
+
+render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);</code></pre>
+<h3 id="二、样式继承">
+      <a href="#二、样式继承" aria-hidden="true"><i class="icon icon-link"></i></a>
+      二、样式继承
+    </h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> Button = styled.button<span class="hljs-string">`
+  color: palevioletred;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+`</span>;
+<span class="hljs-comment">// 创建一个新Button组件，继承自Button，并对Button进行样式添加和覆盖</span>
+<span class="hljs-keyword">const</span> TomatoButton = styled(Button)<span class="hljs-string">`
+  color: tomato;
+  border-color: tomato;
+`</span>;
+
+render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>Normal Button<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">TomatoButton</span>&gt;</span>Tomato Button<span class="hljs-tag">&lt;/<span class="hljs-name">TomatoButton</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);</code></pre>
+<h3 id="三、组件标签替换">
+      <a href="#三、组件标签替换" aria-hidden="true"><i class="icon icon-link"></i></a>
+      三、组件标签替换
+    </h3>
+<p>比如，你创建了一个Button组件，你想把<code>button</code>标签变成<code>a</code>标签，但是样式还是<code>button</code>的样式。那么你可以通过 <code>withComponent</code> 方法轻松做到。</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> Button = styled.button<span class="hljs-string">`
+  display: inline-block;
+  color: palevioletred;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+`</span>;
+
+<span class="hljs-comment">// 把&lt;button&gt;标签替换成&lt;a&gt;标签</span>
+<span class="hljs-keyword">const</span> Link = Button.withComponent(<span class="hljs-string">'a'</span>)
+
+<span class="hljs-comment">// 继承Link组件</span>
+<span class="hljs-keyword">const</span> TomatoLink = styled(Link)<span class="hljs-string">`
+  color: tomato;
+  border-color: tomato;
+`</span>;
+
+render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>Normal Button<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Link</span>&gt;</span>Normal Link<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">TomatoLink</span>&gt;</span>Tomato Link<span class="hljs-tag">&lt;/<span class="hljs-name">TomatoLink</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);</code></pre>
+<h3 id="四、动画">
+      <a href="#四、动画" aria-hidden="true"><i class="icon icon-link"></i></a>
+      四、动画
+    </h3>
+<pre><code class="language-javascript"><span class="hljs-comment">// 这个keyframe会随机生成一个name</span>
+<span class="hljs-keyword">const</span> rotate360 = keyframes<span class="hljs-string">`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`</span>;
+
+<span class="hljs-keyword">const</span> Rotate = styled.div<span class="hljs-string">`
+  display: inline-block;
+  animation: <span class="hljs-subst">${rotate360}</span> 2s linear infinite;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+`</span>;
+
+render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Rotate</span>&gt;</span>&amp;lt; 💅 &amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">Rotate</span>&gt;</span></span>
+);</code></pre>
+<h3 id="五、media-query">
+      <a href="#五、media-query" aria-hidden="true"><i class="icon icon-link"></i></a>
+      五、Media Query
+    </h3>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> Content = styled.div<span class="hljs-string">`
+  background: papayawhip;
+  height: 3em;
+  width: 3em;
+
+  @media (max-width: 700px) {
+    background: palevioletred;
+  }
+`</span>;
+
+render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Content</span> /&gt;</span>
+);</span></code></pre>
+<h3 id="六、嵌套写法">
+      <a href="#六、嵌套写法" aria-hidden="true"><i class="icon icon-link"></i></a>
+      六、嵌套写法
+    </h3>
+<p><code>styled-components</code>支持嵌套写法，这个特性是从 <code>Sass</code> 移植过来的。</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> EqualDivider = styled.div<span class="hljs-string">`
+  display: flex;
+  margin: 0.5rem;
+  padding: 1rem;
+  background: papayawhip;
+  <span class="hljs-subst">${props =&gt; props.vertical &amp;&amp; <span class="hljs-string">'flex-direction: column;'</span>}</span>
+
+  &gt; * {
+    flex: 1;
+
+    &amp;:not(:first-child) {
+      <span class="hljs-subst">${props =&gt; props.vertical ? <span class="hljs-string">'margin-top'</span> : <span class="hljs-string">'margin-left'</span>}</span>: 1rem;
+    }
+  }
+`</span>;
+
+<span class="hljs-keyword">const</span> Child = styled.div<span class="hljs-string">`
+  padding: 0.25rem 0.5rem;
+  background: palevioletred;
+`</span>;
+
+render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EqualDivider</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>First<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Second<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Third<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EqualDivider</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EqualDivider</span> <span class="hljs-attr">vertical</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>First<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Second<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Child</span>&gt;</span>Third<span class="hljs-tag">&lt;/<span class="hljs-name">Child</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EqualDivider</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);</code></pre>
+<h3 id="七、配合其他css类库使用">
+      <a href="#七、配合其他css类库使用" aria-hidden="true"><i class="icon icon-link"></i></a>
+      七、配合其他css类库使用
+    </h3>
+<p>比如你在项目中引入了 <code>bootstrap.css</code>，应该怎么和<code>bootstrap</code>中的类配合使用呢？</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> Button = styled.button.attrs({
+  <span class="hljs-comment">// 生成的classList中会包含small</span>
+  className: <span class="hljs-string">'small'</span>
+})<span class="hljs-string">`
+  background: black;
+`</span>;
+
+render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>Styled Components<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>The new way to style components!<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);</code></pre>
+<h3 id="八、优先级">
+      <a href="#八、优先级" aria-hidden="true"><i class="icon icon-link"></i></a>
+      八、优先级
+    </h3>
+<p>怎么样覆盖高优先级的样式呢？当然我们可以通过 <code>!important</code>来做，不过 <code>styled-components</code> 更推荐下边这种做法：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> MyStyledComponent = styled(AlreadyStyledComponent)<span class="hljs-string">`
+  &amp;&amp;&amp; {
+    color: palevioletred;
+    font-weight: bold;
+  }
+`</span>;</code></pre>
+<p>每个 <code>&amp;</code> 替换为生成的类,那么生成的CSS是这样的:</p>
+<pre><code class="language-css"><span class="hljs-selector-class">.MyStyledComponent-asdf123</span><span class="hljs-selector-class">.MyStyledComponent-asdf123</span><span class="hljs-selector-class">.MyStyledComponent-asdf123</span> {
+  <span class="hljs-attribute">color</span>: palevioletred;
+  <span class="hljs-attribute">font-weight</span>: bold;
+}</code></pre>
+<p>那么怎么覆盖内联样式呢？如下：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> MyStyledComponent = styled(InlineStyledComponent)<span class="hljs-string">`
+  &amp;[style] {
+    font-size: 12px !important;
+    color: blue !important;
+  }
+`</span>;</code></pre>
+<p><code>styled-components</code> 颠覆了传统的样式写法，像写组件一样写css，配合 <code>react</code> 恰到好处 ：）</p>
+<p>至于在 <a href="https://github.com/less/less.js">Less</a>、<a href="https://github.com/css-modules/css-modules">css-modules</a> 和 <a href="https://github.com/styled-components/styled-components">styled-components</a> 中到底选择哪一个，就要看你的应用场景和需求了。</p>
+<p><strong>本章完</strong></p>
 
         
           <div style="margin-top: 80px;" id="disqus_thread"></div>

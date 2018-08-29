@@ -3,14 +3,14 @@ title: Css还可以这么写?
 date: 2018-08-23
 author: PengJiyuan
 tag: JavaScript,Css
-intro: 本章主要介绍css-modules, style-components, less.
+intro: 本章主要介绍css-modules, styled-components, less.
 type: 原创
 top: true
-keywords: css-modules,style-components,less,css,postcss,js,前端
+keywords: css-modules,styled-components,less,css,postcss,js,前端
 ---
 
 > 作为一个前端，毫无疑问css肯定是最基础的一项技能之一。css是一个标记语言，没有编程语言的诸多特性，比如变量定义，复用，嵌套等，所以相应的开发效率也受到限制。
-> 在追求效率和自动化的当下，涌现了一批解决方案，像是css预编译语言Less, Sass等，解决css命名冲突的css-modules，在js中写css的style-components等。
+> 在追求效率和自动化的当下，涌现了一批解决方案，像是css预编译语言Less, Sass等，解决css命名冲突的css-modules，react中css的最佳实践styled-components等。
 >
 > 本篇文章不在于探讨css的技巧学习，而在于讨论css的这些提升开发效率的方案。
 
@@ -390,6 +390,309 @@ import styles from './text.css';
 // styles = {green: 'green__green___1v20L', text: 'text__text__2jfs0 green__green___1v20L'}
 ```
 
-## style-components
+## styled-components
 
-TODO...
+[styled-components](https://github.com/styled-components/styled-components), 可能是React中css的最佳实践了，如果你喜欢，你也可以叫它`styled-react-components` : )。想象一下，像写react组件一样去写css，是一种什么样的体验？
+
+如下，你可以这样来写样式：
+
+```javascript
+import React from 'react';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
+export default () => <Wrapper>
+  <Title>Hello World, this is my first styled component!</Title>
+</Wrapper>;
+```
+
+`styled-components`会自动帮你在 `运行时` 生成一个样式表，插入到 `<head>` 下的 `<style>` 标签中，比如上边的代码，会在运行是生成如下代码：
+
+```html
+<head>
+  <style data-styled-components>
+    /* sc-component-id: model__Title-cooNNd */
+    .model__Title-cooNNd {} .jHitSF{font-size:1.5em;text-align:center;color:palevioletred;}
+    /* sc-component-id: model__Wrapper-bEJrHK */
+    .model__Wrapper-bEJrHK {} .ipFfju{padding:4em;background:papayawhip;}
+  </style>
+</head>
+<body>
+  <section class="model__Wrapper-bEJrHK ipFfju">
+    <h1 class="model__Title-cooNNd jHitSF">Hello World, this is my first styled component!</h1>
+  </section>
+</body>
+```
+
+我们可以看到，我们在js中写的样式，被插入到了 `<style>`中，并且生成了一个随机的类名，而且这个类名，也是被 `react-dom` 生成的DOM结构所引用。
+
+受益于 `styled-components`，我们贯彻了 `react` 的 `万物皆组件` 的思想，使我们在css的组件化上又推进了一步（发布一个纯css组件试试？） : )
+
+在这篇文章里，我会简单探讨一下 `style-components` 的用法和特性。
+
+### 如何使用？
+
+`styled-components` 一般配合着 `react` 使用，当然也支持 `vue` （[vue-styled-components](https://github.com/styled-components/vue-styled-components))。抛开这两个来说，你也可以直接在原生js下使用：
+
+```html
+<script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
+```
+
+我们这里讲配合 `react` 的用法。
+
+**一、首先，安装依赖**
+
+```bash
+$ npm i styled-components
+# 配合着babel来使用
+$ npm i -D babel-plugin-styled-components
+```
+
+**二、配置 `.babelrc`** （当然，我们需要安装 `webpack` ，配置webpack的config，并且需要需要安装 `babel-preset-env` 和 `babel-preset-react`，这里不赘述）
+
+```json
+{
+  "presets": ["env", "react"],
+  "plugins": ["styled-components"]
+}
+```
+
+经过以上简单的配置之后，就可以在项目中使用 `styled-components` 了。
+
+### 工具
+
+当然，现在的 `styled-components` 也是支持了 [stylelint](https://github.com/styled-components/stylelint-processor-styled-components) 和 [jest](https://github.com/styled-components/jest-styled-components)，所以，你也不用担心样式检查和测试了 ：）
+
+**下边儿说一下 `styled-components` 的一些用法和特性。** 官方文档在这儿： https://www.styled-components.com/docs/basics
+
+### 一、动态样式赋值
+
+你可以传props给组件，让组件根据所传的props的值动态改变样式。
+
+```javascript
+const Button = styled.button`
+  /* 根据props的值动态改变样式的值 */
+  background: ${props => props.primary ? 'palevioletred' : 'white'};
+  color: ${props => props.primary ? 'white' : 'palevioletred'};
+`;
+
+render(
+  <div>
+    <Button>Normal</Button>
+    <Button primary>Primary</Button>
+  </div>
+);
+```
+
+### 二、样式继承
+
+```javascript
+const Button = styled.button`
+  color: palevioletred;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+`;
+// 创建一个新Button组件，继承自Button，并对Button进行样式添加和覆盖
+const TomatoButton = styled(Button)`
+  color: tomato;
+  border-color: tomato;
+`;
+
+render(
+  <div>
+    <Button>Normal Button</Button>
+    <TomatoButton>Tomato Button</TomatoButton>
+  </div>
+);
+```
+
+### 三、组件标签替换
+
+比如，你创建了一个Button组件，你想把`button`标签变成`a`标签，但是样式还是`button`的样式。那么你可以通过 `withComponent` 方法轻松做到。
+
+```javascript
+const Button = styled.button`
+  display: inline-block;
+  color: palevioletred;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+`;
+
+// 把<button>标签替换成<a>标签
+const Link = Button.withComponent('a')
+
+// 继承Link组件
+const TomatoLink = styled(Link)`
+  color: tomato;
+  border-color: tomato;
+`;
+
+render(
+  <div>
+    <Button>Normal Button</Button>
+    <Link>Normal Link</Link>
+    <TomatoLink>Tomato Link</TomatoLink>
+  </div>
+);
+```
+
+### 四、动画
+
+```javascript
+// 这个keyframe会随机生成一个name
+const rotate360 = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const Rotate = styled.div`
+  display: inline-block;
+  animation: ${rotate360} 2s linear infinite;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+`;
+
+render(
+  <Rotate>&lt; 💅 &gt;</Rotate>
+);
+```
+
+### 五、Media Query
+
+```javascript
+const Content = styled.div`
+  background: papayawhip;
+  height: 3em;
+  width: 3em;
+
+  @media (max-width: 700px) {
+    background: palevioletred;
+  }
+`;
+
+render(
+  <Content />
+);
+```
+
+### 六、嵌套写法
+
+`styled-components`支持嵌套写法，这个特性是从 `Sass` 移植过来的。
+
+```javascript
+const EqualDivider = styled.div`
+  display: flex;
+  margin: 0.5rem;
+  padding: 1rem;
+  background: papayawhip;
+  ${props => props.vertical && 'flex-direction: column;'}
+
+  > * {
+    flex: 1;
+
+    &:not(:first-child) {
+      ${props => props.vertical ? 'margin-top' : 'margin-left'}: 1rem;
+    }
+  }
+`;
+
+const Child = styled.div`
+  padding: 0.25rem 0.5rem;
+  background: palevioletred;
+`;
+
+render(
+  <div>
+  <EqualDivider>
+    <Child>First</Child>
+    <Child>Second</Child>
+    <Child>Third</Child>
+  </EqualDivider>
+  <EqualDivider vertical>
+    <Child>First</Child>
+    <Child>Second</Child>
+    <Child>Third</Child>
+  </EqualDivider>
+  </div>
+);
+```
+
+### 七、配合其他css类库使用
+
+比如你在项目中引入了 `bootstrap.css`，应该怎么和`bootstrap`中的类配合使用呢？
+
+```javascript
+const Button = styled.button.attrs({
+  // 生成的classList中会包含small
+  className: 'small'
+})`
+  background: black;
+`;
+
+render(
+  <div>
+    <Button>Styled Components</Button>
+    <Button>The new way to style components!</Button>
+  </div>
+);
+```
+
+### 八、优先级
+
+怎么样覆盖高优先级的样式呢？当然我们可以通过 `!important`来做，不过 `styled-components` 更推荐下边这种做法：
+
+```javascript
+const MyStyledComponent = styled(AlreadyStyledComponent)`
+  &&& {
+    color: palevioletred;
+    font-weight: bold;
+  }
+`;
+```
+
+每个 `&` 替换为生成的类,那么生成的CSS是这样的:
+
+```css
+.MyStyledComponent-asdf123.MyStyledComponent-asdf123.MyStyledComponent-asdf123 {
+  color: palevioletred;
+  font-weight: bold;
+}
+```
+
+那么怎么覆盖内联样式呢？如下：
+
+```javascript
+const MyStyledComponent = styled(InlineStyledComponent)`
+  &[style] {
+    font-size: 12px !important;
+    color: blue !important;
+  }
+`;
+```
+
+`styled-components` 颠覆了传统的样式写法，像写组件一样写css，配合 `react` 恰到好处 ：）
+
+至于在 [Less](https://github.com/less/less.js)、[css-modules](https://github.com/css-modules/css-modules) 和 [styled-components](https://github.com/styled-components/styled-components) 中到底选择哪一个，就要看你的应用场景和需求了。
+
+**本章完**
