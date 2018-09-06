@@ -85,9 +85,10 @@
 </div>
 <br>
 
-<h3 id="创建一个新项目">
-      <a href="#创建一个新项目" aria-hidden="true"><i class="icon icon-link"></i></a>
-      创建一个新项目
+<p>那么怎么从零开始写一个命令行工具呢？</p>
+<h3 id="一、创建一个新项目">
+      <a href="#一、创建一个新项目" aria-hidden="true"><i class="icon icon-link"></i></a>
+      一、创建一个新项目
     </h3>
 <p>首先，我们创建一个npm项目。</p>
 <pre><code class="language-bash">$ mkdir cli-demo
@@ -105,9 +106,9 @@ $ npm init</code></pre>
   <span class="hljs-attr">"author"</span>: <span class="hljs-string">""</span>,
   <span class="hljs-attr">"license"</span>: <span class="hljs-string">"MIT"</span>
 }</code></pre>
-<h3 id="新建一个可执行文件">
-      <a href="#新建一个可执行文件" aria-hidden="true"><i class="icon icon-link"></i></a>
-      新建一个可执行文件
+<h3 id="二、新建一个可执行文件">
+      <a href="#二、新建一个可执行文件" aria-hidden="true"><i class="icon icon-link"></i></a>
+      二、新建一个可执行文件
     </h3>
 <p>我们在<code>cli-demo</code>文件夹中，新建一个js文件，这里我们新建一个名为<code>cli.js</code>的文件。</p>
 <blockquote>
@@ -121,9 +122,9 @@ $ npm init</code></pre>
 <pre><code class="language-javascript"><span class="hljs-meta">#!/usr/bin/env node</span>
 
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello world!'</span>);</code></pre>
-<h3 id="指定cli.js为执行文件">
-      <a href="#指定cli.js为执行文件" aria-hidden="true"><i class="icon icon-link"></i></a>
-      指定<code>cli.js</code>为执行文件
+<h3 id="三、指定cli.js为执行文件">
+      <a href="#三、指定cli.js为执行文件" aria-hidden="true"><i class="icon icon-link"></i></a>
+      三、指定<code>cli.js</code>为执行文件
     </h3>
 <p>我们需要在<code>package.json</code>中，指定<code>bin</code>字段将<code>cli.js</code>作为我们的执行文件。</p>
 <pre><code class="language-json">{
@@ -135,9 +136,9 @@ $ npm init</code></pre>
     <span class="hljs-attr">"cli-demo"</span>: <span class="hljs-string">"cli.js"</span>
   }
 }</code></pre>
-<h3 id="调试">
-      <a href="#调试" aria-hidden="true"><i class="icon icon-link"></i></a>
-      调试
+<h3 id="四、调试">
+      <a href="#四、调试" aria-hidden="true"><i class="icon icon-link"></i></a>
+      四、调试
     </h3>
 <p>我们全局安装一个cli包后，可以全局调用这个命令行工具。那我们在开发调试的时候, 就要用到<code>npm link</code>这个命令了。</p>
 <blockquote>
@@ -149,9 +150,9 @@ $ npm init</code></pre>
 <pre><code class="language-bash">$ cli-demo
 
 Hello world!</code></pre>
-<h3 id="使用命令行辅助工具">
-      <a href="#使用命令行辅助工具" aria-hidden="true"><i class="icon icon-link"></i></a>
-      使用命令行辅助工具
+<h3 id="五、使用命令行辅助工具">
+      <a href="#五、使用命令行辅助工具" aria-hidden="true"><i class="icon icon-link"></i></a>
+      五、使用命令行辅助工具
     </h3>
 <p>在我们写命令行工具的时候，使用一些辅助工具会让我们开发更高效。以下是一些我用过的一些辅助工具：</p>
 <ul>
@@ -194,9 +195,9 @@ program
 <pre><code class="language-bash">$ cli-demo -n Jay -g
 
   Hello, Jay! I am very happy to see you!</code></pre>
-<h3 id="发布">
-      <a href="#发布" aria-hidden="true"><i class="icon icon-link"></i></a>
-      发布
+<h3 id="六、发布">
+      <a href="#六、发布" aria-hidden="true"><i class="icon icon-link"></i></a>
+      六、发布
     </h3>
 <p>单纯的发布包到npm非常简单，只需要一条命令：</p>
 <pre><code class="language-bash">npm publish</code></pre>

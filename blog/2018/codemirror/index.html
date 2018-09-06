@@ -1,0 +1,296 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="keywords" content="codemirror,网页编辑器,代码编辑器,教程,javascript,js,前端" />
+    
+    <meta name="description" content="本章主要探讨如何使用 codemirror 搭建网页代码编辑器." />
+    <meta name="og:site_name" content="PengJiyuan's Blog" />
+    <meta name="og:image" content="/static/images/common/avatar.png" />
+    <meta name="og:url" content="http://isweety.me/blog/2018/codemirror" />
+    <meta name="og:title" content="搭建网页代码编辑器" />
+    <meta name="og:description" content="本章主要探讨如何使用 codemirror 搭建网页代码编辑器." />
+    <link href="/static/css/markdown.css" rel="stylesheet" />
+    <link href="/static/css/highlight.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
+    <title>搭建网页代码编辑器-JavaScript</title>
+  </head>
+  <body>
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/opensource">我的开源</a><a href="/tag">归档</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header id="header" class="header">
+        <div class="center">
+          <h1 class="title">搭建网页代码编辑器</h1>
+          <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+          <p class="intro">本章主要探讨如何使用 codemirror 搭建网页代码编辑器.</p>
+        </div>
+      </header>
+      <script>
+        var header = document.getElementById('header');
+        var themes = [
+          'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+          'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+          'purple_bliss', 'miaka', 'sky'
+        ];
+        function random(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        const theme = themes[random(0, themes.length - 1)];
+        header.classList.add(theme);
+      </script>
+      <div class="markdown-body">
+        
+        <div class="copyright">
+          本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">知识共享署名 3.0 (CC BY-NC-ND 3.0)</a> 国际许可协议进行许可, 转载请注明出处，禁止商业性使用，禁止演绎。
+        </div>
+        
+        <h2 id="codemirror">
+      <a href="#codemirror" aria-hidden="true"><i class="icon icon-link"></i></a>
+      CodeMirror
+    </h2>
+<p><a href="https://github.com/codemirror/codemirror">CodeMirror</a> 是一个可以镶嵌到 Web 页面中代码编辑器组件。它的核心代码库仅仅提供了编辑器功能，没有提供像是 <strong>自动补全</strong>, <strong>语法纠错</strong> 等IDE功能。
+<strong>CodeMirror</strong> 提供了丰富的api，让你可以轻易的拓展想要的功能。</p>
+<h2 id="使用方法">
+      <a href="#使用方法" aria-hidden="true"><i class="icon icon-link"></i></a>
+      使用方法
+    </h2>
+<h3 id="浏览器">
+      <a href="#浏览器" aria-hidden="true"><i class="icon icon-link"></i></a>
+      浏览器
+    </h3>
+<p>在浏览器中使用的话，你需要引用编辑器核心 <code>js</code> 和 <code>css</code> 文件，每个编辑器主题对应一个css文件，你需要引用你所指定的编辑器主题对应的css。每个编辑器语言对应一个js文件，需引入你需要编辑的语言对应的js文件。</p>
+<p>如下，我们创建一个编辑 <code>javascript</code> 代码的编辑器：</p>
+<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/lib/codemirror.css"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/theme/material.css"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+  }
+  <span class="hljs-selector-tag">textarea</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span>&gt;</span>
+    var myTextArea = document.getElementById('text');
+    var editor = CodeMirror.fromTextArea(myTextArea, {
+      lineNumbers: true,
+      mode: 'javascript',
+      theme: 'material'
+    });
+    editor.on('change', () =&gt; {
+      console.log(editor.getValue());
+    });
+  <span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/lib/codemirror.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/mode/javascript/javascript.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">var</span> myTextArea = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'text'</span>);
+  <span class="hljs-keyword">var</span> editor = CodeMirror.fromTextArea(myTextArea, {
+    <span class="hljs-attr">lineNumbers</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">'javascript'</span>,
+    <span class="hljs-attr">theme</span>: <span class="hljs-string">'material'</span>
+  });
+  editor.on(<span class="hljs-string">'change'</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(editor.getValue());
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>上边的代码复制到html文件即可运行。从上边的代码可以看到，我们使用 <code>CodeMirror.fromTextArea()</code> 创建了一个编辑器，当然还有其他的方法来创建。</p>
+<ul>
+<li>从textarea创建，会自动替换textarea并且获取textarea的值，填充到编辑器。</li>
+</ul>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span>&gt;</span>console.log('codemirror!');<span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">const</span> myTextArea = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'textarea'</span>);
+CodeMirror.fromTextArea(myTextArea, {
+  <span class="hljs-attr">lineNumbers</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">mode</span>: <span class="hljs-string">'javascript'</span>
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<ul>
+<li>指定父级元素创建编辑器</li>
+</ul>
+<p>如下代码，<code>CodeMirror</code> 会创建一个编辑器，插入到 <code>body</code> 节点下。</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+CodeMirror(<span class="hljs-built_in">document</span>.body, {
+  <span class="hljs-attr">value</span>: <span class="hljs-string">'console.log("codemirror")'</span>,
+  <span class="hljs-attr">mode</span>: <span class="hljs-string">'javascript'</span>
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<h3 id="模块打包用法">
+      <a href="#模块打包用法" aria-hidden="true"><i class="icon icon-link"></i></a>
+      模块打包用法
+    </h3>
+<p>我们可以通过 <strong>Webpack</strong> 来打包使用 <strong>codemirror</strong>。</p>
+<p>先通过 <code>npm</code> 下载codemirror：</p>
+<pre><code class="language-bash">npm i codemirror</code></pre>
+<p>引用 <strong>codemirror</strong> 所需要的 js 和 css 文件：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> CodeMirror = <span class="hljs-built_in">require</span>(<span class="hljs-string">'codemirror'</span>); <span class="hljs-comment">// 编辑器主逻辑文件</span>
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'codemirror/mode/javascript/javascript.js'</span>); <span class="hljs-comment">// 编辑器支持 javascript</span>
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'codemirror/lib/codemirror.css'</span>); <span class="hljs-comment">// 编辑器主样式文件</span>
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'codemirror/theme/material.css'</span>); <span class="hljs-comment">// 编辑器主题样式文件</span>
+
+CodeMirror(<span class="hljs-built_in">document</span>.body, {
+  <span class="hljs-attr">value</span>: <span class="hljs-string">'console.log("codemirror")'</span>,
+  <span class="hljs-attr">mode</span>: <span class="hljs-string">'javascript'</span>,
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">'material'</span>
+});</code></pre>
+<h2 id="简单常用的api">
+      <a href="#简单常用的api" aria-hidden="true"><i class="icon icon-link"></i></a>
+      简单常用的api
+    </h2>
+<p>在我们使用 <strong>CodeMirror</strong> 搭建编辑器之后，可能会用到下面一些简单的api。详细的api列表在这里：<a href="https://codemirror.net/doc/manual.html#api">api list</a>.</p>
+<p><strong><code>getValue()</code></strong></p>
+<p>获取编辑器当前的值。</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> editor = CodeMirror(<span class="hljs-built_in">document</span>.body);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getEditorValue</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> editor.getValue();
+}</code></pre>
+<p><strong><code>setValue(value: String)</code></strong></p>
+<p>改变编辑器的值。</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> editor = CodeMirror(<span class="hljs-built_in">document</span>.body);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setEditorValue</span>(<span class="hljs-params">value</span>) </span>{
+  editor.setValue(value);
+}</code></pre>
+<p><strong><code>on(eventName: String, handler: Function)</code></strong></p>
+<p>编辑器时间监听。</p>
+<p>支持丰富的event类型，完整的event 类型你可以在这里查阅：<a href="https://codemirror.net/doc/manual.html#events">event list</a>。比如，我们可以监听编辑器内容改变，当编辑器内容改变时，输出编辑器的内容：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> editor = CodeMirror(<span class="hljs-built_in">document</span>.body);
+
+editor.on(<span class="hljs-string">'change'</span>, (codemirrorIns, codemirrorObj) =&gt; {
+  <span class="hljs-built_in">console</span>.log(editor.getValue());
+});</code></pre>
+<h2 id="ide拓展">
+      <a href="#ide拓展" aria-hidden="true"><i class="icon icon-link"></i></a>
+      IDE拓展
+    </h2>
+<p><strong>CodeMirror</strong> 支持丰富的IDE拓展，这些拓展放在 <code>codemirror/addon</code>文件夹下。我们可以通过引入该文件夹下的IDE文件，从而让我们编辑器的功能更加丰富。完整的IDE拓展列表在这里：<a href="https://codemirror.net/doc/manual.html#addons">addon list</a>.</p>
+<p>如下示例展示了开启javascript语法纠错：(直接将代码复制到html文件即可运行)</p>
+<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/lib/codemirror.css"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/theme/material.css"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/addon/lint/lint.css"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+  }
+  <span class="hljs-selector-tag">textarea</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"text"</span>&gt;</span>
+const a = 
+<span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/jshint@2.9.6/dist/jshint.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/lib/codemirror.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/mode/javascript/javascript.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/addon/lint/lint.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/codemirror@5.40.0/addon/lint/javascript-lint.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">var</span> myTextArea = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'text'</span>);
+  <span class="hljs-keyword">var</span> editor = CodeMirror.fromTextArea(myTextArea, {
+    <span class="hljs-attr">lineNumbers</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">'javascript'</span>,
+    <span class="hljs-attr">theme</span>: <span class="hljs-string">'material'</span>,
+    <span class="hljs-attr">lint</span>: <span class="hljs-literal">true</span>
+  });
+  editor.on(<span class="hljs-string">'change'</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(editor.getValue());
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<p>当然，<strong>CodeMirror</strong> 的功能十分丰富，比如 <strong>按键映射</strong>、<strong>主题定制</strong>、<strong>Vim模式</strong>等，更深入的使用可以查阅 <a href="https://codemirror.net/">CodeMirror 官网</a>。</p>
+<p><strong>本章完</strong></p>
+
+        
+          <div style="margin-top: 80px;" id="disqus_thread"></div>
+          <script>
+            var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://pengjiyuan-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: '#fff'
+      });
+    </script>
+  </body>
+</html>
