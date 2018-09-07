@@ -1,0 +1,330 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="怎么样可以知道一个npm包的名字是否被占用？为了方便，我们来写一个能告诉你npm名字是否被占用的工具。" />
+    <meta name="og:site_name" content="PengJiyuan's Blog" />
+    <meta name="og:image" content="/static/images/common/avatar.png" />
+    <meta name="og:url" content="http://isweety.me/blog/2018/unused-npm-names" />
+    <meta name="og:title" content="怎么样写一个能告诉你npm包名字是否被占用的工具" />
+    <meta name="og:description" content="怎么样可以知道一个npm包的名字是否被占用？为了方便，我们来写一个能告诉你npm名字是否被占用的工具。" />
+    <link href="/static/css/markdown.css" rel="stylesheet" />
+    <link href="/static/css/highlight.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
+    <title>怎么样写一个能告诉你npm包名字是否被占用的工具-JavaScript,NodeJs</title>
+  </head>
+  <body>
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/opensource">我的开源</a><a href="/tag">归档</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header id="header" class="header">
+        <div class="center">
+          <h1 class="title">怎么样写一个能告诉你npm包名字是否被占用的工具</h1>
+          <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+          <p class="intro">怎么样可以知道一个npm包的名字是否被占用？为了方便，我们来写一个能告诉你npm名字是否被占用的工具。</p>
+        </div>
+      </header>
+      <script>
+        var header = document.getElementById('header');
+        var themes = [
+          'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+          'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+          'purple_bliss', 'miaka', 'sky'
+        ];
+        function random(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        const theme = themes[random(0, themes.length - 1)];
+        header.classList.add(theme);
+      </script>
+      <div class="markdown-body">
+        
+        <div class="copyright">
+          本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">知识共享署名 3.0 (CC BY-NC-ND 3.0)</a> 国际许可协议进行许可, 转载请注明出处，禁止商业性使用，禁止演绎。
+        </div>
+        
+        <blockquote>
+<p>事情是这样的：</p>
+<p>因为我经常会写一些npm包，但是有时候我写完一个包，<code>npm publish</code> 的时候却被提示说包名字被占用了，要不就改名字，要不就加scope，很无奈。
+npm 命令行可以通过 <code>npm view</code> 的方式去得知一个包是否存在，但是无法批量得知，所以就想着写一个工具来批量选名:)</p>
+</blockquote>
+<h2 id="npm方式">
+      <a href="#npm方式" aria-hidden="true"><i class="icon icon-link"></i></a>
+      NPM方式
+    </h2>
+<p>在写工具之前，我们先看看怎么通过 npm 提供的命令来得知包名是否被占用。</p>
+<p><code>npm view</code></p>
+<p>通过 <code>npm view -h</code> 我们可以得知其用法：</p>
+<blockquote>
+<p><code>npm view [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;] [&lt;field&gt;[.subfield]...]</code></p>
+<p>aliases: v, info, show</p>
+</blockquote>
+<p>通过以上命令来看看 <code>unused-npm-names</code> 包：</p>
+<pre><code class="language-bash">npm view unused-npm-names
+<span class="hljs-comment"># 或者</span>
+npm info unused-npm-names</code></pre>
+<p>会输出：</p>
+<pre><code>{ name: 'unused-npm-names',
+  'dist-tags': { latest: '1.1.1' },
+  versions: [ '1.0.0', '1.0.1', '1.1.0', '1.1.1' ],
+  time:
+   { created: '2018-09-07T02:53:05.277Z',
+     '1.0.0': '2018-09-07T02:53:05.439Z',
+     modified: '2018-09-07T03:44:06.363Z',
+     '1.0.1': '2018-09-07T03:07:46.542Z',
+     '1.1.0': '2018-09-07T03:35:40.221Z',
+     '1.1.1': '2018-09-07T03:44:03.534Z' },
+  maintainers: [ 'pjy &lt;731401082@qq.com&gt;' ],
+  description: 'Find unused npm names',
+  homepage: 'https://github.com/PengJiyuan/unused-npm-names#readme',
+  keywords: [ 'npm', 'names', 'unused', 'find' ],
+  repository:
+   { type: 'git',
+     url: 'git+https://github.com/PengJiyuan/unused-npm-names.git' },
+  author: 'PengJiyuan',
+  bugs:
+   { url: 'https://github.com/PengJiyuan/unused-npm-names/issues' },
+  license: 'MIT',
+  readmeFilename: 'README.md',
+  version: '1.1.1',
+  main: 'index.js',
+  bin: { unn: 'cli.js' },
+  scripts: { test: 'echo "Error: no test specified" &amp;&amp; exit 1' },
+  dependencies: { axios: '^0.18.0', chalk: '^2.4.1', commander: '^2.17.1' },
+  gitHead: '818611db1c2baeb589cb3f639559ab6afc9f8e8f',
+  dist:
+   { integrity: 'sha512-t9bCfY3qbeVY54QC6Cznn3YhM0jq6HX0fE0r5TMAq1IOzu+NQ/caA8tfj62pZtDuZKb9R29ne7UyPB+4zAAplw==',
+     shasum: '0b7c162f7656c0d74868bf567713150488f8c473',
+     tarball: 'https://registry.npmjs.org/unused-npm-names/-/unused-npm-names-1.1.1.tgz',
+     fileCount: 5,
+     unpackedSize: 4544,
+     'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbkfQDCRA9TVsSAnZWagAAwS4QAKFC1MnosxmJEws07U4O\ngfUPLP04ZLZqtW6nuB/29A72DE1+bh/TGsir83r/sYf1TAPSLOCRd3Nrky3A\n7+umUUOl5zGU5WyG86Fo2XOl5cYgXXWXU6LcZufG/cwM3Xi9MUfxnT7zCEWt\nQPAE8Oh9UhkWCnvFMBA6M6knqK9K08nQf0Ke55UoiuX+OqF8BUlNw8LqEwrI\nMTW8hpjKqsAdo3JhBu0ZkrfTRMq7cTawfjAg+qDs4SSTuWD9OJ9d/2y4OC/p\nX6+3I+Et+SqFJxjGDBounjF1GYYiH3dQPRN8UWL1p9Ypu6YsiZ7l8dp6RH15\nHFUv6lsCmZvhkKc1zO1pY67xUOA9VbLjhXtObwopFvCIehlv3cCw5FMwoa7x\nz+tou0J4II6n68cG6IfTt+9odi9abj7M2YxStW32Miu3efhpXiw2PpX3HWOW\njkY7IQryyxJbQIdKHJqJ59fADHLxpdmr6WADYWt8mKI+9TK9onpSgFgX4udw\ng7fXN3z/L6i7yY+0fvvX/b0jjVzVFNP5kFnUBSnWk/Hjm+h96QS+0xfRCRNv\n5CmVT2kbxYNAdFsFFoNCqHqE+uQoMrSwBw1SIJdybWjs84QrLOrDFjhKypev\nl6bzrgcyE0VWYY1A+zdyquL1cQ+xEJacsfN5NbicxTZhDU0enAtcxhKSe7bz\nJ9CP\r\n=t8xy\r\n-----END PGP SIGNATURE-----\r\n' },
+  directories: {} }</code></pre><p>这样的输出太长了，我们可以只看 <code>unused-npm-names</code> 最近的版本号:</p>
+<pre><code class="language-bash">npm view unused-npm-names version</code></pre>
+<p>会输出：</p>
+<pre><code>1.1.1</code></pre><p>当然，如果这个包不存在的话，就会报 <code>404</code> 的错误，我们也就知道这个包名是否被占用了。</p>
+<h2 id="写个命令行工具">
+      <a href="#写个命令行工具" aria-hidden="true"><i class="icon icon-link"></i></a>
+      写个命令行工具
+    </h2>
+<p>上面的方式是可以得到我们想要的结果，可是如果我想从一批名字中选一个可用的，就没有那么方便了，就要一个一个试了。</p>
+<p>如果有一个工具可以像这样使用：</p>
+<pre><code class="language-bash">unn react react-router react-dom react-pp react-fdasf</code></pre>
+<p>能一步鉴别所有的包，那就太方便了。</p>
+<p>所以，我们一步一步来看一下应该怎么实现这个功能。</p>
+<h3 id="一、看npm如何做的">
+      <a href="#一、看npm如何做的" aria-hidden="true"><i class="icon icon-link"></i></a>
+      一、看npm如何做的
+    </h3>
+<p>我们通过 <code>npm view</code> 可以查看一个包的信息，那么在走这个命令的时候，npm 肯定是发了一个请求去拿到的这个包的数据，那么我们怎么知道 npm 发的什么请求呢？</p>
+<pre><code class="language-bash"><span class="hljs-comment"># 加 --verbose 后缀来看详细的输出</span>
+npm view unused-npm-names --verbose</code></pre>
+<p>会输出：</p>
+<pre><code>...
+
+npm http request GET https://registry.npmjs.org/unused-npm-names
+
+...
+
+npm info ok</code></pre><p>我们在其中发现，npm 发了个 <code>GET</code> 请求，请求的url是 <code>https://registry.npmjs.org/unused-npm-names</code>。</p>
+<p>哦，那知道了，我们可以请求 <code>https://registry.npmjs.org/${packageName}</code> 来获取名为 <code>packageName</code> 的包信息。当然，在npm的官方仓库也能找到相关api的用法：<a href="https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md">package-metadata</a>。</p>
+<h2 id="开始写工具">
+      <a href="#开始写工具" aria-hidden="true"><i class="icon icon-link"></i></a>
+      开始写工具
+    </h2>
+<p>之前有一篇文章，讲了怎么写一个命令行工具，见这里：<a href="/blog/2018/how-to-write-cli-tool">手把手教你写命令行工具</a>。这篇文章就不从怎么从零开始构建一个命令行工具开始了，我们直接来代码：</p>
+<p>文件目录大概是这样：</p>
+<pre><code>unused-npm-names
+├── node_modules
+├── package.json
+├── cli.js (bin)
+└── index.js (main)</code></pre><p><code>package.json</code>:</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"unused-npm-names"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Find unused npm names"</span>,
+  <span class="hljs-attr">"main"</span>: <span class="hljs-string">"index.js"</span>,
+  <span class="hljs-attr">"bin"</span>: {
+    <span class="hljs-attr">"unn"</span>: <span class="hljs-string">"cli.js"</span>
+  },
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"test"</span>: <span class="hljs-string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+  },
+  <span class="hljs-attr">"license"</span>: <span class="hljs-string">"MIT"</span>,
+  <span class="hljs-attr">"dependencies"</span>: {
+    <span class="hljs-attr">"axios"</span>: <span class="hljs-string">"^0.18.0"</span>,
+    <span class="hljs-attr">"chalk"</span>: <span class="hljs-string">"^2.4.1"</span>,
+    <span class="hljs-attr">"commander"</span>: <span class="hljs-string">"^2.17.1"</span>
+  }
+}</code></pre>
+<p>通过 <code>package.json</code> 中设置 <code>bin</code> 自动，我们将命令的名字设置为 <code>unn</code>，比较简短，方便实用。</p>
+<p>我们把查询的主逻辑放到 <code>index.js</code> 中，把命令行逻辑放到 <code>cli.js</code> 中，这样的话我们既可以通过 cli 的方式去使用，也可以通过 <code>require</code> 的方式在 nodejs 脚本中使用。</p>
+<pre><code class="language-js"><span class="hljs-comment">// index.js</span>
+<span class="hljs-keyword">const</span> axios = <span class="hljs-built_in">require</span>(<span class="hljs-string">'axios'</span>); <span class="hljs-comment">// 用于发送 http 请求</span>
+<span class="hljs-keyword">const</span> chalk = <span class="hljs-built_in">require</span>(<span class="hljs-string">'chalk'</span>); <span class="hljs-comment">// 终端输出带颜色的文本</span>
+
+<span class="hljs-comment">// search方法的参数是一个数组，存放着需要查询的包的名字</span>
+<span class="hljs-comment">// 比如我们要查询 react和react-dom，那么search(['react', 'react-dom'])</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">search</span>(<span class="hljs-params">pkgs = []</span>) </span>{
+  <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">Array</span>.isArray(pkgs)) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-string">'Param should be an array.'</span>;
+  }
+
+  <span class="hljs-built_in">console</span>.log();
+  pkgs.forEach(<span class="hljs-function">(<span class="hljs-params">pkg</span>) =&gt;</span> {
+    axios.get(<span class="hljs-string">`https://registry.npmjs.org/<span class="hljs-subst">${pkg}</span>`</span>)
+      .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+        <span class="hljs-comment">// 如果请求成功，说明包存在，那么名字被占用。</span>
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${chalk.cyan(pkg)}</span>: <span class="hljs-subst">${chalk.red(<span class="hljs-string">'Used ❌'</span>)}</span>`</span>);
+      })
+      .catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+        <span class="hljs-comment">// 如果请求失败，并且是因为404报错，那么证明包不存在，名字可用。</span>
+        <span class="hljs-keyword">if</span> (err.stack &amp;&amp; <span class="hljs-regexp">/Request failed with status code 404/</span>.test(err.stack)) {
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${chalk.cyan(pkg)}</span>: <span class="hljs-subst">${chalk.green(<span class="hljs-string">'Unused ✅'</span>)}</span>`</span>);
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-comment">// 处理未知情况</span>
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${chalk.cyan(pkg)}</span>: <span class="hljs-subst">${chalk.gray(<span class="hljs-string">'Unknown 🤔'</span>)}</span>`</span>)
+        }
+      });
+  });
+}
+
+<span class="hljs-built_in">module</span>.exports = search;</code></pre>
+<p>我们最终实现的cli要支持两种模式，一种是命令行参数解析，一种是传入js文件。如下：</p>
+<pre><code class="language-js"><span class="hljs-comment">// cli.js</span>
+<span class="hljs-meta">#!/usr/bin/env node</span>
+<span class="hljs-meta">
+'use strict'</span>;
+
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> program = <span class="hljs-built_in">require</span>(<span class="hljs-string">'commander'</span>); <span class="hljs-comment">// 命令行参数解析</span>
+<span class="hljs-keyword">const</span> chalk = <span class="hljs-built_in">require</span>(<span class="hljs-string">'chalk'</span>);
+<span class="hljs-keyword">const</span> search = <span class="hljs-built_in">require</span>(<span class="hljs-string">'.'</span>);
+<span class="hljs-keyword">const</span> pkg = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./package.json'</span>);
+
+program
+  .version(pkg.version, <span class="hljs-string">'-v, --version'</span>)
+  .usage(<span class="hljs-string">'[names])'</span>)
+  .option(<span class="hljs-string">'-c, --config [config]'</span>, <span class="hljs-string">'use config files'</span>)
+  .on(<span class="hljs-string">'--help'</span>, () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'\n  Examples:\n'</span>);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`    <span class="hljs-subst">${chalk.green(<span class="hljs-string">'$'</span>)}</span> unn react,react-dom,react-router`</span>);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">''</span>);
+  })
+  .parse(process.argv);
+
+<span class="hljs-comment">// program.args是所有解析直接传入的参数</span>
+<span class="hljs-comment">// 比如 unn react react-dom --hehe</span>
+<span class="hljs-comment">// 那么program.args是['react', 'react-dom']</span>
+<span class="hljs-keyword">let</span> pkgs = program.args;
+
+<span class="hljs-comment">// 如果指定js文件的话，pkgs从文件中读取</span>
+<span class="hljs-keyword">if</span> (program.config &amp;&amp; <span class="hljs-keyword">typeof</span> program.config === <span class="hljs-string">'string'</span>) {
+  <span class="hljs-comment">// process.cwd() 是当前程序运行的目录</span>
+  <span class="hljs-keyword">const</span> files = path.resolve(process.cwd(), program.config);
+
+  <span class="hljs-keyword">try</span> {
+    pkgs = <span class="hljs-built_in">require</span>(files);
+    search(pkgs);
+  } <span class="hljs-keyword">catch</span> (err) {
+    <span class="hljs-built_in">console</span>.log(err);
+    process.exit(<span class="hljs-number">1</span>);
+  }
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">if</span> (pkgs.length &gt; <span class="hljs-number">0</span>) {
+    search(pkgs);
+  } <span class="hljs-keyword">else</span> {
+    program.outputHelp();
+  }
+}</code></pre>
+<p>这样我们的工具就创建好了，我们一起来试一下吧。（注意：要先 <code>npm link</code> 或者 全局安装了我们写的这个包，不明白的可以先看上一篇教程）</p>
+<p><strong>cli使用</strong></p>
+<pre><code class="language-bash">unn react react-dom unnnn
+
+<span class="hljs-comment"># 输出</span>
+unnnn: Unused ✅
+react-dom: Used ❌
+react: Used ❌</code></pre>
+<p><strong>配置文件使用</strong></p>
+<pre><code class="language-js"><span class="hljs-comment">// names.js</span>
+<span class="hljs-built_in">module</span>.exports = [<span class="hljs-string">'react'</span>, <span class="hljs-string">'react-router'</span>, <span class="hljs-string">'react-dom'</span>, <span class="hljs-string">'hahahahahaha'</span>];</code></pre>
+<pre><code class="language-bash">unn -c names.js
+
+<span class="hljs-comment"># 输出</span>
+hahahahahaha: Unused ✅
+react-dom: Used ❌
+react: Used ❌
+react-router: Used ❌</code></pre>
+<p><strong>NodeJs api使用</strong></p>
+<pre><code class="language-js"><span class="hljs-comment">// search.js</span>
+<span class="hljs-keyword">const</span> search = <span class="hljs-built_in">require</span>(<span class="hljs-string">'unused-npm-names'</span>);
+
+search([<span class="hljs-string">'react'</span>, <span class="hljs-string">'react-dom'</span>, <span class="hljs-string">'react-router'</span>, <span class="hljs-string">'unused-npm-names'</span>]);</code></pre>
+<pre><code class="language-bash">node search.js
+
+<span class="hljs-comment"># 输出</span>
+unused-npm-names: Used ❌
+react-router: Used ❌
+react: Used ❌
+react-dom: Used ❌</code></pre>
+<p><strong>本章完</strong></p>
+
+        
+          <div style="margin-top: 80px;" id="disqus_thread"></div>
+          <script>
+            var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://pengjiyuan-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: '#fff'
+      });
+    </script>
+  </body>
+</html>
