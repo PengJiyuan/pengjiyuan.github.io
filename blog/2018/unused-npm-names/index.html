@@ -76,6 +76,7 @@
 <p>事情是这样的：</p>
 <p>因为我经常会写一些npm包，但是有时候我写完一个包，<code>npm publish</code> 的时候却被提示说包名字被占用了，要不就改名字，要不就加scope，很无奈。
 npm 命令行可以通过 <code>npm view</code> 的方式去得知一个包是否存在，但是无法批量得知，所以就想着写一个工具来批量选名:)</p>
+<p>本教程的相关代码已经全上传到github: <a href="https://github.com/PengJiyuan/unused-npm-names">源代码</a></p>
 </blockquote>
 <h2 id="npm方式">
       <a href="#npm方式" aria-hidden="true"><i class="icon icon-link"></i></a>
@@ -296,8 +297,14 @@ unused-npm-names: Used ❌
 react-router: Used ❌
 react: Used ❌
 react-dom: Used ❌</code></pre>
+<h2 id="后话">
+      <a href="#后话" aria-hidden="true"><i class="icon icon-link"></i></a>
+      后话
+    </h2>
+<p>当然，这种方式不是百分百准确的，因为有的时候，就算包名字没被占用，也可能会被提示，跟已经存在的包名字太相似，让你改名字或者加scope，那就无能为力了。。。</p>
 <blockquote>
 <p>相关阅读：<a href="/blog/2018/how-to-write-cli-tool">手把手教你写一个命令行工具</a></p>
+<p>源代码：<a href="https://github.com/PengJiyuan/unused-npm-names">https://github.com/PengJiyuan/unused-npm-names</a></p>
 </blockquote>
 <p><strong>本章完</strong></p>
 
