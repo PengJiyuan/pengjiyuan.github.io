@@ -300,4 +300,6 @@ react: Used ❌
 react-dom: Used ❌
 ```
 
+> 相关阅读：[手把手教你写一个命令行工具](/blog/2018/how-to-write-cli-tool)
+
 **本章完**

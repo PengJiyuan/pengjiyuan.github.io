@@ -195,3 +195,5 @@ relix --patch
 ```
 
 会自动帮你生成新版本号，生成提交信息，打tag，推送提交和tag到github，发布npm包！[relix](https://github.com/PengJiyuan/relix)的详细用法请看relix文档。
+
+> 进阶阅读：[怎么样写一个能告诉你npm包名字是否被占用的工具](/blog/2018/unused-npm-names)
