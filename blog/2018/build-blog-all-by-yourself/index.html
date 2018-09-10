@@ -1,0 +1,595 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="搭建博客是在是没什么难度，世面上有太多成熟的博客生成工具了，像是Hexo、Jekyll, Hugo等等。这篇文章不仅讲如何搭建一个博客，而且教你怎么写一个博客生成工具！" />
+    <meta name="og:site_name" content="PengJiyuan's Blog" />
+    <meta name="og:image" content="/static/images/common/avatar.png" />
+    <meta name="og:url" content="http://isweety.me/blog/2018/build-blog-all-by-yourself" />
+    <meta name="og:title" content="搭建博客太简单，这次我们来做一个博客生成工具" />
+    <meta name="og:description" content="搭建博客是在是没什么难度，世面上有太多成熟的博客生成工具了，像是Hexo、Jekyll, Hugo等等。这篇文章不仅讲如何搭建一个博客，而且教你怎么写一个博客生成工具！" />
+    <link href="/static/css/markdown.css" rel="stylesheet" />
+    <link href="/static/css/highlight.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
+    <title>搭建博客太简单，这次我们来做一个博客生成工具-JavaScript,NodeJs</title>
+  </head>
+  <body>
+    <nav class="nav">
+  <a href="/" class="avatar"><img src="/static/images/common/avatar.png" /></a>
+  <div id="menu-btn" class="menu-btn"><i class="icon icon-category"></i>菜单</div>
+</nav>
+
+<div class="nav-content">
+  <h3>菜单</h3>
+  <i id="close-nav" class="icon icon-close"></i>
+  <div class="menus">
+    <a href="/">博客</a><a href="/opensource">我的开源</a><a href="/tag">归档</a>
+  </div>
+  <h3>关注我</h3>
+  <div class="follow-me">
+    <a href="https://github.com/PengJiyuan">Github</a><a href="https://twitter.com/MrjLEO">Twitter</a>
+  </div>
+</div>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var closeNav = document.getElementById('close-nav');
+  menuBtn.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  };
+  closeNav.onclick = function() {
+    document.body.classList.toggle('nav-open');
+  }
+</script>
+
+    <div class="site-wrapper">
+      <header id="header" class="header">
+        <div class="center">
+          <h1 class="title">搭建博客太简单，这次我们来做一个博客生成工具</h1>
+          <p class="author"><img src="/static/images/common/favicon.ico" />PengJiyuan | 原创</p>
+          <p class="intro">搭建博客是在是没什么难度，世面上有太多成熟的博客生成工具了，像是Hexo、Jekyll, Hugo等等。这篇文章不仅讲如何搭建一个博客，而且教你怎么写一个博客生成工具！</p>
+        </div>
+      </header>
+      <script>
+        var header = document.getElementById('header');
+        var themes = [
+          'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+          'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+          'purple_bliss', 'miaka', 'sky'
+        ];
+        function random(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        const theme = themes[random(0, themes.length - 1)];
+        header.classList.add(theme);
+      </script>
+      <div class="markdown-body">
+        
+        <div class="copyright">
+          本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">知识共享署名 3.0 (CC BY-NC-ND 3.0)</a> 国际许可协议进行许可, 转载请注明出处，禁止商业性使用，禁止演绎。
+        </div>
+        
+        <blockquote>
+<p>文章较长，耐心读下来我想你肯定会有所收获 : )</p>
+</blockquote>
+<p>作为一个技术人员，见到别人那光鲜亮丽的个人博客，心里总免不了想搭建自己博客的冲动。当然，搭建博客的方式有好多种，但是大体上分这两种：</p>
+<ol>
+<li><p><strong>服务端数据库</strong></p>
+<p>例如：你可以用 <strong>WordPress</strong> 搭建自己的博客，你可以利用 PHP 和 MySQL 数据库在服务器上架设属于自己的网站。</p>
+</li>
+<li><p><strong>纯静态页面</strong></p>
+<p>市面上有挺多的免费 <strong>静态文件</strong>（<strong>HTML</strong>）托管机构，当然其中最简单，最方便的可能就是 <strong>Github Pages</strong> 了。纯静态文件构建的网站有很多的优点，
+比如静态网页的访问速度比较快、容易被搜索引擎检索等。</p>
+</li>
+</ol>
+<p>当然，仅仅用作博客的话，纯静态页面足够使用了。评论系统的话可以用第三方的插件，比如 <a href="https://disqus.com/">Disqus</a>。</p>
+<h2 id="github-pages">
+      <a href="#github-pages" aria-hidden="true"><i class="icon icon-link"></i></a>
+      Github Pages
+    </h2>
+<p><strong>Github Pages</strong> 是Github提供的一个静态文件托管系统，配合Github仓库，使用起来特别方便。如果你不会使用的话，请看<a href="https://pages.github.com/">这里</a>。</p>
+<p>而且，Github Pages 集成了 <a href="https://jekyllrb.com/">Jekyll</a>，可以自动帮你把 <code>markdown</code> 语法编译成漂亮的 <code>html</code> 页面。</p>
+<p>市面上有很多的博客生成工具，可以跟 <strong>Github pages</strong> 很好的结合，像是 <a href="https://github.com/hexojs/hexo">Hexo</a>。其实本质上很简单，Hexo就是帮你把 <code>markdown</code> 编译成了 <code>html</code>,
+并且帮你生成了完善的目录和路由。</p>
+<h2 id="手把手教你写一个博客生成工具出来">
+      <a href="#手把手教你写一个博客生成工具出来" aria-hidden="true"><i class="icon icon-link"></i></a>
+      手把手教你写一个博客生成工具出来
+    </h2>
+<blockquote>
+<p>通过一篇文章很难把整个工具描述的一清二楚，所以先放源代码在这里。<a href="https://github.com/PengJiyuan/bloger">源代码</a></p>
+</blockquote>
+<p>我们得知了博客生成的本质，那么动手做出一个博客生成工具也就没有那么大的难度了。我们先来梳理一下博客生成工具需要有哪些最基本的功能：</p>
+<ol>
+<li><p><strong><code>markdown</code> 编译成 <code>html</code></strong></p>
+<p>我们写博客，如果自己去写html的话，那怕会被累死。。 <strong>Markdown</strong> 语法帮我们解决了这个问题，如果你对markdown不了解的话，可以看<a href="https://www.jianshu.com/p/191d1e21f7ed">这里</a>。</p>
+</li>
+<li><p><strong>生成目录结构</strong></p>
+</li>
+</ol>
+<p>我们想一下，确实，一个博客的话最基本的就两个部分：目录和博客内容。我们模仿<a href="https://github.com/hexojs/hexo">Hexo</a>的命令，设计如下：</p>
+<blockquote>
+<p>我们把工具命名为 <strong>Bloger</strong>。</p>
+</blockquote>
+<pre><code class="language-bash">bloger init blog <span class="hljs-comment"># 初始化一个名为blog的博客项目</span>
+
+bloger new hello-world <span class="hljs-comment"># 创建一篇名为 hello-word 的博客</span>
+
+bloger build <span class="hljs-comment"># 编译博客网站</span>
+
+bloger dev <span class="hljs-comment"># 监听 markdown 文件，实时编译博客网站</span>
+
+bloger serve <span class="hljs-comment"># 本地起服务</span></code></pre>
+<p>按照以上的设计，我们开始写工具：</p>
+<h3 id="一、目录设计">
+      <a href="#一、目录设计" aria-hidden="true"><i class="icon icon-link"></i></a>
+      一、目录设计
+    </h3>
+<p>我们需要为我们 <strong>生成的博客项目</strong> 设计一个合理的文件目录。如下：</p>
+<pre><code>blog
+  ├── my.json (网站的基本配置)
+  ├── index.html (首页)
+  ├── node_modules
+  ├── package.json
+  ├── _posts (博客 markdown 源文件)
+  │   └── 2018
+  │       ├── test.md
+  │       └── hello-world.md
+  ├── blog (_posts 中 markdown 生成的 html 文件)
+  │   └── 2018
+  │       ├── test
+  │       │   └──index.html (这样设计的话，我们就可以通过访问 https://xxx.com/blog/2018/test/ 来访问这篇博客了)
+  │       └── hello-world
+  │           └──index.html
+  └── static (博客 markdown 源文件)
+      ├── css (网站的css存放的文件)
+      ├── iconfonts (网站的 iconfonts 存放的文件夹)
+      ├── images (网站的图片存放的文件夹)
+      └── less (存放于这儿的 less 文件，会在 dev 的时候被编译到 css 文件夹中，生成同名的 css 文件)</code></pre><p>下面是我们写的工具的源码结构：</p>
+<pre><code>bloger
+  ├── bin
+  │   └── cli.js
+  ├── lib
+  │   ├── less (博客的样式文件)
+  │   ├── pages (博客的ejs模版)
+  │   ├── tasks (编译网站的脚本)
+  │   └── gulpfile.js
+  └── tpl (生成的博客模版，结构见上方)</code></pre><h3 id="二、markdown编译成html">
+      <a href="#二、markdown编译成html" aria-hidden="true"><i class="icon icon-link"></i></a>
+      二、markdown编译成html
+    </h3>
+<p>markdown编译成html，有许多成熟的库，这里我们选用 <a href="https://github.com/PengJiyuan/mdpack">mdpack</a>。这个项目其实是在<a href="https://github.com/markedjs/marked">marked</a>上的一层封装。
+<strong>mdpack</strong> 支持模版定制，支持多markdown拼接。</p>
+<h2 id="三、文章信息配置">
+      <a href="#三、文章信息配置" aria-hidden="true"><i class="icon icon-link"></i></a>
+      三、文章信息配置
+    </h2>
+<p>一篇文章有很多的信息需要我们配置，比如 <strong>标题</strong>、<strong>标签</strong>、<strong>发布日期</strong> 等等，<strong>Hexo</strong> 和 <strong>Jekyll</strong> 通常有一个规范是这样的，在markdown文件的顶部放置文章的配置，
+front-matter 格式如下：</p>
+<pre><code class="language-md"> ---
+ title: Hello world
+ date: 2018-09-10
+ tag: JavaScript,NodeJs
+ info: 这篇文章简单介绍了写一个博客生成工具.
+ ---</code></pre>
+<p>我们需要写个脚本将这些信息提取，并且转换成一个json对象，比如上边的信息，我们要转换成这样：</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Hello world"</span>,
+  <span class="hljs-attr">"date"</span>: <span class="hljs-string">"2018-09-10"</span>,
+  <span class="hljs-attr">"tag"</span>: <span class="hljs-string">"JavaScript,NodeJs"</span>,
+  <span class="hljs-attr">"info"</span>: <span class="hljs-string">"这篇文章简单介绍了写一个博客生成工具."</span>
+}</code></pre>
+<p>脚本如下：</p>
+<pre><code class="language-js"><span class="hljs-comment">// task/metadata.js</span>
+<span class="hljs-keyword">const</span> frontMatter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@egoist/front-matter'</span>); <span class="hljs-comment">// 截取头部front-matter信息</span>
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> root = process.cwd();
+
+<span class="hljs-keyword">const</span> metadata = {
+  <span class="hljs-attr">post</span>: []
+};
+
+<span class="hljs-comment">// 把提取出来的front-matter字符串解析，生成对象</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getMetadata</span>(<span class="hljs-params">content</span>) </span>{
+  <span class="hljs-keyword">const</span> head = frontMatter(content).head.split(<span class="hljs-string">'\n'</span>);
+  <span class="hljs-keyword">const</span> ret = {};
+  head.forEach(<span class="hljs-function">(<span class="hljs-params">h</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> [key, value] = h.split(<span class="hljs-string">': '</span>);
+    ret[key.trim()] = value.trim();
+  });
+
+  <span class="hljs-keyword">if</span> (!ret.type) {
+    ret.type = <span class="hljs-string">'原创'</span>;
+  }
+
+  <span class="hljs-keyword">return</span> ret;
+}
+
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-comment">// 便利 _posts 文件夹，将所有的markdown内容的front-matter转换成对象，存放到metadata数组中</span>
+  <span class="hljs-comment">// 将生成的metadata信息写入一个文件中，我们命名为postMap.json，保存到所生成项目的根目录，以备使用</span>
+  fs.readdirSync(path.resolve(root, <span class="hljs-string">'_posts'</span>))
+  .filter(<span class="hljs-function"><span class="hljs-params">m</span> =&gt;</span> fs.statSync(path.resolve(root, <span class="hljs-string">'_posts'</span>, m)).isDirectory())
+  .forEach(<span class="hljs-function">(<span class="hljs-params">year</span>) =&gt;</span> {
+    fs.readdirSync(path.resolve(root, <span class="hljs-string">'_posts'</span>, year))
+      .forEach(<span class="hljs-function">(<span class="hljs-params">post</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> content = fs.readFileSync(path.resolve(root, <span class="hljs-string">'_posts'</span>, year, post), <span class="hljs-string">'utf8'</span>);
+        metadata.post.push({
+          year,
+          <span class="hljs-attr">filename</span>: post.split(<span class="hljs-string">'.md'</span>)[<span class="hljs-number">0</span>],
+          <span class="hljs-attr">metadata</span>: getMetadata(content)
+        });
+      });
+  });
+
+  fs.writeFileSync(path.resolve(root, <span class="hljs-string">'postMap.json'</span>), <span class="hljs-built_in">JSON</span>.stringify(metadata), <span class="hljs-string">'utf8'</span>);
+} <span class="hljs-keyword">catch</span> (err) {}
+
+<span class="hljs-built_in">module</span>.exports = metadata;</code></pre>
+<h3 id="四、博客目录生成">
+      <a href="#四、博客目录生成" aria-hidden="true"><i class="icon icon-link"></i></a>
+      四、博客目录生成
+    </h3>
+<p>通过读取<code>postMap.json</code>中的metadata信息，我们可以构建一个博客目录出来。代码如下：</p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs-extra'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> ejs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'ejs'</span>);
+<span class="hljs-comment">// 首页的ejs模版</span>
+<span class="hljs-keyword">const</span> homeTpl = fs.readFileSync(path.resolve(__dirname, <span class="hljs-string">'../pages/home.ejs'</span>), <span class="hljs-string">'utf8'</span>);
+<span class="hljs-keyword">const</span> root = process.cwd();
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buildHomeHtml</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> metadata = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./metadata'</span>);
+  <span class="hljs-comment">// 博客网站的基本配置</span>
+  <span class="hljs-keyword">const</span> myInfo = <span class="hljs-built_in">require</span>(path.resolve(root, <span class="hljs-string">'my.json'</span>));
+  <span class="hljs-keyword">const</span> htmlMenu = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./menu'</span>)(); <span class="hljs-comment">// 菜单生成，这里不讲</span>
+
+  <span class="hljs-comment">// 讲postMap.json中的metadata遍历，然后生成一个blogList数组</span>
+  <span class="hljs-keyword">const</span> blogList = metadata.post.map(<span class="hljs-function">(<span class="hljs-params">postInfo</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> data = postInfo.metadata;
+
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">title</span>: data.title,
+      <span class="hljs-attr">date</span>: data.date,
+      <span class="hljs-attr">url</span>: <span class="hljs-string">`/blog/<span class="hljs-subst">${postInfo.year}</span>/<span class="hljs-subst">${postInfo.filename}</span>`</span>,
+      <span class="hljs-attr">intro</span>: data.intro,
+      <span class="hljs-attr">tags</span>: data.tag.split(<span class="hljs-string">','</span>),
+      <span class="hljs-attr">author</span>: data.author,
+      <span class="hljs-attr">type</span>: data.type,
+      <span class="hljs-attr">top</span>: data.top === <span class="hljs-string">'true'</span> ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>
+    };
+  });
+
+  <span class="hljs-comment">// 默认按发布时间排序</span>
+  blogList.sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(a.date) - <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(b.date));
+
+  <span class="hljs-comment">// 置顶</span>
+  blogList.sort(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> !a.top);
+
+  <span class="hljs-comment">// ejs替换</span>
+  fs.outputFile(
+    path.resolve(root, <span class="hljs-string">'index.html'</span>),
+    ejs.render(homeTpl, {
+      <span class="hljs-attr">name</span>: myInfo.name,
+      <span class="hljs-attr">intro</span>: myInfo.intro,
+      <span class="hljs-attr">homepage</span>: myInfo.homepage,
+      <span class="hljs-attr">links</span>: myInfo.links,
+      blogList,
+      htmlMenu
+    }),
+    (err) =&gt; {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'\nUpadate home html success!\n'</span>);
+    }
+  );
+}
+
+<span class="hljs-built_in">module</span>.exports = buildHomeHtml;</code></pre>
+<h3 id="五、集成gulp">
+      <a href="#五、集成gulp" aria-hidden="true"><i class="icon icon-link"></i></a>
+      五、集成gulp
+    </h3>
+<p>在编译博客的过程中，一些操作利用 <strong><a href="https://github.com/gulpjs/gulp">gulp</a></strong> 会简单快捷许多。比如 <strong>编译less</strong>、<strong>打包iconfonts</strong>、<strong>监听文件改动</strong> 等。
+但是gulp是一个命令行工具，我们怎么样能把gulp继承到我们的工具中呢？方法很简单，如下：</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'./gulpfile.js'</span>);
+
+<span class="hljs-comment">// 启动gulpfile中的build任务</span>
+<span class="hljs-keyword">if</span>(gulp.tasks.build) {
+  gulp.start(<span class="hljs-string">'build'</span>);
+}</code></pre>
+<p>通过以上的方法，我们可以在我们的cli工具中集成 <strong>gulp</strong>，那么好多问题就变得特别简单，贴上完整的 <code>gulpfile</code>:</p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">'url'</span>);
+<span class="hljs-keyword">const</span> del = <span class="hljs-built_in">require</span>(<span class="hljs-string">'del'</span>);
+<span class="hljs-keyword">const</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-keyword">const</span> log = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fancy-log'</span>);
+<span class="hljs-keyword">const</span> less = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-less'</span>);
+<span class="hljs-keyword">const</span> minifyCSS = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-csso'</span>);
+<span class="hljs-keyword">const</span> autoprefixer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-autoprefixer'</span>);
+<span class="hljs-keyword">const</span> plumber = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-plumber'</span>);
+<span class="hljs-keyword">const</span> iconfont = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-iconfont'</span>);
+<span class="hljs-keyword">const</span> iconfontCss = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-iconfont-css'</span>);
+<span class="hljs-keyword">const</span> mdpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mdpack'</span>);
+<span class="hljs-keyword">const</span> buildHome = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tasks/home'</span>);
+<span class="hljs-keyword">const</span> root = process.cwd();
+
+<span class="hljs-comment">// 编译博客文章页面</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">build</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> metadata = <span class="hljs-built_in">require</span>(path.resolve(root, <span class="hljs-string">'postMap.json'</span>));
+  <span class="hljs-keyword">const</span> myInfo = <span class="hljs-built_in">require</span>(path.resolve(root, <span class="hljs-string">'my.json'</span>));
+  <span class="hljs-keyword">const</span> htmlMenu = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tasks/menu'</span>)(); <span class="hljs-comment">// 跳过</span>
+  <span class="hljs-comment">// 删除博客文件夹</span>
+  del.sync(path.resolve(root, <span class="hljs-string">'blog'</span>));
+
+  <span class="hljs-comment">// 遍历_posts文件夹，编译所有的markdown文件</span>
+  <span class="hljs-comment">// 生成的格式为 blog/${year}/${filename}/index.html</span>
+  fs.readdirSync(path.resolve(root, <span class="hljs-string">'_posts'</span>))
+  .filter(<span class="hljs-function"><span class="hljs-params">m</span> =&gt;</span> fs.statSync(path.resolve(root, <span class="hljs-string">'_posts'</span>, m)).isDirectory())
+  .forEach(<span class="hljs-function">(<span class="hljs-params">year</span>) =&gt;</span> {
+    fs.readdirSync(path.resolve(root, <span class="hljs-string">'_posts'</span>, year))
+      .forEach(<span class="hljs-function">(<span class="hljs-params">post</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> filename = post.split(<span class="hljs-string">'.md'</span>)[<span class="hljs-number">0</span>];
+        <span class="hljs-keyword">const</span> _meta = metadata.post.find(<span class="hljs-function"><span class="hljs-params">_m</span> =&gt;</span> _m.filename === filename).metadata;
+        <span class="hljs-keyword">const</span> currentUrl = url.resolve(myInfo.homepage, <span class="hljs-string">`blog/<span class="hljs-subst">${year}</span>/<span class="hljs-subst">${filename}</span>`</span>);
+        <span class="hljs-keyword">const</span> mdConfig = {
+          <span class="hljs-attr">entry</span>: path.resolve(root, <span class="hljs-string">'_posts'</span>, year, post),
+          <span class="hljs-attr">output</span>: {
+            <span class="hljs-attr">path</span>: path.resolve(root, <span class="hljs-string">'blog'</span>, year, filename),
+            <span class="hljs-attr">name</span>: <span class="hljs-string">'index'</span>
+          },
+          <span class="hljs-attr">format</span>: [<span class="hljs-string">'html'</span>],
+          <span class="hljs-attr">plugins</span>: [
+            <span class="hljs-comment">// 去除markdown文件头部的front-matter</span>
+            <span class="hljs-keyword">new</span> mdpack.plugins.mdpackPluginRemoveHead()
+          ],
+          <span class="hljs-attr">template</span>: path.join(__dirname, <span class="hljs-string">'pages/blog.ejs'</span>),
+          <span class="hljs-attr">resources</span>: {
+            <span class="hljs-attr">markdownCss</span>: <span class="hljs-string">'/static/css/markdown.css'</span>,
+            <span class="hljs-attr">highlightCss</span>: <span class="hljs-string">'/static/css/highlight.css'</span>,
+            <span class="hljs-attr">title</span>: _meta.title,
+            <span class="hljs-attr">author</span>: _meta.author,
+            <span class="hljs-attr">type</span>: _meta.type,
+            <span class="hljs-attr">intro</span>: _meta.intro,
+            <span class="hljs-attr">tag</span>: _meta.tag,
+            <span class="hljs-attr">keywords</span>: _meta.keywords,
+            <span class="hljs-attr">homepage</span>: myInfo.homepage,
+            <span class="hljs-attr">name</span>: myInfo.name,
+            <span class="hljs-attr">disqusUrl</span>: myInfo.disqus ? myInfo.disqus.src : <span class="hljs-literal">false</span>,
+            currentUrl,
+            htmlMenu
+          }
+        };
+        mdpack(mdConfig);
+      });
+  });
+}
+
+<span class="hljs-comment">// 编译css</span>
+gulp.task(<span class="hljs-string">'css'</span>, () =&gt; {
+  log(<span class="hljs-string">'Compile less.'</span>);
+  <span class="hljs-comment">// 我们编译当前项目下的 lib/less/*.less 和 生成的博客项目下的 static/less/**/*.less</span>
+  <span class="hljs-keyword">return</span> gulp.src([path.resolve(__dirname, <span class="hljs-string">'less/*.less'</span>), path.resolve(root, <span class="hljs-string">'static/less/**/*.less'</span>)])
+    .pipe(plumber())
+    .pipe(less({
+      <span class="hljs-attr">paths</span>: [root]
+    }))
+    <span class="hljs-comment">// css压缩</span>
+    .pipe(minifyCSS())
+    <span class="hljs-comment">// 自动加前缀</span>
+    .pipe(autoprefixer({
+      <span class="hljs-attr">browsers</span>: [<span class="hljs-string">'last 2 versions'</span>],
+      <span class="hljs-attr">cascade</span>: <span class="hljs-literal">false</span>
+    }))
+    <span class="hljs-comment">// 将编译生成的css放入生成的博客项目下的 static/css 文件夹中</span>
+    .pipe(gulp.dest(path.resolve(root, <span class="hljs-string">'static/css'</span>)));
+});
+
+<span class="hljs-comment">// 监听css文件的改动，编译css</span>
+gulp.task(<span class="hljs-string">'cssDev'</span>, () =&gt; {
+  log(<span class="hljs-string">'Starting watch less files...'</span>);
+  <span class="hljs-keyword">return</span> gulp.watch([path.resolve(__dirname, <span class="hljs-string">'less/**/*.less'</span>), path.resolve(root, <span class="hljs-string">'static/less/**/*.less'</span>)], [<span class="hljs-string">'css'</span>]);
+});
+
+<span class="hljs-comment">// 监听markdown文件的改动，编译首页和博客文章页</span>
+gulp.task(<span class="hljs-string">'mdDev'</span>, () =&gt; {
+  log(<span class="hljs-string">'Starting watch markdown files...'</span>);
+  <span class="hljs-keyword">return</span> gulp.watch(path.resolve(root, <span class="hljs-string">'_posts/**/*.md'</span>), [<span class="hljs-string">'home'</span>, <span class="hljs-string">'blog'</span>]);
+});
+
+<span class="hljs-comment">// 编译首页</span>
+gulp.task(<span class="hljs-string">'home'</span>, buildHome);
+
+<span class="hljs-comment">// build博客</span>
+gulp.task(<span class="hljs-string">'blog'</span>, build);
+
+gulp.task(<span class="hljs-string">'default'</span>, [<span class="hljs-string">'build'</span>]);
+
+<span class="hljs-comment">// 监听模式</span>
+gulp.task(<span class="hljs-string">'dev'</span>, [<span class="hljs-string">'cssDev'</span>, <span class="hljs-string">'mdDev'</span>]);
+
+<span class="hljs-comment">// 执行build的时候会编译css，编译首页，编译文章页</span>
+gulp.task(<span class="hljs-string">'build'</span>, [<span class="hljs-string">'css'</span>, <span class="hljs-string">'home'</span>, <span class="hljs-string">'blog'</span>]);
+
+<span class="hljs-comment">// 生成iconfonts</span>
+gulp.task(<span class="hljs-string">'fonts'</span>, () =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Task: [Generate icon fonts and stylesheets and preview html]'</span>);
+  <span class="hljs-keyword">return</span> gulp.src([path.resolve(root, <span class="hljs-string">'static/iconfonts/svgs/**/*.svg'</span>)])
+    .pipe(iconfontCss({
+      <span class="hljs-attr">fontName</span>: <span class="hljs-string">'icons'</span>,
+      <span class="hljs-attr">path</span>: <span class="hljs-string">'css'</span>,
+      <span class="hljs-attr">targetPath</span>: <span class="hljs-string">'icons.css'</span>,
+      <span class="hljs-attr">cacheBuster</span>: <span class="hljs-built_in">Math</span>.random()
+    }))
+    .pipe(iconfont({
+      <span class="hljs-attr">fontName</span>: <span class="hljs-string">'icons'</span>,
+      <span class="hljs-attr">prependUnicode</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">fontHeight</span>: <span class="hljs-number">1000</span>,
+      <span class="hljs-attr">normalize</span>: <span class="hljs-literal">true</span>
+    }))
+    .pipe(gulp.dest(path.resolve(root, <span class="hljs-string">'static/iconfonts/icons'</span>)));
+});</code></pre>
+<h3 id="六、cli文件">
+      <a href="#六、cli文件" aria-hidden="true"><i class="icon icon-link"></i></a>
+      六、cli文件
+    </h3>
+<p>我们已经把gulpfile写完了，下面就要写我们的命令行工具了，并且集成gulp。代码如下：</p>
+<pre><code class="language-js"><span class="hljs-comment">// cli.js</span>
+<span class="hljs-meta">#!/usr/bin/env node</span>
+
+<span class="hljs-keyword">const</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-keyword">const</span> program = <span class="hljs-built_in">require</span>(<span class="hljs-string">'commander'</span>); <span class="hljs-comment">// 命令行参数解析</span>
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs-extra'</span>);
+<span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+<span class="hljs-keyword">const</span> spawn = <span class="hljs-built_in">require</span>(<span class="hljs-string">'cross-spawn'</span>);
+<span class="hljs-keyword">const</span> chalk = <span class="hljs-built_in">require</span>(<span class="hljs-string">'chalk'</span>);
+<span class="hljs-keyword">const</span> dateTime = <span class="hljs-built_in">require</span>(<span class="hljs-string">'date-time'</span>);
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'../lib/gulpfile'</span>);
+<span class="hljs-keyword">const</span> { version } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../package.json'</span>);
+<span class="hljs-keyword">const</span> root = process.cwd();
+
+<span class="hljs-comment">// 判断是否是所生成博客项目的根目录（因为我们必须进入到所生成的博客项目中，才可以执行我们的build和dev等命令）</span>
+<span class="hljs-keyword">const</span> isRoot = fs.existsSync(path.resolve(root, <span class="hljs-string">'_posts'</span>));
+<span class="hljs-comment">// 如果不是根目录的话，输出的内容</span>
+<span class="hljs-keyword">const</span> notRootError = chalk.red(<span class="hljs-string">'\nError: You should in the root path of blog project!\n'</span>);
+
+<span class="hljs-comment">// 参数解析，正如我们上面所设计的命令用法，我们实现了以下几个命令</span>
+<span class="hljs-comment">// bloger init [blogName]</span>
+<span class="hljs-comment">// bloger new [blog]</span>
+<span class="hljs-comment">// bloger build</span>
+<span class="hljs-comment">// bloger dev</span>
+<span class="hljs-comment">// bloger iconfonts</span>
+program
+  .version(version)
+  .option(<span class="hljs-string">'init [blogName]'</span>, <span class="hljs-string">'init blog project'</span>)
+  .option(<span class="hljs-string">'new [blog]'</span>, <span class="hljs-string">'Create a new blog'</span>)
+  .option(<span class="hljs-string">'build'</span>, <span class="hljs-string">'Build blog'</span>)
+  .option(<span class="hljs-string">'dev'</span>, <span class="hljs-string">'Writing blog, watch mode.'</span>)
+  .option(<span class="hljs-string">'iconfonts'</span>, <span class="hljs-string">'Generate iconfonts.'</span>)
+  .parse(process.argv);
+
+<span class="hljs-comment">// 如果使用 bloger init 命令的话，执行以下操作</span>
+<span class="hljs-keyword">if</span> (program.init) {
+  <span class="hljs-keyword">const</span> projectName = <span class="hljs-keyword">typeof</span> program.init === <span class="hljs-string">'string'</span> ? program.init : <span class="hljs-string">'blog'</span>;
+  <span class="hljs-keyword">const</span> tplPath = path.resolve(__dirname, <span class="hljs-string">'../tpl'</span>);
+  <span class="hljs-keyword">const</span> projectPath = path.resolve(root, projectName);
+  <span class="hljs-comment">// 将我们的项目模版复制到当前目录下</span>
+  fs.copy(tplPath, projectPath)
+    .then(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'\nInit project success!'</span>);
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'\nInstall npm packages...\n'</span>);
+      fs.ensureDirSync(projectPath); <span class="hljs-comment">// 确保存在项目目录</span>
+      process.chdir(projectPath); <span class="hljs-comment">// 进入到我们生成的博客项目，然后执行 npm install 操作</span>
+      <span class="hljs-keyword">const</span> commond = <span class="hljs-string">'npm'</span>;
+      <span class="hljs-keyword">const</span> args = [
+        <span class="hljs-string">'install'</span>
+      ];
+
+      <span class="hljs-comment">// npm install</span>
+      spawn(commond, args, { <span class="hljs-attr">stdio</span>: <span class="hljs-string">'inherit'</span> }).on(<span class="hljs-string">'close'</span>, code =&gt; {
+        <span class="hljs-keyword">if</span> (code !== <span class="hljs-number">0</span>) {
+          process.exit(<span class="hljs-number">1</span>);
+        }
+        <span class="hljs-comment">// npm install 之后执行 npm run build，构建博客项目</span>
+        spawn(<span class="hljs-string">'npm'</span>, [<span class="hljs-string">'run'</span>, <span class="hljs-string">'build'</span>], { <span class="hljs-attr">stdio</span>: <span class="hljs-string">'inherit'</span> }).on(<span class="hljs-string">'close'</span>, code =&gt; {
+          <span class="hljs-keyword">if</span> (code !== <span class="hljs-number">0</span>) {
+            process.exit(<span class="hljs-number">1</span>);
+          }
+          <span class="hljs-comment">// 构建成功之后输出成功信息</span>
+          <span class="hljs-built_in">console</span>.log(chalk.cyan(<span class="hljs-string">'\nProject created!\n'</span>));
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${chalk.cyan(<span class="hljs-string">'You can'</span>)}</span> <span class="hljs-subst">${chalk.grey(<span class="hljs-string">`cd <span class="hljs-subst">${projectName}</span> &amp;&amp; npm start`</span>)}</span> <span class="hljs-subst">${chalk.cyan(<span class="hljs-string">'to serve blog website.'</span>)}</span>\n`</span>);
+        });
+      });
+    });
+}
+
+<span class="hljs-comment">// bloger build 执行的操作</span>
+<span class="hljs-keyword">if</span> (program.build &amp;&amp; gulp.tasks.build) {
+  <span class="hljs-keyword">if</span> (isRoot) {
+    gulp.start(<span class="hljs-string">'build'</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(notRootError);
+  }
+}
+
+<span class="hljs-comment">// bloger dev执行的操作</span>
+<span class="hljs-keyword">if</span> (program.dev &amp;&amp; gulp.tasks.dev) {
+  <span class="hljs-keyword">if</span> (isRoot) {
+    gulp.start(<span class="hljs-string">'dev'</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(notRootError);
+  }
+}
+
+<span class="hljs-comment">// bloger new 执行的操作</span>
+<span class="hljs-keyword">if</span> (program.new &amp;&amp; <span class="hljs-keyword">typeof</span> program.new === <span class="hljs-string">'string'</span>) {
+  <span class="hljs-keyword">if</span> (isRoot) {
+    <span class="hljs-keyword">const</span> postRoot = path.resolve(root, <span class="hljs-string">'_posts'</span>);
+    <span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+    <span class="hljs-keyword">const</span> thisYear = date.getFullYear().toString();
+    <span class="hljs-comment">// 在_posts文件夹中生成一个markdown文件，内容是下边的字符串模版</span>
+    <span class="hljs-keyword">const</span> template = <span class="hljs-string">`---\ntitle: <span class="hljs-subst">${program.<span class="hljs-keyword">new</span>}</span>\ndate: <span class="hljs-subst">${dateTime()}</span>\nauthor: 作者\ntag: 标签\nintro: 简短的介绍这篇文章.\ntype: 原创\n---\n\nBlog Content`</span>;
+    fs.ensureDirSync(path.resolve(postRoot, thisYear));
+    <span class="hljs-keyword">const</span> allList = fs.readdirSync(path.resolve(postRoot, thisYear)).map(<span class="hljs-function"><span class="hljs-params">name</span> =&gt;</span> name.split(<span class="hljs-string">'.md'</span>)[<span class="hljs-number">0</span>]);
+    <span class="hljs-comment">// name exist</span>
+    <span class="hljs-keyword">if</span> (~allList.indexOf(program.new)) {
+      <span class="hljs-built_in">console</span>.log(chalk.red(<span class="hljs-string">`\nFile <span class="hljs-subst">${program.<span class="hljs-keyword">new</span>}</span>.md already exist!\n`</span>));
+      process.exit(<span class="hljs-number">2</span>);
+    }
+    fs.outputFile(path.resolve(postRoot, thisYear, <span class="hljs-string">`<span class="hljs-subst">${program.<span class="hljs-keyword">new</span>}</span>.md`</span>), template, <span class="hljs-string">'utf8'</span>, (err) =&gt; {
+      <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+      <span class="hljs-built_in">console</span>.log(chalk.green(<span class="hljs-string">`\nCreate new blog <span class="hljs-subst">${chalk.cyan(<span class="hljs-string">`<span class="hljs-subst">${program.<span class="hljs-keyword">new</span>}</span>.md`</span>)}</span> done!\n`</span>));
+    });
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(notRootError);
+  }
+}
+
+<span class="hljs-comment">// bloger iconfonts执行的操作</span>
+<span class="hljs-keyword">if</span> (program.iconfonts &amp;&amp; gulp.tasks.fonts) {
+  <span class="hljs-keyword">if</span> (isRoot) {
+    gulp.start(<span class="hljs-string">'fonts'</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(notRootError);
+  }
+}</code></pre>
+<blockquote>
+<p>完整的项目源代码：<a href="https://github.com/PengJiyuan/bloger">https://github.com/PengJiyuan/bloger</a></p>
+<p>相关阅读：<a href="/blog/2018/how-to-write-cli-tool">手把手教你写一个命令行工具</a></p>
+</blockquote>
+<p><strong>本章完</strong></p>
+
+        
+          <div style="margin-top: 80px;" id="disqus_thread"></div>
+          <script>
+            var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://pengjiyuan-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+      </div>
+      <footer class="copyright">
+        <span><b><a href="/">PengJiyuan</a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: '#fff'
+      });
+    </script>
+  </body>
+</html>
