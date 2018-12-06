@@ -20,6 +20,12 @@
 
 👊 **一个基于antd实现的一套组件封装，用于开发管理平台面板。配置 = 界面**
 
+## 小游戏
+
+### [FlappyBird](https://github.com/PengJiyuan/FlappyBird)
+
+**Flappy Bird像素鸟小游戏.**
+
 ## Cli 工具
 
 ### [Bloger](https://github.com/PengJiyuan/bloger)
