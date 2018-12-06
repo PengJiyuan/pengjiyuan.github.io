@@ -5,6 +5,7 @@ author: PengJiyuan
 tag: JavaScript,NodeJs
 intro: 手把手教你学会写NodeJs的cli工具
 type: 原创
+top: true
 keywords: 命令行,cli,工具,JavaScript,nodejs,npm,JS,js,手把手教你,shell
 ---
 
