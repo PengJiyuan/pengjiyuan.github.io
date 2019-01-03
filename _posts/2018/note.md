@@ -66,6 +66,25 @@ nvm use version
 nvm alias default v5.9.0
 ```    
 
+## NRM
+
+npm源管理工具。
+
+```bash
+npm i nrm -g
+```
+
+```bash
+$ nrm ls
+
+* npm -----  https://registry.npmjs.org/
+  cnpm ----  http://r.cnpmjs.org/
+  taobao --  https://registry.npm.taobao.org/
+  nj ------  https://registry.nodejitsu.com/
+  rednpm -- http://registry.mirror.cqupt.edu.cn
+  skimdb -- https://skimdb.npmjs.com/registry
+```
+
 ## git安装及配置
 
 ### 1.  安装git    
