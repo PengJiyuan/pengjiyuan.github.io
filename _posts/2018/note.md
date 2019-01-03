@@ -3,7 +3,7 @@ title: 一些工具的安装
 date: 2018/08/05
 author: PengJiyuan
 tag: 笔记
-intro: 这里记录了我的一些备忘的操作和命令，这个备忘录较早，其中可能大部分都不使用了!
+intro: 记录一些备忘的东西。
 ---
 
 # 环境搭建(Ubuntu下)：
@@ -108,45 +108,6 @@ __创建SSH Key:__
 
 进入/c/Users/Administrator/.ssh目录，`ssh-keygen -t rsa -C "youremail@example.com"` ,接下来同linux操作。
 
-## grunt的安装和配置：    
-
-安装grunt和grunt-cli  
-  
-```bash
-$ npm install -g grunt-cli    
-
-$ npm install grunt -g
-```
-
-
-安装grunt插件    
-```bash
-$ npm install <module> --save-dev
-```
-
-## webpack的安装和使用    
-
-### 1.  安装    
-
-```bash
-$ npm install webpack -g    
-
-$ pm install webpack --save-dev
-```
-
-
-### 2.  命令行操作    
-
-```bash
-$ webpack --config XXX.js   //使用另一份配置文件（比如webpack.config2.js）来打包
- 
-$ webpack --watch   //监听变动并自动打包
-         
-$ webpack -p    //压缩混淆脚本，这个非常非常重要！
-         
-$ webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了   
-```
-
 ##  sublime text 3的安装       
 
 ```bash
@@ -154,7 +115,7 @@ $ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 
 $ sudo apt-get update    
 
-$ sudo apt-get install sublime-text-installer    
+$ sudo apt-get install sublime-text-installer
 ```
 
 ##  google chrome安装    
