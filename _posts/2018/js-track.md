@@ -7,6 +7,49 @@ intro: 记录一些Javascript上小技巧和备忘.
 type: 原创
 ---
 
+## @装饰符
+
+有时候会看到这样的写法，比如react-router的connect函数，本身是一个HOC，用于包裹组件，如下：
+
+```js
+class A extends React.Component {
+  ...
+}
+
+export default connect({...})(A);
+```
+
+那么要是用上@装饰符就可以这么来写：
+
+```js
+@connect({...});
+export default class A extends React.Component {
+  ...
+}
+```
+
+记住`@`必须在class前。
+
+其实`@`就是一个语法糖而已，需要配合babel的`babel-plugin-transform-decorators-legacy`插件使用：
+
+```json
+{
+  "plugins":[
+    "transform-decorators-legacy"
+  ]
+}
+```
+
+如果你用的是vscode, 可以在项目根目录下添加jsconfig.json文件来消除代码警告：
+
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true
+  }
+}
+```
+
 ## Position
 
 #### Fixed

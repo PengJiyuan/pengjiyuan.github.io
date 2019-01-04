@@ -72,7 +72,35 @@
           本文由 <a href="/">PengJiyuan</a> 创作，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">知识共享署名 3.0 (CC BY-NC-ND 3.0)</a> 国际许可协议进行许可, 转载请注明出处，禁止商业性使用，禁止演绎。
         </div>
         
-        <h2 id="position">
+        <h2 id="@装饰符">
+      <a href="#@装饰符" aria-hidden="true"><i class="icon icon-link"></i></a>
+      @装饰符
+    </h2>
+<p>有时候会看到这样的写法，比如react-router的connect函数，本身是一个HOC，用于包裹组件，如下：</p>
+<pre><code class="language-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  ...
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect({...})(A);</code></pre>
+<p>那么要是用上@装饰符就可以这么来写：</p>
+<pre><code class="language-js">@connect({...});
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  ...
+}</code></pre>
+<p>记住<code>@</code>必须在class前。</p>
+<p>其实<code>@</code>就是一个语法糖而已，需要配合babel的<code>babel-plugin-transform-decorators-legacy</code>插件使用：</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"plugins"</span>:[
+    <span class="hljs-string">"transform-decorators-legacy"</span>
+  ]
+}</code></pre>
+<p>如果你用的是vscode, 可以在项目根目录下添加jsconfig.json文件来消除代码警告：</p>
+<pre><code class="language-json">{
+  <span class="hljs-attr">"compilerOptions"</span>: {
+    <span class="hljs-attr">"experimentalDecorators"</span>: <span class="hljs-literal">true</span>
+  }
+}</code></pre>
+<h2 id="position">
       <a href="#position" aria-hidden="true"><i class="icon icon-link"></i></a>
       Position
     </h2>
