@@ -9,7 +9,7 @@ type: 原创
 
 ## @装饰符
 
-有时候会看到这样的写法，比如react-router的connect函数，本身是一个HOC，用于包裹组件，如下：
+有时候会看到这样的写法，比如react-redux的connect函数，本身是一个HOC，用于包裹组件，如下：
 
 ```js
 class A extends React.Component {
