@@ -4,6 +4,7 @@
   <img src="https://img.shields.io/github/stars/PengJiyuan/ai-tech-wiki?style=social" alt="stars">
   <img src="https://img.shields.io/github/forks/PengJiyuan/ai-tech-wiki?style=social" alt="forks">
   <img src="https://img.shields.io/github/license/PengJiyuan/ai-tech-wiki" alt="license">
+  <img src="https://img.shields.io/github/last-commit/PengJiyuan/ai-tech-wiki/main" alt="lastcommit">
 </p>
 
 > 从零开始，体系化学习 AI。面向开发者的实用 AI 教程仓库。
@@ -22,7 +23,7 @@
 |------|------|
 | [注册 ChatGPT](./docs/04-register-chatgpt.md) | ChatGPT 账号注册 |
 | [注册 Claude](./docs/05-register-claude.md) | Claude 账号注册 |
-| [AI 写作](./docs/06- | 用 AI ai-writing.md)帮你写文章 |
+| [AI 写作](./docs/06-ai-writing.md) | 用 AI 帮你写文章 |
 | [AI 编程](./docs/07-ai-coding.md) | 用 AI 帮你写代码 |
 
 ### 第三阶段：Prompt 工程
@@ -43,9 +44,9 @@
 ### 第五阶段：进阶技术
 | 文档 | 描述 |
 |------|------|
-| [RAG 入门](./docs/rag-intro.md) | 检索增强生成 |
-| [MCP 入门](./docs/mcp-intro.md) | 模型上下文协议 |
-| [AI Agent 入门](./docs/agent-intro.md) | AI 智能体 |
+| [RAG 入门](./docs/rag-intro.md) | 检索增强生成，掌握知识库构建 |
+| [MCP 入门](./docs/mcp-intro.md) | 模型上下文协议，AI 动手能力 |
+| [AI Agent 入门](./docs/agent-intro.md) | AI 智能体，自主完成任务 |
 
 ---
 
@@ -72,58 +73,91 @@ AI 生成的内容可以直接使用
 | 写代码 | "用 Python 写一个计算器" |
 | 解释概念 | "什么是机器学习？" |
 | 翻译 | "把这段话翻译成英文" |
+| 总结 | "帮我总结这篇文章的主要内容" |
+| 改写 | "把这段话改得更正式" |
 
 ---
 
 ## 🛠️ 技术栈
 
 ### AI 大模型
-- **OpenAI** - GPT-4, GPT-4o
-- **Anthropic** - Claude 3.5
-- **阿里** - 通义千问
-- **百度** - 文心一言
+| 模型 | 特点 | 推荐场景 |
+|------|------|----------|
+| **GPT-4** | 最强大、全面 | 复杂任务、编程 |
+| **Claude 3.5** | 安全、写作强 | 长文本、分析 |
+| **通义千问** | 中文好、免费 | 中文场景 |
+| **文心一言** | 中文生态丰富 | 国内应用 |
 
 ### 开发框架
-- **LangChain** - AI 应用开发框架
-- **LlamaIndex** - RAG 开发框架
-- **AutoGen** - 多 Agent 框架
-- **n8n** - 自动化工作流
+| 框架 | 特点 | 适用场景 |
+|------|------|----------|
+| **LangChain** | 生态最全 | AI 应用开发 |
+| **LlamaIndex** | RAG 专精 | 知识库问答 |
+| **AutoGen** | 多 Agent | 复杂协作任务 |
+| **n8n** | 无代码 | 自动化工作流 |
 
 ### 向量数据库
-- **Pinecone** - 云端向量库
-- **Milvus** - 开源向量库
-- **Chroma** - 本地向量库
-- **Qdrant** - 开源向量搜索
+| 数据库 | 特点 | 部署方式 |
+|--------|------|----------|
+| **Pinecone** | 云服务、无需运维 | 云端 |
+| **Milvus** | 功能强大、开源 | 云端/本地 |
+| **Chroma** | 简单、本地首选 | 本地 |
+| **Qdrant** | 高性能、开源 | 云端/本地 |
 
 ---
 
 ## 📖 推荐资源
 
 ### 学习平台
-- [DeepLearning.AI](https://www.deeplearning.ai/) - Andrew Ng 创办
-- [Hugging Face Course](https://huggingface.co/learn)
-- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+| 资源 | 描述 |
+|------|------|
+| [DeepLearning.AI](https://www.deeplearning.ai/) | Andrew Ng 创办的 AI 学习平台 |
+| [Hugging Face Course](https://huggingface.co/learn) | Hugging Face 官方课程 |
+| [Prompt Engineering Guide](https://www.promptingguide.ai/) | Prompt 工程指南 |
+| [Learn Prompting](https://learnprompting.org/) | 免费 Prompt 课程 |
 
 ### AI 资讯
-- [Hacker News](https://news.ycombinator.com)
-- [36kr AI](https://www.36kr.com/information/AI/)
-- [机器之心](https://www.jiqizhixin.com/)
+| 资源 | 描述 |
+|------|------|
+| [Hacker News](https://news.ycombinator.com) | 技术新闻聚合 |
+| [36kr AI](https://www.36kr.com/information/AI/) | 36kr AI 资讯 |
+| [机器之心](https://www.jiqizhixin.com/) | AI 科技媒体 |
+| [量子位](https://www.1bitit.com/) | AI 深度报道 |
+
+### 开发者工具
+| 资源 | 描述 |
+|------|------|
+| [OpenAI Platform](https://platform.openai.com/) | OpenAI 开发者平台 |
+| [Anthropic Console](https://console.anthropic.com/) | Claude API |
+| [LangChain Docs](https://python.langchain.com/) | LangChain 文档 |
+| [Model Context Protocol](https://modelcontextprotocol.io/) | MCP 官方文档 |
 
 ---
 
 ## ❓ 常见问题
 
 **Q: AI 是什么？**
-> AI 即人工智能，让计算机像人一样思考和做事。
+> AI 即人工智能（Artificial Intelligence），让计算机像人一样思考和做事。
 
 **Q: 使用 AI 需要付费吗？**
 > 基本使用免费，付费版功能更强。ChatGPT/Claude 免费版都够用。
 
 **Q: 英语不好能用 AI 吗？**
-> 能！直接用中文提问就行。
+> 能！直接用中文提问就行，国产 AI 中文能力也很强。
 
 **Q: AI 会取代人类工作吗？**
 > AI 是工具，不会取代人类。但会使用 AI 的人会取代不会用 AI 的人。
+
+**Q: 需要学编程才能用 AI 吗？**
+> 不需要！直接用 ChatGPT/Claude 对话即可。编程是进阶技能。
+
+---
+
+## 📊 仓库状态
+
+![GitHub repo size](https://img.shields.io/github/repo-size/PengJiyuan/ai-tech-wiki)
+![Total tutorials](https://img.shields.io/badge/tutorials-17+-green)
+![Last updated](https://img.shields.io/badge/last%20updated-2026--03-blue)
 
 ---
 
