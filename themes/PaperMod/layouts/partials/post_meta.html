@@ -1,12 +1,5 @@
 {{- $scratch := newScratch }}
 
-{{- $sectionNames := dict "tutorials" "AI 教程" "articles" "技术文章" "news" "每日资讯" }}
-{{- $section := .Section }}
-{{- $sectionDisplay := index $sectionNames $section | default $section }}
-{{- if and $section (ne $section "") }}
-<span class="category-tag">{{ $sectionDisplay }}</span>
-{{- end }}
-
 {{- if not .Date.IsZero -}}
 {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
 {{- end }}

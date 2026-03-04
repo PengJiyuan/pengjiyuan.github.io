@@ -1,6 +1,6 @@
 baseURL: "https://pengjiyuan.github.io/"
 languageCode: "zh-CN"
-title: "AI 技术百科"
+title: "Peng's Blog"
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -20,7 +20,7 @@ pagination:
 
 params:
   env: production
-  title: "AI 技术百科"
+  title: "Peng's Blog"
   description: "从零开始，体系化学习 AI。面向开发者和 AI 新手的技术博客。"
   keywords: [AI, 人工智能, ChatGPT, Claude, Prompt, LLM, RAG, Agent, MCP]
   author: PengJiyuan
@@ -49,9 +49,9 @@ params:
 
   # 首页模式：profile（个人介绍）
   homeInfoParams:
-    Title: "AI 技术百科"
+    Title: "Peng's Blog"
     Content: |
-      欢迎来到 **AI 技术百科** —— 从零开始，体系化学习 AI。
+      欢迎来到 **Peng's Blog** —— 从零开始，体系化学习 AI。
 
       > 面向开发者和 AI 新手的技术博客，涵盖 **AI 教程**、**技术文章**、**每日资讯** 三大板块。
 

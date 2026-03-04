@@ -17,7 +17,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive   # 拉取 PaperMod 主题
+          submodules: recursive # 拉取 PaperMod 主题
           fetch-depth: 0
 
       - name: Setup Hugo
