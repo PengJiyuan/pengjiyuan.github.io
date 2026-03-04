@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技巧 on AI 技术百科</title>
+    <link>https://pengjiyuan.github.io/tags/%E6%8A%80%E5%B7%A7/</link>
+    <description>Recent content in 技巧 on AI 技术百科</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何写出好 Prompt？</title>
+      <link>https://pengjiyuan.github.io/tutorials/09-write-good-prompt/</link>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tutorials/09-write-good-prompt/</guid>
+      <description>掌握高质量 Prompt 的核心要素：角色设定、任务描述、约束条件、输出格式，让 AI 输出更精准。</description>
+    </item>
+  </channel>
+</rss>

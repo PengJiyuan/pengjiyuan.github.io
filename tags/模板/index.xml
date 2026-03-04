@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>模板 on AI 技术百科</title>
+    <link>https://pengjiyuan.github.io/tags/%E6%A8%A1%E6%9D%BF/</link>
+    <description>Recent content in 模板 on AI 技术百科</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prompt 模板大全</title>
+      <link>https://pengjiyuan.github.io/tutorials/10-prompt-templates/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tutorials/10-prompt-templates/</guid>
+      <description>收录 50&#43; 高频使用场景的 Prompt 模板，覆盖写作、编程、分析、翻译等场景，直接复用。</description>
+    </item>
+  </channel>
+</rss>

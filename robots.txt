@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://pengjiyuan.github.io/sitemap.xml

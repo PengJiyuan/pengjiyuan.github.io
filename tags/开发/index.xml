@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>开发 on AI 技术百科</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 开发 on AI 技术百科</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 14 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是 API？</title>
+      <link>https://pengjiyuan.github.io/tutorials/11-what-is-api/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tutorials/11-what-is-api/</guid>
+      <description>API 是连接 AI 服务与你的应用之间的桥梁。本文用最简单的语言解释 API 的工作原理。</description>
+    </item>
+    <item>
+      <title>从零构建一个 AI 助手</title>
+      <link>https://pengjiyuan.github.io/tutorials/14-build-ai-assistant/</link>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tutorials/14-build-ai-assistant/</guid>
+      <description>综合前面所有知识，完整实现一个具备记忆、人格、工具调用能力的个人 AI 助手项目。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on AI 技术百科</title>
+    <link>https://pengjiyuan.github.io/tags/</link>
+    <description>Recent content in Tags on AI 技术百科</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026</title>
+      <link>https://pengjiyuan.github.io/tags/2026/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/2026/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent</title>
+      <link>https://pengjiyuan.github.io/tags/agent/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI动态</title>
+      <link>https://pengjiyuan.github.io/tags/ai%E5%8A%A8%E6%80%81/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai%E5%8A%A8%E6%80%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>智能体</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%99%BA%E8%83%BD%E4%BD%93/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%99%BA%E8%83%BD%E4%BD%93/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>资讯</title>
+      <link>https://pengjiyuan.github.io/tags/%E8%B5%84%E8%AE%AF/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E8%B5%84%E8%AE%AF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自动化</title>
+      <link>https://pengjiyuan.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI工具</title>
+      <link>https://pengjiyuan.github.io/tags/ai%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>https://pengjiyuan.github.io/tags/mcp/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>模型上下文协议</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RAG</title>
+      <link>https://pengjiyuan.github.io/tags/rag/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/rag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>向量数据库</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>知识库</title>
+      <link>https://pengjiyuan.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI应用</title>
+      <link>https://pengjiyuan.github.io/tags/ai%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai%E5%BA%94%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>开发</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>实战项目</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API</title>
+      <link>https://pengjiyuan.github.io/tags/api/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/api/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://pengjiyuan.github.io/tags/python/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>编程实战</title>
+      <link>https://pengjiyuan.github.io/tags/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>API Key</title>
+      <link>https://pengjiyuan.github.io/tags/api-key/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/api-key/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude</title>
+      <link>https://pengjiyuan.github.io/tags/claude/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/claude/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenAI</title>
+      <link>https://pengjiyuan.github.io/tags/openai/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/openai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>入门</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%85%A5%E9%97%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt</title>
+      <link>https://pengjiyuan.github.io/tags/prompt/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/prompt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工具箱</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>模板</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%A8%A1%E6%9D%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>技巧</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>提示词</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI编程</title>
+      <link>https://pengjiyuan.github.io/tags/ai%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Copilot</title>
+      <link>https://pengjiyuan.github.io/tags/copilot/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/copilot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>效率</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%95%88%E7%8E%87/</link>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%95%88%E7%8E%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI写作</title>
+      <link>https://pengjiyuan.github.io/tags/ai%E5%86%99%E4%BD%9C/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai%E5%86%99%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>内容创作</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anthropic</title>
+      <link>https://pengjiyuan.github.io/tags/anthropic/</link>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/anthropic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>注册</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%B3%A8%E5%86%8C/</link>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%B3%A8%E5%86%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>https://pengjiyuan.github.io/tags/chatgpt/</link>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://pengjiyuan.github.io/tags/ai/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>词典</title>
+      <link>https://pengjiyuan.github.io/tags/%E8%AF%8D%E5%85%B8/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E8%AF%8D%E5%85%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>术语</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%9C%AF%E8%AF%AD/</link>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%9C%AF%E8%AF%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工具</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>应用</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%BA%94%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人工智能</title>
+      <link>https://pengjiyuan.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

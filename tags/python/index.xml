@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on AI 技术百科</title>
+    <link>https://pengjiyuan.github.io/tags/python/</link>
+    <description>Recent content in Python on AI 技术百科</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 调用 AI API 实战</title>
+      <link>https://pengjiyuan.github.io/tutorials/13-call-ai-in-python/</link>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tutorials/13-call-ai-in-python/</guid>
+      <description>从零开始，用 Python 调用 OpenAI API，实现对话、续写、摘要等功能，附完整可运行代码。</description>
+    </item>
+  </channel>
+</rss>

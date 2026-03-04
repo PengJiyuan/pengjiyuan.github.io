@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>每日资讯 on AI 技术百科</title>
+    <link>https://pengjiyuan.github.io/news/</link>
+    <description>Recent content in 每日资讯 on AI 技术百科</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 资讯速递（2026年3月）</title>
+      <link>https://pengjiyuan.github.io/news/news-2026-03/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/news/news-2026-03/</guid>
+      <description>2026年3月 AI 行业重大动态：Claude Code 语音模式、GPT-5.4 泄露、多模态突破……每日追踪 AI 最新进展。</description>
+    </item>
+  </channel>
+</rss>
