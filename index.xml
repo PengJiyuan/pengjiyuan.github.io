@@ -6,7 +6,7 @@
     <description>Recent content on Peng&#39;s Blog</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RAG 入门：让 AI 拥有「外部记忆」</title>
@@ -28,6 +28,13 @@
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/agent-intro/</guid>
       <description>AI Agent 是能自主规划、使用工具、完成复杂任务的智能体。本文带你深入理解 Agent 的架构与实现。</description>
+    </item>
+    <item>
+      <title>AI 资讯速递（2026年3月5日）</title>
+      <link>https://pengjiyuan.github.io/news/2026-03-05/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/news/2026-03-05/</guid>
+      <description>2026年3月5日：AI Agent 与工作流、全球竞争格局、医疗诊断突破、多模态成主流。</description>
     </item>
     <item>
       <title>AI 资讯速递（2026年3月第1周）</title>
