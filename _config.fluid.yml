@@ -1,0 +1,249 @@
+#---------------------------
+# Hexo Theme Fluid
+# Author: Fluid-dev
+# Github: https://github.com/fluid-dev/hexo-theme-fluid
+#---------------------------
+
+#######################
+#        全局          #
+#######################
+
+# 主题版本，不要手动修改
+version: 1.9.8
+
+# 主题模式
+# light: 亮色模式
+# dark: 暗色模式
+# auto: 自动跟随系统
+mode: auto
+
+# 主色调，影响部分主题颜色
+# 必须是 16 进制颜色值
+primary_color: "#1890ff"
+
+# 页面初始时顶部横幅高度
+# 头部高度百分比 (e.g., 100%, 60%)
+banner_img_height: 60
+
+# 文章页头部区域高度
+post_banner_img_height: 45
+
+# 图标
+# 开启时，文章页各种图标均显示
+icon:
+  enable: true
+  # 图标库，支持 fontawesome, remixicon
+  icon_library: fontawesome
+
+# 链接点击统计 （不蒜子）
+web_analytics:
+  enable: false
+  busuanzi:
+    enable: false
+
+# CDN 配置，用于加速各种静态资源
+# 第三方 CDN 加速
+static_prefix:
+  # Internal static resource
+  internal_js: /js
+  internal_css: /css
+  internal_img: /img
+
+  anchor: https://cdn.staticfile.org/anchor-js/4.3.1/anchor.min.js
+  tocbot: https://cdn.staticfile.org/tocbot/4.20.1/tocbot.min.js
+  typed: https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js
+  fancybox: https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js
+  jquery: https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js
+  clipboard: https://cdn.staticfile.org/clipboard.js/2.0.11/clipboard.min.js
+  prism: https://cdn.staticfile.org/prism/1.29.0/prism.min.js
+
+#######################
+#      导航栏          #
+#######################
+
+navbar:
+  blog_title: "🤖 AI 技术百科"
+  # 导航栏滚动时是否显示
+  ground_glass:
+    enable: false
+  # 导航菜单
+  menu:
+    - { key: "首页", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "AI 教程", link: "/categories/AI教程/", icon: "iconfont icon-books" }
+    - { key: "技术文章", link: "/categories/技术文章/", icon: "iconfont icon-article" }
+    - { key: "每日资讯", link: "/categories/每日资讯/", icon: "iconfont icon-rss" }
+    - { key: "归档", link: "/archives/", icon: "iconfont icon-archive" }
+    - { key: "关于", link: "/about/", icon: "iconfont icon-user" }
+  # 搜索按钮
+  search:
+    enable: true
+
+#######################
+#      首页            #
+#######################
+
+index:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 100
+  banner_mask_alpha: 0.3
+  # 首页 Slogan 标语（打字机效果）
+  slogan:
+    enable: true
+    text: "从零开始，体系化学习 AI"
+    api:
+      enable: false
+  # 是否显示文章摘要
+  post_excerpt:
+    enable: true
+    # auto: 自动截取 
+    # description: 优先使用 Front-matter 中的 excerpt
+    type: description
+  # 自动截取的字数
+  auto_excerpt: 150
+
+#######################
+#      文章页          #
+#######################
+
+post:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 45
+  banner_mask_alpha: 0.3
+  # 文章元信息
+  meta:
+    author:
+      enable: false
+    date:
+      enable: true
+      format: "YYYY-MM-DD"
+    wordcount:
+      enable: true
+      format: "{} 字"
+    min2read:
+      enable: true
+      format: "{} 分钟"
+    views:
+      enable: false
+  # 目录
+  toc:
+    enable: true
+    placement: right
+    sticky: false
+  # 文章版权声明
+  copyright:
+    enable: true
+    default: cc_by_nc_sa
+  # 文章结尾
+  ending_index: true
+  # 评论插件
+  comments:
+    enable: false
+    type: disqus
+
+#######################
+#      归档页          #
+#######################
+
+archive:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  subtitle: "归档"
+
+#######################
+#      分类页          #
+#######################
+
+category:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  subtitle: "分类"
+  post_limit: 10
+  order_by: "-length"
+  collapse_depth: 0
+  card_height: 160
+
+#######################
+#      标签页          #
+#######################
+
+tag:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  subtitle: "标签"
+  tagcloud:
+    min_font: 15
+    max_font: 30
+    unit: px
+    start_color: "#BBBBEE"
+    end_color: "#337ab7"
+
+#######################
+#      关于页          #
+#######################
+
+about:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  subtitle: "关于本站"
+  avatar: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/avatar.png
+  name: "PengJiyuan"
+  intro: "AI 技术百科站长，致力于分享 AI 技术知识"
+  # 联系方式
+  icons:
+    - { class: "iconfont icon-github-fill", link: "https://github.com/PengJiyuan", tips: "GitHub" }
+
+#######################
+#      友链页          #
+#######################
+
+links:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  subtitle: "友情链接"
+  items:
+    - { title: "AI 新手入门教程", intro: "本站 GitHub Wiki 原版", link: "https://github.com/PengJiyuan/ai-tech-wiki", avatar: "https://github.githubassets.com/favicons/favicon.svg" }
+    - { title: "OpenAI", intro: "ChatGPT 官网", link: "https://openai.com", avatar: "https://openai.com/favicon.ico" }
+    - { title: "Anthropic", intro: "Claude AI 官网", link: "https://anthropic.com", avatar: "https://www.anthropic.com/favicon.ico" }
+
+#######################
+#      404 页          #
+#######################
+
+page404:
+  banner_img: https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/img/default.png
+  banner_img_height: 85
+  banner_mask_alpha: 0.3
+  subtitle: "页面不存在"
+
+#######################
+#      页脚            #
+#######################
+
+footer:
+  statistics:
+    enable: false
+  content: |
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+
+#######################
+#      代码高亮        #
+#######################
+
+code:
+  copy_btn: true
+  highlight:
+    enable: true
+    lib: "highlightjs"
+    highlightjs:
+      style: 'Github Gist'
+      bg_color: false
+    prismjs:
+      style: "default"
+      preprocess: true

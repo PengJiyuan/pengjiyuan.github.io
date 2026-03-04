@@ -1,0 +1,124 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: AI 技术百科
+subtitle: 从零开始，体系化学习 AI
+description: 面向开发者和 AI 新手的技术博客，涵盖 AI 教程、每日资讯和深度技术文章
+keywords: AI, 人工智能, ChatGPT, Claude, Prompt, LLM, RAG, Agent, MCP
+author: PengJiyuan
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+## Set your site URL here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://pengjiyuan.github.io
+permalink: :category/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 12
+  order_by: -date
+
+# Category & Tag
+default_category: 文章
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 12
+pagination_dir: page
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: fluid
+
+# Deployment
+deploy:
+  type: git
+  repo: git@github.com:PengJiyuan/pengjiyuan.github.io.git
+  branch: gh-pages
+
+# Search
+search:
+  path: search.xml
+  field: post
+  content: true
+
+# Feed
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# Archive
+archive_generator:
+  per_page: 0
+  yearly: true
+  monthly: true
+  daily: false
+
+# Category generator
+category_generator:
+  per_page: 12
+
+# Tag generator
+tag_generator:
+  per_page: 12
