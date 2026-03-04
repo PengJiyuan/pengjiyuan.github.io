@@ -25,23 +25,23 @@ TocOpen: true
 
 ### 以前的问题
 
-```
-AI 只能聊天 ✗
-每个工具都要单独开发接口 ✗
+```text
+AI 只能聊天 (不支持)
+每个工具都要单独开发接口 (不支持)
 ```
 
 ### 有 MCP 后
 
-```
-AI 不仅能聊天，还能做事 ✓
-一个协议连接所有工具 ✓
+```text
+AI 不仅能聊天，还能做事 (支持)
+一个协议连接所有工具 (支持)
 ```
 
 ---
 
 ## MCP 的核心概念
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                        AI 应用                              │
 │                    (ChatGPT、Claude)                        │
@@ -86,13 +86,13 @@ AI 不仅能聊天，还能做事 ✓
 
 | 类型 | 功能 | 示例 |
 |------|------|------|
-| 🖥️ 终端 | 执行命令行 | run command |
-| 📁 文件 | 读写文件 | read/write file |
-| 🔍 搜索 | 联网搜索 | web search |
-| 📝 Git | Git 操作 | commit, push, PR |
-| 💻 代码 | 代码执行 | execute code |
-| 📊 数据库 | 数据库查询 | SQL query |
-| 🖼️ 网页 | 浏览器控制 | browser automation |
+| 终端 | 执行命令行 | run command |
+| 文件 | 读写文件 | read/write file |
+| 搜索 | 联网搜索 | web search |
+| Git | Git 操作 | commit, push, PR |
+| 代码 | 代码执行 | execute code |
+| 数据库 | 数据库查询 | SQL query |
+| 网页 | 浏览器控制 | browser automation |
 
 ---
 
