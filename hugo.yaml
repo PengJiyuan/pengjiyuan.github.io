@@ -74,10 +74,6 @@ params:
 
 menu:
   main:
-    - identifier: tutorials
-      name: "AI 教程"
-      url: /tutorials/
-      weight: 10
     - identifier: articles
       name: "技术文章"
       url: /articles/
