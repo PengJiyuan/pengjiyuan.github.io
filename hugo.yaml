@@ -49,10 +49,10 @@ params:
 
   # 首页模式：profile（个人介绍）
   homeInfoParams:
-    Title: "🤖 AI 技术百科"
+    Title: "AI 技术百科"
     Content: |
       欢迎来到 **AI 技术百科** —— 从零开始，体系化学习 AI。
-      
+
       > 面向开发者和 AI 新手的技术博客，涵盖 **AI 教程**、**技术文章**、**每日资讯** 三大板块。
 
   socialIcons:
@@ -75,31 +75,31 @@ params:
 menu:
   main:
     - identifier: tutorials
-      name: "🎓 AI 教程"
+      name: "AI 教程"
       url: /tutorials/
       weight: 10
     - identifier: articles
-      name: "🔬 技术文章"
+      name: "技术文章"
       url: /articles/
       weight: 20
     - identifier: news
-      name: "📰 每日资讯"
+      name: "每日资讯"
       url: /news/
       weight: 30
     - identifier: tags
-      name: "🏷️ 标签"
+      name: "标签"
       url: /tags/
       weight: 40
     - identifier: archives
-      name: "📦 归档"
+      name: "归档"
       url: /archives/
       weight: 50
     - identifier: search
-      name: "🔍 搜索"
+      name: "搜索"
       url: /search/
       weight: 60
     - identifier: about
-      name: "👤 关于"
+      name: "关于"
       url: /about/
       weight: 70
 
@@ -107,12 +107,12 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON   # 搜索功能需要
+    - JSON # 搜索功能需要
 
 markup:
   goldmark:
     renderer:
-      unsafe: true   # 允许 HTML
+      unsafe: true # 允许 HTML
   highlight:
     noClasses: false
     anchorLineNos: true
