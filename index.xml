@@ -23,13 +23,6 @@
       <description>RAG（检索增强生成）是构建企业知识库问答系统的核心技术。本文系统介绍 RAG 原理、流程与实践。</description>
     </item>
     <item>
-      <title>什么是 AI？</title>
-      <link>https://pengjiyuan.github.io/tutorials/01-what-is-ai/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/01-what-is-ai/</guid>
-      <description>AI 即人工智能（Artificial Intelligence），让计算机像人一样思考和做事。本文带你了解 AI 的定义、发展历程，以及它与我们生活的关系。</description>
-    </item>
-    <item>
       <title>MCP 入门：给 AI 装上「手脚」</title>
       <link>https://pengjiyuan.github.io/articles/mcp-intro/</link>
       <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
@@ -37,102 +30,11 @@
       <description>MCP（模型上下文协议）让 AI 能够调用外部工具、访问文件、浏览网页。这是 AI 从「说」到「做」的关键一跃。</description>
     </item>
     <item>
-      <title>AI 能做什么？</title>
-      <link>https://pengjiyuan.github.io/tutorials/02-what-ai-can-do/</link>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/02-what-ai-can-do/</guid>
-      <description>AI 的能力边界究竟在哪里？本文全景梳理 AI 在写作、编程、翻译、绘画、语音等各领域的实际应用。</description>
-    </item>
-    <item>
       <title>AI Agent 入门：自主完成任务的智能体</title>
       <link>https://pengjiyuan.github.io/articles/agent-intro/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/agent-intro/</guid>
       <description>AI Agent 是能自主规划、使用工具、完成复杂任务的智能体。本文带你深入理解 Agent 的架构与实现。</description>
-    </item>
-    <item>
-      <title>AI 术语大全</title>
-      <link>https://pengjiyuan.github.io/tutorials/03-ai-terms/</link>
-      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/03-ai-terms/</guid>
-      <description>LLM、Token、Fine-tuning、Embedding... 入门 AI 必须掌握的核心术语全解析，从此不再看天书。</description>
-    </item>
-    <item>
-      <title>注册 ChatGPT 完整教程</title>
-      <link>https://pengjiyuan.github.io/tutorials/04-register-chatgpt/</link>
-      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/04-register-chatgpt/</guid>
-      <description>手把手教你注册 ChatGPT 账号，包括常见问题解决方案，让你顺利开始 AI 之旅。</description>
-    </item>
-    <item>
-      <title>注册 Claude 完整教程</title>
-      <link>https://pengjiyuan.github.io/tutorials/05-register-claude/</link>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/05-register-claude/</guid>
-      <description>Claude 是 Anthropic 打造的高质量 AI 助手，本文教你快速注册并开始使用 Claude。</description>
-    </item>
-    <item>
-      <title>用 AI 写文章：从入门到精通</title>
-      <link>https://pengjiyuan.github.io/tutorials/06-ai-writing/</link>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/06-ai-writing/</guid>
-      <description>学会用 AI 辅助写作，提升 10 倍内容产出效率。涵盖博客、报告、邮件等各类写作场景。</description>
-    </item>
-    <item>
-      <title>用 AI 写代码：开发者必读</title>
-      <link>https://pengjiyuan.github.io/tutorials/07-ai-coding/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/07-ai-coding/</guid>
-      <description>AI 编程助手已经成为开发者的标配工具。本文教你如何用 AI 提升编程效率、快速解决问题。</description>
-    </item>
-    <item>
-      <title>什么是 Prompt？</title>
-      <link>https://pengjiyuan.github.io/tutorials/08-what-is-prompt/</link>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/08-what-is-prompt/</guid>
-      <description>Prompt 是与 AI 沟通的语言。理解 Prompt 的本质，是充分发挥 AI 能力的第一步。</description>
-    </item>
-    <item>
-      <title>如何写出好 Prompt？</title>
-      <link>https://pengjiyuan.github.io/tutorials/09-write-good-prompt/</link>
-      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/09-write-good-prompt/</guid>
-      <description>掌握高质量 Prompt 的核心要素：角色设定、任务描述、约束条件、输出格式，让 AI 输出更精准。</description>
-    </item>
-    <item>
-      <title>Prompt 模板大全</title>
-      <link>https://pengjiyuan.github.io/tutorials/10-prompt-templates/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/10-prompt-templates/</guid>
-      <description>收录 50&#43; 高频使用场景的 Prompt 模板，覆盖写作、编程、分析、翻译等场景，直接复用。</description>
-    </item>
-    <item>
-      <title>什么是 API？</title>
-      <link>https://pengjiyuan.github.io/tutorials/11-what-is-api/</link>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/11-what-is-api/</guid>
-      <description>API 是连接 AI 服务与你的应用之间的桥梁。本文用最简单的语言解释 API 的工作原理。</description>
-    </item>
-    <item>
-      <title>如何获取 AI API Key</title>
-      <link>https://pengjiyuan.github.io/tutorials/12-get-api-key/</link>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/12-get-api-key/</guid>
-      <description>一站式指南：OpenAI、Anthropic、通义千问等主流厂商 API Key 申请全流程。</description>
-    </item>
-    <item>
-      <title>Python 调用 AI API 实战</title>
-      <link>https://pengjiyuan.github.io/tutorials/13-call-ai-in-python/</link>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/13-call-ai-in-python/</guid>
-      <description>从零开始，用 Python 调用 OpenAI API，实现对话、续写、摘要等功能，附完整可运行代码。</description>
-    </item>
-    <item>
-      <title>从零构建一个 AI 助手</title>
-      <link>https://pengjiyuan.github.io/tutorials/14-build-ai-assistant/</link>
-      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tutorials/14-build-ai-assistant/</guid>
-      <description>综合前面所有知识，完整实现一个具备记忆、人格、工具调用能力的个人 AI 助手项目。</description>
     </item>
     <item>
       <title>关于本站</title>

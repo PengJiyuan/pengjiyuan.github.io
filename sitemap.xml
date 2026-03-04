@@ -8,53 +8,11 @@
     <loc>https://pengjiyuan.github.io/articles/rag-intro/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/01-what-is-ai/</loc>
-    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/articles/mcp-intro/</loc>
     <lastmod>2026-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/02-what-ai-can-do/</loc>
-    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/articles/agent-intro/</loc>
     <lastmod>2026-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/03-ai-terms/</loc>
-    <lastmod>2026-02-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/04-register-chatgpt/</loc>
-    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/05-register-claude/</loc>
-    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/06-ai-writing/</loc>
-    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/07-ai-coding/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/08-what-is-prompt/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/09-write-good-prompt/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/10-prompt-templates/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/11-what-is-api/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/12-get-api-key/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/13-call-ai-in-python/</loc>
-    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/14-build-ai-assistant/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/2026/</loc>
     <lastmod>2026-03-01T00:00:00+00:00</lastmod>
@@ -103,96 +61,6 @@
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tutorials/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/ai%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/api/</loc>
-    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/python/</loc>
-    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
-    <lastmod>2026-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/api-key/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/claude/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/openai/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2026-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/prompt/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E7%AE%B1/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E6%A8%A1%E6%9D%BF/</loc>
-    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/</loc>
-    <lastmod>2026-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/ai%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/copilot/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E6%95%88%E7%8E%87/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/ai%E5%86%99%E4%BD%9C/</loc>
-    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/</loc>
-    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/anthropic/</loc>
-    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E6%B3%A8%E5%86%8C/</loc>
-    <lastmod>2026-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/chatgpt/</loc>
-    <lastmod>2026-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/ai/</loc>
-    <lastmod>2026-02-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E8%AF%8D%E5%85%B8/</loc>
-    <lastmod>2026-02-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E6%9C%AF%E8%AF%AD/</loc>
-    <lastmod>2026-02-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2026-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
-    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/categories/</loc>
   </url><url>
