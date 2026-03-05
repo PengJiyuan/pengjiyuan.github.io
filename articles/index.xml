@@ -16,18 +16,11 @@
       <description>2026 年 AI 的发展走向何方？褪去营销包装后，真正改变工程实践的技术趋势是什么？从推理模型到 Agent 基础设施，本文从技术视角梳理值得关注的方向。</description>
     </item>
     <item>
-      <title>RAG 系统从零构建：原理、实现与工程化</title>
-      <link>https://pengjiyuan.github.io/articles/rag-intro/</link>
-      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/rag-intro/</guid>
-      <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
-    </item>
-    <item>
-      <title>MCP 协议深度解析：给 AI 接上真实世界的标准接口</title>
-      <link>https://pengjiyuan.github.io/articles/mcp-intro/</link>
-      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/mcp-intro/</guid>
-      <description>MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放协议，旨在标准化 AI 模型与外部工具之间的通信。本文深入解析 MCP 架构设计与实现方法。</description>
+      <title>用 Tiny Stable Diffusion &#43; Pillow 生成带文字的 AI 封面图</title>
+      <link>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</guid>
+      <description>所有 AI 图片产品的通用方案：用 Tiny SD 生成背景，再用 Pillow 精确渲染文字。本文完整实现这套流程，一条命令生成可直接用于博客的封面图。</description>
     </item>
     <item>
       <title>AI Agent 工程实践：从 ReAct 到多智能体协作</title>
@@ -37,11 +30,18 @@
       <description>AI Agent 是能够自主规划、调用工具、执行多步任务的 AI 系统。本文从 ReAct 模式出发，介绍 Agent 的核心架构与工程实现，包括工具调用、记忆管理和多 Agent 协作。</description>
     </item>
     <item>
-      <title>用 Tiny Stable Diffusion &#43; Pillow 生成带文字的 AI 封面图</title>
-      <link>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</link>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</guid>
-      <description>所有 AI 图片产品的通用方案：用 Tiny SD 生成背景，再用 Pillow 精确渲染文字。本文完整实现这套流程，一条命令生成可直接用于博客的封面图。</description>
+      <title>MCP 协议深度解析：给 AI 接上真实世界的标准接口</title>
+      <link>https://pengjiyuan.github.io/articles/mcp-intro/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/mcp-intro/</guid>
+      <description>MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放协议，旨在标准化 AI 模型与外部工具之间的通信。本文深入解析 MCP 架构设计与实现方法。</description>
+    </item>
+    <item>
+      <title>RAG 系统从零构建：原理、实现与工程化</title>
+      <link>https://pengjiyuan.github.io/articles/rag-intro/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/rag-intro/</guid>
+      <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
     </item>
   </channel>
 </rss>
