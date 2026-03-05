@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/rag/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>RAG 入门：让 AI 拥有「外部记忆」</title>
+      <title>RAG 系统从零构建：原理、实现与工程化</title>
       <link>https://pengjiyuan.github.io/articles/rag-intro/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/rag-intro/</guid>
-      <description>RAG（检索增强生成）是构建企业知识库问答系统的核心技术。本文系统介绍 RAG 原理、流程与实践。</description>
+      <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
     </item>
   </channel>
 </rss>
