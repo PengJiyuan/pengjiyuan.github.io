@@ -1,13 +1,16 @@
 ---
 title: "MCP 协议深度解析：给 AI 接上真实世界的标准接口"
 date: 2026-02-25
-weight: 2
 tags:
   - "MCP"
   - "Anthropic"
   - "AI Agent"
   - "工具调用"
 description: "MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放协议，旨在标准化 AI 模型与外部工具之间的通信。本文深入解析 MCP 架构设计与实现方法。"
+cover:
+  image: "/articles/mcp-cover.png"
+  alt: "MCP 协议深度解析"
+  caption: "由 Tiny Stable Diffusion 生成"
 showToc: true
 TocOpen: true
 ---

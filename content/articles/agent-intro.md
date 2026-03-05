@@ -1,7 +1,6 @@
 ---
 title: "AI Agent 工程实践：从 ReAct 到多智能体协作"
 date: 2026-03-01
-weight: 3
 tags:
   - "AI Agent"
   - "LangChain"
@@ -9,8 +8,8 @@ tags:
   - "ReAct"
 description: "AI Agent 是能够自主规划、调用工具、执行多步任务的 AI 系统。本文从 ReAct 模式出发，介绍 Agent 的核心架构与工程实现，包括工具调用、记忆管理和多 Agent 协作。"
 cover:
-  image: "/images/ai-article-cover.png"
-  alt: "AI Neural Network Visualization"
+  image: "/articles/agent-intro-cover.png"
+  alt: "AI Agent 工程实践"
   caption: "由 Tiny Stable Diffusion 生成"
 showToc: true
 TocOpen: true

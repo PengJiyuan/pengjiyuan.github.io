@@ -1,7 +1,6 @@
 ---
 title: "用 Tiny Stable Diffusion + Pillow 生成带文字的 AI 封面图"
 date: 2026-03-05
-weight: 5
 tags:
   - "Stable Diffusion"
   - "Pillow"
@@ -9,8 +8,8 @@ tags:
   - "Python"
 description: "所有 AI 图片产品的通用方案：用 Tiny SD 生成背景，再用 Pillow 精确渲染文字。本文完整实现这套流程，一条命令生成可直接用于博客的封面图。"
 cover:
-  image: "/images/ai-article-cover.png"
-  alt: "AI Generated Cover"
+  image: "/articles/sd-cover.png"
+  alt: "AI 封面图生成方案"
   caption: "由本文介绍的方案生成"
 showToc: true
 TocOpen: true

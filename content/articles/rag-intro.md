@@ -1,13 +1,16 @@
 ---
 title: "RAG 系统从零构建：原理、实现与工程化"
 date: 2026-02-20
-weight: 1
 tags:
   - "RAG"
   - "向量数据库"
   - "LangChain"
   - "LlamaIndex"
 description: "RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。"
+cover:
+  image: "/articles/rag-cover.png"
+  alt: "RAG 系统从零构建"
+  caption: "由 Tiny Stable Diffusion 生成"
 showToc: true
 TocOpen: true
 ---

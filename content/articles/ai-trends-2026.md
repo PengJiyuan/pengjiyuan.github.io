@@ -1,13 +1,16 @@
 ---
 title: "2026 年 AI 技术趋势：从工程视角看真正重要的变化"
 date: 2026-03-05T09:00:00+08:00
-weight: 1
 tags:
   - "AI 趋势"
   - "Agent"
   - "推理模型"
   - "多模态"
 description: "2026 年 AI 的发展走向何方？褪去营销包装后，真正改变工程实践的技术趋势是什么？从推理模型到 Agent 基础设施，本文从技术视角梳理值得关注的方向。"
+cover:
+  image: "/articles/ai-trends-cover.png"
+  alt: "2026 AI 技术趋势"
+  caption: "由 Tiny Stable Diffusion 生成"
 showToc: true
 TocOpen: true
 ---
