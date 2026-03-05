@@ -10,26 +10,28 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .post-content table:not(.lntable) {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.75rem 0;
-    font-size: 0.925rem;
-    line-height: 1.6;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    display: table;
 }
 
 .post-content table:not(.lntable) th,
 .post-content table:not(.lntable) td {
-    padding: 10px 16px;
+    padding: 14px 20px;
     text-align: left;
     border-bottom: 1px solid var(--border);
+    vertical-align: top;
 }
 
 .post-content table:not(.lntable) thead th {
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.04em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--secondary);
-    border-bottom: 2px solid var(--border);
+    border-bottom: 1px solid var(--border);
     background: transparent;
+    white-space: nowrap;
 }
 
 .post-content table:not(.lntable) tbody tr:last-child td {

@@ -24,7 +24,8 @@
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}
-{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime)))) }}
+{{- $readMinutes := int (math.Max 1 (math.Round (div (float .WordCount) 180.0))) -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "read_time" $readMinutes | default (printf "%d 分钟" $readMinutes)))) }}
 {{- end }}
 
 {{- if (.Param "ShowWordCount") -}}
