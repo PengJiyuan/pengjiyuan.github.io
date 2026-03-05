@@ -8,6 +8,10 @@ tags:
   - "LangGraph"
   - "ReAct"
 description: "AI Agent 是能够自主规划、调用工具、执行多步任务的 AI 系统。本文从 ReAct 模式出发，介绍 Agent 的核心架构与工程实现，包括工具调用、记忆管理和多 Agent 协作。"
+cover:
+  image: "/images/ai-article-cover.png"
+  alt: "AI Neural Network Visualization"
+  caption: "由 Tiny Stable Diffusion 生成"
 showToc: true
 TocOpen: true
 ---
