@@ -116,9 +116,9 @@ markup:
     renderer:
       unsafe: true # 允许 HTML
   highlight:
-    noClasses: false
-    anchorLineNos: true
+    noClasses: true
+    anchorLineNos: false
     codeFences: true
     guessSyntax: true
-    lineNos: true
-    style: github-dark
+    # lineNos: true
+    style: emacs

@@ -22,7 +22,6 @@ summary: "about"
 #### 每日资讯
 追踪 AI 行业最新动态，包括大模型发布、技术突破、产品更新等。
 
----
 
 ### 关于作者
 
@@ -31,7 +30,6 @@ summary: "about"
 - GitHub：[github.com/PengJiyuan](https://github.com/PengJiyuan)
 - 原始 Wiki：[ai-tech-wiki](https://github.com/PengJiyuan/ai-tech-wiki)
 
----
 
 ### 技术栈
 
@@ -42,6 +40,5 @@ summary: "about"
 | **GitHub Pages** | 免费静态网站托管 |
 | **GitHub Actions** | 自动化 CI/CD 部署 |
 
----
 
 > **AI 学习最重要的是动手实践，不要只看不动手！**

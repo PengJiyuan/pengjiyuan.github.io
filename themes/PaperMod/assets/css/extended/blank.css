@@ -3,3 +3,125 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+/* ====================
+   表格（排除代码块内部 table）
+   ==================== */
+.post-content table:not(.lntable) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.75rem 0;
+    font-size: 0.925rem;
+    line-height: 1.6;
+}
+
+.post-content table:not(.lntable) th,
+.post-content table:not(.lntable) td {
+    padding: 10px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content table:not(.lntable) thead th {
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    border-bottom: 2px solid var(--border);
+    background: transparent;
+}
+
+.post-content table:not(.lntable) tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.post-content table:not(.lntable) tbody tr:hover td {
+    background-color: var(--code-bg);
+}
+
+/* 代码块内的 table 完全不响应 hover */
+.post-content .highlight table tr:hover td {
+    background-color: transparent !important;
+}
+
+/* ====================
+   代码高亮块
+   ==================== */
+
+/* nord inline 背景色完整显示，不被 PaperMod 覆盖 */
+.post-content .highlight:not(table) {
+    background: transparent !important;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.post-content pre code {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+/* ====================
+   引用块
+   ==================== */
+blockquote {
+    margin: 1.75rem 0;
+    padding: 0.75rem 0 0.75rem 1.25rem;
+    border-left: 3px solid var(--tertiary);
+    background-color: var(--code-bg);
+    border-radius: 0 6px 6px 0;
+    color: var(--secondary);
+    font-style: normal;
+}
+
+blockquote::before {
+    content: none;
+}
+
+blockquote p {
+    margin: 0.4rem 0;
+    padding-left: 0;
+    line-height: 1.75;
+}
+
+/* ====================
+   代码（inline）
+   ==================== */
+code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+}
+
+pre {
+    border-radius: var(--radius);
+    margin: 1.5rem 0;
+}
+
+/* ====================
+   正文排版
+   ==================== */
+.post-content h2 {
+    margin-top: 2.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content h3 {
+    margin-top: 2rem;
+}
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+}
+
+.post-content ul,
+.post-content ol {
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin: 0.4rem 0;
+    line-height: 1.75;
+}
+
