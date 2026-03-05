@@ -45,7 +45,10 @@ params:
   tocopen: true
 
   assets:
-    favicon: "/images/favicon.ico"
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    appleTouchIcon: "/apple-touch-icon.png"
 
   # 首页模式：profile（个人介绍）
   homeInfoParams:
