@@ -1,4 +1,4 @@
-# Peng's Blog
+# 棱镜空间
 
 <p align="center">
   <img src="https://img.shields.io/badge/更新频率-每日三次-brightgreen?style=flat-square" alt="update frequency">

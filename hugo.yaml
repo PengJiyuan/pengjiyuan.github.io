@@ -1,6 +1,6 @@
 baseURL: "https://pengjiyuan.github.io/"
 languageCode: "zh-CN"
-title: "Peng's Blog"
+title: "棱镜空间"
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -20,7 +20,7 @@ pagination:
 
 params:
   env: production
-  title: "Peng's Blog"
+  title: "棱镜空间"
   description: "关于 AI 的技术、资讯与思考。AI 动的是认知本身，值得认真对待。"
   keywords: [AI, 人工智能, ChatGPT, Claude, Prompt, LLM, RAG, Agent, MCP]
   author: PengJiyuan
@@ -52,7 +52,7 @@ params:
 
   # 首页模式：profile（个人介绍）
   homeInfoParams:
-    Title: "Peng's Blog"
+    # Title: "棱镜空间"
     Content: |
       嗨，我是 Peng 👋
 
