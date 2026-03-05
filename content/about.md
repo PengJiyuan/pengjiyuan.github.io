@@ -14,10 +14,7 @@ summary: "about"
 本站内容分为两大板块：
 
 #### 文章
-深入探讨 AI 前沿技术知识：
-- **RAG**（检索增强生成）：企业知识库问答的核心技术
-- **MCP**（模型上下文协议）：让 AI 具备工具调用能力
-- **AI Agent**（智能体）：自主规划、执行复杂任务
+深入探讨 AI 前沿技术知识。
 
 #### 每日资讯
 追踪 AI 行业最新动态，包括大模型发布、技术突破、产品更新等。
@@ -25,20 +22,7 @@ summary: "about"
 
 ### 关于作者
 
-**PengJiyuan**，AI 技术爱好者，关注 LLM 应用开发。
+ByteDance 程序员，聚焦 AI Coding。
 
 - GitHub：[github.com/PengJiyuan](https://github.com/PengJiyuan)
-- 原始 Wiki：[ai-tech-wiki](https://github.com/PengJiyuan/ai-tech-wiki)
 
-
-### 技术栈
-
-| 技术 | 用途 |
-|------|------|
-| **Hugo** | 静态博客框架（Go 构建，极速） |
-| **PaperMod** | 简洁美观的 Hugo 主题 |
-| **GitHub Pages** | 免费静态网站托管 |
-| **GitHub Actions** | 自动化 CI/CD 部署 |
-
-
-> **AI 学习最重要的是动手实践，不要只看不动手！**
