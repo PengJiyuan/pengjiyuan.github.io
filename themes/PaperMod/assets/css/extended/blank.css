@@ -171,11 +171,6 @@ pre {
     display: block;
 }
 
-/* 无封面图时卡片内边距回退 */
-.post-entry:not(:has(.entry-cover)) {
-    padding: var(--gap);
-}
-
 /* 移动端：上文下图 */
 @media (max-width: 640px) {
     .post-entry {
