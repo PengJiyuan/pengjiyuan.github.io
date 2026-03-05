@@ -118,7 +118,7 @@ print(result["output"])
 
 把 `verbose=True` 打开，可以看到 Agent 完整的推理链：
 
-```
+```text
 > Entering new AgentExecutor chain...
 Thought: 需要先查询比特币最新价格
 Action: search

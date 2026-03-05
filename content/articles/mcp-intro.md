@@ -34,7 +34,7 @@ Function Calling 本质上是"每次 API 调用里夹带一个工具列表"；MC
 
 MCP 有三个角色：
 
-```
+```text
 ┌──────────────────────────────────────┐
 │  Host（宿主，如 Claude Desktop）      │
 │                                      │

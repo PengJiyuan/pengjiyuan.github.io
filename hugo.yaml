@@ -81,7 +81,7 @@ params:
 menu:
   main:
     - identifier: articles
-      name: "技术文章"
+      name: "文章"
       url: /articles/
       weight: 20
     - identifier: news
