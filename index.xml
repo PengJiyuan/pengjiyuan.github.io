@@ -37,6 +37,13 @@
       <description>AI Agent 是能够自主规划、调用工具、执行多步任务的 AI 系统。本文从 ReAct 模式出发，介绍 Agent 的核心架构与工程实现，包括工具调用、记忆管理和多 Agent 协作。</description>
     </item>
     <item>
+      <title>用 Tiny Stable Diffusion &#43; Pillow 生成带文字的 AI 封面图</title>
+      <link>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</guid>
+      <description>所有 AI 图片产品的通用方案：用 Tiny SD 生成背景，再用 Pillow 精确渲染文字。本文完整实现这套流程，一条命令生成可直接用于博客的封面图。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月5日）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-05/</link>
       <pubDate>Thu, 05 Mar 2026 09:32:00 +0800</pubDate>
