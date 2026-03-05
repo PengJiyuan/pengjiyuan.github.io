@@ -1,0 +1,82 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- $pages := .RegularPages | complement (where .RegularPages "Params.hiddenInHomeList" true) }}
+{{- $paginator := .Paginate $pages }}
+
+<div class="timeline">
+  {{- /* 按月分组 */}}
+  {{- $months := slice }}
+  {{- range $paginator.Pages }}
+    {{- $ym := .Date.Format "2006-01" }}
+    {{- if not (in $months $ym) }}
+      {{- $months = $months | append $ym }}
+    {{- end }}
+  {{- end }}
+
+  {{- range $months }}
+    {{- $ym := . }}
+    {{- $monthPages := where $paginator.Pages "Date" "ge" (time (printf "%s-01" $ym)) }}
+    {{- $nextYm := "" }}{{/* 用日期比较过滤当月 */}}
+
+    {{- /* 解析年月用于标题显示 */}}
+    {{- $t := time (printf "%s-01T00:00:00Z" $ym) }}
+
+    <div class="timeline-month">
+      <div class="timeline-month-label">
+        <span class="timeline-year">{{ $t.Format "2006" }}</span>
+        <span class="timeline-mon">{{ $t.Format "01月" }}</span>
+      </div>
+
+      {{- range where $paginator.Pages "Date" "ge" (time (printf "%s-01T00:00:00Z" $ym)) }}
+        {{- if eq (.Date.Format "2006-01") $ym }}
+        <article class="timeline-entry">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">{{ .Date.Format "01/02" }}</div>
+          <div class="timeline-body">
+            <a class="timeline-title" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- if .Description }}
+            <p class="timeline-desc">{{ .Description | plainify }}</p>
+            {{- else if .Summary }}
+            <p class="timeline-desc">{{ .Summary | plainify | truncate 100 }}</p>
+            {{- end }}
+            <div class="timeline-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </div>
+        </article>
+        {{- end }}
+      {{- end }}
+    </div>
+  {{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      «&nbsp;{{ i18n "prev_page" }}
+      {{- if (.Param "ShowPageNums") }}&nbsp;{{ sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}{{- end }}
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{- i18n "next_page" }}&nbsp;»
+      {{- if (.Param "ShowPageNums") }}&nbsp;{{ add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}{{- end }}
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}
