@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on Peng&#39;s Blog</title>
+    <title>Categories on 棱镜空间</title>
     <link>https://pengjiyuan.github.io/categories/</link>
-    <description>Recent content in Categories on Peng&#39;s Blog</description>
+    <description>Recent content in Categories on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <atom:link href="https://pengjiyuan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
