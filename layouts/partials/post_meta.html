@@ -1,0 +1,42 @@
+{{- $scratch := newScratch }}
+
+{{- /* 难度标签 */ -}}
+{{- with (.Param "difficulty") -}}
+{{- $difficultyLabel := "" -}}
+{{- $difficultyClass := "" -}}
+{{- if eq . "beginner" -}}
+  {{- $difficultyLabel = "入门" -}}
+  {{- $difficultyClass = "beginner" -}}
+{{- else if eq . "intermediate" -}}
+  {{- $difficultyLabel = "进阶" -}}
+  {{- $difficultyClass = "intermediate" -}}
+{{- else if eq . "advanced" -}}
+  {{- $difficultyLabel = "高级" -}}
+  {{- $difficultyClass = "advanced" -}}
+{{- end -}}
+{{- if $difficultyLabel -}}
+{{- $scratch.Add "meta" (slice (printf "<span class=\"difficulty-badge %s\">%s</span>" $difficultyClass $difficultyLabel)) -}}
+{{- end -}}
+{{- end -}}
+
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default ":date_long" site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime)))) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" (i18n "words" .WordCount | default (printf "%d words" .WordCount)))) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice (printf "<span>%s</span>" .)) }}
+{{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}

@@ -8,6 +8,7 @@ tags:
   - "市场动态"
   - "2026"
 description: "2026年3月：Claude首次超越ChatGPT成为iOS应用商店免费榜第一，AI助手市场格局生变。"
+difficulty: intermediate
 showToc: true
 TocOpen: true
 ---

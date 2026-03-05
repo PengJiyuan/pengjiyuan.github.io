@@ -44,6 +44,9 @@ params:
   showtoc: true
   tocopen: true
 
+  # 自定义 CSS
+  customCSS: ["css/custom.css"]
+
   assets:
     favicon: "/images/favicon.ico"
 
@@ -121,4 +124,4 @@ markup:
     codeFences: true
     guessSyntax: true
     lineNos: true
-    style: monokai
+    style: github-dark

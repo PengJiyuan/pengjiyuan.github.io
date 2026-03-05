@@ -7,6 +7,7 @@ tags:
   - "模型上下文协议"
   - "AI工具"
 description: "MCP（模型上下文协议）让 AI 能够调用外部工具、访问文件、浏览网页。这是 AI 从「说」到「做」的关键一跃。"
+difficulty: beginner
 showToc: true
 TocOpen: true
 ---

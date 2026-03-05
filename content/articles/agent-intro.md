@@ -7,6 +7,7 @@ tags:
   - "智能体"
   - "自动化"
 description: "AI Agent 是能自主规划、使用工具、完成复杂任务的智能体。本文带你深入理解 Agent 的架构与实现。"
+difficulty: beginner
 showToc: true
 TocOpen: true
 ---

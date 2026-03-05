@@ -6,6 +6,7 @@ tags:
   - "2026"
   - "AI发展"
 description: "从个人生产力到团队协作，2026年AI将如何重塑工作方式？"
+difficulty: intermediate
 showToc: true
 TocOpen: true
 ---

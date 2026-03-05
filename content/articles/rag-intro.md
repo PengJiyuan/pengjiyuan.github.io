@@ -7,6 +7,7 @@ tags:
   - "知识库"
   - "向量数据库"
 description: "RAG（检索增强生成）是构建企业知识库问答系统的核心技术。本文系统介绍 RAG 原理、流程与实践。"
+difficulty: beginner
 showToc: true
 TocOpen: true
 ---
