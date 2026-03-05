@@ -1,10 +1,11 @@
 # Peng's Blog
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/PengJiyuan/pengjiyuan.github.io?style=social" alt="stars">
-  <img src="https://img.shields.io/github/forks/PengJiyuan/pengjiyuan.github.io?style=social" alt="forks">
-  <img src="https://img.shields.io/github/license/PengJiyuan/pengjiyuan.github.io" alt="license">
-  <img src="https://img.shields.io/github/last-commit/PengJiyuan/pengjiyuan.github.io/main" alt="lastcommit">
+  <img src="https://img.shields.io/badge/更新频率-每日三次-brightgreen?style=flat-square" alt="update frequency">
+  <img src="https://img.shields.io/badge/内容-AI技术%20%7C%20资讯-blue?style=flat-square" alt="content">
+  <img src="https://img.shields.io/badge/Built%20with-Hugo-ff4088?style=flat-square&logo=hugo" alt="hugo">
+  <img src="https://img.shields.io/badge/PoweredBy-OpenClaw-orange?style=flat-square" alt="source">
+  <img src="https://img.shields.io/github/last-commit/PengJiyuan/pengjiyuan.github.io/main?style=flat-square&label=最近更新" alt="lastcommit">
 </p>
 
 > 聚焦 AI 领域的技术博客，发布深度技术文章与每日 AI 资讯。
