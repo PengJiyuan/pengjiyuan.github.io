@@ -21,7 +21,7 @@ pagination:
 params:
   env: production
   title: "Peng's Blog"
-  description: "从零开始，体系化学习 AI。面向开发者和 AI 新手的技术博客。"
+  description: "关于 AI 的技术、资讯与思考。AI 动的是认知本身，值得认真对待。"
   keywords: [AI, 人工智能, ChatGPT, Claude, Prompt, LLM, RAG, Agent, MCP]
   author: PengJiyuan
   DateFormat: "2006-01-02"
@@ -51,9 +51,15 @@ params:
   homeInfoParams:
     Title: "Peng's Blog"
     Content: |
-      欢迎来到 **Peng's Blog** —— 从零开始，体系化学习 AI。
+      嗨，我是 Peng 👋
 
-      > 面向开发者和 AI 新手的技术博客，涵盖 **AI 教程**、**技术文章**、**每日资讯** 三大板块。
+      我有时候会想，AI 这波浪潮和以往的技术革命有什么不同。蒸汽机解放了体力，互联网消除了信息差，但 AI 动的是认知本身——它开始能理解语言、生成思路、做出判断。这让我觉得有点不安，又很兴奋。
+
+      不安，是因为我们还没想清楚边界在哪。兴奋，是因为这是我见过的、离“智能”最近的一次。
+
+      现在的大模型已经很能干了，但我更感兴趣的是：它究竟在“理解”什么？还是只是在做极其复杂的模式匹配？当它给出一个很好的答案，那是推理，还是记忆？这些问题可能没有标准答案，但值得一直追问下去。
+
+      技术会过时，但对技术的追问不会。
 
   socialIcons:
     - name: github
