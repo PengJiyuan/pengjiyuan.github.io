@@ -6,8 +6,15 @@
     <description>Recent content in AI Agent on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/ai-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Computer Use 深度解析：AI 如何学会操控电脑</title>
+      <link>https://pengjiyuan.github.io/articles/computer-use-deep-dive/</link>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/computer-use-deep-dive/</guid>
+      <description>Claude Computer Use 让 AI 直接操控电脑成为现实。本文深入解析这项技术的工作原理、应用场景以及它将如何改变人机交互方式。</description>
+    </item>
     <item>
       <title>AI Agent 工程实践：从 ReAct 到多智能体协作</title>
       <link>https://pengjiyuan.github.io/articles/agent-intro/</link>
