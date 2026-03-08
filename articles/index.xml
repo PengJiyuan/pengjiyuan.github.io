@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 07 Mar 2026 11:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 驱动的软件测试实战指南：2026 年工具与实践</title>
+      <link>https://pengjiyuan.github.io/articles/ai-software-testing-2026/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-software-testing-2026/</guid>
+      <description>AI 测试工具正在从实验性功能演变为关键基础设施。2026 年，AI 如何改变测试用例生成、执行和维护？本文介绍主流工具、实战方案以及引入 AI 测试的完整路径。</description>
+    </item>
     <item>
       <title>Claude Code 语音编程：编程进入「对讲机」时代</title>
       <link>https://pengjiyuan.github.io/articles/claude-code-voice-programming/</link>
