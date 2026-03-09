@@ -6,8 +6,15 @@
     <description>Recent content in MCP on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 11:00:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 编码 Agent 实战全攻略：CLI 工具与异步任务 (2026)</title>
+      <link>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</link>
+      <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</guid>
+      <description>2026 年 AI 编码工具已经从 IDE 自动补全进化到 CLI Agent 和异步任务 Agent。本文全面对比 Claude Code、Codex CLI、Cline、GitHub Copilot Agent 等主流工具，深入解析 MCP 生态和 Subagent 机制，提供完整的选型指南与实战工作流。</description>
+    </item>
     <item>
       <title>MCP 协议深度解析：给 AI 接上真实世界的标准接口</title>
       <link>https://pengjiyuan.github.io/articles/mcp-intro/</link>

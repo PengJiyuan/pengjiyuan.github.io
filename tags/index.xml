@@ -23,17 +23,31 @@
       <description></description>
     </item>
     <item>
-      <title>CLI</title>
-      <link>https://pengjiyuan.github.io/tags/cli/</link>
+      <title>Claude Code</title>
+      <link>https://pengjiyuan.github.io/tags/claude-code/</link>
       <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/cli/</guid>
+      <guid>https://pengjiyuan.github.io/tags/claude-code/</guid>
       <description></description>
     </item>
     <item>
-      <title>工具实战</title>
-      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AE%9E%E6%88%98/</link>
+      <title>Cline</title>
+      <link>https://pengjiyuan.github.io/tags/cline/</link>
       <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AE%9E%E6%88%98/</guid>
+      <guid>https://pengjiyuan.github.io/tags/cline/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Copilot</title>
+      <link>https://pengjiyuan.github.io/tags/copilot/</link>
+      <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/copilot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>https://pengjiyuan.github.io/tags/mcp/</link>
+      <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
@@ -93,10 +107,10 @@
       <description></description>
     </item>
     <item>
-      <title>Claude Code</title>
-      <link>https://pengjiyuan.github.io/tags/claude-code/</link>
+      <title>工具实战</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AE%9E%E6%88%98/</link>
       <pubDate>Sat, 07 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/claude-code/</guid>
+      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AE%9E%E6%88%98/</guid>
       <description></description>
     </item>
     <item>
@@ -202,13 +216,6 @@
       <link>https://pengjiyuan.github.io/tags/react/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/react/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCP</title>
-      <link>https://pengjiyuan.github.io/tags/mcp/</link>
-      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
