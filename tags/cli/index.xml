@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>工具实战 on 棱镜空间</title>
-    <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AE%9E%E6%88%98/</link>
-    <description>Recent content in 工具实战 on 棱镜空间</description>
+    <title>CLI on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/cli/</link>
+    <description>Recent content in CLI on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 09 Mar 2026 11:00:00 +0800</lastBuildDate>
-    <atom:link href="https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AE%9E%E6%88%98/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pengjiyuan.github.io/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI 编码 Agent 实战：从 CLI 工具到异步任务</title>
       <link>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</link>
       <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
       <guid>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</guid>
       <description>2026 年 AI 编码工具已经从 IDE 内的自动补全进化到 CLI 工具和异步 Agent。本文实战对比 Claude Code、Codex CLI、Cline 等主流 CLI 编码工具，以及 GitHub Copilot Agent、Jules 等异步任务 Agent，提供选型建议。</description>
-    </item>
-    <item>
-      <title>Claude Code 语音编程：编程进入「对讲机」时代</title>
-      <link>https://pengjiyuan.github.io/articles/claude-code-voice-programming/</link>
-      <pubDate>Sat, 07 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/claude-code-voice-programming/</guid>
-      <description>2026年3月，Anthropic 为 Claude Code 推出语音编程模式。长按空格说话，松开即完成输入——编程正在从键盘迁移到语音。本文深入解析这一交互革命的本质与未来影响。</description>
     </item>
   </channel>
 </rss>
