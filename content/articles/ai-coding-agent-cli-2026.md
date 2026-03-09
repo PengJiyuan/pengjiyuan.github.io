@@ -8,7 +8,7 @@ tags:
   - "工具实战"
 description: "2026 年 AI 编码工具已经从 IDE 内的自动补全进化到 CLI 工具和异步 Agent。本文实战对比 Claude Code、Codex CLI、Cline 等主流 CLI 编码工具，以及 GitHub Copilot Agent、Jules 等异步任务 Agent，提供选型建议。"
 cover:
-  image: "/articles/ai-coding-agent-cover.png"
+  image: "/articles/ai-coding-agent-cli-2026-cover.png"
   alt: "AI 编码 Agent 实战"
   caption: "由 Tiny Stable Diffusion 生成"
 showToc: true
