@@ -192,24 +192,164 @@ clawhub install weather
 - **飞书文档操作**：读、写、创建文档
 - **图像生成**：Tiny Stable Diffusion 文生图
 - **小红书发布**：自动化发笔记
+- **MCP 工具**：支持 Model Context Protocol 扩展
+
+### 6. MCP：模型上下文协议
+
+MCP（Model Context Protocol）是 2024 年底由 Anthropic 推出的标准化协议，让 AI 能够安全地调用外部工具。
+
+```typescript
+// 配置 MCP 服务
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/pengjiyuan/projects"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search", "--api-key", "你的 key"]
+    }
+  }
+}
+```
+
+### 7. A2A：Agent 到 Agent 通信
+
+A2A（Agent to Agent）是 2025 年 Google 推出的协议，让不同 Agent 之间能够相互通信协作。
+
+```typescript
+// 跨 Agent 协作
+const result = await a2a.send({
+  agent: "research-agent",
+  task: "调研 OpenAI 最新模型",
+  callback: "my-agent"  // 结果返回给我
+});
+```
 
 ## 实战：打造个人 AI 助手
 
-### 场景：每天早上自动推送 AI 资讯
+### 场景 1：AI 写作助手（企业场景）
 
-1. **配置定时任务**
-
-```bash
-openclaw cron add "AI 资讯推送" \
-  "cron 0 9 * * * @ Asia/Shanghai" \
-  --task "搜索昨天和今天的 AI 新闻，整理成摘要，推送到飞书"
+```
+用户需求：销售团队需要每天自动生成客户案例分析报告
 ```
 
-2. **编写推送逻辑**
+```typescript
+// 定时触发：每天早上 9 点
+// 1. 读取昨天 CRM 数据
+const crmData = await feishu_bitale_list_records({
+  app_token: "你的 CRM 应用",
+  table_id: "客户表"
+});
 
-创建一个 Subagent 来执行：
+// 2. 让 AI 分析并生成报告
+const report = await callAI({
+  model: "deepseek/deepseek-r1",
+  messages: [
+    { role: "system", content: "你是一个专业的商业分析师" },
+    { role: "user", content: `分析以下客户数据，生成今日报告：${JSON.stringify(crmData)}` }
+  ]
+});
+
+// 3. 写入飞书文档并通知相关人
+await feishu_doc({
+  action: "append",
+  doc_token: "团队共享文档",
+  content: report
+});
+
+await feishu_chat({
+  action: "send",
+  chat_id: "销售群",
+  message: "📊 今日客户分析报告已生成"
+});
+```
+
+### 场景 2：代码审查助手
+
+```
+用户需求：GitHub PR 自动审查，提供优化建议
+```
 
 ```typescript
+// 监听 GitHub Webhook
+// 当有新 PR 时自动触发
+
+const prDetails = await github.getPR({ owner, repo, pr_number });
+
+const review = await callAI({
+  model: "claude-sonnet-4",
+  messages: [
+    { 
+      role: "system", 
+      content: "你是一个资深代码审查专家，关注：安全性、性能、可维护性" 
+    },
+    { 
+      role: "user", 
+      content: `审查以下 PR：\n\nTitle: ${prDetails.title}\n\nDiff: ${prDetails.diff}` 
+    }
+  ]
+});
+
+// 评论 PR
+await github.createReviewComment({
+  owner, repo, pr_number,
+  body: review
+});
+```
+
+### 场景 3：智能客服机器人
+
+```
+用户需求：自动回复客户问题，分类处理，升级人工
+```
+
+```typescript
+// 监听消息
+onmessage(async (msg) => {
+  // 1. 意图识别
+  const intent = await callAI({
+    model: "qwen/qwen-2.5-72b",
+    messages: [
+      { role: "user", content: msg.text }
+    ],
+    tools: [{
+      name: "classify_intent",
+      description: "识别用户意图",
+      parameters: {
+        type: "object",
+        properties: {
+          intent: { type: "string", enum: ["咨询", "投诉", "技术问题", "其他"] },
+          urgency: { type: "string", enum: ["低", "中", "高"] }
+        }
+      }
+    }]
+  });
+
+  // 2. 根据意图处理
+  if (intent.intent === "技术问题") {
+    // 检索知识库
+    const solution = await rag.search(intent.query);
+    await msg.reply(solution);
+  } else if (intent.urgency === "高") {
+    // 升级人工客服
+    await notifyHuman({
+      channel: "feishu",
+      user: "客服主管",
+      message: `高优先级工单：${msg.text}`
+    });
+  }
+});
+```
+
+### 场景 4：每日 AI 资讯推送
+
+```typescript
+// 每天定时执行
+openclaw cron add "AI 资讯推送" \
+  "cron 0 9 * * * @ Asia/Shanghai"
+
 const news = await tavily_search({
   query: "AI news today",
   topic: "news",
@@ -223,21 +363,20 @@ await feishu_doc({
 });
 ```
 
-### 场景：语音助手
+### 场景 5：语音助手
 
 配合 TTS（文字转语音）：
 
 ```typescript
-// AI 生成语音回复
 await tts({
   text: "今天天气晴朗，适合外出",
-  channel: "telegram"  // 自动选择合适的格式
+  channel: "telegram"
 });
 ```
 
 结合手机节点，还能实现语音对话交互。
 
-### 场景：自动化发小红书
+### 场景 6：自动化发小红书
 
 ```typescript
 // 生成封面图
@@ -299,11 +438,23 @@ await xhs_publisher({
 
 ### Q: 支持哪些模型？
 
-理论上任何支持 Function Calling 的模型都可以用。目前测试较好的是：
-- OpenAI GPT-4o / GPT-4o-mini
-- Claude 3.5 Sonnet
-- MiniMax M2.5
-- 字节跳动的豆包
+理论上任何支持 Function Calling 的模型都可以用。2026 年主流模型推荐：
+
+**推理王者：**
+- **OpenAI o1 / o3-mini**：推理能力极强，适合复杂任务
+- **DeepSeek R1**：国产开源推理模型，免费可自部署
+- **Claude 3.7 Sonnet**：代码能力顶尖，新增 Extended Thinking 模式
+
+**多模态：**
+- **GPT-4o**：原生多模态，实时语音/视频输入
+- **Gemini 2.0 Flash**：Google 最新多模态模型，速度快
+- **Qwen 2.5 VL**：阿里开源多模态，效果逼近 GPT-4o
+
+**性价比：**
+- **DeepSeek V3**：开源白菜价，API 极便宜
+- **MiniMax M2.5**：国内稳定，支持超长上下文
+
+> 2026 年最佳实践：用 o1/DeepSeek R1 做推理，用 GPT-4o/Claude 做日常对话，用 V3/R1 做大批量任务。
 
 ### Q: 能同时用多少个渠道？
 
