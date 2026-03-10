@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpenClaw on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/openclaw/</link>
+    <description>Recent content in OpenClaw on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/openclaw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenClaw 上手指南：从安装到深度实践</title>
+      <link>https://pengjiyuan.github.io/articles/openclaw-getting-started/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/openclaw-getting-started/</guid>
+      <description>OpenClaw 是一个开源的 AI Agent 网关，支持多平台消息接入。本文详细介绍如何安装、配置、以及利用其强大的 Subagent、Cron、Memory 等功能打造个人 AI 助手。</description>
+    </item>
+  </channel>
+</rss>

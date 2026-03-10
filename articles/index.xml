@@ -16,6 +16,13 @@
       <description>A2A（Agent-to-Agent）协议是 Google 推出的开放标准，旨在解决 AI Agent 之间的通信与协作问题。本文深入解析 A2A 的核心概念、Agent Card 机制、与 MCP 的关系，以及实际开发中的应用场景。</description>
     </item>
     <item>
+      <title>OpenClaw 上手指南：从安装到深度实践</title>
+      <link>https://pengjiyuan.github.io/articles/openclaw-getting-started/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/openclaw-getting-started/</guid>
+      <description>OpenClaw 是一个开源的 AI Agent 网关，支持多平台消息接入。本文详细介绍如何安装、配置、以及利用其强大的 Subagent、Cron、Memory 等功能打造个人 AI 助手。</description>
+    </item>
+    <item>
       <title>AI 编码 Agent 实战全攻略：CLI 工具与异步任务 (2026)</title>
       <link>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</link>
       <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
