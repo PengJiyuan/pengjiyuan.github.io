@@ -198,17 +198,17 @@ clawhub install weather
 
 MCP（Model Context Protocol）是 2024 年底由 Anthropic 推出的标准化协议，让 AI 能够安全地调用外部工具。
 
-```typescript
-// 配置 MCP 服务
+```json5
+// 在 openclaw.json 中配置 MCP
 {
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/pengjiyuan/projects"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/你的项目路径"]
     },
     "brave-search": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-brave-search", "--api-key", "你的 key"]
+      "args": ["-y", "@modelcontextprotocol/server-brave-search", "--api-key", "你的 Brave API Key"]
     }
   }
 }
