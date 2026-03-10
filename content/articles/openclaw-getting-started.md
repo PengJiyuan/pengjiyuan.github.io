@@ -77,7 +77,7 @@ openclaw channels login whatsapp
 
 ### 飞书（Feishu）
 
-飞书是目前国内最常用的企业通讯工具，OpenClaw 原生支持：
+飞书是 OpenClaw 内置支持的渠道之一，开箱即用：
 
 ```bash
 openclaw channels login feishu
@@ -85,9 +85,8 @@ openclaw channels login feishu
 
 配置飞书应用权限后，可以：
 - 接收/发送消息
-- 操作飞书文档
-- 管理云盘文件
-- 操作飞书维基页面
+- 操作飞书文档、云盘、维基页面
+- 管理飞书 Bitable 多维表格
 
 详细配置见 [飞书配置文档](/channels/feishu)。
 
@@ -180,18 +179,24 @@ await browser({
 
 ### 5. Skills：自定义技能
 
-Skills 是可复用的工具集。比如你想让 AI 帮你查天气：
+Skills 是可复用的工具集。比如安装天气技能：
 
 ```bash
-# 安装天气技能
+# 从 ClawHub 安装技能
 clawhub install weather
 ```
 
-内置技能包括：
+OpenClaw 内置了大量常用技能：
 - **天气查询**：wttr.in / Open-Meteo
-- **飞书文档操作**：读、写、创建文档
+- **GitHub**：PR、Issue、Repo 管理
+- **Notion / Obsidian**：笔记操作
+- **Apple 生态**：Notes、Reminders、Things
+- **Spotify**：音乐控制
+- **TTS / STT**：语音合成与识别
+
+通过 ClawHub 还能安装更多社区技能：
 - **图像生成**：Tiny Stable Diffusion 文生图
-- **小红书发布**：自动化发笔记
+- **小红书发布**：自动化发笔记（需安装 xhs-publisher 技能）
 - **MCP 工具**：支持 Model Context Protocol 扩展
 
 ### 6. MCP：模型上下文协议
