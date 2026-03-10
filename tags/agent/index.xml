@@ -6,8 +6,15 @@
     <description>Recent content in Agent on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 09 Mar 2026 11:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A2A 协议完全指南：2026 年 AI Agent 通信标准</title>
+      <link>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</guid>
+      <description>A2A（Agent-to-Agent）协议是 Google 推出的开放标准，旨在解决 AI Agent 之间的通信与协作问题。本文深入解析 A2A 的核心概念、Agent Card 机制、与 MCP 的关系，以及实际开发中的应用场景。</description>
+    </item>
     <item>
       <title>AI 编码 Agent 实战全攻略：CLI 工具与异步任务 (2026)</title>
       <link>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</link>

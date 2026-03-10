@@ -16,6 +16,13 @@
       <description>2026年3月10日：OpenAI收购PromptFoo、腾讯WorkBuddy上线、火山引擎推出ArkClaw、AI芯片市场十年增20倍、两会热议AI治理与就业冲击。</description>
     </item>
     <item>
+      <title>A2A 协议完全指南：2026 年 AI Agent 通信标准</title>
+      <link>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</guid>
+      <description>A2A（Agent-to-Agent）协议是 Google 推出的开放标准，旨在解决 AI Agent 之间的通信与协作问题。本文深入解析 A2A 的核心概念、Agent Card 机制、与 MCP 的关系，以及实际开发中的应用场景。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月9日）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-09/</link>
       <pubDate>Mon, 09 Mar 2026 15:00:00 +0800</pubDate>
