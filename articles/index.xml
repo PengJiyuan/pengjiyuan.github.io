@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>企业级 AI Agent 安全与零信任框架：2026 实战指南</title>
+      <link>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</guid>
+      <description>2026 年，80% 的 Fortune 500 企业已部署 AI Agent，但大多数尚未建立完善的安全体系。本文深入探讨 AI Agent 带来的新型攻击面、零信任安全框架、以及企业级部署的最佳实践，帮助你在创新与安全之间找到平衡。</description>
+    </item>
     <item>
       <title>A2A 协议完全指南：2026 年 AI Agent 通信标准</title>
       <link>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</link>
