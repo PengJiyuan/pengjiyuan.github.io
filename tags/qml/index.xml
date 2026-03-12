@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>QML on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/qml/</link>
+    <description>Recent content in QML on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/qml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026 年量子计算与 AI 融合：突破之年</title>
+      <link>https://pengjiyuan.github.io/articles/quantum-ai-2026/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/quantum-ai-2026/</guid>
+      <description>2026 年被视为量子计算与 AI 融合的转折点。本文深入探讨量子 AI 的最新进展、实际应用场景、关键技术挑战，以及企业和开发者应该如何准备迎接这一技术变革。</description>
+    </item>
+  </channel>
+</rss>
