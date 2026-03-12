@@ -1,0 +1,17 @@
+{{- /* layouts/_default/_markup/render-codeblock.html */ -}}
+{{- /* 自定义代码块渲染：修复没有语言标记时的 SVG 渲染问题 */ -}}
+{{- $language := .Type -}}
+{{- $inner := .Inner -}}
+
+{{- if $language -}}
+{{- /* 有语言标记时，使用默认的高亮渲染 */ -}}
+{{- $result := transform.HighlightCodeBlock . -}}
+{{- if $result.Wrapped -}}
+{{- $result.Wrapped | safeHTML -}}
+{{- else -}}
+<pre><code>{{ $inner | htmlEscape }}</code></pre>
+{{- end -}}
+{{- else -}}
+{{- /* 没有语言标记时，直接渲染为普通代码块，不使用任何自动检测 */ -}}
+<pre><code>{{ $inner | htmlEscape }}</code></pre>
+{{- end -}}
