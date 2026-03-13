@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pengjiyuan.github.io/tags/agent/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/multi-agent-systems-2026/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/</loc>
+    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://pengjiyuan.github.io/tags/2026/</loc>
     <lastmod>2026-03-13T09:00:00+08:00</lastmod>
   </url><url>
@@ -9,12 +33,6 @@
     <lastmod>2026-03-13T09:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/ai%E5%8A%A8%E6%80%81/</loc>
-    <lastmod>2026-03-13T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/</loc>
-    <lastmod>2026-03-13T09:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/</loc>
     <lastmod>2026-03-13T09:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/news/</loc>
@@ -42,9 +60,6 @@
     <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/articles/</loc>
     <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-11/</loc>
@@ -75,9 +90,6 @@
     <lastmod>2026-03-10T09:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</loc>
-    <lastmod>2026-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/agent/</loc>
     <lastmod>2026-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/google/</loc>
