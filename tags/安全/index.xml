@@ -6,8 +6,15 @@
     <description>Recent content in 安全 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 11:00:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code Security：AI 驱动的代码安全扫描新范式</title>
+      <link>https://pengjiyuan.github.io/articles/claude-code-security-2026/</link>
+      <pubDate>Sun, 15 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/claude-code-security-2026/</guid>
+      <description>2026 年 2 月 Anthropic 发布的 Claude Code Security 标志着安全扫描从规则驱动向推理驱动的范式转变。本文深入解析这一新工具的能力、局限以及对网络安全行业的深远影响。</description>
+    </item>
     <item>
       <title>企业级 AI Agent 安全与零信任框架：2026 实战指南</title>
       <link>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</link>
