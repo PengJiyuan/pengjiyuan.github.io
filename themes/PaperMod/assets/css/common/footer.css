@@ -39,10 +39,18 @@
     background: var(--primary);
     width: 44px;
     height: 44px;
-    padding: 10px;
+    padding: 0;
     border-radius: 50%;
     transition: visibility 0.3s, opacity 0.3s, transform 0.2s;
     box-shadow: 0 4px 12px rgba(187, 30, 34, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-link svg {
+    width: 22px;
+    height: 22px;
 }
 
 .top-link {
