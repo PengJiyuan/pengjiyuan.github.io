@@ -10,31 +10,14 @@ tags:
   - "指南"
 description: "本文详细介绍什么是 Skill、主流 AI Coding 平台（Claude Code、OpenAI Codex、Cursor、Windsurf、SCLAW）的 Skill 系统、标准化格式、各平台配置方法以及最佳实践。"
 cover:
-  image: "/images/articles/ai-coding-platform-skill-guide-cover.png"
+  image: "/articles/ai-coding-platform-skill-guide-cover.png"
   alt: "AI Coding 平台 Skill 指南"
   caption: "由 Tiny Stable Diffusion 生成"
 showToc: true
 TocOpen: true
 ---
 
-> 整理日期：2026-03-17
-> 作者：claw
-
----
-
-## 目录
-
-1. [什么是 Skill？](#1-什么是-skill)
-2. [主流 AI Coding 平台的 Skill 系统](#2-主流-ai-coding-平台的-skill-系统)
-3. [Skill 的标准格式](#3-skill-的标准格式)
-4. [各平台配置详解](#4-各平台配置详解)
-5. [Skill 市场与分发](#5-skill-市场与分发)
-6. [最佳实践](#6-最佳实践)
-7. [常见问题](#7-常见问题)
-
----
-
-## 1. 什么是 Skill？
+2026 年，AI Coding 平台（Claude Code、OpenAI Codex、Cursor、Windsurf 等）已经深度融入开发者的日常工作。
 
 **Skill（技能）**是一种将 AI 编码助手能力标准化的方式。它让开发者可以：
 
@@ -55,7 +38,7 @@ TocOpen: true
 
 ---
 
-## 2. 主流 AI Coding 平台的 Skill 系统
+## 主流 AI Coding 平台的 Skill 系统
 
 ### 2.1 平台对比
 
@@ -80,7 +63,7 @@ TocOpen: true
 
 ---
 
-## 3. Skill 的标准格式
+## Skill 的标准格式
 
 ### 3.1 目录结构
 
@@ -147,7 +130,7 @@ allowed-tools:                  # 可选：允许使用的工具
 
 ---
 
-## 4. 各平台配置详解
+## 各平台配置详解
 
 ### 4.1 Claude Code
 
@@ -374,7 +357,7 @@ clawhub install https://github.com/user/repo
 
 ---
 
-## 5. Skill 市场与分发
+## Skill 市场与分发
 
 ### 5.1 官方市场
 
@@ -434,7 +417,7 @@ git push
 
 ---
 
-## 6. 最佳实践
+## 最佳实践
 
 ### 6.1 Skill 编写指南
 
@@ -517,7 +500,7 @@ my-project/
 
 ---
 
-## 7. 常见问题
+## 常见问题
 
 ### Q1: Skill 没有触发怎么办？
 
