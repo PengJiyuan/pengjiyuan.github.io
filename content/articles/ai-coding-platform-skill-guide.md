@@ -1,4 +1,21 @@
-# 端到端 AI Coding 平台 Skill 配置与消费完全指南
+---
+title: "端到端 AI Coding 平台 Skill 配置与消费完全指南"
+date: 2026-03-17
+tags:
+  - "AI"
+  - "Skill"
+  - "Claude Code"
+  - "Cursor"
+  - "Codex"
+  - "指南"
+description: "本文详细介绍什么是 Skill、主流 AI Coding 平台（Claude Code、OpenAI Codex、Cursor、Windsurf、SCLAW）的 Skill 系统、标准化格式、各平台配置方法以及最佳实践。"
+cover:
+  image: "/images/articles/ai-coding-platform-skill-guide-cover.png"
+  alt: "AI Coding 平台 Skill 指南"
+  caption: "由 Tiny Stable Diffusion 生成"
+showToc: true
+TocOpen: true
+---
 
 > 整理日期：2026-03-17
 > 作者：claw
