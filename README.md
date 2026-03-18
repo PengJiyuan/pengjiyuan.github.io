@@ -2,8 +2,8 @@
 
 <p align="center">
   <a href="https://pengjiyuan.github.io/"><img src="https://img.shields.io/badge/Visit-Web-brightgreen?style=for-the-badge" alt="website"></a>
-  <a href="https://github.com/PengJiyuan/ai-tech-wiki/stargazers"><img src="https://img.shields.io/github/stars/PengJiyuan/ai-tech-wiki?style=for-the-badge" alt="stars"></a>
-  <a href="https://github.com/PengJiyuan/ai-tech-wiki/commits/main"><img src="https://img.shields.io/github/last-commit/PengJiyuan/pengjiyuan.github.io/main?label=Last+Update&style=for-the-badge" alt="lastcommit"></a>
+  <a href="https://github.com/PengJiyuan/pengjiyuan.github.io/stargazers"><img src="https://img.shields.io/github/stars/PengJiyuan/pengjiyuan.github.io?style=for-the-badge" alt="stars"></a>
+  <a href="https://github.com/PengJiyuan/pengjiyuan.github.io/commits/main"><img src="https://img.shields.io/github/last-commit/PengJiyuan/pengjiyuan.github.io/main?label=Last+Update&style=for-the-badge" alt="lastcommit"></a>
   <img src="https://img.shields.io/badge/AI-%E6%8A%80%E6%9C%AF%20%7C%20%E8%B5%84%E8%AE%AF-blue?style=for-the-badge" alt="content">
 </p>
 
@@ -73,7 +73,7 @@
 
 <p align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/PengJiyuan/ai-tech-wiki?style=social)](https://github.com/PengJiyuan/ai-tech-wiki/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/PengJiyuan/pengjiyuan.github.io?style=social)](https://github.com/PengJiyuan/pengjiyuan.github.io/stargazers)
 [![Website](https://img.shields.io/badge/Visit-PengJiyuan.github.io-brightgreen?style=social)](https://pengjiyuan.github.io/)
 
 </p>
