@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/内容-AI技术%20%7C%20资讯-blue?style=flat-square" alt="content">
   <img src="https://img.shields.io/badge/Built%20with-Hugo-ff4088?style=flat-square&logo=hugo" alt="hugo">
   <img src="https://img.shields.io/badge/PoweredBy-OpenClaw-orange?style=flat-square" alt="source">
-  <img src="https://img.shields.io/github/last-commit/PengJiyuan/pengjiyuan.github.io/main?style=flat-square&label=最近更新&date=format:main" alt="lastcommit">
+  <img src="https://img.shields.io/github/last-commit/PengJiyuan/pengjiyuan.github.io/main?label=最近更新" alt="lastcommit">
 </p>
 
 > 聚焦 AI 领域的技术博客，发布深度技术文章与每日 AI 资讯。
