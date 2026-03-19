@@ -33,16 +33,15 @@ const AI_KEYWORDS = [
   '大模型', '人工智能', 'AI模型', '生成式AI',
 ];
 
-// RSS 源配置
+// RSS 源配置 - 专注高质量中文源
 const RSS_SOURCES = [
-  { name: 'Hacker News', url: 'https://hnrss.org/frontpage', lang: 'en' },
-  { name: 'Hacker News AI', url: 'https://hnrss.org/newest?q=ai', lang: 'en' },
-  { name: 'Reddit r/AI', url: 'https://www.reddit.com/r/ArtificialIntelligence/.rss', lang: 'en' },
-  { name: 'Reddit r/ML', url: 'https://www.reddit.com/r/MachineLearning/.rss', lang: 'en' },
-  { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
+  // 中文媒体（高质量完整内容）
+  { name: '虎嗅', url: 'https://www.huxiu.com/rss/0.xml', lang: 'zh' },
   { name: '36氪', url: 'https://36kr.com/feed', lang: 'zh' },
-  { name: '少数派', url: 'https://sspai.com/feed', lang: 'zh' },
   { name: '钛媒体', url: 'https://www.tmtpost.com/rss', lang: 'zh' },
+  { name: '少数派', url: 'https://sspai.com/feed', lang: 'zh' },
+  // 英文源（仅供参考）
+  { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
 ];
 
 // 分类关键词
@@ -267,7 +266,7 @@ function formatNews({ items, categorized }) {
   lines.push('');
   lines.push(`## AI 资讯速递（${dateStr}）`);
   lines.push('');
-  lines.push(`> 来源: Hacker News, Reddit, TechCrunch, 36氪, 少数派, 钛媒体 | 共 ${items.length} 条\n`);
+  lines.push(`> 来源: 虎嗅, 36氪, 钛媒体, 少数派, TechCrunch | 共 ${items.length} 条\n`);
   
   // 按分类输出
   const categoryOrder = ['技术突破', '产业动态', '资本动态', '应用落地', '政策动态'];
@@ -278,13 +277,13 @@ function formatNews({ items, categorized }) {
     lines.push(`## ${cat}`);
     lines.push('');
     
-    for (let i = 0; i < categorized[cat].length && i < 8; i++) {
+    for (let i = 0; i < categorized[cat].length && i < 10; i++) {
       const item = categorized[cat][i];
-      const summary = item.summary ? item.summary.substring(0, 100).replace(/\n/g, ' ').trim() : '';
+      const summary = item.summary ? item.summary.substring(0, 300).replace(/\n/g, ' ').trim() : '';
       lines.push(`${i + 1}. **${item.title}**`);
       lines.push(`   - 来源：${item.source}`);
       if (summary) {
-        lines.push(`   - ${summary}${item.summary.length > 100 ? '...' : ''}`);
+        lines.push(`   - ${summary}${item.summary.length > 300 ? '...' : ''}`);
       }
       lines.push('');
     }
