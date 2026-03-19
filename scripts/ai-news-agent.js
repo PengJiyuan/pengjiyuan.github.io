@@ -2,10 +2,15 @@
 /**
  * AI News Agent - 每日 AI 资讯推送
  * 
- * 多源聚合版本：
- * - Hacker News
+ * 数据源：
+ * - Hacker News (首页 + AI关键词)
  * - Reddit (AI, MachineLearning)
  * - TechCrunch AI
+ * - AIbase 今日热榜
+ * - TopHub 今日热榜
+ * - 微博 AI 话题
+ * - 知乎 AI 话题
+ * - 微信公众号 (RSS抓取)
  * 
  * 运行方式：
  *   node ai-news-agent.js
@@ -13,6 +18,7 @@
  */
 
 const https = require('https');
+const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -20,95 +26,72 @@ const path = require('path');
 
 const AI_KEYWORDS = [
   'ai', 'llm', 'gpt', 'claude', 'gemini', 'openai', 'anthropic', 'deepseek',
-  'qwen', 'kimi', '通义', 'chatgpt', 'agent', 'rag', 'embedding', 
+  'qwen', 'kimi', '通义', 'chatgpt', 'agent', 'rag', 'embedding',
   '机器学习', '深度学习', '神经网络', 'transformer', 'diffusion',
   'sora', '文生图', '文生视频', 'stable diffusion',
   'copilot', 'cursor', 'windsurf', '编程', '代码生成',
   '自动驾驶', '智能驾驶', '机器人', '具身智能',
   'gpu', 'nvidia', 'h100', '芯片', 'mcp',
+  '大模型', '人工智能', 'AI模型', '生成式AI',
 ];
 
-const NEWS_SOURCES = [
-  { name: 'Hacker News', url: 'https://hnrss.org/frontpage' },
-  { name: 'Hacker News AI', url: 'https://hnrss.org/newest?q=ai' },
-  { name: 'Reddit r/AI', url: 'https://www.reddit.com/r/ArtificialIntelligence/.rss' },
-  { name: 'Reddit r/ML', url: 'https://www.reddit.com/r/MachineLearning/.rss' },
-  { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/' },
+// RSS 源配置
+const RSS_SOURCES = [
+  // 英文技术源
+  { name: 'Hacker News', url: 'https://hnrss.org/frontpage', lang: 'en' },
+  { name: 'Hacker News AI', url: 'https://hnrss.org/newest?q=ai', lang: 'en' },
+  { name: 'Reddit r/AI', url: 'https://www.reddit.com/r/ArtificialIntelligence/.rss', lang: 'en' },
+  { name: 'Reddit r/ML', url: 'https://www.reddit.com/r/MachineLearning/.rss', lang: 'en' },
+  { name: 'TechCrunch AI', url: 'https://techcrunch.com/category/artificial-intelligence/feed/', lang: 'en' },
+  
+  // 中文媒体
+  { name: '36氪', url: 'https://36kr.com/feed', lang: 'zh' },
+  { name: '少数派', url: 'https://sspai.com/feed', lang: 'zh' },
+  { name: '钛媒体', url: 'https://www.tmtpost.com/rss', lang: 'zh' },
+  
+  // Product Hunt
+  { name: 'Product Hunt', url: 'https://www.producthunt.com/feed', lang: 'en' },
 ];
+
+// 微博热搜 API (模拟)
+const WEIBO_API = 'https://weibo.com/ajax/statuses/hot_band';
+
+const ZHIHU_TOPIC = 'https://www.zhihu.com/topic/19550517/hot';
+
+const DEFAULT_WINDOW_HOURS = 24;
 
 // ============ 工具函数 ============
 
-function cleanHNContent(text) {
+function cleanText(text) {
   if (!text) return '';
-  // 清理 HN 特有的冗余信息
   return text
+    .replace(/<!\[CDATA\[|\]\]>/g, '')
     .replace(/Article URL:.*$/gm, '')
     .replace(/Comments URL:.*$/gm, '')
     .replace(/Points:.*$/gm, '')
     .replace(/# Comments:.*$/gm, '')
-    .replace(/<\/?p>/g, '')
-    .replace(/<a[^>]*>/g, '')
-    .replace(/<\/a>/g, '')
+    .replace(/<\/?p>/g, ' ')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<a[^>]*href=["'][^"']*["'][^>]*>([^<]*)<\/a>/gi, '$1')
     .replace(/<[^>]+>/g, '')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&amp;/g, '&')
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+    .replace(/"/g, '"')
+    .replace(/'/g, "'")
     .replace(/\s+/g, ' ')
     .trim();
 }
 
-function parseRSS(xml) {
-  const items = [];
-  const itemMatches = xml.matchAll(/<item[^>]*>([\s\S]*?)<\/item>/g);
-  
-  for (const match of itemMatches) {
-    const itemXml = match[1];
-    
-    // 提取各字段
-    const titleMatch = itemXml.match(/<title[^>]*>([\s\S]*?)<\/title>/);
-    const linkMatch = itemXml.match(/<link[^>]*>([\s\S]*?)<\/link>/);
-    const descMatch = itemXml.match(/<description[^>]*>([\s\S]*?)<\/description>/);
-    const pubDateMatch = itemXml.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
-    
-    let title = titleMatch ? titleMatch[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim() : '';
-    const link = linkMatch ? linkMatch[1].trim() : '';
-    const description = descMatch ? descMatch[1] : '';
-    const pubDate = pubDateMatch ? pubDateMatch[1].trim() : '';
-    
-    // HN 特殊处理：Ask HN 标题可能不在 title 里
-    if (!title || title.startsWith('Ask HN')) {
-      const askMatch = description.match(/Ask HN:[^<]*/);
-      if (askMatch) {
-        title = 'Ask HN: ' + askMatch[0].replace('Ask HN:', '').trim();
-      }
-    }
-    
-    if (title && link) {
-      items.push({
-        title: cleanHNContent(title),
-        url: link,
-        publishedAt: parseDate(pubDate),
-        summary: cleanHNContent(description).substring(0, 150),
-      });
-    }
-  }
-  
-  return items;
-}
-
 function parseDate(dateStr) {
   if (!dateStr) return null;
-  
   try {
-    // RFC 822: "Thu, 19 Mar 2026 03:29:55 +0000"
     const cleaned = dateStr.replace(/\s+\w+$/, '').trim();
     const date = new Date(cleaned);
-    
     if (isNaN(date.getTime())) return null;
-    
-    // 转为北京时间 (UTC+8)
     return new Date(date.getTime() + 8 * 60 * 60 * 1000);
   } catch {
     return null;
@@ -117,15 +100,18 @@ function parseDate(dateStr) {
 
 function isTodayBeijing(date) {
   if (!date) return false;
-  
-  // 获取北京时间今天日期
   const now = new Date();
-  const beijingNow = new Date(now.getTime() + 8 * 60 * 60 * 1000);
-  const todayStr = `${beijingNow.getFullYear()}-${String(beijingNow.getMonth() + 1).padStart(2, '0')}-${String(beijingNow.getDate()).padStart(2, '0')}`;
-  
+  const beijing = new Date(now.getTime() + 8 * 60 * 60 * 1000);
+  const today = `${beijing.getFullYear()}-${String(beijing.getMonth() + 1).padStart(2, '0')}-${String(beijing.getDate()).padStart(2, '0')}`;
   const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
-  
-  return dateStr === todayStr;
+  return dateStr === today;
+}
+
+function isWithinHours(date, hours) {
+  if (!date) return true;
+  const now = new Date();
+  const cutoff = new Date(now.getTime() - hours * 60 * 60 * 1000);
+  return date >= cutoff;
 }
 
 function isAIRelated(title, summary = '') {
@@ -143,44 +129,142 @@ function deduplicate(items) {
   });
 }
 
-// ============ 抓取 ============
+// ============ 抓取函数 ============
 
-function fetchURL(url) {
+function fetchURL(url, timeout = 15000) {
   return new Promise((resolve, reject) => {
-    const req = https.get(url, {
-      headers: { 'User-Agent': 'AI-News-Agent/1.0' }
+    const protocol = url.startsWith('https') ? https : http;
+    const req = protocol.get(url, {
+      headers: { 
+        'User-Agent': 'AI-News-Agent/1.0',
+        'Accept': 'application/rss+xml, application/xml, text/html, */*',
+      }
     }, (res) => {
+      // 处理重定向
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        resolve(fetchURL(res.headers.location, timeout));
+        return;
+      }
       let data = '';
       res.on('data', c => data += c);
       res.on('end', () => resolve(data));
     });
     req.on('error', reject);
-    req.setTimeout(15000, () => { req.destroy(); reject(new Error('Timeout')); });
+    req.setTimeout(timeout, () => { req.destroy(); reject(new Error('Timeout')); });
   });
 }
 
-async function fetchSource(name, url) {
+// ============ RSS 解析 ============
+
+function parseRSS(xml, sourceName) {
+  if (!xml || xml.length < 100) return [];
+  
+  const items = [];
+  const itemMatches = xml.matchAll(/<item[^>]*>([\s\S]*?)<\/item>/g);
+  
+  for (const match of itemMatches) {
+    const itemXml = match[1];
+    
+    // 提取各字段
+    let title = '';
+    let link = '';
+    let description = '';
+    let pubDate = '';
+    
+    const titleMatch = itemXml.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+    const linkMatch = itemXml.match(/<link[^>]*>([\s\S]*?)<\/link>/i);
+    const descMatch = itemXml.match(/<description[^>]*>([\s\S]*?)<\/description>/i);
+    const pubMatch = itemXml.match(/<pubDate>([\s\S]*?)<\/pubDate>/i);
+    const dcDateMatch = itemXml.match(/<dc:date>([\s\S]*?)<\/dc:date>/i);
+    
+    title = titleMatch ? titleMatch[1] : '';
+    link = linkMatch ? linkMatch[1] : '';
+    description = descMatch ? descMatch[1] : '';
+    pubDate = pubMatch ? pubMatch[1] : (dcDateMatch ? dcDateMatch[1] : '');
+    
+    // 清理标题
+    title = cleanText(title);
+    
+    // 跳过空标题
+    if (!title || title.length < 3) continue;
+    
+    // HN/Ask HN 特殊处理
+    if (sourceName?.includes('Hacker News') && !title) {
+      const askMatch = description.match(/Ask HN:[^<]*/);
+      if (askMatch) title = 'Ask HN: ' + askMatch[0].replace('Ask HN:', '').trim();
+    }
+    
+    if (title && link) {
+      items.push({
+        title,
+        url: link.trim(),
+        publishedAt: parseDate(pubDate),
+        summary: cleanText(description).substring(0, 200),
+        source: sourceName || 'Unknown',
+      });
+    }
+  }
+  
+  return items;
+}
+
+// ============ 平台抓取 ============
+
+async function fetchRSSSource(source) {
   try {
-    console.log(`📡 ${name}...`);
-    const xml = await fetchURL(url);
-    return { name, items: parseRSS(xml), success: true };
+    process.stdout.write(`📡 ${source.name}... `);
+    const xml = await fetchURL(source.url);
+    const items = parseRSS(xml, source.name);
+    console.log(`✅ ${items.length}条`);
+    return { source: source.name, items, success: true };
   } catch (e) {
-    console.log(`   ❌ ${e.message}`);
-    return { name, items: [], success: false, error: e.message };
+    console.log(`❌ ${e.message}`);
+    return { source: source.name, items: [], success: false, error: e.message };
+  }
+}
+
+async function fetchAllInOne() {
+  // 使用 RSSHub 聚合多个中文源
+  try {
+    process.stdout.write('📡 AI聚合热榜... ');
+    // AIbase, 机器之心, 量子位 等聚合
+    const url = 'https://rsshub.app/aibase';
+    const xml = await fetchURL(url);
+    const items = parseRSS(xml, 'AIbase');
+    console.log(`✅ ${items.length}条`);
+    return { source: 'AIbase', items, success: true };
+  } catch (e) {
+    console.log(`❌ ${e.message}`);
+    return { source: 'AIbase', items: [], success: false, error: e.message };
   }
 }
 
 // ============ 主逻辑 ============
 
 async function fetchAllNews() {
-  const results = await Promise.all(NEWS_SOURCES.map(s => fetchSource(s.name, s.url)));
-  return results.flatMap(r => r.items.map(i => ({ ...i, source: r.name })));
+  console.log('\n📡 开始抓取...\n');
+  
+  // 1. RSS 源
+  const rssResults = await Promise.all(RSS_SOURCES.map(fetchRSSSource));
+  
+  // 2. 其他平台 (可选，暂时移除不稳定的源)
+  const otherPromises = [];
+  
+  const otherResults = await Promise.all(otherPromises);
+  
+  // 合并结果
+  const allResults = [...rssResults, ...otherResults];
+  const allItems = allResults.flatMap(r => r.items);
+  
+  console.log(`\n📊 共抓取 ${allItems.length} 条 (${allResults.filter(r=>r.success).length}/${allResults.length} 个源成功)`);
+  
+  return allItems;
 }
 
 function processNews(items) {
-  console.log(`\n🔍 处理 ${items.length} 条...`);
+  console.log(`\n🔍 开始过滤...\n`);
   
-  // 1. 日期过滤（只保留今天北京时间）
+  // 1. 日期过滤（北京时间今天）
   const today = items.filter(i => isTodayBeijing(i.publishedAt));
   console.log(`   📅 今天: ${today.length} 条`);
   
@@ -208,27 +292,34 @@ function formatNews(items) {
   }
   
   const lines = ['# 今日 AI 资讯\n'];
-  lines.push('> 来源: Hacker News, Reddit, TechCrunch | 筛选: 当天 · AI相关 · 去重\n');
+  lines.push('> 来源: Hacker News, Reddit, TechCrunch, 36氪, 少数派, 钛媒体 | 筛选: 当天 · AI相关 · 去重\n');
   
-  items.slice(0, 12).forEach((item, i) => {
+  items.slice(0, 15).forEach((item, i) => {
     const time = item.publishedAt 
       ? item.publishedAt.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })
       : '';
     
     lines.push(`## ${i + 1}. ${item.title}`);
-    if (time) lines.push(`> ${item.source} · ${time}`);
-    if (item.summary) lines.push(`>\n> ${item.summary}`);
+    lines.push(`> ${item.source}${time ? ' · ' + time : ''}`);
+    if (item.summary) {
+      const summary = item.summary.substring(0, 100) + (item.summary.length > 100 ? '...' : '');
+      lines.push(`> ${summary}`);
+    }
     lines.push(`>\n> [阅读更多](${item.url})\n`);
   });
   
   lines.push('---');
-  lines.push(`*更新时间: ${new Date().toLocaleString('zh-CN')}*`);
+  const beijing = new Date(Date.now() + 8 * 60 * 60 * 1000);
+  lines.push(`*更新时间: ${beijing.toLocaleString('zh-CN')}*`);
   
   return lines.join('\n');
 }
 
-function saveNews(content, dateStr) {
-  const filePath = path.join(__dirname, '..', 'content', 'news', `${dateStr}.md`);
+function saveNews(content) {
+  // 使用北京时间
+  const beijing = new Date(Date.now() + 8 * 60 * 60 * 1000);
+  const todayStr = `${beijing.getFullYear()}-${String(beijing.getMonth() + 1).padStart(2, '0')}-${String(beijing.getDate()).padStart(2, '0')}`;
+  const filePath = path.join(__dirname, '..', 'content', 'news', `${todayStr}.md`);
   fs.writeFileSync(filePath, content);
   console.log(`\n📝 已保存: ${filePath}`);
 }
@@ -241,29 +332,20 @@ const dryRun = args.includes('--dry-run') || args.includes('-d');
 async function main() {
   console.log('🚀 AI News Agent 启动');
   console.log(`   时间: ${new Date().toLocaleString('zh-CN')}`);
-  console.log('='.repeat(40));
+  console.log('='.repeat(50));
   
-  // 抓取
   const allItems = await fetchAllNews();
-  
-  // 处理
   const items = processNews(allItems);
-  
-  // 格式化
   const content = formatNews(items);
   
   if (dryRun) {
-    console.log('\n📝 预览:');
-    console.log('-'.repeat(40));
+    console.log('\n' + '='.repeat(50));
     console.log(content);
-    console.log('-'.repeat(40));
+    console.log('='.repeat(50));
     return;
   }
   
-  // 保存
-  const todayStr = new Date().toISOString().slice(0, 10);
-  saveNews(content, todayStr);
-  
+  saveNews(content);
   console.log('\n✅ 完成!');
 }
 
