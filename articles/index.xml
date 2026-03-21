@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>文章 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/articles/</link>
+    <description>Recent content in 文章 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI for Science：从「辅助写作」到「亲自做实验」的范式跃迁</title>
+      <link>https://pengjiyuan.github.io/articles/ai-for-science-2026/</link>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-for-science-2026/</guid>
+      <description>2025 年底，IIT Delhi 发布的 AILA 成为首个能独立操作显微镜完成实验的 AI Agent；同期 Google DeepMind 的 AlphaEvolve 用大模型进化出了 1969 年以来最快的矩阵乘法算法。AI 不再只是「帮科学家写报告」，而是开始「亲自做科学」。本文深度解析这场科研范式转移的核心案例、技术逻辑与深远影响。</description>
+    </item>
+    <item>
+      <title>Meta Manus「My Computer」：把 AI Agent 从云端拉回桌面</title>
+      <link>https://pengjiyuan.github.io/articles/manus-my-computer-2026/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/manus-my-computer-2026/</guid>
+      <description>2026年3月16日，被 Meta 收购的 AI 创业公司 Manus 推出桌面应用「My Computer」，将 AI Agent 直接运行在用户的 Mac 和 PC 上。本文深度解析 My Computer 的功能特性、技术架构，以及它与 OpenClaw 的竞争格局。</description>
+    </item>
+    <item>
+      <title>AgentOps 实战：从零构建企业级 AI Agent 运维体系</title>
+      <link>https://pengjiyuan.github.io/articles/agentops-2026/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agentops-2026/</guid>
+      <description>AI Agent 从概念验证到生产部署，最大的挑战不是模型能力，而是运维成本与可靠性。本文系统讲解 AgentOps 的三大核心支柱：成本管理（FinOps）、可观测性（Observability）与治理安全，附带 OpenClaw 实战技巧，帮助你把 AI Agent 真正跑起来。</description>
+    </item>
+    <item>
+      <title>LLM 语义缓存实战：用向量相似度将 API 成本降低 70%&#43;</title>
+      <link>https://pengjiyuan.github.io/articles/semantic-caching-2026/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/semantic-caching-2026/</guid>
+      <description>语义缓存是 LLM 应用成本优化的杀手锏。本文深入解析如何用向量嵌入和相似度匹配替代传统的精确匹配缓存，实现「请问病假政策」和「我们有多少天病假」这类语义相同但字面不同的查询共享缓存结果，实测可节省高达 73% 的 API 调用成本。</description>
+    </item>
+    <item>
+      <title>LLM Agent 效率优化：记忆、工具与规划的系统性指南</title>
+      <link>https://pengjiyuan.github.io/articles/agent-efficiency-2026/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-efficiency-2026/</guid>
+      <description>基于上海AI Lab等机构联合发布的前沿研究，深入解析 LLM Agent 在记忆管理、工具调用和规划策略三个维度的效率优化方案，涵盖 AgeMem、Tool-R0、HiPlan 等最新 SOTA 方法与实践技巧。</description>
+    </item>
+    <item>
+      <title>端到端 AI Coding 平台 Skill 配置与消费完全指南</title>
+      <link>https://pengjiyuan.github.io/articles/ai-coding-platform-skill-guide/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-coding-platform-skill-guide/</guid>
+      <description>本文详细介绍什么是 Skill、主流 AI Coding 平台（Claude Code、OpenAI Codex、Cursor、Windsurf、SCLAW）的 Skill 系统、标准化格式、各平台配置方法以及最佳实践。</description>
+    </item>
+    <item>
+      <title>AG-UI 协议完全指南：AI Agent 与用户界面的连接层</title>
+      <link>https://pengjiyuan.github.io/articles/ag-ui-protocol-2026/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ag-ui-protocol-2026/</guid>
+      <description>AG-UI（Agent-User Interaction）协议是连接 AI Agent 与用户界面的开放标准。本文深入解析 AG-UI 的核心概念、与 MCP/A2A 的关系、以及如何使用它构建下一代智能应用。</description>
+    </item>
+    <item>
+      <title>Claude Code Security：AI 驱动的代码安全扫描新范式</title>
+      <link>https://pengjiyuan.github.io/articles/claude-code-security-2026/</link>
+      <pubDate>Sun, 15 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/claude-code-security-2026/</guid>
+      <description>2026 年 2 月 Anthropic 发布的 Claude Code Security 标志着安全扫描从规则驱动向推理驱动的范式转变。本文深入解析这一新工具的能力、局限以及对网络安全行业的深远影响。</description>
+    </item>
+    <item>
+      <title>世界模型与物理AI：2026年AI范式转移的关键方向</title>
+      <link>https://pengjiyuan.github.io/articles/world-model-physical-ai-2026/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/world-model-physical-ai-2026/</guid>
+      <description>从“预测下一个词”到“预测世界下一个状态”，AI正在经历从数字空间到物理世界的根本性转变。本文深入解析世界模型、NSP范式、具身智能的发展脉络，以及2026年为何是物理AI的关键分水岭。</description>
+    </item>
+    <item>
+      <title>多智能体系统实战：企业级架构设计与 2026 落地指南</title>
+      <link>https://pengjiyuan.github.io/articles/multi-agent-systems-2026/</link>
+      <pubDate>Fri, 13 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/multi-agent-systems-2026/</guid>
+      <description>从单智能体到多智能体协同，企业 AI 正在经历范式转变。本文深入剖析多智能体的核心架构模式、2026 年主流落地场景、实际实施中的挑战与应对策略，为企业构建生产级多智能体系统提供可操作的参考。</description>
+    </item>
+    <item>
+      <title>2026 年量子计算与 AI 融合：突破之年</title>
+      <link>https://pengjiyuan.github.io/articles/quantum-ai-2026/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/quantum-ai-2026/</guid>
+      <description>2026 年被视为量子计算与 AI 融合的转折点。本文深入探讨量子 AI 的最新进展、实际应用场景、关键技术挑战，以及企业和开发者应该如何准备迎接这一技术变革。</description>
+    </item>
+    <item>
+      <title>企业级 AI Agent 安全与零信任框架：2026 实战指南</title>
+      <link>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</guid>
+      <description>2026 年，80% 的 Fortune 500 企业已部署 AI Agent，但大多数尚未建立完善的安全体系。本文深入探讨 AI Agent 带来的新型攻击面、零信任安全框架、以及企业级部署的最佳实践，帮助你在创新与安全之间找到平衡。</description>
+    </item>
+    <item>
+      <title>A2A 协议完全指南：2026 年 AI Agent 通信标准</title>
+      <link>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</guid>
+      <description>A2A（Agent-to-Agent）协议是 Google 推出的开放标准，旨在解决 AI Agent 之间的通信与协作问题。本文深入解析 A2A 的核心概念、Agent Card 机制、与 MCP 的关系，以及实际开发中的应用场景。</description>
+    </item>
+    <item>
+      <title>OpenClaw 上手指南：从安装到深度实践</title>
+      <link>https://pengjiyuan.github.io/articles/openclaw-getting-started/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/openclaw-getting-started/</guid>
+      <description>OpenClaw 是一个开源的 AI Agent 网关，支持多平台消息接入。本文详细介绍如何安装、配置、以及利用其强大的 Subagent、Cron、Memory 等功能打造个人 AI 助手。</description>
+    </item>
+    <item>
+      <title>AI 编码 Agent 实战全攻略：CLI 工具与异步任务 (2026)</title>
+      <link>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</link>
+      <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</guid>
+      <description>2026 年 AI 编码工具已经从 IDE 自动补全进化到 CLI Agent 和异步任务 Agent。本文全面对比 Claude Code、Codex CLI、Cline、GitHub Copilot Agent 等主流工具，深入解析 MCP 生态和 Subagent 机制，提供完整的选型指南与实战工作流。</description>
+    </item>
+    <item>
+      <title>AI 驱动的软件测试实战指南：2026 年工具与实践</title>
+      <link>https://pengjiyuan.github.io/articles/ai-software-testing-2026/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-software-testing-2026/</guid>
+      <description>AI 测试工具正在从实验性功能演变为关键基础设施。2026 年，AI 如何改变测试用例生成、执行和维护？本文介绍主流工具、实战方案以及引入 AI 测试的完整路径。</description>
+    </item>
+    <item>
+      <title>Claude Code 语音编程：编程进入「对讲机」时代</title>
+      <link>https://pengjiyuan.github.io/articles/claude-code-voice-programming/</link>
+      <pubDate>Sat, 07 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/claude-code-voice-programming/</guid>
+      <description>2026年3月，Anthropic 为 Claude Code 推出语音编程模式。长按空格说话，松开即完成输入——编程正在从键盘迁移到语音。本文深入解析这一交互革命的本质与未来影响。</description>
+    </item>
+    <item>
+      <title>Claude Computer Use 深度解析：AI 如何学会操控电脑</title>
+      <link>https://pengjiyuan.github.io/articles/computer-use-deep-dive/</link>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/computer-use-deep-dive/</guid>
+      <description>Claude Computer Use 让 AI 直接操控电脑成为现实。本文深入解析这项技术的工作原理，并提供详细的上手指南和代码示例。</description>
+    </item>
+    <item>
+      <title>2026 年 AI 技术趋势：从工程视角看真正重要的变化</title>
+      <link>https://pengjiyuan.github.io/articles/ai-trends-2026/</link>
+      <pubDate>Thu, 05 Mar 2026 09:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-trends-2026/</guid>
+      <description>2026 年 AI 的发展走向何方？褪去营销包装后，真正改变工程实践的技术趋势是什么？从推理模型到 Agent 基础设施，本文从技术视角梳理值得关注的方向。</description>
+    </item>
+    <item>
+      <title>用 Tiny Stable Diffusion &#43; Pillow 生成带文字的 AI 封面图</title>
+      <link>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</guid>
+      <description>所有 AI 图片产品的通用方案：用 Tiny SD 生成背景，再用 Pillow 精确渲染文字。本文完整实现这套流程，一条命令生成可直接用于博客的封面图。</description>
+    </item>
+    <item>
+      <title>AI Agent 工程实践：从 ReAct 到多智能体协作</title>
+      <link>https://pengjiyuan.github.io/articles/agent-intro/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-intro/</guid>
+      <description>AI Agent 是能够自主规划、调用工具、执行多步任务的 AI 系统。本文从 ReAct 模式出发，介绍 Agent 的核心架构与工程实现，包括工具调用、记忆管理和多 Agent 协作。</description>
+    </item>
+    <item>
+      <title>MCP 协议深度解析：给 AI 接上真实世界的标准接口</title>
+      <link>https://pengjiyuan.github.io/articles/mcp-intro/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/mcp-intro/</guid>
+      <description>MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放协议，旨在标准化 AI 模型与外部工具之间的通信。本文深入解析 MCP 架构设计与实现方法。</description>
+    </item>
+    <item>
+      <title>RAG 系统从零构建：原理、实现与工程化</title>
+      <link>https://pengjiyuan.github.io/articles/rag-intro/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/rag-intro/</guid>
+      <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
+    </item>
+  </channel>
+</rss>

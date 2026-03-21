@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AILA on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/aila/</link>
+    <description>Recent content in AILA on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/aila/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI for Science：从「辅助写作」到「亲自做实验」的范式跃迁</title>
+      <link>https://pengjiyuan.github.io/articles/ai-for-science-2026/</link>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-for-science-2026/</guid>
+      <description>2025 年底，IIT Delhi 发布的 AILA 成为首个能独立操作显微镜完成实验的 AI Agent；同期 Google DeepMind 的 AlphaEvolve 用大模型进化出了 1969 年以来最快的矩阵乘法算法。AI 不再只是「帮科学家写报告」，而是开始「亲自做科学」。本文深度解析这场科研范式转移的核心案例、技术逻辑与深远影响。</description>
+    </item>
+  </channel>
+</rss>

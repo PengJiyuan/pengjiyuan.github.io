@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>协议 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%8D%8F%E8%AE%AE/</link>
+    <description>Recent content in 协议 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%8D%8F%E8%AE%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AG-UI 协议完全指南：AI Agent 与用户界面的连接层</title>
+      <link>https://pengjiyuan.github.io/articles/ag-ui-protocol-2026/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ag-ui-protocol-2026/</guid>
+      <description>AG-UI（Agent-User Interaction）协议是连接 AI Agent 与用户界面的开放标准。本文深入解析 AG-UI 的核心概念、与 MCP/A2A 的关系、以及如何使用它构建下一代智能应用。</description>
+    </item>
+    <item>
+      <title>A2A 协议完全指南：2026 年 AI Agent 通信标准</title>
+      <link>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/a2a-protocol-2026/</guid>
+      <description>A2A（Agent-to-Agent）协议是 Google 推出的开放标准，旨在解决 AI Agent 之间的通信与协作问题。本文深入解析 A2A 的核心概念、Agent Card 机制、与 MCP 的关系，以及实际开发中的应用场景。</description>
+    </item>
+  </channel>
+</rss>

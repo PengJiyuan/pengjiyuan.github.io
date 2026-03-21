@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI Agent on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
+    <description>Recent content in AI Agent on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/ai-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meta Manus「My Computer」：把 AI Agent 从云端拉回桌面</title>
+      <link>https://pengjiyuan.github.io/articles/manus-my-computer-2026/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/manus-my-computer-2026/</guid>
+      <description>2026年3月16日，被 Meta 收购的 AI 创业公司 Manus 推出桌面应用「My Computer」，将 AI Agent 直接运行在用户的 Mac 和 PC 上。本文深度解析 My Computer 的功能特性、技术架构，以及它与 OpenClaw 的竞争格局。</description>
+    </item>
+    <item>
+      <title>Claude Code Security：AI 驱动的代码安全扫描新范式</title>
+      <link>https://pengjiyuan.github.io/articles/claude-code-security-2026/</link>
+      <pubDate>Sun, 15 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/claude-code-security-2026/</guid>
+      <description>2026 年 2 月 Anthropic 发布的 Claude Code Security 标志着安全扫描从规则驱动向推理驱动的范式转变。本文深入解析这一新工具的能力、局限以及对网络安全行业的深远影响。</description>
+    </item>
+    <item>
+      <title>企业级 AI Agent 安全与零信任框架：2026 实战指南</title>
+      <link>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</guid>
+      <description>2026 年，80% 的 Fortune 500 企业已部署 AI Agent，但大多数尚未建立完善的安全体系。本文深入探讨 AI Agent 带来的新型攻击面、零信任安全框架、以及企业级部署的最佳实践，帮助你在创新与安全之间找到平衡。</description>
+    </item>
+    <item>
+      <title>OpenClaw 上手指南：从安装到深度实践</title>
+      <link>https://pengjiyuan.github.io/articles/openclaw-getting-started/</link>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/openclaw-getting-started/</guid>
+      <description>OpenClaw 是一个开源的 AI Agent 网关，支持多平台消息接入。本文详细介绍如何安装、配置、以及利用其强大的 Subagent、Cron、Memory 等功能打造个人 AI 助手。</description>
+    </item>
+    <item>
+      <title>Claude Computer Use 深度解析：AI 如何学会操控电脑</title>
+      <link>https://pengjiyuan.github.io/articles/computer-use-deep-dive/</link>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/computer-use-deep-dive/</guid>
+      <description>Claude Computer Use 让 AI 直接操控电脑成为现实。本文深入解析这项技术的工作原理，并提供详细的上手指南和代码示例。</description>
+    </item>
+    <item>
+      <title>AI Agent 工程实践：从 ReAct 到多智能体协作</title>
+      <link>https://pengjiyuan.github.io/articles/agent-intro/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-intro/</guid>
+      <description>AI Agent 是能够自主规划、调用工具、执行多步任务的 AI 系统。本文从 ReAct 模式出发，介绍 Agent 的核心架构与工程实现，包括工具调用、记忆管理和多 Agent 协作。</description>
+    </item>
+    <item>
+      <title>MCP 协议深度解析：给 AI 接上真实世界的标准接口</title>
+      <link>https://pengjiyuan.github.io/articles/mcp-intro/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/mcp-intro/</guid>
+      <description>MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放协议，旨在标准化 AI 模型与外部工具之间的通信。本文深入解析 MCP 架构设计与实现方法。</description>
+    </item>
+  </channel>
+</rss>

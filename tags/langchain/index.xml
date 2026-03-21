@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LangChain on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/langchain/</link>
+    <description>Recent content in LangChain on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/langchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 工程实践：从 ReAct 到多智能体协作</title>
+      <link>https://pengjiyuan.github.io/articles/agent-intro/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-intro/</guid>
+      <description>AI Agent 是能够自主规划、调用工具、执行多步任务的 AI 系统。本文从 ReAct 模式出发，介绍 Agent 的核心架构与工程实现，包括工具调用、记忆管理和多 Agent 协作。</description>
+    </item>
+    <item>
+      <title>RAG 系统从零构建：原理、实现与工程化</title>
+      <link>https://pengjiyuan.github.io/articles/rag-intro/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/rag-intro/</guid>
+      <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
+    </item>
+  </channel>
+</rss>

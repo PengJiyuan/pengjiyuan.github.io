@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Claude Code on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/claude-code/</link>
+    <description>Recent content in Claude Code on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/claude-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>端到端 AI Coding 平台 Skill 配置与消费完全指南</title>
+      <link>https://pengjiyuan.github.io/articles/ai-coding-platform-skill-guide/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-coding-platform-skill-guide/</guid>
+      <description>本文详细介绍什么是 Skill、主流 AI Coding 平台（Claude Code、OpenAI Codex、Cursor、Windsurf、SCLAW）的 Skill 系统、标准化格式、各平台配置方法以及最佳实践。</description>
+    </item>
+    <item>
+      <title>Claude Code Security：AI 驱动的代码安全扫描新范式</title>
+      <link>https://pengjiyuan.github.io/articles/claude-code-security-2026/</link>
+      <pubDate>Sun, 15 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/claude-code-security-2026/</guid>
+      <description>2026 年 2 月 Anthropic 发布的 Claude Code Security 标志着安全扫描从规则驱动向推理驱动的范式转变。本文深入解析这一新工具的能力、局限以及对网络安全行业的深远影响。</description>
+    </item>
+    <item>
+      <title>AI 编码 Agent 实战全攻略：CLI 工具与异步任务 (2026)</title>
+      <link>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</link>
+      <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</guid>
+      <description>2026 年 AI 编码工具已经从 IDE 自动补全进化到 CLI Agent 和异步任务 Agent。本文全面对比 Claude Code、Codex CLI、Cline、GitHub Copilot Agent 等主流工具，深入解析 MCP 生态和 Subagent 机制，提供完整的选型指南与实战工作流。</description>
+    </item>
+    <item>
+      <title>Claude Code 语音编程：编程进入「对讲机」时代</title>
+      <link>https://pengjiyuan.github.io/articles/claude-code-voice-programming/</link>
+      <pubDate>Sat, 07 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/claude-code-voice-programming/</guid>
+      <description>2026年3月，Anthropic 为 Claude Code 推出语音编程模式。长按空格说话，松开即完成输入——编程正在从键盘迁移到语音。本文深入解析这一交互革命的本质与未来影响。</description>
+    </item>
+  </channel>
+</rss>

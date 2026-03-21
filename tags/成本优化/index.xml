@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>成本优化 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96/</link>
+    <description>Recent content in 成本优化 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AgentOps 实战：从零构建企业级 AI Agent 运维体系</title>
+      <link>https://pengjiyuan.github.io/articles/agentops-2026/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agentops-2026/</guid>
+      <description>AI Agent 从概念验证到生产部署，最大的挑战不是模型能力，而是运维成本与可靠性。本文系统讲解 AgentOps 的三大核心支柱：成本管理（FinOps）、可观测性（Observability）与治理安全，附带 OpenClaw 实战技巧，帮助你把 AI Agent 真正跑起来。</description>
+    </item>
+    <item>
+      <title>LLM 语义缓存实战：用向量相似度将 API 成本降低 70%&#43;</title>
+      <link>https://pengjiyuan.github.io/articles/semantic-caching-2026/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/semantic-caching-2026/</guid>
+      <description>语义缓存是 LLM 应用成本优化的杀手锏。本文深入解析如何用向量嵌入和相似度匹配替代传统的精确匹配缓存，实现「请问病假政策」和「我们有多少天病假」这类语义相同但字面不同的查询共享缓存结果，实测可节省高达 73% 的 API 调用成本。</description>
+    </item>
+  </channel>
+</rss>

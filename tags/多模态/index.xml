@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>多模态 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%A8%A1%E6%80%81/</link>
+    <description>Recent content in 多模态 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 05 Mar 2026 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%A8%A1%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026 年 AI 技术趋势：从工程视角看真正重要的变化</title>
+      <link>https://pengjiyuan.github.io/articles/ai-trends-2026/</link>
+      <pubDate>Thu, 05 Mar 2026 09:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-trends-2026/</guid>
+      <description>2026 年 AI 的发展走向何方？褪去营销包装后，真正改变工程实践的技术趋势是什么？从推理模型到 Agent 基础设施，本文从技术视角梳理值得关注的方向。</description>
+    </item>
+  </channel>
+</rss>

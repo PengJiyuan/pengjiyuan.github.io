@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工具学习 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 工具学习 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Agent 效率优化：记忆、工具与规划的系统性指南</title>
+      <link>https://pengjiyuan.github.io/articles/agent-efficiency-2026/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-efficiency-2026/</guid>
+      <description>基于上海AI Lab等机构联合发布的前沿研究，深入解析 LLM Agent 在记忆管理、工具调用和规划策略三个维度的效率优化方案，涵盖 AgeMem、Tool-R0、HiPlan 等最新 SOTA 方法与实践技巧。</description>
+    </item>
+  </channel>
+</rss>

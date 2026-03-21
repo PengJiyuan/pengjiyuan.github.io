@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AGI on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/agi/</link>
+    <description>Recent content in AGI on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 14 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/agi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>世界模型与物理AI：2026年AI范式转移的关键方向</title>
+      <link>https://pengjiyuan.github.io/articles/world-model-physical-ai-2026/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/world-model-physical-ai-2026/</guid>
+      <description>从“预测下一个词”到“预测世界下一个状态”，AI正在经历从数字空间到物理世界的根本性转变。本文深入解析世界模型、NSP范式、具身智能的发展脉络，以及2026年为何是物理AI的关键分水岭。</description>
+    </item>
+  </channel>
+</rss>

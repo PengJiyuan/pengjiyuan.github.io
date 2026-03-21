@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>工具调用 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8/</link>
+    <description>Recent content in 工具调用 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCP 协议深度解析：给 AI 接上真实世界的标准接口</title>
+      <link>https://pengjiyuan.github.io/articles/mcp-intro/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/mcp-intro/</guid>
+      <description>MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放协议，旨在标准化 AI 模型与外部工具之间的通信。本文深入解析 MCP 架构设计与实现方法。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Copilot on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/copilot/</link>
+    <description>Recent content in Copilot on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 09 Mar 2026 11:00:00 +0800</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/copilot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 编码 Agent 实战全攻略：CLI 工具与异步任务 (2026)</title>
+      <link>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</link>
+      <pubDate>Mon, 09 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-coding-agent-cli-2026/</guid>
+      <description>2026 年 AI 编码工具已经从 IDE 自动补全进化到 CLI Agent 和异步任务 Agent。本文全面对比 Claude Code、Codex CLI、Cline、GitHub Copilot Agent 等主流工具，深入解析 MCP 生态和 Subagent 机制，提供完整的选型指南与实战工作流。</description>
+    </item>
+  </channel>
+</rss>

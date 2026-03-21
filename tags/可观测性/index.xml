@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>可观测性 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7/</link>
+    <description>Recent content in 可观测性 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AgentOps 实战：从零构建企业级 AI Agent 运维体系</title>
+      <link>https://pengjiyuan.github.io/articles/agentops-2026/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agentops-2026/</guid>
+      <description>AI Agent 从概念验证到生产部署，最大的挑战不是模型能力，而是运维成本与可靠性。本文系统讲解 AgentOps 的三大核心支柱：成本管理（FinOps）、可观测性（Observability）与治理安全，附带 OpenClaw 实战技巧，帮助你把 AI Agent 真正跑起来。</description>
+    </item>
+  </channel>
+</rss>

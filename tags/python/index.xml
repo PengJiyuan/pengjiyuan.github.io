@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/python/</link>
+    <description>Recent content in Python on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 Tiny Stable Diffusion &#43; Pillow 生成带文字的 AI 封面图</title>
+      <link>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-cover-image-generator/</guid>
+      <description>所有 AI 图片产品的通用方案：用 Tiny SD 生成背景，再用 Pillow 精确渲染文字。本文完整实现这套流程，一条命令生成可直接用于博客的封面图。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>企业级 AI on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai/</link>
+    <description>Recent content in 企业级 AI on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 13 Mar 2026 11:00:00 +0800</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多智能体系统实战：企业级架构设计与 2026 落地指南</title>
+      <link>https://pengjiyuan.github.io/articles/multi-agent-systems-2026/</link>
+      <pubDate>Fri, 13 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/multi-agent-systems-2026/</guid>
+      <description>从单智能体到多智能体协同，企业 AI 正在经历范式转变。本文深入剖析多智能体的核心架构模式、2026 年主流落地场景、实际实施中的挑战与应对策略，为企业构建生产级多智能体系统提供可操作的参考。</description>
+    </item>
+  </channel>
+</rss>
