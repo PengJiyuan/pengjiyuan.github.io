@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>生产级AI on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E7%94%9F%E4%BA%A7%E7%BA%A7ai/</link>
+    <description>Recent content in 生产级AI on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 22 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E7%94%9F%E4%BA%A7%E7%BA%A7ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agent 记忆持久化：让 AI 从&#34;金鱼&#34;变成&#34;老搭档&#34;</title>
+      <link>https://pengjiyuan.github.io/articles/agent-memory-persistence-2026/</link>
+      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-memory-persistence-2026/</guid>
+      <description>深入解析 2026 年生产级 AI Agent 的记忆持久化架构：从「金鱼困境」出发，系统讲解语义记忆、情景记忆、工作记忆、程序记忆四种类型，以及 Mem0、Letta、LangMem 等开源方案的实现路径与选型对比。</description>
+    </item>
+  </channel>
+</rss>

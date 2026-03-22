@@ -6,8 +6,15 @@
     <description>Recent content in AI Agent on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/ai-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[我的想法] AI Agent 经济需要哪些基础设施</title>
+      <link>https://pengjiyuan.github.io/articles/agent-infrastructure-opportunity-2026/</link>
+      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-infrastructure-opportunity-2026/</guid>
+      <description>当 AI Agent 能自主买卖、协作之后，支付、身份、信任、审计这些商业基础设施也得跟着变。这是一个比「做 Agent 应用」更底层的方向，值得想深一点。</description>
+    </item>
     <item>
       <title>Meta Manus「My Computer」：把 AI Agent 从云端拉回桌面</title>
       <link>https://pengjiyuan.github.io/articles/manus-my-computer-2026/</link>
