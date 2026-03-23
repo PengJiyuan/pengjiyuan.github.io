@@ -16,6 +16,13 @@
       <description>当所有人都在说 OpenClaw 生态有机会的时候，很少有人区分：什么方向是卖时间的服务，什么方向是能 scale 的产品。这个区别对副业很重要。</description>
     </item>
     <item>
+      <title>VLA 模型解析：让机器人同时看懂世界、执行动作</title>
+      <link>https://pengjiyuan.github.io/articles/vla-models-deep-dive-2026/</link>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/vla-models-deep-dive-2026/</guid>
+      <description>VLA（Vision-Language-Action）模型是物理 AI 的核心引擎——它让机器人能同时理解自然语言指令、感知视觉世界、并输出精确的运动控制指令。本文深入解析 VLA 的架构演进、三大主流方案对比、π0 的两阶段训练配方，以及 2026 年的发展趋势与挑战。</description>
+    </item>
+    <item>
       <title>[我的想法] AI Agent 经济需要哪些基础设施</title>
       <link>https://pengjiyuan.github.io/articles/agent-infrastructure-opportunity-2026/</link>
       <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
