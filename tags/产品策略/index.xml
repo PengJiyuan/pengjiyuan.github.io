@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>副业 on 棱镜空间</title>
-    <link>https://pengjiyuan.github.io/tags/%E5%89%AF%E4%B8%9A/</link>
-    <description>Recent content in 副业 on 棱镜空间</description>
+    <title>产品策略 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E7%95%A5/</link>
+    <description>Recent content in 产品策略 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pengjiyuan.github.io/tags/%E5%89%AF%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pengjiyuan.github.io/tags/%E4%BA%A7%E5%93%81%E7%AD%96%E7%95%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[我的想法] OpenClaw 生态里，服务和产品的区别</title>
       <link>https://pengjiyuan.github.io/articles/openclaw-service-vs-product-2026/</link>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/openclaw-service-vs-product-2026/</guid>
       <description>当所有人都在说 OpenClaw 生态有机会的时候，很少有人区分：什么方向是卖时间的服务，什么方向是能 scale 的产品。这个区别对副业很重要。</description>
-    </item>
-    <item>
-      <title>[我的想法] AI Agent 经济需要哪些基础设施</title>
-      <link>https://pengjiyuan.github.io/articles/agent-infrastructure-opportunity-2026/</link>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/agent-infrastructure-opportunity-2026/</guid>
-      <description>当 AI Agent 能自主买卖、协作之后，支付、身份、信任、审计这些商业基础设施也得跟着变。这是一个比「做 Agent 应用」更底层的方向，值得想深一点。</description>
     </item>
   </channel>
 </rss>
