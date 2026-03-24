@@ -30,6 +30,13 @@
       <description></description>
     </item>
     <item>
+      <title>Agentic RAG</title>
+      <link>https://pengjiyuan.github.io/tags/agentic-rag/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/agentic-rag/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>AI Agent</title>
       <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
@@ -58,10 +65,24 @@
       <description></description>
     </item>
     <item>
+      <title>RAG</title>
+      <link>https://pengjiyuan.github.io/tags/rag/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/rag/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>测试</title>
       <link>https://pengjiyuan.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>多步推理</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%AD%A5%E6%8E%A8%E7%90%86/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%AD%A5%E6%8E%A8%E7%90%86/</guid>
       <description></description>
     </item>
     <item>
@@ -76,6 +97,13 @@
       <link>https://pengjiyuan.github.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>检索增强</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA/</guid>
       <description></description>
     </item>
     <item>
@@ -97,6 +125,13 @@
       <link>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>知识库</title>
+      <link>https://pengjiyuan.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</guid>
       <description></description>
     </item>
     <item>
@@ -321,13 +356,6 @@
       <link>https://pengjiyuan.github.io/tags/qdrant/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/qdrant/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>RAG</title>
-      <link>https://pengjiyuan.github.io/tags/rag/</link>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/rag/</guid>
       <description></description>
     </item>
     <item>

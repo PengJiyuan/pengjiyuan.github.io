@@ -23,6 +23,12 @@
     <loc>https://pengjiyuan.github.io/tags/%E8%B5%84%E8%AE%AF/</loc>
     <lastmod>2026-03-24T23:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://pengjiyuan.github.io/tags/agentic-rag/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/agentic-rag-2026/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pengjiyuan.github.io/tags/ai-agent/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,13 +44,22 @@
     <loc>https://pengjiyuan.github.io/tags/neuro-symbolic/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://pengjiyuan.github.io/tags/rag/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%AD%A5%E6%8E%A8%E7%90%86/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</loc>
@@ -60,6 +75,9 @@
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/articles/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-23/</loc>
@@ -198,9 +216,6 @@
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/qdrant/</loc>
-    <lastmod>2026-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/rag/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/redis/</loc>
