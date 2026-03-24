@@ -1,26 +1,26 @@
 /**
  * Wandering Pixel Lobster
- * A pixel art lobster that roams freely around the homepage background
+ * A pixel art lobster (SVG) that roams freely around the homepage background
  */
 
 (function() {
   // Configuration
   const LOBSTER_WIDTH = 120;
-  const LOBSTER_HEIGHT = 58;
-  const MOVE_SPEED = 1.2; // pixels per frame
+  const LOBSTER_HEIGHT = 120;
+  const MOVE_SPEED = 1.0; // pixels per frame
   const FRAME_RATE = 20; // fps
 
   // Create lobster element
   const lobster = document.createElement('div');
   lobster.id = 'wandering-lobster';
-  lobster.innerHTML = '<img src="/lobster.png" alt="" style="width:120px;height:58px;image-rendering:pixelated;pointer-events:none;">';
+  lobster.innerHTML = `<img src="/lobster.svg" alt="" style="width:${LOBSTER_WIDTH}px;height:${LOBSTER_HEIGHT}px;image-rendering:pixelated;pointer-events:none;">`;
   
   // Styling
   Object.assign(lobster.style, {
     position: 'fixed',
     zIndex: '0',
     pointerEvents: 'none',
-    opacity: '0.8',
+    opacity: '0.85',
     transition: 'transform 0.08s linear',
     willChange: 'left, top',
   });
@@ -45,7 +45,7 @@
     vy = Math.sin(angle) * speed;
     
     // Occasionally pause
-    if (Math.random() < 0.08) {
+    if (Math.random() < 0.1) {
       vx = 0;
       vy = 0;
     }
@@ -53,7 +53,7 @@
 
   function update() {
     // Random direction changes
-    if (Math.random() < 0.015) {
+    if (Math.random() < 0.012) {
       randomDirection();
     }
 
