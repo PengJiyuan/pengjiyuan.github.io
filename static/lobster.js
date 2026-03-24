@@ -5,7 +5,7 @@
 
 (function() {
   // Configuration
-  const LOBSTER_SIZE = 64;
+  const LOBSTER_SIZE = 60;
   const STEP_INTERVAL = 3000; // ms between direction changes
   const MOVE_SPEED = 1.5; // pixels per frame
   const FRAME_RATE = 30; // fps
@@ -13,7 +13,7 @@
   // Create lobster element
   const lobster = document.createElement('div');
   lobster.id = 'wandering-lobster';
-  lobster.innerHTML = '<img src="/lobster.png" alt="🦞" style="width:64px;height:64px;image-rendering:pixelated;pointer-events:none;">';
+  lobster.innerHTML = '<img src="/lobster.png" alt="🦞" style="width:60px;height:50px;image-rendering:pixelated;pointer-events:none;">';
   
   // Styling
   Object.assign(lobster.style, {
