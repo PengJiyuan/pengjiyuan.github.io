@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Neuro-Symbolic on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/neuro-symbolic/</link>
+    <description>Recent content in Neuro-Symbolic on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/neuro-symbolic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>神经符号AI：让机器同时拥有直觉与逻辑</title>
+      <link>https://pengjiyuan.github.io/articles/neuro-symbolic-ai-2026/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/neuro-symbolic-ai-2026/</guid>
+      <description>2026年3月，Tufts大学研究团队发表的神经符号AI研究引发了业界震动——在机器人任务中实现100倍能效提升、训练时间从36小时缩短至34分钟。本文深入解析这一混合范式的核心原理、工作机制，以及它为何被视为通向通用人工智能的关键一步。</description>
+    </item>
+  </channel>
+</rss>

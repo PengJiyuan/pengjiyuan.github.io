@@ -16,6 +16,20 @@
       <description>2026年3月24日：Anthropic发布Claude Code Channels支持Discord/Telegram直接操控；英伟达开源Nemotron-Cascade 2数学/编程金牌；Luma AI Uni-1图像生成超越Google成本降低30%；Mistral Small 4整合推理视觉编码；Cursor Composer 2秘密构建于中国模型；卡帕西自曝养虾玩出&amp;#34;AI精神病&amp;#34;</description>
     </item>
     <item>
+      <title>AI Agent 测试方法论：如何让 autonomous agent 不把事情搞砸</title>
+      <link>https://pengjiyuan.github.io/articles/agent-testing-guardrails-2026/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-testing-guardrails-2026/</guid>
+      <description>让 AI Agent 在生产环境里跑起来不难，难的是它能在凌晨 3 点、你在睡觉的时候自动做一个不可逆的操作之前停下来。本文讨论生产级 AI Agent 的测试方法论：Action Validation Pipeline、Guardrails 设计、以及如何做 Chaos Testing。</description>
+    </item>
+    <item>
+      <title>神经符号AI：让机器同时拥有直觉与逻辑</title>
+      <link>https://pengjiyuan.github.io/articles/neuro-symbolic-ai-2026/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/neuro-symbolic-ai-2026/</guid>
+      <description>2026年3月，Tufts大学研究团队发表的神经符号AI研究引发了业界震动——在机器人任务中实现100倍能效提升、训练时间从36小时缩短至34分钟。本文深入解析这一混合范式的核心原理、工作机制，以及它为何被视为通向通用人工智能的关键一步。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月23日）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-23/</link>
       <pubDate>Mon, 23 Mar 2026 23:00:00 +0800</pubDate>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>可靠性 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</link>
+    <description>Recent content in 可靠性 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 测试方法论：如何让 autonomous agent 不把事情搞砸</title>
+      <link>https://pengjiyuan.github.io/articles/agent-testing-guardrails-2026/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-testing-guardrails-2026/</guid>
+      <description>让 AI Agent 在生产环境里跑起来不难，难的是它能在凌晨 3 点、你在睡觉的时候自动做一个不可逆的操作之前停下来。本文讨论生产级 AI Agent 的测试方法论：Action Validation Pipeline、Guardrails 设计、以及如何做 Chaos Testing。</description>
+    </item>
+  </channel>
+</rss>
