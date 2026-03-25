@@ -23,6 +23,13 @@
       <description>2026年3月25日上午版：OpenAI正式关闭Sora视频社区App、谷歌发布Gemini 3.1 Flash-Lite每秒360 Tokens实时渲染、litellm库遭供应链投毒攻击、微软从艾伦AI研究所挖角组建超级智能团队、KPCB 35亿美元重仓AI</description>
     </item>
     <item>
+      <title>思考的深度与广度：LLM Reasoning 技术全面解析</title>
+      <link>https://pengjiyuan.github.io/articles/llm-reasoning-2026/</link>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/llm-reasoning-2026/</guid>
+      <description>从 Chain-of-Thought 到 Tree-of-Thought、Graph-of-Thought，再到 Process Reward Model 与 Test-time Compute Scaling，本文系统梳理 2024-2026 年 LLM Reasoning 技术的演进路径、核心原理与实践指南。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月24日·晚间版）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-24/</link>
       <pubDate>Tue, 24 Mar 2026 23:00:00 +0800</pubDate>

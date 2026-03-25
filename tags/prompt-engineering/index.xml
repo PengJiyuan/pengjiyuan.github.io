@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>LLM on 棱镜空间</title>
-    <link>https://pengjiyuan.github.io/tags/llm/</link>
-    <description>Recent content in LLM on 棱镜空间</description>
+    <title>Prompt Engineering on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/prompt-engineering/</link>
+    <description>Recent content in Prompt Engineering on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pengjiyuan.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pengjiyuan.github.io/tags/prompt-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>思考的深度与广度：LLM Reasoning 技术全面解析</title>
       <link>https://pengjiyuan.github.io/articles/llm-reasoning-2026/</link>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/llm-reasoning-2026/</guid>
       <description>从 Chain-of-Thought 到 Tree-of-Thought、Graph-of-Thought，再到 Process Reward Model 与 Test-time Compute Scaling，本文系统梳理 2024-2026 年 LLM Reasoning 技术的演进路径、核心原理与实践指南。</description>
-    </item>
-    <item>
-      <title>LLM Agent 效率优化：记忆、工具与规划的系统性指南</title>
-      <link>https://pengjiyuan.github.io/articles/agent-efficiency-2026/</link>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/agent-efficiency-2026/</guid>
-      <description>基于上海AI Lab等机构联合发布的前沿研究，深入解析 LLM Agent 在记忆管理、工具调用和规划策略三个维度的效率优化方案，涵盖 AgeMem、Tool-R0、HiPlan 等最新 SOTA 方法与实践技巧。</description>
     </item>
   </channel>
 </rss>

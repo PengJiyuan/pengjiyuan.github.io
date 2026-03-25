@@ -6,8 +6,15 @@
     <description>Recent content in 推理 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>思考的深度与广度：LLM Reasoning 技术全面解析</title>
+      <link>https://pengjiyuan.github.io/articles/llm-reasoning-2026/</link>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/llm-reasoning-2026/</guid>
+      <description>从 Chain-of-Thought 到 Tree-of-Thought、Graph-of-Thought，再到 Process Reward Model 与 Test-time Compute Scaling，本文系统梳理 2024-2026 年 LLM Reasoning 技术的演进路径、核心原理与实践指南。</description>
+    </item>
     <item>
       <title>神经符号AI：让机器同时拥有直觉与逻辑</title>
       <link>https://pengjiyuan.github.io/articles/neuro-symbolic-ai-2026/</link>
