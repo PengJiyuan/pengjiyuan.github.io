@@ -6,8 +6,15 @@
     <description>Recent content in Agent on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 11:00:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 评测实践：构建可量化的 Agent 质量标准</title>
+      <link>https://pengjiyuan.github.io/articles/agent-evaluation-2026/</link>
+      <pubDate>Wed, 25 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-evaluation-2026/</guid>
+      <description>Benchmark 刷到满分，生产就翻车？本文系统梳理 2026 年 AI Agent 评测的完整图谱：从任务层基准（AgentBench、GAIA、WebArena）到决策层 LLM-as-Judge，再到生产级持续评测流水线，帮助你构建真正可量化的 Agent 质量标准。</description>
+    </item>
     <item>
       <title>Agent 记忆持久化：让 AI 从&#34;金鱼&#34;变成&#34;老搭档&#34;</title>
       <link>https://pengjiyuan.github.io/articles/agent-memory-persistence-2026/</link>

@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pengjiyuan.github.io/tags/agent/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/agent-evaluation-2026/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E8%AF%84%E6%B5%8B/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E7%94%9F%E4%BA%A7%E7%BA%A7-ai/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E8%B4%A8%E9%87%8F%E5%B7%A5%E7%A8%8B/</loc>
+    <lastmod>2026-03-25T11:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://pengjiyuan.github.io/tags/2026/</loc>
     <lastmod>2026-03-25T10:00:00+08:00</lastmod>
   </url><url>
@@ -9,12 +36,6 @@
     <lastmod>2026-03-25T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/ai%E5%8A%A8%E6%80%81/</loc>
-    <lastmod>2026-03-25T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/</loc>
-    <lastmod>2026-03-25T10:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/</loc>
     <lastmod>2026-03-25T10:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/news/</loc>
@@ -77,9 +98,6 @@
     <loc>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/articles/</loc>
-    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -120,9 +138,6 @@
     <lastmod>2026-03-22T23:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/articles/agent-infrastructure-opportunity-2026/</loc>
-    <lastmod>2026-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/agent/</loc>
     <lastmod>2026-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/articles/agent-memory-persistence-2026/</loc>

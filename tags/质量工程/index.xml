@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>质量工程 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E8%B4%A8%E9%87%8F%E5%B7%A5%E7%A8%8B/</link>
+    <description>Recent content in 质量工程 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Mar 2026 11:00:00 +0800</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E8%B4%A8%E9%87%8F%E5%B7%A5%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 评测实践：构建可量化的 Agent 质量标准</title>
+      <link>https://pengjiyuan.github.io/articles/agent-evaluation-2026/</link>
+      <pubDate>Wed, 25 Mar 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-evaluation-2026/</guid>
+      <description>Benchmark 刷到满分，生产就翻车？本文系统梳理 2026 年 AI Agent 评测的完整图谱：从任务层基准（AgentBench、GAIA、WebArena）到决策层 LLM-as-Judge，再到生产级持续评测流水线，帮助你构建真正可量化的 Agent 质量标准。</description>
+    </item>
+  </channel>
+</rss>
