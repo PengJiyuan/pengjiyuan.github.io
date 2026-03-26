@@ -16,6 +16,13 @@
       <description>2026年3月26日上午版：亚马逊收购人形机器人公司Fauna Robotics；英伟达GTC 2026全面拥抱&amp;#34;物理AI&amp;#34;时代；中国日均词元调用量突破140万亿；中关村论坛年会迎AI盛宴；金山办公WPS AI月活超8000万</description>
     </item>
     <item>
+      <title>LLM 推理时间计算Scaling：为什么 o1/o3 之后的 AI 正在改变游戏规则</title>
+      <link>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</guid>
+      <description>训练一个大模型越来越贵，但推理时投入更多算力也能显著提升效果——这就是 Test-Time Compute Scaling。o1 和 o3 已经证明这条路走得通。本文系统解析推理时计算Scaling的核心策略：多采样、迭代自改进、过程奖励模型，以及计算量最优分配背后的Scaling定律反转。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月25日·晚间版）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-25/</link>
       <pubDate>Wed, 25 Mar 2026 23:00:00 +0800</pubDate>

@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Mar 2026 11:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM 推理时间计算Scaling：为什么 o1/o3 之后的 AI 正在改变游戏规则</title>
+      <link>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</guid>
+      <description>训练一个大模型越来越贵，但推理时投入更多算力也能显著提升效果——这就是 Test-Time Compute Scaling。o1 和 o3 已经证明这条路走得通。本文系统解析推理时计算Scaling的核心策略：多采样、迭代自改进、过程奖励模型，以及计算量最优分配背后的Scaling定律反转。</description>
+    </item>
     <item>
       <title>AI Agent 评测实践：构建可量化的 Agent 质量标准</title>
       <link>https://pengjiyuan.github.io/articles/agent-evaluation-2026/</link>
