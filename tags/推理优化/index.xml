@@ -6,8 +6,15 @@
     <description>Recent content in 推理优化 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM 推理成本 2026 变革：几分钱时代的应用经济学</title>
+      <link>https://pengjiyuan.github.io/articles/llm-cost-economics-2026/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/llm-cost-economics-2026/</guid>
+      <description>2022 年花 20 美元能调用 100 万 Token，2026 年同样价格能调用 5000 万 Token——LLM 推理成本在三年内暴跌 250 倍。本文系统梳理当前 LLM 定价图谱、成本优化的工程策略，以及几分钱 Token 时代真正打开的应用空间。</description>
+    </item>
     <item>
       <title>LLM 推理时间计算Scaling：为什么 o1/o3 之后的 AI 正在改变游戏规则</title>
       <link>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</link>

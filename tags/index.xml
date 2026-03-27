@@ -30,17 +30,45 @@
       <description></description>
     </item>
     <item>
-      <title>AI Agent</title>
-      <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/ai-agent/</guid>
+      <title>AI 趋势</title>
+      <link>https://pengjiyuan.github.io/tags/ai-%E8%B6%8B%E5%8A%BF/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai-%E8%B6%8B%E5%8A%BF/</guid>
       <description></description>
     </item>
     <item>
       <title>LLM</title>
       <link>https://pengjiyuan.github.io/tags/llm/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>成本优化</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工程实践</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>推理优化</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Agent</title>
+      <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai-agent/</guid>
       <description></description>
     </item>
     <item>
@@ -83,13 +111,6 @@
       <link>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86/</link>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>推理优化</title>
-      <link>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</guid>
       <description></description>
     </item>
     <item>
@@ -209,13 +230,6 @@
       <link>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%AD%A5%E6%8E%A8%E7%90%86/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%AD%A5%E6%8E%A8%E7%90%86/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>工程实践</title>
-      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
       <description></description>
     </item>
     <item>
@@ -426,13 +440,6 @@
       <link>https://pengjiyuan.github.io/tags/finops/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/finops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>成本优化</title>
-      <link>https://pengjiyuan.github.io/tags/%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96/</link>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96/</guid>
       <description></description>
     </item>
     <item>
@@ -832,13 +839,6 @@
       <link>https://pengjiyuan.github.io/tags/computer-use/</link>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/computer-use/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI 趋势</title>
-      <link>https://pengjiyuan.github.io/tags/ai-%E8%B6%8B%E5%8A%BF/</link>
-      <pubDate>Thu, 05 Mar 2026 09:00:00 +0800</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/ai-%E8%B6%8B%E5%8A%BF/</guid>
       <description></description>
     </item>
     <item>
