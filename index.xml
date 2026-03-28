@@ -6,14 +6,14 @@
     <description>Recent content on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Mar 2026 16:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2026 23:00:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI 资讯速递（2026年3月28日）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-28/</link>
-      <pubDate>Sat, 28 Mar 2026 16:00:00 +0800</pubDate>
+      <pubDate>Sat, 28 Mar 2026 23:00:00 +0800</pubDate>
       <guid>https://pengjiyuan.github.io/news/2026-03-28/</guid>
-      <description>2026年3月28日：OpenAI关闭Sora视频模型；SoftBank 400亿美元贷款布局OpenAI IPO；SK海力士秘密提交美股IPO（融资可达140亿美元）；Mistral发布免费TTS模型剑指ElevenLabs；Cursor承认新编程模型基于Moonshot Kimi；亚马逊Trainium芯片获得Anthropic/OpenAI/Apple客户；Bernie Sanders提出数据 center建设禁令AI安全法案</description>
+      <description>2026年3月28日：OpenAI关闭Sora视频模型；SoftBank 400亿美元贷款布局OpenAI IPO；SK海力士秘密提交美股IPO；Mistral发布免费TTS模型；晚间：苹果挖角谷歌高管执掌AI营销；谷歌将为Anthropic数据中心提供融资；Anthropic泄露事件深层剖析</description>
     </item>
     <item>
       <title>LLM 应用可观测性实战：Tracing、评估与生产级监控指南</title>
