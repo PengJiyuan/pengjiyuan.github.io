@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/posts/</link>
+    <description>Recent content in Posts on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <atom:link href="https://pengjiyuan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://pengjiyuan.github.io/posts/2026-03-28-sclaw-execution-traces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/posts/2026-03-28-sclaw-execution-traces/</guid>
+      <description>&lt;h1 id=&#34;我的想法-sclaw-的隐藏资产agent-执行轨迹是最好的隐性知识库&#34;&gt;[我的想法] Sclaw 的隐藏资产：Agent 执行轨迹是最好的隐性知识库&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📅 2026-03-28
+🏷️ #我的想法 #AI副业 #Sclaw #隐性知识&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一个类比&#34;&gt;一个类比&lt;/h2&gt;
+&lt;p&gt;Google Maps 为什么准？因为它聚合了所有人的出行数据。&lt;/p&gt;
+&lt;p&gt;每次你开车导航，系统就知道：A 路口红灯太多，B 绕路更快。这个知识不是来自地图专家，而是来自所有用户的集体行动。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -436,6 +436,20 @@
       <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
     </item>
     <item>
+      <title></title>
+      <link>https://pengjiyuan.github.io/posts/2026-03-28-sclaw-execution-traces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/posts/2026-03-28-sclaw-execution-traces/</guid>
+      <description>&lt;h1 id=&#34;我的想法-sclaw-的隐藏资产agent-执行轨迹是最好的隐性知识库&#34;&gt;[我的想法] Sclaw 的隐藏资产：Agent 执行轨迹是最好的隐性知识库&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📅 2026-03-28
+🏷️ #我的想法 #AI副业 #Sclaw #隐性知识&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一个类比&#34;&gt;一个类比&lt;/h2&gt;
+&lt;p&gt;Google Maps 为什么准？因为它聚合了所有人的出行数据。&lt;/p&gt;
+&lt;p&gt;每次你开车导航，系统就知道：A 路口红灯太多，B 绕路更快。这个知识不是来自地图专家，而是来自所有用户的集体行动。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>关于本站</title>
       <link>https://pengjiyuan.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
