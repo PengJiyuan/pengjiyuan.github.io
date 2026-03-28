@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tracing on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/tracing/</link>
+    <description>Recent content in Tracing on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/tracing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM 应用可观测性实战：Tracing、评估与生产级监控指南</title>
+      <link>https://pengjiyuan.github.io/articles/llm-observability-2026/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/llm-observability-2026/</guid>
+      <description>模型跑起来了，然后呢？本文系统讲解 LLM 应用可观测性的三大支柱——结构化 Tracing、异步评估与实时监控，从 OpenTelemetry 集成到成本抖动检测，帮你建立生产级 LLM 应用的运维能力。</description>
+    </item>
+  </channel>
+</rss>

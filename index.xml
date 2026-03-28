@@ -16,6 +16,13 @@
       <description>2026年3月28日：法官临时阻止国防部对Anthropic禁令；David Sacks卸任白宫AI主管；Google Gemini支持导入竞品记忆；Apple允许第三方AI接入Siri；Meta将推两款Ray-Ban AI眼镜；Wikipedia禁止AI生成条目</description>
     </item>
     <item>
+      <title>LLM 应用可观测性实战：Tracing、评估与生产级监控指南</title>
+      <link>https://pengjiyuan.github.io/articles/llm-observability-2026/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/llm-observability-2026/</guid>
+      <description>模型跑起来了，然后呢？本文系统讲解 LLM 应用可观测性的三大支柱——结构化 Tracing、异步评估与实时监控，从 OpenTelemetry 集成到成本抖动检测，帮你建立生产级 LLM 应用的运维能力。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月27日）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-27/</link>
       <pubDate>Fri, 27 Mar 2026 23:00:00 +0800</pubDate>
