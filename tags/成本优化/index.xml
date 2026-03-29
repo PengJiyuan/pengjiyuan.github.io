@@ -6,8 +6,15 @@
     <description>Recent content in 成本优化 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/%E6%88%90%E6%9C%AC%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>xMemory：智能体记忆的语义层级架构，告别 RAG 失效</title>
+      <link>https://pengjiyuan.github.io/articles/xmemory-semantic-hierarchy-2026/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/xmemory-semantic-hierarchy-2026/</guid>
+      <description>基于 King&amp;#39;s College London 和 The Alan Turing Institute 的最新研究，深入解析 xMemory 如何通过语义主题的四层层级架构解决企业级多会话 AI 记忆失效问题，将每次查询的 token 消耗从 9000&#43; 降至约 4700。</description>
+    </item>
     <item>
       <title>LLM 推理成本 2026 变革：几分钱时代的应用经济学</title>
       <link>https://pengjiyuan.github.io/articles/llm-cost-economics-2026/</link>

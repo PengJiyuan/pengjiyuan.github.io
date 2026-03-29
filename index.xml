@@ -16,6 +16,13 @@
       <description>2026年3月29日：OpenAI关闭Sora视频产品线转向机器人研究；Anthropic Claude实现Mac电脑控制；Google发布TurboQuant算法将AI内存效率提升8倍；Cloudflare推出Dynamic Workers加速AI代理</description>
     </item>
     <item>
+      <title>xMemory：智能体记忆的语义层级架构，告别 RAG 失效</title>
+      <link>https://pengjiyuan.github.io/articles/xmemory-semantic-hierarchy-2026/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/xmemory-semantic-hierarchy-2026/</guid>
+      <description>基于 King&amp;#39;s College London 和 The Alan Turing Institute 的最新研究，深入解析 xMemory 如何通过语义主题的四层层级架构解决企业级多会话 AI 记忆失效问题，将每次查询的 token 消耗从 9000&#43; 降至约 4700。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月28日）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-28/</link>
       <pubDate>Sat, 28 Mar 2026 23:00:00 +0800</pubDate>

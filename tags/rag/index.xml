@@ -6,8 +6,15 @@
     <description>Recent content in RAG on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>xMemory：智能体记忆的语义层级架构，告别 RAG 失效</title>
+      <link>https://pengjiyuan.github.io/articles/xmemory-semantic-hierarchy-2026/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/xmemory-semantic-hierarchy-2026/</guid>
+      <description>基于 King&amp;#39;s College London 和 The Alan Turing Institute 的最新研究，深入解析 xMemory 如何通过语义主题的四层层级架构解决企业级多会话 AI 记忆失效问题，将每次查询的 token 消耗从 9000&#43; 降至约 4700。</description>
+    </item>
     <item>
       <title>Agentic RAG 实战：让检索拥有「规划能力」的 2026 进阶指南</title>
       <link>https://pengjiyuan.github.io/articles/agentic-rag-2026/</link>
