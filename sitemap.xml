@@ -23,6 +23,33 @@
     <loc>https://pengjiyuan.github.io/tags/%E8%B5%84%E8%AE%AF/</loc>
     <lastmod>2026-03-30T23:00:00+08:00</lastmod>
   </url><url>
+    <loc>https://pengjiyuan.github.io/tags/llm/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/o1/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/o3/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/reasoning/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E8%92%B8%E9%A6%8F/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/model-distillation-2026/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E5%B0%8F%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-29/</loc>
     <lastmod>2026-03-29T23:00:00+08:00</lastmod>
   </url><url>
@@ -44,14 +71,8 @@
     <loc>https://pengjiyuan.github.io/tags/%E8%AE%B0%E5%BF%86%E6%9C%BA%E5%88%B6/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/articles/</loc>
-    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-28/</loc>
     <lastmod>2026-03-28T23:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/llm/</loc>
-    <lastmod>2026-03-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/articles/llm-observability-2026/</loc>
     <lastmod>2026-03-28T00:00:00+00:00</lastmod>
@@ -98,9 +119,6 @@
     <loc>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/tags/o1/</loc>
-    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/tags/prm/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -138,9 +156,6 @@
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/prompt-engineering/</loc>
-    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/reasoning/</loc>
     <lastmod>2026-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/tree-of-thought/</loc>

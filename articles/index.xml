@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>模型蒸馏：让小模型学会深度思考</title>
+      <link>https://pengjiyuan.github.io/articles/model-distillation-2026/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/model-distillation-2026/</guid>
+      <description>o1 和 o3 展示了「深度思考」的威力——但思考链条长达数千 token，推理成本令人却步。模型蒸馏（Distillation）正在改变这一局面：如何将大模型的推理能力压缩进 7B~32B 的小模型，让它们也学会慢思考？本文系统梳理 2025-2026 年 Reasoning Model 蒸馏的技术原理、实战方法与最新进展。</description>
+    </item>
     <item>
       <title>xMemory：智能体记忆的语义层级架构，告别 RAG 失效</title>
       <link>https://pengjiyuan.github.io/articles/xmemory-semantic-hierarchy-2026/</link>

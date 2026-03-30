@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>O1 on 棱镜空间</title>
-    <link>https://pengjiyuan.github.io/tags/o1/</link>
-    <description>Recent content in O1 on 棱镜空间</description>
+    <title>模型压缩 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9/</link>
+    <description>Recent content in 模型压缩 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pengjiyuan.github.io/tags/o1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>模型蒸馏：让小模型学会深度思考</title>
       <link>https://pengjiyuan.github.io/articles/model-distillation-2026/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/model-distillation-2026/</guid>
       <description>o1 和 o3 展示了「深度思考」的威力——但思考链条长达数千 token，推理成本令人却步。模型蒸馏（Distillation）正在改变这一局面：如何将大模型的推理能力压缩进 7B~32B 的小模型，让它们也学会慢思考？本文系统梳理 2025-2026 年 Reasoning Model 蒸馏的技术原理、实战方法与最新进展。</description>
-    </item>
-    <item>
-      <title>LLM 推理时间计算Scaling：为什么 o1/o3 之后的 AI 正在改变游戏规则</title>
-      <link>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/test-time-compute-scaling-2026/</guid>
-      <description>训练一个大模型越来越贵，但推理时投入更多算力也能显著提升效果——这就是 Test-Time Compute Scaling。o1 和 o3 已经证明这条路走得通。本文系统解析推理时计算Scaling的核心策略：多采样、迭代自改进、过程奖励模型，以及计算量最优分配背后的Scaling定律反转。</description>
     </item>
   </channel>
 </rss>

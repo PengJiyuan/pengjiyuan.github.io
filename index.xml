@@ -16,6 +16,13 @@
       <description>2026年3月30日：苹果AI战略蓝图曝光称iPhone是AI最强载体；Meta开源TRIBE v2脑预测模型；Suno v5.5上线AI声音克隆；AI普及后职场工作量不减反增；英国研究AI失控案例6个月激增5倍；Anthropic未发布模型Mytho遭泄漏；OpenAI硬件团队被控窃取原型</description>
     </item>
     <item>
+      <title>模型蒸馏：让小模型学会深度思考</title>
+      <link>https://pengjiyuan.github.io/articles/model-distillation-2026/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/model-distillation-2026/</guid>
+      <description>o1 和 o3 展示了「深度思考」的威力——但思考链条长达数千 token，推理成本令人却步。模型蒸馏（Distillation）正在改变这一局面：如何将大模型的推理能力压缩进 7B~32B 的小模型，让它们也学会慢思考？本文系统梳理 2025-2026 年 Reasoning Model 蒸馏的技术原理、实战方法与最新进展。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年3月29日）</title>
       <link>https://pengjiyuan.github.io/news/2026-03-29/</link>
       <pubDate>Sun, 29 Mar 2026 23:00:00 +0800</pubDate>
