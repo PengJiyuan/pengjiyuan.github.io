@@ -30,6 +30,48 @@
       <description></description>
     </item>
     <item>
+      <title>AI Agent</title>
+      <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai-agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Function Calling</title>
+      <link>https://pengjiyuan.github.io/tags/function-calling/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/function-calling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>https://pengjiyuan.github.io/tags/mcp/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool Use</title>
+      <link>https://pengjiyuan.github.io/tags/tool-use/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/tool-use/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工程实践</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>函数调用</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>LLM</title>
       <link>https://pengjiyuan.github.io/tags/llm/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
@@ -156,24 +198,10 @@
       <description></description>
     </item>
     <item>
-      <title>工程实践</title>
-      <link>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>推理优化</title>
       <link>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</link>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E6%8E%A8%E7%90%86%E4%BC%98%E5%8C%96/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI Agent</title>
-      <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/ai-agent/</guid>
       <description></description>
     </item>
     <item>
@@ -391,13 +419,6 @@
       <link>https://pengjiyuan.github.io/tags/letta/</link>
       <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/letta/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCP</title>
-      <link>https://pengjiyuan.github.io/tags/mcp/</link>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
