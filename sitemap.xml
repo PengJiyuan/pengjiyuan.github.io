@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pengjiyuan.github.io/tags/agent/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/openclaw/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E6%8C%81%E4%B9%85%E5%8C%96/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/persistent-agent-2026/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E8%8C%83%E5%BC%8F%E8%BD%AC%E7%A7%BB/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E8%AE%B0%E5%BF%86%E6%9C%BA%E5%88%B6/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/</loc>
+    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://pengjiyuan.github.io/tags/2026/</loc>
     <lastmod>2026-04-01T10:04:31+08:00</lastmod>
   </url><url>
@@ -9,12 +39,6 @@
     <lastmod>2026-04-01T10:04:31+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/ai%E5%8A%A8%E6%80%81/</loc>
-    <lastmod>2026-04-01T10:04:31+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/</loc>
-    <lastmod>2026-04-01T10:04:31+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/</loc>
     <lastmod>2026-04-01T10:04:31+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/news/</loc>
@@ -47,9 +71,6 @@
     <loc>https://pengjiyuan.github.io/tags/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/</loc>
     <lastmod>2026-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/articles/</loc>
-    <lastmod>2026-03-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-30/</loc>
     <lastmod>2026-03-30T23:00:00+08:00</lastmod>
   </url><url>
@@ -80,9 +101,6 @@
     <loc>https://pengjiyuan.github.io/news/2026-03-29/</loc>
     <lastmod>2026-03-29T23:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/tags/agent/</loc>
-    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/tags/rag/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -93,9 +111,6 @@
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E5%A4%9A%E4%BC%9A%E8%AF%9D%E6%99%BA%E8%83%BD%E4%BD%93/</loc>
-    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E8%AE%B0%E5%BF%86%E6%9C%BA%E5%88%B6/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-28/</loc>
@@ -237,9 +252,6 @@
     <lastmod>2026-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/foundation-model/</loc>
-    <lastmod>2026-03-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/openclaw/</loc>
     <lastmod>2026-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/physical-ai/</loc>
@@ -453,9 +465,6 @@
     <lastmod>2026-03-13T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/articles/multi-agent-systems-2026/</loc>
-    <lastmod>2026-03-13T11:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2026-03-13T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai/</loc>

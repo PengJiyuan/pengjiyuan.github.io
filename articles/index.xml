@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 11:00:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>持久化 AI Agent：范式转移、架构挑战与 2026 实战指南</title>
+      <link>https://pengjiyuan.github.io/articles/persistent-agent-2026/</link>
+      <pubDate>Wed, 01 Apr 2026 11:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/persistent-agent-2026/</guid>
+      <description>从「问答」到「持续运行」——传统 AI 是你提问它回答，持久化 AI Agent 则是永不睡眠的数字员工。理解这种范式转移的本质：Agent 如何维持身份、如何管理长生命周期中的记忆与任务、如何避免「日落型遗忘」陷阱，是 2026 年构建真正可用 AI 系统的关键。</description>
+    </item>
     <item>
       <title>LLM 函数调用实战：让大模型真正替你干活</title>
       <link>https://pengjiyuan.github.io/articles/function-calling-2026/</link>
