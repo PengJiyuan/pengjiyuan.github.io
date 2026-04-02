@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://pengjiyuan.github.io/tags/dare/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/llm/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/model-merging/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/model-merging-llm-2026/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/ties/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E5%8F%82%E6%95%B0%E7%A9%BA%E9%97%B4/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E8%9E%8D%E5%90%88/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://pengjiyuan.github.io/articles/</loc>
+    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://pengjiyuan.github.io/tags/2026/</loc>
     <lastmod>2026-04-01T23:00:00+08:00</lastmod>
   </url><url>
@@ -9,12 +39,6 @@
     <lastmod>2026-04-01T23:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/ai%E5%8A%A8%E6%80%81/</loc>
-    <lastmod>2026-04-01T23:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/</loc>
-    <lastmod>2026-04-01T23:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/</loc>
     <lastmod>2026-04-01T23:00:00+08:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/news/</loc>
@@ -44,9 +68,6 @@
     <loc>https://pengjiyuan.github.io/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2026-04-01T11:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://pengjiyuan.github.io/articles/</loc>
-    <lastmod>2026-04-01T11:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-31/</loc>
     <lastmod>2026-03-31T23:00:00+08:00</lastmod>
   </url><url>
@@ -73,9 +94,6 @@
   </url><url>
     <loc>https://pengjiyuan.github.io/news/2026-03-30/</loc>
     <lastmod>2026-03-30T23:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://pengjiyuan.github.io/tags/llm/</loc>
-    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://pengjiyuan.github.io/tags/o1/</loc>
     <lastmod>2026-03-30T00:00:00+00:00</lastmod>

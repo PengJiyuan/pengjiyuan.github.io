@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>参数空间 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%8F%82%E6%95%B0%E7%A9%BA%E9%97%B4/</link>
+    <description>Recent content in 参数空间 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%8F%82%E6%95%B0%E7%A9%BA%E9%97%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Model Merging：如何把多个专家模型合并成一个？</title>
+      <link>https://pengjiyuan.github.io/articles/model-merging-llm-2026/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/model-merging-llm-2026/</guid>
+      <description>Model Merging 通过直接对多个微调模型的权重参数做算术运算，将专家模型合并为一个多任务统一模型。不同于模型集成，合并后得到的是单个模型，推理零额外开销。本文深入解析 Task Vector、TIES-Merging、DARE 等核心方法，以及 ICLR 2026 最新研究进展。</description>
+    </item>
+  </channel>
+</rss>
