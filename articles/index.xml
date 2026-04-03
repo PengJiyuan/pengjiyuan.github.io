@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 协议生态全景 2026：MCP、A2A、AG-UI 与智能体互联基础设施</title>
+      <link>https://pengjiyuan.github.io/articles/agent-protocol-ecosystem-2026/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-protocol-ecosystem-2026/</guid>
+      <description>当 AI Agent 从单点工具走向互联系统，协议层成为最重要的基础设施。本文系统梳理 2026 年 AI Agent 互联协议生态：MCP 的生产困境与进化路线、A2A 的企业级多智能体协作、AG-UI 的人机交互标准，以及如何依据场景选择正确的协议组合。</description>
+    </item>
     <item>
       <title>Model Merging：如何把多个专家模型合并成一个？</title>
       <link>https://pengjiyuan.github.io/articles/model-merging-llm-2026/</link>

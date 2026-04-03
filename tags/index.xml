@@ -30,6 +30,55 @@
       <description></description>
     </item>
     <item>
+      <title>A2A</title>
+      <link>https://pengjiyuan.github.io/tags/a2a/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/a2a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AG-UI</title>
+      <link>https://pengjiyuan.github.io/tags/ag-ui/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ag-ui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent</title>
+      <link>https://pengjiyuan.github.io/tags/agent/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>https://pengjiyuan.github.io/tags/mcp/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>多智能体</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>互操作性</title>
+      <link>https://pengjiyuan.github.io/tags/%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>协议</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%8D%8F%E8%AE%AE/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>DARE</title>
       <link>https://pengjiyuan.github.io/tags/dare/</link>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
@@ -69,13 +118,6 @@
       <link>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E8%9E%8D%E5%90%88/</link>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E6%A8%A1%E5%9E%8B%E8%9E%8D%E5%90%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Agent</title>
-      <link>https://pengjiyuan.github.io/tags/agent/</link>
-      <pubDate>Wed, 01 Apr 2026 11:00:00 +0800</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/agent/</guid>
       <description></description>
     </item>
     <item>
@@ -125,13 +167,6 @@
       <link>https://pengjiyuan.github.io/tags/function-calling/</link>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/function-calling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCP</title>
-      <link>https://pengjiyuan.github.io/tags/mcp/</link>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
@@ -688,13 +723,6 @@
       <description></description>
     </item>
     <item>
-      <title>AG-UI</title>
-      <link>https://pengjiyuan.github.io/tags/ag-ui/</link>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/ag-ui/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>CopilotKit</title>
       <link>https://pengjiyuan.github.io/tags/copilotkit/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
@@ -713,13 +741,6 @@
       <link>https://pengjiyuan.github.io/tags/%E7%94%9F%E6%88%90%E5%BC%8Fui/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E7%94%9F%E6%88%90%E5%BC%8Fui/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>协议</title>
-      <link>https://pengjiyuan.github.io/tags/%E5%8D%8F%E8%AE%AE/</link>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E5%8D%8F%E8%AE%AE/</guid>
       <description></description>
     </item>
     <item>
@@ -772,13 +793,6 @@
       <description></description>
     </item>
     <item>
-      <title>多智能体</title>
-      <link>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</link>
-      <pubDate>Fri, 13 Mar 2026 11:00:00 +0800</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>企业级 AI</title>
       <link>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai/</link>
       <pubDate>Fri, 13 Mar 2026 11:00:00 +0800</pubDate>
@@ -811,13 +825,6 @@
       <link>https://pengjiyuan.github.io/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>A2A</title>
-      <link>https://pengjiyuan.github.io/tags/a2a/</link>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/a2a/</guid>
       <description></description>
     </item>
     <item>

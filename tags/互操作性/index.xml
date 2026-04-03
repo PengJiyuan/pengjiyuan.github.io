@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AG-UI on 棱镜空间</title>
-    <link>https://pengjiyuan.github.io/tags/ag-ui/</link>
-    <description>Recent content in AG-UI on 棱镜空间</description>
+    <title>互操作性 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/</link>
+    <description>Recent content in 互操作性 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pengjiyuan.github.io/tags/ag-ui/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pengjiyuan.github.io/tags/%E4%BA%92%E6%93%8D%E4%BD%9C%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Agent 协议生态全景 2026：MCP、A2A、AG-UI 与智能体互联基础设施</title>
       <link>https://pengjiyuan.github.io/articles/agent-protocol-ecosystem-2026/</link>
       <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/agent-protocol-ecosystem-2026/</guid>
       <description>当 AI Agent 从单点工具走向互联系统，协议层成为最重要的基础设施。本文系统梳理 2026 年 AI Agent 互联协议生态：MCP 的生产困境与进化路线、A2A 的企业级多智能体协作、AG-UI 的人机交互标准，以及如何依据场景选择正确的协议组合。</description>
-    </item>
-    <item>
-      <title>AG-UI 协议完全指南：AI Agent 与用户界面的连接层</title>
-      <link>https://pengjiyuan.github.io/articles/ag-ui-protocol-2026/</link>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/ag-ui-protocol-2026/</guid>
-      <description>AG-UI（Agent-User Interaction）协议是连接 AI Agent 与用户界面的开放标准。本文深入解析 AG-UI 的核心概念、与 MCP/A2A 的关系、以及如何使用它构建下一代智能应用。</description>
     </item>
   </channel>
 </rss>
