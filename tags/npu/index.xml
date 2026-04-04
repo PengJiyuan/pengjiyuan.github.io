@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NPU on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/npu/</link>
+    <description>Recent content in NPU on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/npu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>边缘 AI 智能体与 SLM 崛起：2026 年本地智能的新范式</title>
+      <link>https://pengjiyuan.github.io/articles/edge-ai-agents-slm-2026/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/edge-ai-agents-slm-2026/</guid>
+      <description>当业界还在追逐更大的云端模型时，另一场静默的革命正在终端发生。2026 年，SLM（小语言模型）、NPU 算力成熟与混合边缘云架构正在将 AI 推理从数据中心推向设备端。本文系统解析这场边缘 AI 浪潮的技术驱动力、真实落地场景，以及开发者如何构建自己的边缘 AI 智能体。</description>
+    </item>
+  </channel>
+</rss>
