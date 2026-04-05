@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vibe Coding 2026：从&#34;忘记代码&#34;到工程化实践</title>
+      <link>https://pengjiyuan.github.io/articles/vibe-coding-2026/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/vibe-coding-2026/</guid>
+      <description>2025年，Andrej Karpathy 发明了&amp;#34;Vibe Coding&amp;#34;这个词；2026年，它已被92%的美国开发者日常使用。本文系统解析 Vibe Coding 的工具生态、2026年成熟度现状、核心挑战与工程化最佳实践，帮助你在享受AI编程速度的同时避开常见的坑。</description>
+    </item>
     <item>
       <title>边缘 AI 智能体与 SLM 崛起：2026 年本地智能的新范式</title>
       <link>https://pengjiyuan.github.io/articles/edge-ai-agents-slm-2026/</link>

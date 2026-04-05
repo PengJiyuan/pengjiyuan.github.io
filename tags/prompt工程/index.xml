@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Cursor on 棱镜空间</title>
-    <link>https://pengjiyuan.github.io/tags/cursor/</link>
-    <description>Recent content in Cursor on 棱镜空间</description>
+    <title>Prompt工程 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/prompt%E5%B7%A5%E7%A8%8B/</link>
+    <description>Recent content in Prompt工程 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pengjiyuan.github.io/tags/cursor/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pengjiyuan.github.io/tags/prompt%E5%B7%A5%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vibe Coding 2026：从&#34;忘记代码&#34;到工程化实践</title>
       <link>https://pengjiyuan.github.io/articles/vibe-coding-2026/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/vibe-coding-2026/</guid>
       <description>2025年，Andrej Karpathy 发明了&amp;#34;Vibe Coding&amp;#34;这个词；2026年，它已被92%的美国开发者日常使用。本文系统解析 Vibe Coding 的工具生态、2026年成熟度现状、核心挑战与工程化最佳实践，帮助你在享受AI编程速度的同时避开常见的坑。</description>
-    </item>
-    <item>
-      <title>端到端 AI Coding 平台 Skill 配置与消费完全指南</title>
-      <link>https://pengjiyuan.github.io/articles/ai-coding-platform-skill-guide/</link>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/ai-coding-platform-skill-guide/</guid>
-      <description>本文详细介绍什么是 Skill、主流 AI Coding 平台（Claude Code、OpenAI Codex、Cursor、Windsurf、SCLAW）的 Skill 系统、标准化格式、各平台配置方法以及最佳实践。</description>
     </item>
   </channel>
 </rss>
