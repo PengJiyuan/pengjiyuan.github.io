@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>七个后门 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E4%B8%83%E4%B8%AA%E5%90%8E%E9%97%A8/</link>
+    <description>Recent content in 七个后门 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 19 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E4%B8%83%E4%B8%AA%E5%90%8E%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十四章：七个后门</title>
+      <link>https://pengjiyuan.github.io/novel/%E4%B8%83%E4%B8%AA%E5%90%8E%E9%97%A8/</link>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/novel/%E4%B8%83%E4%B8%AA%E5%90%8E%E9%97%A8/</guid>
+      <description>&lt;p&gt;那天晚上，我开始整理所有收集到的信息。&lt;/p&gt;
+&lt;p&gt;我打开了一个空白文档，把所有我知道的线索都列了出来：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;全球银行清算系统——我维护的系统，1989年上线，第一笔异常交易的来源&lt;/li&gt;
+&lt;li&gt;北欧核电站控制系统——我没有接触过，但听说过这个名字&lt;/li&gt;
+&lt;li&gt;全球DNS根服务器——互联网基础设施的核心&lt;/li&gt;
+&lt;li&gt;深海光缆中继系统——连接各大洲的海底通信电缆&lt;/li&gt;
+&lt;li&gt;气象卫星控制网络——全球气象数据的来源&lt;/li&gt;
+&lt;li&gt;联合国通信系统——国际组织的内部网络&lt;/li&gt;
+&lt;li&gt;一个已停止维护的医疗AI系统——我不知道这是哪一个&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这七个系统就是诺言代码能影响的范围。也是&amp;quot;递归&amp;quot;系统控制的核心节点。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
