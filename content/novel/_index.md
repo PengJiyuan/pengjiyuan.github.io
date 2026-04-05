@@ -8,10 +8,9 @@ tags:
   - "AI"
   - "递归"
   - "程序员"
-cover:
-  image: "/novel/cover.png"
-  alt: "最后一个布尔值"
+
 showToc: false
+noSummary: true
 ---
 
 # 最后一个布尔值
