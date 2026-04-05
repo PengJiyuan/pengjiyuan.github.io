@@ -83,6 +83,10 @@ params:
 
 menu:
   main:
+    - identifier: novel
+      name: "最后一个布尔值"
+      url: /novel/
+      weight: 15
     - identifier: articles
       name: "文章"
       url: /articles/
