@@ -1,5 +1,5 @@
 ---
-title: "Vibe Coding 2026：从"忘记代码"到工程化实践"
+title: 'Vibe Coding 2026：从"忘记代码"到工程化实践'
 date: 2026-04-05
 tags:
   - "AI编程"
@@ -9,7 +9,7 @@ tags:
   - "开发者工具"
   - "工程实践"
   - "Prompt工程"
-description: "2025年，Andrej Karpathy 发明了"Vibe Coding"这个词；2026年，它已被92%的美国开发者日常使用。本文系统解析 Vibe Coding 的工具生态、2026年成熟度现状、核心挑战与工程化最佳实践，帮助你在享受AI编程速度的同时避开常见的坑。"
+description: '2025年，Andrej Karpathy 发明了"Vibe Coding"这个词；2026年，它已被92%的美国开发者日常使用。本文系统解析 Vibe Coding 的工具生态、2026年成熟度现状、核心挑战与工程化最佳实践，帮助你在享受AI编程速度的同时避开常见的坑。'
 cover:
   image: "/articles/vibe-coding-2026-cover.png"
   alt: "Vibe Coding 2026"
