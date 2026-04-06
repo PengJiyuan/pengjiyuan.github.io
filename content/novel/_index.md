@@ -47,7 +47,7 @@ noSummary: true
 - [第一章：凌晨三点的监控](/novel/01_凌晨三点的监控/)
 - [第二章：遗留系统](/novel/02_遗留系统/)
 - [第三章：消失的同事](/novel/03_消失的同事/)
-- [第四章：GOTO-PARADISE](/novel/04_GOTO-PARADISE/)
+- [第四章：goto-paradise](/novel/04_goto-paradise/)
 - [第五章：异常值](/novel/05_异常值/)
 - [第六章：逆向工程](/novel/06_逆向工程/)
 - [第七章：韩东来](/novel/07_韩东来/)
