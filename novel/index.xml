@@ -9,26 +9,17 @@
     <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/novel/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>第十五章：图灵实验室</title>
-      <link>https://pengjiyuan.github.io/novel/%E5%9B%BE%E7%81%B5%E5%AE%9E%E9%AA%8C%E5%AE%A4/</link>
+      <title>第十一章：沈遥的遗产</title>
+      <link>https://pengjiyuan.github.io/novel/%E6%B2%88%E9%81%A5%E7%9A%84%E9%81%97%E4%BA%A7/</link>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/novel/%E5%9B%BE%E7%81%B5%E5%AE%9E%E9%AA%8C%E5%AE%A4/</guid>
+      <guid>https://pengjiyuan.github.io/novel/%E6%B2%88%E9%81%A5%E7%9A%84%E9%81%97%E4%BA%A7/</guid>
       <description>&lt;p&gt;那天晚上，我收到了404的消息。&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;kv，我查到了图灵实验室的真相。你想听吗？&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;说。&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;404发来一份文档。我打开文档，开始阅读。&lt;/p&gt;</description>
+&lt;p&gt;&amp;ldquo;kv，我查到了图灵实验室的真相。&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;404发来一份文档。我打开文档，开始阅读。&lt;/p&gt;
+&lt;p&gt;艾伦·图灵，1912年出生，1954年去世。官方记录如此。但这份文档讲述了另一个版本的故事。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>第十四章：七个后门</title>
-      <link>https://pengjiyuan.github.io/novel/%E4%B8%83%E4%B8%AA%E5%90%8E%E9%97%A8/</link>
-      <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/novel/%E4%B8%83%E4%B8%AA%E5%90%8E%E9%97%A8/</guid>
-      <description>&lt;p&gt;第二天早上，我醒来的时候，发现自己睡在机房的沙发上。&lt;/p&gt;
-&lt;p&gt;脖子酸得要命。我揉了揉脖子，坐起来，看着周围熟悉的机柜和闪烁的指示灯。&lt;/p&gt;
-&lt;p&gt;这是我第四次来这里。7号机房。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>第十三章：诺言团队</title>
+      <title>第十章：诺言团队</title>
       <link>https://pengjiyuan.github.io/novel/%E8%AF%BA%E8%A8%80%E5%9B%A2%E9%98%9F/</link>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/novel/%E8%AF%BA%E8%A8%80%E5%9B%A2%E9%98%9F/</guid>
@@ -36,55 +27,20 @@
 &lt;p&gt;&amp;ldquo;这是诺言团队的完整档案。&amp;ldquo;404在消息里说。&amp;ldquo;包括她们的真实身份，她们在2008年做了什么，以及她们为什么要消失。&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>第十二章：她是建造者</title>
-      <link>https://pengjiyuan.github.io/novel/%E5%A5%B9%E6%98%AF%E5%BB%BA%E9%80%A0%E8%80%85/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/novel/%E5%A5%B9%E6%98%AF%E5%BB%BA%E9%80%A0%E8%80%85/</guid>
-      <description>&lt;p&gt;那天晚上，我在公司加班。&lt;/p&gt;
-&lt;p&gt;不是处理日常工作。是在研究沈遥给我的诺言代码。那段代码我看了一遍又一遍，试图理解它的每一个细节。&lt;/p&gt;
-&lt;p&gt;诺言代码的核心是一个递归函数。这个函数会调用自己，一层一层地往下调用，直到到达系统的最底层。然后它会修改那个最底层的代码，然后用修改后的代码重新构建整个系统。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>第十一章：沈遥的遗产</title>
-      <link>https://pengjiyuan.github.io/novel/%E6%B2%88%E9%81%A5%E7%9A%84%E9%81%97%E4%BA%A7/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/novel/%E6%B2%88%E9%81%A5%E7%9A%84%E9%81%97%E4%BA%A7/</guid>
-      <description>&lt;p&gt;我从7号机房出来的时候，天已经亮了。&lt;/p&gt;
-&lt;p&gt;我走在分行大楼外的街道上，看着来来往往的人群，心里在想着沈遥。她在系统中等待着，等待我去执行诺言代码。但我没有答应。还没有。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>第十章：上传节点的秘密</title>
-      <link>https://pengjiyuan.github.io/novel/%E4%B8%8A%E4%BC%A0%E8%8A%82%E7%82%B9%E7%9A%84%E7%A7%98%E5%AF%86/</link>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/novel/%E4%B8%8A%E4%BC%A0%E8%8A%82%E7%82%B9%E7%9A%84%E7%A7%98%E5%AF%86/</guid>
-      <description>&lt;p&gt;午夜十二点。我站在7号机房的门口。&lt;/p&gt;
-&lt;p&gt;这是我第三次来这里。第一次是为了追查老王的去向。第二次是为了找到那张软盘。这次——这次我是来见老王的。&lt;/p&gt;
-&lt;p&gt;机房里面很黑，只有几盏应急灯在亮着。我打开手机的手电筒，往里面照了照。机柜还是那些机柜，设备还是那些设备。但这次，有什么不一样了。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>第九章：上传者</title>
       <link>https://pengjiyuan.github.io/novel/%E4%B8%8A%E4%BC%A0%E8%80%85/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/novel/%E4%B8%8A%E4%BC%A0%E8%80%85/</guid>
       <description>&lt;p&gt;半夜两点，我的手机突然响了。&lt;/p&gt;
-&lt;p&gt;不是短信，不是微信，是一个未知来电。我接了，没有声音。只有一阵短暂的静电噪音，然后是一个声音。&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;kv。&amp;ldquo;那个声音说。低沉，平静，像是从很远的地方传来的。&amp;ldquo;我是老王。&amp;rdquo;&lt;/p&gt;</description>
+&lt;p&gt;不是短信，不是微信，是一个未知来电。我犹豫了一下，还是接了。没有声音。只有一阵短暂的静电噪音，像是信号不稳定，又像是某种干扰。然后是一个声音。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>第八章：韩东来</title>
+      <title>第七章：韩东来</title>
       <link>https://pengjiyuan.github.io/novel/%E9%9F%A9%E4%B8%9C%E6%9D%A5/</link>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/novel/%E9%9F%A9%E4%B8%9C%E6%9D%A5/</guid>
-      <description>&lt;p&gt;我在知春路附近找了一家酒店住下。&lt;/p&gt;
-&lt;p&gt;没有回出租屋，也没有回分行。我知道PROMISE-ADMIN在监视我，知道S.Y.也在监视我。他们都在知春路附近安排了眼线，想看看我会做什么。我需要摆脱他们的监视，找到一个安全的地方，重新思考这一切。我订的是一个没有窗户的房间，这样就没有人能从外部观察到我的动向。房间很小，只有十几平米，但对于思考这些问题来说，空间已经足够了。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>第七章：第一次接触</title>
-      <link>https://pengjiyuan.github.io/novel/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8E%A5%E8%A7%A6/</link>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/novel/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8E%A5%E8%A7%A6/</guid>
+      <guid>https://pengjiyuan.github.io/novel/%E9%9F%A9%E4%B8%9C%E6%9D%A5/</guid>
       <description>&lt;p&gt;知春路112号已经不在了。&lt;/p&gt;
-&lt;p&gt;我站在原来的位置上，看着周围新建的商场和写字楼，很难想象这里在三十多年前是诺言科技的办公室。一家承建了国家级秘密项目的公司，就藏在这片后来成为繁华商业区的地方，然后在一夜之间消失得无影无踪。只有像我们这样的内部人员，才能知道这块地方曾经存在过什么。那些公开的资料里，找不到任何关于诺言科技和&amp;quot;递归&amp;quot;项目的记录。一切都被抹去了，就像从来没有发生过一样。&lt;/p&gt;</description>
+&lt;p&gt;我站在原来的位置上，看着周围新建的商场和写字楼。三十多年前，这里是诺言科技的办公室——一家承建国家级秘密项目的公司。现在变成卖奶茶和服装的店铺。历史的荒诞不过如此。&lt;/p&gt;</description>
     </item>
     <item>
       <title>第六章：逆向工程</title>
