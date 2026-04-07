@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI DevOps on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/ai-devops/</link>
+    <description>Recent content in AI DevOps on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/ai-devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 驱动的 CI/CD：代码交付全流程智能化实战指南</title>
+      <link>https://pengjiyuan.github.io/articles/ai-cicd-devops-2026/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-cicd-devops-2026/</guid>
+      <description>AI 正在重新定义软件交付的每一个环节。从提交前自动生成测试、AI 实时审查代码漏洞，到基于代码变更自动判断发布风险，2026 年的 CI/CD 流水线已经深度拥抱 AI Agent。本文提供从代码提交到生产部署的全流程智能化实战指南。</description>
+    </item>
+  </channel>
+</rss>
