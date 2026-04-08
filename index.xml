@@ -67,6 +67,13 @@
 &lt;p&gt;不是不想去，是不敢去。我坐在出租屋里，盯着窗外发呆，一直到天亮。那张照片里的老王，那个在地下三层出现的PROMISE-ADMIN，那些指向2008年的线索——所有这些都太重了，我需要先整理清楚才能迈出下一步。但整理得越清楚，我就越恐惧。这些线索不是零散的，它们指向同一个方向。而那个方向让我感到一种前所未有的寒意。我开始意识到，我不是在一个迷宫里探索，我是在一个已经被设计好的轨道上滑行。每一步都被人预料到了。每一个发现都被人预设好了。我只是一个执行剧本的工具。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>AI 资讯速递（2026年4月8日）</title>
+      <link>https://pengjiyuan.github.io/news/2026-04-08/</link>
+      <pubDate>Wed, 08 Apr 2026 11:17:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/news/2026-04-08/</guid>
+      <description>2026年4月8日：智元AGIBOT发布周持续进行；智谱AI发布GLM-5.1：8小时自主工作超越GPT-5.4；中国AI股集体大涨，智谱AI涨15%领跑；Anthropic发布Mythos模型发现27年未修复漏洞；小米发布FIPO算法；中国AI政策落地</description>
+    </item>
+    <item>
       <title>第三章：消失的同事</title>
       <link>https://pengjiyuan.github.io/novel/03_%E6%B6%88%E5%A4%B1%E7%9A%84%E5%90%8C%E4%BA%8B/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
@@ -646,33 +653,6 @@
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/rag-intro/</guid>
       <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://pengjiyuan.github.io/news/2026-04-08/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/news/2026-04-08/</guid>
-      <description>&lt;h1 id=&#34;ai-资讯-2026-04-08&#34;&gt;AI 资讯 2026-04-08&lt;/h1&gt;
-&lt;h2 id=&#34;技术突破&#34;&gt;技术突破&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;GLM-5.1 开源发布&lt;/strong&gt;：Z.AI 的 754B 参数模型，8 小时自主任务能力，benchmark 超过 Claude Opus 4。国产开源模型能力快速追赶。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Anthropic 挖人&lt;/strong&gt;： hires Microsoft Eric Boyd (16年AI平台高管) as head of infrastructure，Anthropic 加码基础设施直追 OpenAI。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;能源与基础设施&#34;&gt;能源与基础设施&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;美国电力需求创纪录&lt;/strong&gt;：EIA 预测 2026-2027 电力需求创纪录，AI 数据中心是主因。算力瓶颈可能比想象中更快到来。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Firmus AI 融资&lt;/strong&gt;：Nvidia 支持的 AI 数据中心建设公司，估值 $55亿，融资 $5.05亿（Coatue 领投）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;资本&#34;&gt;资本&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Musk 诉 OpenAI&lt;/strong&gt;：起诉要求罢免 Sam Altman 和 Greg Brockman，质疑其从非营利向营利转型。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;应用&#34;&gt;应用&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Uber + Amazon&lt;/strong&gt;：Uber 扩大 AWS 合同，使用 Amazon 定制 AI 芯片进行叫车功能开发和模型训练。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;副业研究关键信号&#34;&gt;副业研究关键信号&lt;/h2&gt;
-&lt;p&gt;国产开源模型（GLM-5.1 + Qwen3.6 Plus）快速追赶美国，中间页方向（帮开发者跨越中美生态）持续有利。&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

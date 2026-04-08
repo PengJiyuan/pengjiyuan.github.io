@@ -6,8 +6,15 @@
     <description>Recent content in 每日资讯 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 Apr 2026 23:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 11:17:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 资讯速递（2026年4月8日）</title>
+      <link>https://pengjiyuan.github.io/news/2026-04-08/</link>
+      <pubDate>Wed, 08 Apr 2026 11:17:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/news/2026-04-08/</guid>
+      <description>2026年4月8日：智元AGIBOT发布周持续进行；智谱AI发布GLM-5.1：8小时自主工作超越GPT-5.4；中国AI股集体大涨，智谱AI涨15%领跑；Anthropic发布Mythos模型发现27年未修复漏洞；小米发布FIPO算法；中国AI政策落地</description>
+    </item>
     <item>
       <title>AI 资讯速递（2026年4月7日）</title>
       <link>https://pengjiyuan.github.io/news/2026-04-07/</link>
@@ -245,33 +252,6 @@
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/news/2026-03-01/</guid>
       <description>2026年3月第1周 AI 行业重大动态：Claude Code 语音模式、GPT-5.4 泄露、多模态突破……</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://pengjiyuan.github.io/news/2026-04-08/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/news/2026-04-08/</guid>
-      <description>&lt;h1 id=&#34;ai-资讯-2026-04-08&#34;&gt;AI 资讯 2026-04-08&lt;/h1&gt;
-&lt;h2 id=&#34;技术突破&#34;&gt;技术突破&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;GLM-5.1 开源发布&lt;/strong&gt;：Z.AI 的 754B 参数模型，8 小时自主任务能力，benchmark 超过 Claude Opus 4。国产开源模型能力快速追赶。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Anthropic 挖人&lt;/strong&gt;： hires Microsoft Eric Boyd (16年AI平台高管) as head of infrastructure，Anthropic 加码基础设施直追 OpenAI。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;能源与基础设施&#34;&gt;能源与基础设施&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;美国电力需求创纪录&lt;/strong&gt;：EIA 预测 2026-2027 电力需求创纪录，AI 数据中心是主因。算力瓶颈可能比想象中更快到来。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Firmus AI 融资&lt;/strong&gt;：Nvidia 支持的 AI 数据中心建设公司，估值 $55亿，融资 $5.05亿（Coatue 领投）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;资本&#34;&gt;资本&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Musk 诉 OpenAI&lt;/strong&gt;：起诉要求罢免 Sam Altman 和 Greg Brockman，质疑其从非营利向营利转型。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;应用&#34;&gt;应用&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Uber + Amazon&lt;/strong&gt;：Uber 扩大 AWS 合同，使用 Amazon 定制 AI 芯片进行叫车功能开发和模型训练。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;副业研究关键信号&#34;&gt;副业研究关键信号&lt;/h2&gt;
-&lt;p&gt;国产开源模型（GLM-5.1 + Qwen3.6 Plus）快速追赶美国，中间页方向（帮开发者跨越中美生态）持续有利。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
