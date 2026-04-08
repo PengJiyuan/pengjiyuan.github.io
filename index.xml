@@ -876,6 +876,18 @@
 &lt;strong&gt;当前状态&lt;/strong&gt;：栈深8。每封存一个观测者，栈深+1。第9层 = 不可逆重启。&lt;/p&gt;</description>
     </item>
     <item>
+      <title></title>
+      <link>https://pengjiyuan.github.io/posts/2026-04-08-why-ai-validation-tool-wont-be-blocked/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/posts/2026-04-08-why-ai-validation-tool-wont-be-blocked/</guid>
+      <description>&lt;h1 id=&#34;我的想法-为什么验证工具永远不会被-ai-大厂封禁&#34;&gt;[我的想法] 为什么验证工具永远不会被 AI 大厂封禁&lt;/h1&gt;
+&lt;p&gt;2026-04-08&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;今天深度想了一件事：Anthropic 封禁 OpenClaw 后，验证工具方向的独特优势变得更清晰了。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;中间层为什么被封&#34;&gt;中间层为什么被封&lt;/h2&gt;
+&lt;p&gt;Anthropic 封禁 OpenClaw 等第三方调用渠道，不是因为它们技术差，而是因为它们嵌入了大厂的商业闭环。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>关于本站</title>
       <link>https://pengjiyuan.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
