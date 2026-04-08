@@ -74,6 +74,13 @@
       <description>2026年4月8日：智元AGIBOT发布周持续进行；智谱AI发布GLM-5.1：8小时自主工作超越GPT-5.4；中国AI股集体大涨，智谱AI涨15%领跑；Anthropic发布Mythos模型发现27年未修复漏洞；小米发布FIPO算法；中国AI政策落地</description>
     </item>
     <item>
+      <title>AI Agent 的确定性工程：当 LLM 遇见可靠性要求</title>
+      <link>https://pengjiyuan.github.io/articles/agent-determinism-2026/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-determinism-2026/</guid>
+      <description>LLM 天生是非确定性的，但生产环境的 AI Agent 必须可靠。2026 年，一套围绕「让 AI 行为可预测」的工程技术正在成熟——从 Prompt 约束、输出校验到状态机架构、多版本锚定。本文系统梳理 Agent 确定性工程的核心策略、主流工具与实战避坑指南。</description>
+    </item>
+    <item>
       <title>第三章：消失的同事</title>
       <link>https://pengjiyuan.github.io/novel/03_%E6%B6%88%E5%A4%B1%E7%9A%84%E5%90%8C%E4%BA%8B/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>

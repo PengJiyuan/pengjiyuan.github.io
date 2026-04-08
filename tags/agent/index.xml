@@ -6,8 +6,15 @@
     <description>Recent content in Agent on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 的确定性工程：当 LLM 遇见可靠性要求</title>
+      <link>https://pengjiyuan.github.io/articles/agent-determinism-2026/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/agent-determinism-2026/</guid>
+      <description>LLM 天生是非确定性的，但生产环境的 AI Agent 必须可靠。2026 年，一套围绕「让 AI 行为可预测」的工程技术正在成熟——从 Prompt 约束、输出校验到状态机架构、多版本锚定。本文系统梳理 Agent 确定性工程的核心策略、主流工具与实战避坑指南。</description>
+    </item>
     <item>
       <title>AI Agent 协议生态全景 2026：MCP、A2A、AG-UI 与智能体互联基础设施</title>
       <link>https://pengjiyuan.github.io/articles/agent-protocol-ecosystem-2026/</link>

@@ -128,10 +128,59 @@
       <description></description>
     </item>
     <item>
+      <title>Agent</title>
+      <link>https://pengjiyuan.github.io/tags/agent/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guardrails</title>
+      <link>https://pengjiyuan.github.io/tags/guardrails/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/guardrails/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://pengjiyuan.github.io/tags/llm/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt工程</title>
+      <link>https://pengjiyuan.github.io/tags/prompt%E5%B7%A5%E7%A8%8B/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/prompt%E5%B7%A5%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>第三章</title>
       <link>https://pengjiyuan.github.io/tags/%E7%AC%AC%E4%B8%89%E7%AB%A0/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E7%AC%AC%E4%B8%89%E7%AB%A0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>可靠性</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>确定性</title>
+      <link>https://pengjiyuan.github.io/tags/%E7%A1%AE%E5%AE%9A%E6%80%A7/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E7%A1%AE%E5%AE%9A%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>系统工程</title>
+      <link>https://pengjiyuan.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/</guid>
       <description></description>
     </item>
     <item>
@@ -275,13 +324,6 @@
       <description></description>
     </item>
     <item>
-      <title>Prompt工程</title>
-      <link>https://pengjiyuan.github.io/tags/prompt%E5%B7%A5%E7%A8%8B/</link>
-      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/prompt%E5%B7%A5%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vibe Coding</title>
       <link>https://pengjiyuan.github.io/tags/vibe-coding/</link>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
@@ -366,13 +408,6 @@
       <description></description>
     </item>
     <item>
-      <title>Agent</title>
-      <link>https://pengjiyuan.github.io/tags/agent/</link>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/agent/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>MCP</title>
       <link>https://pengjiyuan.github.io/tags/mcp/</link>
       <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
@@ -405,13 +440,6 @@
       <link>https://pengjiyuan.github.io/tags/dare/</link>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/dare/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>https://pengjiyuan.github.io/tags/llm/</link>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/llm/</guid>
       <description></description>
     </item>
     <item>
@@ -709,13 +737,6 @@
       <description></description>
     </item>
     <item>
-      <title>Guardrails</title>
-      <link>https://pengjiyuan.github.io/tags/guardrails/</link>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/guardrails/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Neuro-Symbolic</title>
       <link>https://pengjiyuan.github.io/tags/neuro-symbolic/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
@@ -748,13 +769,6 @@
       <link>https://pengjiyuan.github.io/tags/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E6%A3%80%E7%B4%A2%E5%A2%9E%E5%BC%BA/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>可靠性</title>
-      <link>https://pengjiyuan.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</link>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</guid>
       <description></description>
     </item>
     <item>
