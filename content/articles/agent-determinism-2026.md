@@ -1,6 +1,10 @@
 ---
 title: "AI Agent 的确定性工程：当 LLM 遇见可靠性要求"
 date: 2026-04-08
+cover:
+  image: "/articles/agent-determinism-2026-cover.png"
+  alt: "AI Agent 确定性工程"
+  caption: "由 Tiny Stable Diffusion 生成"
 tags:
   - "Agent"
   - "确定性"
