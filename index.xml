@@ -66,6 +66,13 @@
       <description>2026年4月9日：Anthropic发布Claude Mythos Preview专注防御性网络安全，&amp;#34;能力强大到不敢公开发布&amp;#34;；OpenAI GPT-6代号Spud蓄势待发，Greg Brockman称&amp;#34;将改变经济&amp;#34;；Q1全球AI融资3000亿美元创历史纪录；OpenAI/Anthropic/Google罕见联手通过Frontier Model Forum围堵中国AI&amp;#34;蒸馏&amp;#34;；字节跳动发布豆包大模型新版本</description>
     </item>
     <item>
+      <title>GLM-5.1 深度解析：开源模型首次突破 1700 步自主执行，8 小时独立完成复杂任务</title>
+      <link>https://pengjiyuan.github.io/articles/glm-5-1-long-horizon-agent-2026/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/glm-5-1-long-horizon-agent-2026/</guid>
+      <description>Z.ai 发布的 GLM-5.1 以 7540 亿参数的 MoE 架构，首次在开源模型中实现了 1700 步连续工具调用、8 小时自主工作能力。本文深度解析其「楼梯式优化」技术路径、SWE-Bench Pro 超越 Opus 4.6 的关键指标，以及对开源 Agent 生态的深远影响。</description>
+    </item>
+    <item>
       <title>第四章：GOTO PARADISE</title>
       <link>https://pengjiyuan.github.io/novel/04_goto-paradise/</link>
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
