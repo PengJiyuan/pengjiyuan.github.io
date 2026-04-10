@@ -128,6 +128,27 @@
       <description></description>
     </item>
     <item>
+      <title>WASM</title>
+      <link>https://pengjiyuan.github.io/tags/wasm/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/wasm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WebGPU</title>
+      <link>https://pengjiyuan.github.io/tags/webgpu/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/webgpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WebLLM</title>
+      <link>https://pengjiyuan.github.io/tags/webllm/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/webllm/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>编排平台</title>
       <link>https://pengjiyuan.github.io/tags/%E7%BC%96%E6%8E%92%E5%B9%B3%E5%8F%B0/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
@@ -142,6 +163,13 @@
       <description></description>
     </item>
     <item>
+      <title>端侧 AI</title>
+      <link>https://pengjiyuan.github.io/tags/%E7%AB%AF%E4%BE%A7-ai/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E7%AB%AF%E4%BE%A7-ai/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>法律</title>
       <link>https://pengjiyuan.github.io/tags/%E6%B3%95%E5%BE%8B/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
@@ -149,10 +177,24 @@
       <description></description>
     </item>
     <item>
+      <title>浏览器</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>企业 AI</title>
       <link>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A-ai/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>前端开发</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
       <description></description>
     </item>
     <item>

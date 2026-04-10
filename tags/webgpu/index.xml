@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WebGPU on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/webgpu/</link>
+    <description>Recent content in WebGPU on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/webgpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浏览器里的 AI 大脑：WebGPU/WASM 驱动的前端 Agent 时代</title>
+      <link>https://pengjiyuan.github.io/articles/browser-ai-agent-2026/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/browser-ai-agent-2026/</guid>
+      <description>AI Agent 不再只运行在服务器上。WebGPU &#43; WASM 技术让大模型直接在浏览器里跑，配合 Browser-use 架构，前端页面正在变成最自然的多模态 Agent 界面。本文系统梳理浏览器端 AI 推理的技术栈、主流方案、实际性能，以及这场「前端 Agent 化」浪潮对开发者的意义。</description>
+    </item>
+  </channel>
+</rss>

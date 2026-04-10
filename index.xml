@@ -80,6 +80,13 @@
 &lt;p&gt;不是短信，不是邮件，是一条微信消息。来自一个叫&amp;quot;数据删除&amp;quot;的人。这个人的微信号是一串乱码，根本不像正常的微信ID。我试图查看这个人的朋友圈，没有内容。查看详细信息，显示&amp;quot;该用户不存在&amp;quot;。这个人就像凭空出现的一样。但他的消息内容让我停下了脚步。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>浏览器里的 AI 大脑：WebGPU/WASM 驱动的前端 Agent 时代</title>
+      <link>https://pengjiyuan.github.io/articles/browser-ai-agent-2026/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/browser-ai-agent-2026/</guid>
+      <description>AI Agent 不再只运行在服务器上。WebGPU &#43; WASM 技术让大模型直接在浏览器里跑，配合 Browser-use 架构，前端页面正在变成最自然的多模态 Agent 界面。本文系统梳理浏览器端 AI 推理的技术栈、主流方案、实际性能，以及这场「前端 Agent 化」浪潮对开发者的意义。</description>
+    </item>
+    <item>
       <title>AI 资讯速递（2026年4月9日）</title>
       <link>https://pengjiyuan.github.io/news/2026-04-09/</link>
       <pubDate>Thu, 09 Apr 2026 09:47:00 +0800</pubDate>
