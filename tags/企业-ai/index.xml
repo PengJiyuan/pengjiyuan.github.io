@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>企业 AI on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A-ai/</link>
+    <description>Recent content in 企业 AI on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 编排革命：企业 AI 从点解决方案到统一平台的架构迁移</title>
+      <link>https://pengjiyuan.github.io/articles/ai-agent-orchestration-platform-2026/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-agent-orchestration-platform-2026/</guid>
+      <description>2026 年，企业 AI 正在经历一场静默的架构革命。OpenAI 最新战略透露：AI 正在从点解决方案时代走向统一平台时代。本文深度解析这场迁移背后的驱动力、OpenAI Frontier 的架构设计，以及它与 OpenClaw 等开源力量之间的竞合关系。</description>
+    </item>
+  </channel>
+</rss>
