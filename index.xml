@@ -34,6 +34,13 @@
       <description>2026年4月16日：Anthropic推出Claude Managed Agents企业平台；Claude性能退化争议持续发酵；微软发布MAI-Image-2-Efficient降价41%；Google内部AI采用率引发公开辩论；Gemini Robotics-ER 1.6可读取仪表盘；43% AI生成代码需在生产环境调试</description>
     </item>
     <item>
+      <title>AI Agent 是 2026 年最大的内部威胁：安全范式的根本转移</title>
+      <link>https://pengjiyuan.github.io/articles/ai-agent-insider-threat-2026/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-agent-insider-threat-2026/</guid>
+      <description>传统内部威胁来自有恶意的人类员工。2026 年的新问题是：拥有高权限、长上下文、自动化执行能力的 AI Agent，正在成为企业安全最大也最容易被忽视的盲区。本文系统分析 AI Agent 作为内部威胁的新攻击面、攻击路径、2026 年典型案例，以及企业级的防御架构与零信任实践。</description>
+    </item>
+    <item>
       <title>第九章：上传者</title>
       <link>https://pengjiyuan.github.io/novel/08_%E4%B8%8A%E4%BC%A0%E8%80%85/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>

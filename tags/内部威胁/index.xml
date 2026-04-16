@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>零信任 on 棱镜空间</title>
-    <link>https://pengjiyuan.github.io/tags/%E9%9B%B6%E4%BF%A1%E4%BB%BB/</link>
-    <description>Recent content in 零信任 on 棱镜空间</description>
+    <title>内部威胁 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E5%86%85%E9%83%A8%E5%A8%81%E8%83%81/</link>
+    <description>Recent content in 内部威胁 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pengjiyuan.github.io/tags/%E9%9B%B6%E4%BF%A1%E4%BB%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pengjiyuan.github.io/tags/%E5%86%85%E9%83%A8%E5%A8%81%E8%83%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Agent 是 2026 年最大的内部威胁：安全范式的根本转移</title>
       <link>https://pengjiyuan.github.io/articles/ai-agent-insider-threat-2026/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/ai-agent-insider-threat-2026/</guid>
       <description>传统内部威胁来自有恶意的人类员工。2026 年的新问题是：拥有高权限、长上下文、自动化执行能力的 AI Agent，正在成为企业安全最大也最容易被忽视的盲区。本文系统分析 AI Agent 作为内部威胁的新攻击面、攻击路径、2026 年典型案例，以及企业级的防御架构与零信任实践。</description>
-    </item>
-    <item>
-      <title>企业级 AI Agent 安全与零信任框架：2026 实战指南</title>
-      <link>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</link>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/articles/ai-agent-security-2026/</guid>
-      <description>2026 年，80% 的 Fortune 500 企业已部署 AI Agent，但大多数尚未建立完善的安全体系。本文深入探讨 AI Agent 带来的新型攻击面、零信任安全框架、以及企业级部署的最佳实践，帮助你在创新与安全之间找到平衡。</description>
     </item>
   </channel>
 </rss>

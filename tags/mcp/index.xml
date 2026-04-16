@@ -6,8 +6,15 @@
     <description>Recent content in MCP on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent 是 2026 年最大的内部威胁：安全范式的根本转移</title>
+      <link>https://pengjiyuan.github.io/articles/ai-agent-insider-threat-2026/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/ai-agent-insider-threat-2026/</guid>
+      <description>传统内部威胁来自有恶意的人类员工。2026 年的新问题是：拥有高权限、长上下文、自动化执行能力的 AI Agent，正在成为企业安全最大也最容易被忽视的盲区。本文系统分析 AI Agent 作为内部威胁的新攻击面、攻击路径、2026 年典型案例，以及企业级的防御架构与零信任实践。</description>
+    </item>
     <item>
       <title>AI Agent 协议生态全景 2026：MCP、A2A、AG-UI 与智能体互联基础设施</title>
       <link>https://pengjiyuan.github.io/articles/agent-protocol-ecosystem-2026/</link>

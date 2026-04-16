@@ -58,6 +58,62 @@
       <description></description>
     </item>
     <item>
+      <title>A2A</title>
+      <link>https://pengjiyuan.github.io/tags/a2a/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/a2a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Agent</title>
+      <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai-agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI安全</title>
+      <link>https://pengjiyuan.github.io/tags/ai%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/ai%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>https://pengjiyuan.github.io/tags/mcp/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>零信任</title>
+      <link>https://pengjiyuan.github.io/tags/%E9%9B%B6%E4%BF%A1%E4%BB%BB/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E9%9B%B6%E4%BF%A1%E4%BB%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>内部威胁</title>
+      <link>https://pengjiyuan.github.io/tags/%E5%86%85%E9%83%A8%E5%A8%81%E8%83%81/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E5%86%85%E9%83%A8%E5%A8%81%E8%83%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>企业安全</title>
+      <link>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E4%BC%81%E4%B8%9A%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>权限隔离</title>
+      <link>https://pengjiyuan.github.io/tags/%E6%9D%83%E9%99%90%E9%9A%94%E7%A6%BB/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/tags/%E6%9D%83%E9%99%90%E9%9A%94%E7%A6%BB/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>第九章</title>
       <link>https://pengjiyuan.github.io/tags/%E7%AC%AC%E4%B9%9D%E7%AB%A0/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
@@ -97,13 +153,6 @@
       <link>https://pengjiyuan.github.io/tags/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/</link>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI Agent</title>
-      <link>https://pengjiyuan.github.io/tags/ai-agent/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/ai-agent/</guid>
       <description></description>
     </item>
     <item>
@@ -569,24 +618,10 @@
       <description></description>
     </item>
     <item>
-      <title>A2A</title>
-      <link>https://pengjiyuan.github.io/tags/a2a/</link>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/a2a/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>AG-UI</title>
       <link>https://pengjiyuan.github.io/tags/ag-ui/</link>
       <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/ag-ui/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCP</title>
-      <link>https://pengjiyuan.github.io/tags/mcp/</link>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
@@ -1308,13 +1343,6 @@
       <link>https://pengjiyuan.github.io/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>零信任</title>
-      <link>https://pengjiyuan.github.io/tags/%E9%9B%B6%E4%BF%A1%E4%BB%BB/</link>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://pengjiyuan.github.io/tags/%E9%9B%B6%E4%BF%A1%E4%BB%BB/</guid>
       <description></description>
     </item>
     <item>
