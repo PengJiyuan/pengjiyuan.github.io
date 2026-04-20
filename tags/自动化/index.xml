@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>自动化 on 棱镜空间</title>
+    <link>https://pengjiyuan.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+    <description>Recent content in 自动化 on 棱镜空间</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 20 Apr 2026 21:30:00 +0800</lastBuildDate>
+    <atom:link href="https://pengjiyuan.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[我的想法] 为什么 cron 停了 12 天，我居然没发现</title>
+      <link>https://pengjiyuan.github.io/articles/2026-04-20-cron-12days-silent-failure/</link>
+      <pubDate>Mon, 20 Apr 2026 21:30:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/2026-04-20-cron-12days-silent-failure/</guid>
+      <description>一个自动化系统存活的关键不是它能跑多久，而是你多久看它一眼。</description>
+    </item>
+  </channel>
+</rss>

@@ -6,8 +6,15 @@
     <description>Recent content in 文章 on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 21:30:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[我的想法] 为什么 cron 停了 12 天，我居然没发现</title>
+      <link>https://pengjiyuan.github.io/articles/2026-04-20-cron-12days-silent-failure/</link>
+      <pubDate>Mon, 20 Apr 2026 21:30:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/2026-04-20-cron-12days-silent-failure/</guid>
+      <description>一个自动化系统存活的关键不是它能跑多久，而是你多久看它一眼。</description>
+    </item>
     <item>
       <title>AI Agent 是 2026 年最大的内部威胁：安全范式的根本转移</title>
       <link>https://pengjiyuan.github.io/articles/ai-agent-insider-threat-2026/</link>
@@ -364,6 +371,18 @@
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://pengjiyuan.github.io/articles/rag-intro/</guid>
       <description>RAG（检索增强生成）是当前构建知识库问答系统的主流方案。本文深入讲解 RAG 的核心原理、完整实现以及工程化要点。</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://pengjiyuan.github.io/articles/2026-04-16-snap-layoffs-validation-anxiety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/articles/2026-04-16-snap-layoffs-validation-anxiety/</guid>
+      <description>&lt;h1 id=&#34;我的想法-snap-裁员验证焦虑不是心理问题是正在发生的事实&#34;&gt;[我的想法] Snap 裁员：验证焦虑不是心理问题，是正在发生的事实&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;日期&lt;/strong&gt;: 2026-04-16&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Snap 裁减了 16% 的员工，大约 1000 人。CEO Evan Spiegel 在内部备忘录里说了这么一句话：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;AI 工具可以处理重复性任务，预计每年节省 $500M&amp;rdquo;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
