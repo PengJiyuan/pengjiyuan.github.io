@@ -6,8 +6,15 @@
     <description>Recent content on 棱镜空间</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 21:00:00 +0800</lastBuildDate>
     <atom:link href="https://pengjiyuan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 资讯速递（2026年4月20日）</title>
+      <link>https://pengjiyuan.github.io/news/2026-04-20/</link>
+      <pubDate>Mon, 20 Apr 2026 21:00:00 +0800</pubDate>
+      <guid>https://pengjiyuan.github.io/news/2026-04-20/</guid>
+      <description>2026年4月20日：通义实验室连发Qwen3.6系列开源模型；微软33亿美元Fairwater AI数据中心提前投入运营；上海AI实验室发布ViraHInter病毒预测模型；iQIYI AI演员库遭多位明星否认授权；月之暗面&#43;清华发布PrfaaS架构；Anthropic Claude Buddy硬件深圳造；马斯克提&amp;#34;全民高收入&amp;#34;应对AI失业</description>
+    </item>
     <item>
       <title>第十一章：沈遥的遗产</title>
       <link>https://pengjiyuan.github.io/novel/09_%E6%B2%88%E9%81%A5%E7%9A%84%E9%81%97%E4%BA%A7/</link>
@@ -25,6 +32,17 @@
       <guid>https://pengjiyuan.github.io/novel/10_%E8%AF%BA%E8%A8%80%E5%9B%A2%E9%98%9F/</guid>
       <description>&lt;p&gt;那天晚上，404给我发了一个加密文件。&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;这是诺言团队的完整档案。&amp;ldquo;404在消息里说。&amp;ldquo;包括她们的真实身份，她们在2008年做了什么，以及她们为什么要消失。&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2026-04-17 AI 资讯</title>
+      <link>https://pengjiyuan.github.io/news/2026-04-17/</link>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://pengjiyuan.github.io/news/2026-04-17/</guid>
+      <description>&lt;h2 id=&#34;今日-ai-重要动态&#34;&gt;今日 AI 重要动态&lt;/h2&gt;
+&lt;h3 id=&#34;gpt-rosalind-发布22-分钟前&#34;&gt;GPT-Rosalind 发布（22 分钟前）&lt;/h3&gt;
+&lt;p&gt;OpenAI 发布生物学专用大模型 GPT-Rosalind，瞄准科学研究加速。这是之前药物发现模型的正式命名。&lt;/p&gt;
+&lt;h3 id=&#34;claude-opus-47-发布416&#34;&gt;Claude Opus 4.7 发布（4/16）&lt;/h3&gt;
+&lt;p&gt;Anthropic 发布 Claude Opus 4.7，专为实际任务设计，增强安全防护。定位低于 Mythos，策略是 Opus 做商业落地，Mythos 刷榜监管。&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI 资讯速递（2026年4月16日）</title>
